@@ -5,6 +5,7 @@ zentraler Anlaufpunkt rund um die AskSinPP Lib sowie deren Verwendung und Projek
 - https://github.com/jp112sdl/JP-HB-Devices-addon
 
 ## Software / Sketche
+- https://github.com/pa-pa/AskSinPP/tree/master/examples
 - https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples
 - https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master
 - https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST/tree/master
