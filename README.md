@@ -7,7 +7,7 @@ zentraler Anlaufpunkt rund um die Arduino [AskSinPP Lib](https://github.com/pa-p
 ## Software / Sketche
 - [Sketch-Sammlung div. HM-Geräte von pa-pa (Bestandteil der AskSinPP Library)](https://github.com/pa-pa/AskSinPP/tree/master/examples) 
 - [Sketch-Sammlung div. HM-Geräte von mir :)](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples)
-- [HB-UNI-RGB-LED-CTRL RGB Controller für WS28xx / Neopixel / etc.)](https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master)
+- [HB-UNI-RGB-LED-CTRL (RGB Controller für WS28xx / Neopixel / etc.)](https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master)
 - [HB-UNI-Sen-CAP-MOIST (kapazitiver Bodenfeuchtesensor)](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST/tree/master)
 - [HB-UNI-Sen-DIST-US (Ultraschall Abstandsensor)](https://github.com/jp112sdl/HB-UNI-Sen-DIST-US/tree/master)
 - [HB-UNI-Sen-DUMMY-BEACON (Dummy-Device zum Simulieren zyklischer Statusmeldungen sowie Ack-Nachrichten)](https://github.com/jp112sdl/HB-UNI-Sen-DUMMY-BEACON/tree/master)
