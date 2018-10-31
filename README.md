@@ -5,19 +5,19 @@ zentraler Anlaufpunkt rund um die Arduino [AskSinPP Lib](https://github.com/pa-p
 - [(piv)CCU- / RaspberryMatic Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) (wird benötigt, um die Geräte `HB-UNI-...` und `HB-LC-...` verwenden zu können)
 
 ## Software / Sketche
-- https://github.com/pa-pa/AskSinPP/tree/master/examples
-- https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples
-- https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-DIST-US/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-DUMMY-BEACON/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-LEV-US/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-PRESS/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-TEMP-DS18B20/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-TEMP-IR/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-VOLT/tree/master
-- https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master
-- https://github.com/jp112sdl/HB-UNI-SenAct-4-4/tree/master
+- [Sketch-Sammlung div. HM-Geräte von pa-pa (Bestandteil der AskSinPP Library)](https://github.com/pa-pa/AskSinPP/tree/master/examples) 
+- [Sketch-Sammlung div. HM-Geräte von mir :)](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples)
+- [HB-UNI-RGB-LED-CTRL RGB Controller für WS28xx / Neopixel / etc.)](https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master)
+- [HB-UNI-Sen-CAP-MOIST (kapazitiver Bodenfeuchtesensor)](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST/tree/master)
+- [HB-UNI-Sen-DIST-US (Ultraschall Abstandsensor)](https://github.com/jp112sdl/HB-UNI-Sen-DIST-US/tree/master)
+- [HB-UNI-Sen-DUMMY-BEACON (Dummy-Device zum Simulieren zyklischer Statusmeldungen sowie Ack-Nachrichten)](https://github.com/jp112sdl/HB-UNI-Sen-DUMMY-BEACON/tree/master)
+- [HB-UNI-Sen-LEV-US (Ultraschall Füllstandsensor)](https://github.com/jp112sdl/HB-UNI-Sen-LEV-US/tree/master)
+- [HB-UNI-Sen-PRESS (Drucksensor)](https://github.com/jp112sdl/HB-UNI-Sen-PRESS/tree/master)
+- [HB-UNI-Sen-TEMP-DS18B20 (1..8fach DS18B20 Temperatursensor)](https://github.com/jp112sdl/HB-UNI-Sen-TEMP-DS18B20/tree/master)
+- [HB-UNI-Sen-TEMP-IR (MLX90614 Infrarot Temperatursensor)](https://github.com/jp112sdl/HB-UNI-Sen-TEMP-IR/tree/master)
+- [HB-UNI-Sen-VOLT (universeller Spannungssensor (Template))](https://github.com/jp112sdl/HB-UNI-Sen-VOLT/tree/master)
+- [HB-UNI-Sen-WEA (Wetterstation)](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master)
+- [HB-UNI-SenAct-4-4 (4fach - Sender & - Aktor (Netzteil-/Batteriebetrieb))](https://github.com/jp112sdl/HB-UNI-SenAct-4-4/tree/master)
 - https://github.com/stan23/HB-LC-Sw2-FM
 
 
