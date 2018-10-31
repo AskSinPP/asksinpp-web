@@ -1,8 +1,8 @@
 # AskSinPPCollection
-zentraler Anlaufpunkt rund um die AskSinPP Lib sowie deren Verwendung und Projekte
+zentraler Anlaufpunkt rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP/tree/master/examples) sowie deren Verwendung und Projekte
 
 ## Additional 
-- https://github.com/jp112sdl/JP-HB-Devices-addon
+- [(piv)CCU- / RaspberryMatic Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) (wird benötigt, um die Geräte `HB-UNI-...` und `HB-LC-...` verwenden zu können)
 
 ## Software / Sketche
 - https://github.com/pa-pa/AskSinPP/tree/master/examples
