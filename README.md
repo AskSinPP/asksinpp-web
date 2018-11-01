@@ -19,11 +19,13 @@ zentraler Anlaufpunkt rund um die Arduino [AskSinPP Lib](https://github.com/pa-p
 - [HB-UNI-Sen-WEA (Wetterstation)](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master)
 - [HB-UNI-SenAct-4-4 (4fach - Sender & - Aktor (Netzteil-/Batteriebetrieb))](https://github.com/jp112sdl/HB-UNI-SenAct-4-4/tree/master)
 - https://github.com/stan23/HB-LC-Sw2-FM
+- https://github.com/TomMajor/AskSinPP_Examples
 
 
 ## Hardware / Platinen
 - https://github.com/pa-pa/HMSensor
 - https://github.com/alexreinert/PCB
+- https://github.com/TomMajor/AskSinPP_Examples
 - https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1
 - https://github.com/stan23/HM-LC-Bl1-FM-DC
 - https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI
