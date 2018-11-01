@@ -24,18 +24,30 @@ zentraler Anlaufpunkt rund um die Arduino [AskSinPP Lib](https://github.com/pa-p
 
 
 ## Hardware / Platinen
-- https://github.com/pa-pa/HMSensor
-- https://github.com/alexreinert/PCB
-- https://github.com/TomMajor/AskSinPP_Examples
-- https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1
-- https://github.com/stan23/HM-LC-Bl1-FM-DC
-- https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI
-- https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR
-- https://github.com/ronnythomas/HB-UNI-Bat
-- https://github.com/ronnythomas/HB-UNI-SenAct-4-4
-- https://github.com/ronnythomas/HM-MOD-Re-8
-- https://github.com/ronnythomas/HB-Mini
-- https://github.com/ronnythomas/HB-Micro
-- https://github.com/ronnythomas/HB-UNI
-- https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V
-- https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V
+- Platine(n) von [pa-pa](https://github.com/pa-pa)
+  - [HMSensor-Platine](https://github.com/pa-pa/HMSensor)
+
+- Platine(n) von [Alex](https://github.com/alexreinert)
+  - [HB-UNI-644 (Rev. 2)](https://github.com/alexreinert/PCB#hb-uni-644-rev-2) 
+  - [HB-UNI-SEN-BATT](https://github.com/alexreinert/PCB#hb-uni-sen-batt) 
+  - [HB-UNI-SEN-PCB](https://github.com/alexreinert/PCB#hb-uni-sen-pcb) 
+  - [HB-UNI-SEN-WEA](https://github.com/alexreinert/PCB#hb-uni-sen-wea) (Platine für die [Wetterstation](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master))
+
+- Platine(n) von [Tom](https://github.com/TomMajor)
+  - [Außensensorplatine](https://github.com/TomMajor/AskSinPP_Examples/tree/master/PCB/Aussensensor)
+
+- Platine(n) von [Marco](https://github.com/stan23)
+  - [Gosund SP1 Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1)
+  - [HM-LC-Bl1-FM Rollladenaktor für Gleichstrommotoren](https://github.com/stan23/HM-LC-Bl1-FM-DC)
+  - [OBI WiFi Zwischenstecker Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI)
+  
+- Platine(n) von [Ronny](https://github.com/ronnythomas)
+  - [HB-Micro](https://github.com/ronnythomas/HB-Micro)
+  - [HB-Mini](https://github.com/ronnythomas/HB-Mini)
+  - [HM-MOD-Re-8](https://github.com/ronnythomas/HM-MOD-Re-8)
+  - [HB-UNI](https://github.com/ronnythomas/HB-UNI)
+  - [HB-UNI-Bat](https://github.com/ronnythomas/HB-UNI-Bat)
+  - [HB-UNI-SenAct-4-4](https://github.com/ronnythomas/HB-UNI-SenAct-4-4)
+  - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
+  - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
+  - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
