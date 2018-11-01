@@ -19,6 +19,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - [HB-UNI-Sen-VOLT (universeller Spannungssensor (Template))](https://github.com/jp112sdl/HB-UNI-Sen-VOLT/tree/master)
 - [HB-UNI-Sen-WEA (Wetterstation)](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master)
 - [HB-UNI-SenAct-4-4 (4fach - Sender & - Aktor (Netzteil-/Batteriebetrieb))](https://github.com/jp112sdl/HB-UNI-SenAct-4-4/tree/master)
+- [HB-UNI-SenAct-8-8 (8fach - Sender & - Aktor (Netzteil-/Batteriebetrieb))](https://github.com/jp112sdl/HB-UNI-SenAct-8-8-RC/tree/master)
 - [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) von [stan23](https://github.com/stan23)
 - [Toms Sketchsammlung](https://github.com/TomMajor/AskSinPP_Examples) (Hinweis: für den HB-UNI-Sensor1 wird ein separates [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1/CCU_RM) benötigt!)
 
