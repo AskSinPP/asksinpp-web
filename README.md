@@ -10,6 +10,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 ## Software / Sketche
 - [Sketch-Sammlung div. HM-Geräte von pa-pa (Bestandteil der AskSinPP Library)](https://github.com/pa-pa/AskSinPP/tree/master/examples) 
 - [Sketch-Sammlung div. HM-Geräte von mir :)](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples)
+- [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) 2-Kanal-Rollladenaktor
 - [HB-UNI-RGB-LED-CTRL (RGB Controller für WS28xx / Neopixel / etc.)](https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL/tree/master)
 - [HB-UNI-Sen-CAP-MOIST (kapazitiver Bodenfeuchtesensor)](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST/tree/master)
 - [HB-UNI-Sen-DIST-US (Ultraschall Abstandsensor)](https://github.com/jp112sdl/HB-UNI-Sen-DIST-US/tree/master)
