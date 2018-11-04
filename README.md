@@ -57,3 +57,12 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - Gehäuse von [Jan](https://www.thingiverse.com/Schmelzerboy)
   - [HM-WDS40-TH-I](https://www.thingiverse.com/thing:3184336)
   - [Platinenhalter](https://www.thingiverse.com/thing:3158997)
+- Gehäuse von [Christoph S.](https://www.thingiverse.com/ChristophStr)
+  - [HB-UNI-SENS-BATT-Case](https://www.thingiverse.com/thing:3028730)
+- Gehäuse von [Hermi](https://www.thingiverse.com/hermi_le)
+  - [optionale Teile für HB-UNI-Sen-WEA](https://www.thingiverse.com/thing:3173141)
+  
+  
+## Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
+
+# DANKE!
