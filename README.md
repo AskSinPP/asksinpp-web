@@ -52,3 +52,8 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
   - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
+  
+  ## Gehäuse / 3D Druck
+- Gehäuse von [Jan](https://www.thingiverse.com/Schmelzerboy)
+  - [HM-WDS40-TH-I](https://www.thingiverse.com/thing:3184336)
+  - [Platinenhalter](https://www.thingiverse.com/thing:3158997)
