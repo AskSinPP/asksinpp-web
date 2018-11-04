@@ -64,6 +64,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [HB-UNI-SENS-BATT-Case](https://www.thingiverse.com/thing:3028730)
 - Gehäuse von [Hermi](https://www.thingiverse.com/hermi_le)
   - [optionale Teile für HB-UNI-Sen-WEA](https://www.thingiverse.com/thing:3173141)
+  - [Homematic Lichtsensor HM-SEN-LI-O](https://www.thingiverse.com/thing:3196116)
   
   
 ## Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
