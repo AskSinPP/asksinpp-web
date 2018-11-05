@@ -8,10 +8,11 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - [HB-UNI-Sensor1 Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1/CCU_RM) für die Unterstützung des [HB-UNI-Sensor1](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1) von Tom
 - [Kurzbezeichnungen](https://wiki.fhem.de/wiki/HomeMatic_Namen_verstehen) (HM-...) der HomeMatic-Geräte verstehen
 - [Übersicht](https://wiki.fhem.de/wiki/Homematic-Ger%C3%A4te%C3%BCbersicht) der HomeMatic Produkte
+- technische Informationen zum [Schutz vor Dauersendern](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Babbling%20Idiot%20Protection) _("Babbling Idiot Protection")_
+- Unterkategorie [Hardwareentwicklung und Selbstbau von Aktoren und Sensoren](https://homematic-forum.de/forum/viewtopic.php?f=76) im HomeMatic Forum
 
 ## Software / Sketche
 - [pa-pa](https://github.com/pa-pa/AskSinPP)
-  - [Sketch-Sammlung div. HM-Geräte von pa-pa (Bestandteil der AskSinPP Library)](https://github.com/pa-pa/AskSinPP/tree/master/examples) 
   
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
@@ -31,10 +32,43 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   | [HM-WDS100-C6-O-2](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-WDS100-C6-O-2/HM-WDS100-C6-O-2.ino) | Funk-Kombisensor | nur Fake-Werte |
 
 - Meine Nachbauten:
-  - [Sketch-Sammlung div. HM-Geräte von mir](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples)
   
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
+  | [HM-CC-SCD](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-CC-SCD/HM-CC-SCD.ino) | CO2-Sensor | nur Sketch<br>Sensor muss pot.-frei angeschlossen werden |
+  | [HM-Dis-TD-T](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-Dis-TD-T/HM-Dis-TD-T.ino) | Statusanzeige mit Batteriebetrieb |  |
+  | [HM-Dis-WM55](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-Dis-WM55) | Statusanzeige mit TFT Color Screen | erfordert Mega2560<br/>siehe auch [Thread](https://homematic-forum.de/forum/viewtopic.php?f=76&t=45443) im HM-Forum |
+  | [HM-ES-PMSw1-Pl](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-ES-PMSw1-Pl) | Zwischenstecker mit Leistungsmessung | Umbau Sonoff POW |
+  | [HM-ES-PMSw1-Pl_GosundSP1](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-ES-PMSw1-Pl_GosundSP1) | Zwischenstecker mit Leistungsmessung | Umbau Blitzwolf / Gosund SP1  |
+  | [HM-ES-TX-WM_CCU](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-ES-TX-WM_CCU/HM-ES-TX-WM_CCU.ino) | Energiezähler |  |
+  | [HM-LC-SW1-FM_Shelly1](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-LC-SW1-FM_Shelly1) | 1-Kanal Zwischenstecker  | Umbau Shelly1 |
+  | [HM-LC-Sw1-Pl-CT-R1](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-LC-Sw1-Pl-CT-R1/HM-LC-Sw1-Pl-CT-R1.ino) | 1-Kanal Zwischenstecker mit Klemmanschluss |  |
+  | [HM-LC-Sw1-Pl-DN-R1](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-LC-Sw1-Pl-DN-R1/HM-LC-Sw1-Pl-DN-R1.ino) | 1-Kanal Zwischenstecker |  |
+  | [HM-LC-Sw1-Pl-DN-R1_OBI](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-LC-Sw1-Pl-DN-R1_OBI) | 1-Kanal Zwischenstecker | Anpassungen zum Einsatz im OBI WiFi Zwischenstecker |
+  | [HM-LC-Sw2-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-LC-Sw2-FM/HM-LC-Sw2-FM.ino) | Funk-Schaltaktor 2fach, Unterputzmontage |  |
+  | [HM-MOD-Re-8](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-MOD-Re-8/HM-MOD-Re-8.ino) | 8-Kanal-Empfangsmodul |  |
+  | [HM-PB-2-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-PB-2-FM/HM-PB-2-FM.ino) | Funk-Wandtaster 2-fach für Markenschalter, Unterputzmontage |  |
+  | [HM-PB-2-WM55](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-PB-2-WM55/HM-PB-2-WM55.ino) |  2fach-Funk-Wandsender |  |
+  | [HM-PB-6-WM55](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-PB-6-WM55/HM-PB-6-WM55.ino) |  Funk-Wandtaster 6-fach |  |
+  | [HM-PB-MP-WM](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-PB-MP-WM) | 2-/4-fach Wandtaster mit Doppelklickfunktion | Eigentwicklung, funktioniert ohne Addon |
+  | [HM-PBI-4-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-PBI-4-FM/HM-PBI-4-FM.ino) | Funktaster-Schnittstelle 4-fach |  |
+  | [HM-RC-2-PBU-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-RC-2-PBU-FM/HM-RC-2-PBU-FM.ino) | Funk-Sender 2-fach für Markenschalter |  |
+  | [HM-SCI-3-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-SCI-3-FM/HM-SCI-3-FM.ino) | Kontakt-Interface für Öffner und Schließerkontake | bis zu 7 Kanäle möglich |
+  | [HM-SEC-SC](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-SEC-SC/HM-SEC-SC.ino) | Tür-/Fensterkontakt |  |
+  | [HM-SEC-SCO](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-SEC-SCO/HM-SEC-SCO.ino) | Tür-/Fensterkontakt (optisch) |  |
+  | [HM-Sec-TiS](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-Sec-TiS/HM-Sec-TiS.ino) | Neigungssensor |  |
+  | [HM-Sen-DB-PCB](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-Sen-DB-PCB/HM-Sen-DB-PCB.ino) | Klingelsignalsensor |  |
+  | [HM-Sen-LI-O](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-Sen-LI-O/HM-Sen-LI-O.ino) | Lichtsensor Außen |  |
+  | [HM-Sen-WA-OD](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-Sen-WA-OD/HM-Sen-WA-OD.ino) | Füllstandsmesser |  |
+  | [HM-WDS30-OT2-DS18B20](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS30-OT2-DS18B20/HM-WDS30-OT2-DS18B20.ino) | Differenz-Temperatur-Sensor | für DS18B20 Sensor |
+  | [HM-WDS30-OT2-NTC](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS30-OT2-NTC/HM-WDS30-OT2-NTC.ino) | Differenz-Temperatur-Sensor | für NTC Sensor |
+  | [HM-WDS30-T-O-NTC](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS30-T-O-NTC/HM-WDS30-T-O-NTC.ino) | Temperatur-Sensor Außen | für NTC Sensor  |
+  | [HM-WDS40-TH-I-BME280](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-BME280/HM-WDS40-TH-I-BME280.ino) | Temperatur-/Feuchtesensor Innen | für BME280 Sensor |
+  | [HM-WDS40-TH-I-DHT22](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-DHT22/HM-WDS40-TH-I-DHT22.ino) | Temperatur-/Feuchtesensor Innen | für DHT22 Sensor |
+  | [HM-WDS40-TH-I-DS18B20](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-DS18B20/HM-WDS40-TH-I-DS18B20.ino) | Temperatur-/Feuchtesensor Innen | für DS18B20 Sensor |
+  | [HM-WDS40-TH-I-SHT10](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SHT10/HM-WDS40-TH-I-SHT10.ino) | Temperatur-/Feuchtesensor Innen | für SHT10 Sensor |
+  | [HM-WDS40-TH-I-SHT31](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SHT31/HM-WDS40-TH-I-SHT31.ino) | Temperatur-/Feuchtesensor Innen | für SHT31 Sensor |
+  | [HM-WDS40-TH-I-SI7021](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SI7021/HM-WDS40-TH-I-SI7021.ino) | Temperatur-/Feuchtesensor Innen | für SI7021 Sensor |
   | [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) | 2-Kanal-Rollladenaktor | wie HM-LC-Bl1-FM jedoch mit 2 Kanälen |
   
 - Meine Eigentwicklungen ([Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) erforderlich):
