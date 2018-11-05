@@ -13,7 +13,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - [pa-pa](https://github.com/pa-pa/AskSinPP)
   - [Sketch-Sammlung div. HM-Geräte von pa-pa (Bestandteil der AskSinPP Library)](https://github.com/pa-pa/AskSinPP/tree/master/examples) 
   
-  | Bezeichnung        | Beschreibung           | Hinweise  |
+  | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
   | [HM-LC-Bl1-FM](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Bl1-FM/HM-LC-Bl1-FM.ino) | 1-Kanal Rollladenaktor | |
   | [HM-LC-Dim1PWM-CV](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Dim1PWM-CV/HM-LC-Dim1PWM-CV.ino) | 1-Kanal PWM Dimmer | |
@@ -33,7 +33,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - Meine Nachbauten:
   - [Sketch-Sammlung div. HM-Geräte von mir](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples)
   
-  | Bezeichnung        | Beschreibung           | Hinweise  |
+  | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
   | [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) | 2-Kanal-Rollladenaktor | wie HM-LC-Bl1-FM jedoch mit 2 Kanälen |
   
@@ -60,7 +60,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 
 - [Marco](https://github.com/stan23)
 
-  | Bezeichnung        | Beschreibung           | Hinweise  |
+  | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
   | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) | wird auf den originalen HM-LC-Sw2-FM geflasht|
   
@@ -107,6 +107,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [Homematic Lichtsensor HM-SEN-LI-O](https://www.thingiverse.com/thing:3196116)
   
 ## FAQ / häufige Fehler
+- wip
   
 ## Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
 
