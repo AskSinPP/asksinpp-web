@@ -141,8 +141,25 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [Homematic Lichtsensor HM-SEN-LI-O](https://www.thingiverse.com/thing:3196116)
   
 ## FAQ / häufige Fehler
-- wip
+- Debugging
+
+  Sollte es einmal klemmen und die aufgebaute Schaltung nicht funktionieren, ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.<br/>
+  Wichtig und aufschlussreich sind die seriellen Debugmeldungen, die vom Mikrocontroller ausgegeben werden. Um sich diese anzeigen zu lassen, ist der "serielle Monitor" zu öffnen. _(Arduino IDE: Menü -> Werkzeuge -> serieller Monitor)_<br/>
+  Dabei muss ggf. noch die Baudrate (unten links im Fenster) auf **57600** Baud eingestellt werden.<br/>
   
+  | Meldung | Beschreibung |
+  | ------------- |-------------|
+  | <- ... | gesendetes Telegramm |
+  | -> ... | empfangenes, an das Gerät gerichtetes Telegramm |
+  | ignore ... | empfanges, nicht an das Geräte gerichtetes Telegramm |
+  
+  _to be continued_
+
+- Standard vs. gesicherte Übertragung
+  - HM-Sec-... Geräte haben nach dem Anlernen in der WebUI standardmäßig die "gesicherte Übertragung" aktiviert und muss auf "Standard" umgestellt werden
+  - klassisches Beispiel: falls bei einem Fenster- oder Drehgriffkontakt der Status nicht übertragen/angezeigt wird, ist dies zuerst zu prüfen
+
+
 ## Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
 
 # DANKE!
