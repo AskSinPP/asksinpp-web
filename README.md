@@ -129,6 +129,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
   - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
+  - [HM-LC-Sw2-12V](https://github.com/ronnythomas/HM-LC-Sw2-12V)
   
 ## Gehäuse / 3D Druck
 - Gehäuse von [Jan](https://www.thingiverse.com/Schmelzerboy)
