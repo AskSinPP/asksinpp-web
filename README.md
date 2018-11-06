@@ -102,7 +102,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 
 
 ## Hardware / Platinen
-- Platine(n) von [pa-pa](https://github.com/pa-pa)
+- Platine(n) von [pa-pa](https://github.com/pa-pa) 
   - [HMSensor-Platine](https://github.com/pa-pa/HMSensor)
 
 - Platine(n) von [Alex](https://github.com/alexreinert)
@@ -119,7 +119,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [HM-LC-Bl1-FM](https://github.com/stan23/HM-LC-Bl1-FM-DC) Rollladenaktor für Gleichstrommotoren
   - [OBI WiFi Zwischenstecker](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI) Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1
   
-- Platine(n) von [Ronny](https://github.com/ronnythomas)
+- Platine(n) von [Ronny](https://github.com/ronnythomas) _(Nicht OpenSource! Bei Bedarf, bitte den Urheber bei [Facebook](https://www.facebook.com/ronny.thomas.83) direkt anschreiben)_
   - [HB-Micro](https://github.com/ronnythomas/HB-Micro)
   - [HB-Mini](https://github.com/ronnythomas/HB-Mini)
   - [HM-MOD-Re-8](https://github.com/ronnythomas/HM-MOD-Re-8)
