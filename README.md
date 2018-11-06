@@ -156,7 +156,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   _to be continued_
 
 - Standard vs. gesicherte Übertragung
-  - HM-Sec-... Geräte haben nach dem Anlernen in der WebUI standardmäßig die "gesicherte Übertragung" aktiviert und muss auf "Standard" umgestellt werden
+  - HM-Sec-... Geräte haben nach dem Anlernen in der WebUI standardmäßig die "gesicherte Übertragung" aktiviert. Diese muss auf "Standard" umgestellt werden _(sofern man im Sketch kein [AES](https://github.com/pa-pa/AskSinPP#enable-aes-support) implementiert hat)_.
   - klassisches Beispiel: falls bei einem Fenster- oder Drehgriffkontakt der Status nicht übertragen/angezeigt wird, ist dies zuerst zu prüfen
 
 
