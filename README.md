@@ -115,9 +115,9 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [PLHT Sensor](https://github.com/TomMajor/AskSinPP_Examples/tree/master/PCB/Sensor_PLHT) (Druck-, Helligkeit-, Feuchte-, Temperatursensor)
 
 - Platine(n) von [Marco](https://github.com/stan23)
-  - [Gosund SP1 Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1)
-  - [HM-LC-Bl1-FM Rollladenaktor für Gleichstrommotoren](https://github.com/stan23/HM-LC-Bl1-FM-DC)
-  - [OBI WiFi Zwischenstecker Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI)
+  - [Gosund SP1](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1) Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl
+  - [HM-LC-Bl1-FM](https://github.com/stan23/HM-LC-Bl1-FM-DC) Rollladenaktor für Gleichstrommotoren
+  - [OBI WiFi Zwischenstecker](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI) Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1
   
 - Platine(n) von [Ronny](https://github.com/ronnythomas)
   - [HB-Micro](https://github.com/ronnythomas/HB-Micro)
