@@ -9,7 +9,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 - [Kurzbezeichnungen](https://wiki.fhem.de/wiki/HomeMatic_Namen_verstehen) (HM-...) der HomeMatic-Geräte verstehen
 - [Übersicht](https://wiki.fhem.de/wiki/Homematic-Ger%C3%A4te%C3%BCbersicht) der auf dem Markt befindlichen HomeMatic Produkte (Kurzbezeichnungen, Beschreibung, etc.)
 - technische Informationen zum [Schutz vor Dauersendern](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Babbling%20Idiot%20Protection) _("Babbling Idiot Protection")_
-- Unterkategorie [Hardwareentwicklung und Selbstbau von Aktoren und Sensoren](https://homematic-forum.de/forum/viewtopic.php?f=76) im HomeMatic Forum
+- Unterkategorie [Hardwareentwicklung und Selbstbau von Aktoren und Sensoren](https://homematic-forum.de/forum/viewforum.php?f=76) im HomeMatic Forum
 
 ## Software / Sketche
 - [pa-pa](https://github.com/pa-pa/AskSinPP)
@@ -130,6 +130,13 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
   - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
   - [HM-LC-Sw2-12V](https://github.com/ronnythomas/HM-LC-Sw2-12V)
+
+- Platine(n) von "Gelegenheitsbastler" aus dem HM-Forum _(Nicht OpenSource! Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394) direkt anschreiben)_
+  - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43162)
+  - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 2](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43243)
+  - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 3](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43247)
+  - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 4](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43274)
+  - [Umbau Sonoff S20 auf HM-LC-Sw1-Pl-DN-R1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=44258)
   
 ## Gehäuse / 3D Druck
 - Gehäuse von [Jan](https://www.thingiverse.com/Schmelzerboy)
