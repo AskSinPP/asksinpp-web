@@ -155,6 +155,37 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   Wichtig und aufschlussreich sind die seriellen Debugmeldungen, die vom Mikrocontroller ausgegeben werden. Um sich diese anzeigen zu lassen, ist der "serielle Monitor" zu öffnen. _(Arduino IDE: Menü -> Werkzeuge -> serieller Monitor)_<br/>
   Dabei muss ggf. noch die Baudrate (unten links im Fenster) auf **57600** Baud eingestellt werden.<br/>
   
+  (korrektes) Starten eines AskSinPP Device:
+  ```
+  AskSin++ V3.1.1 (Nov  7 2018 18:15:23)
+  Address Space: 32 - 902
+  CC init1
+  CC Version: 04
+  - ready
+  ```
+  ggf. erscheint nach einem Reset, neuem Sketch (erstmaliger Inbetriebnahme) zwischendring noch:
+  ```
+  CAFEFAC4
+  Init Storage: CAFE85D5
+  ```
+
+  Wenn diese Meldungen so erscheinen, ist schon mal das Funkmodul **korrekt** initialisiert worden.
+  
+  Gibt es Probleme mit der Kommunikation mit dem Funkmodul:
+  ```
+  CC init1
+  Error at 00 expected: 2E read: 00
+  Error at 02 expected: 06 read: 00
+   ...
+  Error at 3E expected: 03 read: 00
+  CC Version: 00
+  Error at 3E expected: C0 read: 00
+  - ready
+   ```
+   Dann unbedingt nochmals die Verdrahtung überprüfen.
+  
+  
+  Weitere Ausgaben im seriellen Monitor:
   | Meldung | Beschreibung |
   | ------------- |-------------|
   | <- ... | gesendetes Telegramm |
