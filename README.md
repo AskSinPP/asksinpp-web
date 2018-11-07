@@ -186,6 +186,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   
   
   Weitere Ausgaben im seriellen Monitor:
+  
   | Meldung | Beschreibung |
   | ------------- |-------------|
   | <- ... | gesendetes Telegramm |
