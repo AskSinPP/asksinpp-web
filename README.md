@@ -1,4 +1,4 @@
-# AskSinPPCollection
+# ▶️ AskSinPPCollection ◀️
 Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP/tree/master/examples) sowie deren Verwendung und Projekte.
 
 ![topimg](Images/README_TOP.jpg)
@@ -13,7 +13,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
   
 ## - [FAQ / häufige Fehler](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/FAQ.md)
 
-### Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
+### 🚧 Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
 
 # DANKE!
 
