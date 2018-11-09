@@ -204,5 +204,4 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 
 # DANKE!
 
-[![HitCount](http://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg)](http://hits.dwyl.com/jp112sdl/AskSinPPCollection)
-
+[![HitCount](http://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg)](http://hits.dwyl.com/jp112sdl/AskSinPPCollection) seit 09.11.2018
