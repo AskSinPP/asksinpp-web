@@ -1,5 +1,5 @@
 [Startseite](https://github.com/jp112sdl/AskSinPPCollection/blob/master/README.md)
-## FAQ / häufige Fehler
+## FAQ / häufige Fehler :beginner:
 
 - Debugging
 
