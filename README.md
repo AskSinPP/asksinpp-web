@@ -1,7 +1,7 @@
 # AskSinPPCollection
 Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP/tree/master/examples) sowie deren Verwendung und Projekte.
 
-![topimg](IMG_8916.jpg)
+![topimg](Images/README_TOP.jpg)
 
 ## - [allgemeine Infos / CCU-Addon(s)](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Info.md)
 
