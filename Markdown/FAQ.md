@@ -5,7 +5,7 @@
 
   Sollte es einmal klemmen und die aufgebaute Schaltung nicht funktionieren, ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.<br/>
   Wichtig und aufschlussreich sind die seriellen Debugmeldungen, die vom Mikrocontroller ausgegeben werden. Um sich diese anzeigen zu lassen, ist der "serielle Monitor" zu öffnen. _(Arduino IDE: Menü -> Werkzeuge -> serieller Monitor)_<br/>
-  Dabei muss ggf. noch die Baudrate (unten links im Fenster) auf **57600** Baud eingestellt werden.<br/>
+  Dabei muss ggf. noch die Baudrate (unten rechts im Fenster) auf **57600** Baud eingestellt werden.<br/>
   
   (korrektes) Starten eines AskSinPP Device:
   ```
