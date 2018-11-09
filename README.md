@@ -203,3 +203,6 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 ## Diese Liste lebt von euren Zuarbeiten. Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 
 
 # DANKE!
+
+[![HitCount](http://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg)](http://hits.dwyl.com/jp112sdl/AskSinPPCollection)
+
