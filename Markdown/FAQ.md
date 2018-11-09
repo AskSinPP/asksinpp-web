@@ -1,6 +1,12 @@
 [Startseite](https://github.com/jp112sdl/AskSinPPCollection/blob/master/README.md)
 ## :books: FAQ / häufige Fehler :beginner:
 
+- Einstellungen in der Arduino IDE
+  - **Board:** Arduino Pro or Pro Mini
+  - **Prozessor:** ATmega328P (3.3V, 8MHz)
+  - **Port:** _hier den seriellen Port vom FTDI-Adapter auswählen_
+  <img src="../Images/Arduino_IDE_Settings1.png" width=400>
+
 - Debugging
 
   Sollte es einmal klemmen und die aufgebaute Schaltung nicht funktionieren, ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.<br/>
