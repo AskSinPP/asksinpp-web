@@ -8,7 +8,7 @@ Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskS
 ## - [Software / Sketche](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Sketches.md)
 
 ## - [Hardware / Platinen](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Platinen.md)
-  ### - [Geräteumbauten](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Umbau.md)
+  - [Geräteumbauten](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Umbau.md)
   
 ## - [Gehäuse / 3D Druck](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Gehaeuse.md)
   
