@@ -1,5 +1,5 @@
 # ▶️ AskSinPPCollection ◀️
-Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP/tree/master/examples) sowie deren Verwendung und Projekte.
+Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP) sowie deren Verwendung und Projekte.
 
 ![topimg](Images/README_TOP.jpg)
 
