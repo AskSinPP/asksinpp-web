@@ -26,6 +26,7 @@
   - [HM-MOD-Re-8](https://github.com/ronnythomas/HM-MOD-Re-8)
   - [HB-UNI](https://github.com/ronnythomas/HB-UNI)
   - [HB-UNI-Bat](https://github.com/ronnythomas/HB-UNI-Bat)
+  - [HB-UNI-230V](https://github.com/ronnythomas/HB-UNI-230V)
   - [HB-UNI-SenAct-4-4](https://github.com/ronnythomas/HB-UNI-SenAct-4-4)
   - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
