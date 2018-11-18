@@ -40,7 +40,7 @@
   Wichtig und aufschlussreich sind die seriellen Debugmeldungen, die vom Mikrocontroller ausgegeben werden. Um sich diese anzeigen zu lassen, ist der "serielle Monitor" zu öffnen. _(Arduino IDE: Menü -> Werkzeuge -> serieller Monitor)_<br/>
   Dabei muss ggf. noch die Baudrate (unten rechts im Fenster) auf **57600** Baud eingestellt werden.<br/>
   
-  (korrektes) Starten eines AskSinPP Device:
+  - fehlerfreies Starten eines AskSinPP Device:
   ```
   AskSin++ V3.1.1 (Nov  7 2018 18:15:23)
   Address Space: 32 - 902
@@ -56,7 +56,7 @@
 
   Wenn diese Meldungen so erscheinen, ist schon mal das Funkmodul **korrekt** initialisiert worden.
   
-  Gibt es Probleme mit der Kommunikation mit dem Funkmodul:
+  - gibt es Probleme mit der Kommunikation mit dem Funkmodul:
   ```
   CC init1
   Error at 00 expected: 2E read: 00
