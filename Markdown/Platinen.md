@@ -31,6 +31,7 @@
   - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
   - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
+  - [HM-LC-Sw2-230V](https://github.com/ronnythomas/HM-LC-Sw2-230V)
   - [HM-LC-Sw2-12V](https://github.com/ronnythomas/HM-LC-Sw2-12V)
 
 - Platine(n) von "Gelegenheitsbastler" aus dem HM-Forum _(Nicht OpenSource! Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394) direkt anschreiben)_
