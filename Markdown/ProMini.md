@@ -43,7 +43,7 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
   
   Der Aufruf erfolgt dann bei Verwendung des USBasp in der Eingabeaufforderung/Kommandozeile mit:<br>
   `<Pfadangabe>/avrdude -v -pm328p -cusbasp -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br>
-  _(USBasp benötigt einen [speziellen USB-Treiber "libusb"](http://zadig.akeo.ie)!)_<br>
+  _(USBasp benötigt einen [speziellen USB-Treiber "libusb"](http://zadig.akeo.ie)!)_<br><br>
   Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(com11 ggf. ändern!)_:<br>
   `<Pfadangabe>/avrdude -v -pm328p -P com11 -c stk500v1 -b 19200 -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br><br>
 
