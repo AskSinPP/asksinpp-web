@@ -11,11 +11,11 @@ Er wird in verschiedenen Varianten angeboten - wobei beim Kauf darauf geachtet w
 ### Besonderheiten des Arduino Pro Mini
 
 Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
-- **1.** hoher Stromverbrauch bei Batteriebetrieb durch ungenutzte Bauteile<br><br>
-    Da bei Batteriebetrieb der Spannungsregler _(LDO)_ nicht benötigt wird und auch die Power LED sowie die LED_BUILTIN nur unnötig Strom verbrauchen, können diese Bauteile ganz unproblematisch entfernt werden.<br>
+- :one: :warning: hoher Stromverbrauch bei Batteriebetrieb :battery: durch ungenutzte Bauteile<br><br>
+    Da bei Batteriebetrieb mit 2 x 1,5V der Spannungsregler _(LDO)_ nicht benötigt wird und auch die Power LED sowie die LED_BUILTIN nur unnötig Strom verbrauchen, können diese Bauteile (:x:) ganz unproblematisch entfernt werden.<br>
   <img src="../Images/ProMini_removed_parts.png" />
 
-- **2.** Abschaltung oder Dauersender/-störer trotz fast voller Batterien<br><br>
+- :two: :warning: Abschaltung oder Dauersender/-störer trotz fast voller Batterien :battery:<br><br>
   Um die garantierten Spezifikationen des ATMega328P einzuhalten, ist ab Werk die so genannte [Brown-Out-Detection (BOD)](https://www.mikrocontroller.net/articles/Brownout) bei **2.7V** aktiviert. Sinkt die Eingangsspannung unter diesen Wert, fällt der µC in einen RESET-Zustand. Das _kann_ ungewollte Nebenfolgen haben (siehe ["Babbling Idiot"](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Babbling%20Idiot%20Protection))!<br>
   Bei der BOD handelt es sich um ein sogenanntes ["Fuse-Bit"](https://de.wikipedia.org/wiki/Fuse-Bit).<br>
   Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer) (z.B. [USBasp](https://www.ebay.de/i/232496093834) oder [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2)) verändert werden. Es lässt sich auch ein [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!<br>
