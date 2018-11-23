@@ -16,7 +16,6 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
   <img src="../Images/ProMini_removed_parts.png" />
 
 - **2.** Abschaltung trotz fast voller Batterien<br>
-  Hier wird es schon etwas kniffelig.<br>
   Um die garantierten Spezifikationen des ATMega328P einzuhalten, ist ab Werk die so genannte [Brown-Out-Detection (BOD)](https://www.mikrocontroller.net/articles/Brownout) bei **2.7V** aktiviert.<br>
   Bei der BOD handelt es sich um ein sogenanntes ["Fuse-Bit"](https://de.wikipedia.org/wiki/Fuse-Bit).<br>
   Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer) (z.B. [USBasp](https://www.ebay.de/i/232496093834) oder [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2)) verändert werden. Es lässt sich auch ein [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!<br>
@@ -31,7 +30,7 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
   | 12 | MISO |
   | 13 | SCK |
 
-  Das Setzen der Fuse-Bits mittels USBasp erfolgt dann sehr einfach in der Eingabeaufforderung/Kommandozeile mit:<br>
+  Das Setzen der Fuse-Bits mittels USBasp erfolgt dann in der Eingabeaufforderung/Kommandozeile mit:<br>
   `avrdude -v -pm328p -cusbasp -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br>
   Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(com11 ggf. ändern!)_:<br>
   `avrdude -v -pm328p -P com11 -c stk500v1 -b 19200 -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br>
