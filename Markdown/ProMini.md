@@ -32,9 +32,10 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
 
   Das Setzen der Fuse-Bits mittels USBasp erfolgt dann in der Eingabeaufforderung/Kommandozeile mit:<br>
   `avrdude -v -pm328p -cusbasp -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br>
+  _(USBasp benötigt einen [speziellen USB-Treiber "libusb"](http://zadig.akeo.ie)!)_
   Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(com11 ggf. ändern!)_:<br>
   `avrdude -v -pm328p -P com11 -c stk500v1 -b 19200 -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br><br>
-  Das Tool `avrdude` befindet sich bei installierter **Arduino IDE**
+  Das Tool `avrdude` befindet sich bei installierter **Arduino IDE** und Boardunterstützung **Arduino AVR Boards** 
   - in Windows:
     - `C:\Users\<Benutzer>\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino14\bin\avrdude`
   - auf dem Mac:
