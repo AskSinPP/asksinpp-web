@@ -1,7 +1,8 @@
 # ▶️ AskSinPPCollection ◀️
 Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP) sowie deren Verwendung und Projekte.
 
-## - [allgemeine Infos / CCU-Addon(s)](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Info.md)
+## - [allgemeine Infos](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Info.md)
+  - [CCU Addon](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Addon.md)
 
 ## - [Software / Sketche](https://github.com/jp112sdl/AskSinPPCollection/blob/master/Markdown/Sketches.md)
 
