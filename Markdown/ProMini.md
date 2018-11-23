@@ -36,10 +36,10 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
   `avrdude -v -pm328p -P com11 -c stk500v1 -b 19200 -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m`<br><br>
   Das Tool `avrdude` befindet sich bei installierter **Arduino IDE**
   - in Windows:
-    - `C:\Users\<Benutzer>\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino9\bin\avrdude`
-    - Der Ordner `6.3.0-arduino9` kann je nach Version abweichen.
+    - `C:\Users\<Benutzer>\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino14\bin\avrdude`
   - auf dem Mac:
     - `~/Library/Arduino15/packages/arduino/tools/avrdude/6.3.0-arduino14/bin`
-    - Der Ordner `6.3.0-arduino14` kann je nach Version abweichen.
   - bei Linux:
-    - `/usr/local/share/arduino/hardware/tools/avr/bin/`
+    - `~/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino14/bin/avrdude`
+  
+  _(Der Ordner `6.3.0-arduino14` kann je nach Version abweichen.)_
