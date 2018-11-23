@@ -3,7 +3,7 @@
 
 Der bei den AskSinPP Projekten am häufigsten eingesetzte und verwendete Mikrocontroller ist der [ATMega328P](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061A.pdf).<br>
 Man bekommt ihn auf einer kleinen Platine aus Fernost als [Arduino Pro Mini](https://de.aliexpress.com/item/Free-Shipping-1pcs-pro-mini-atmega328-Pro-Mini-328-Mini-ATMEGA328-3-3V-8MHz-for-Arduino/32340942669.html) für sehr wenig Geld.<br>
-Er wird in verschiedenen Varianten angeboten - wobei beim Kauf darauf geachtet werden sollte, **unbedingt** die Version **"3.3V / 8MHz"** zu verwenden, denn:
+Er wird in verschiedenen Varianten angeboten - wobei beim Kauf darauf geachtet werden sollte,<br>**unbedingt** die Version **"3.3V / 8MHz"** zu verwenden, denn:
   - je geringer die Taktrate, desto zuverlässigerer ist der Betrieb bei sinkender Spannung (wichtig bei Batteriebetrieb!)
   - automatische Erzeugung der 3.3V Spannung für das CC1101 Funkmodul (z.B. bei 5V Netzteilbetrieb mit Speisung am RAW-Pin) durch eingebauten Spannungregler
   
