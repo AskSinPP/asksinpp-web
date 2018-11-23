@@ -16,7 +16,7 @@ Im Laufe der Zeit bin ich auf 2 "Stolperfallen" beim Pro Mini gestoßen.<br>
   <img src="../Images/ProMini_removed_parts.png" />
 
 - :two: :warning: Abschaltung oder Dauersender/-störer trotz fast voller Batterien :battery:<br><br>
-  Um die garantierten Spezifikationen des ATMega328P einzuhalten, ist ab Werk die so genannte [Brown-Out-Detection (BOD)](https://www.mikrocontroller.net/articles/Brownout) bei **2.7V** aktiviert. Sinkt die Eingangsspannung unter diesen Wert, fällt der µC in einen RESET-Zustand. Das _kann_ ungewollte Nebenfolgen haben (siehe ["Babbling Idiot"](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Babbling%20Idiot%20Protection))!<br>
+  Um die garantierten Spezifikationen des ATMega328P einzuhalten, ist ab Werk die so genannte [Brown-Out-Detection (BOD)](https://www.mikrocontroller.net/articles/Brownout) bei **2.7V** aktiviert. Sinkt die Eingangsspannung unter diesen Wert, fällt der µC in einen RESET-Zustand. Das _kann_ ungewollte Nebenfolgen haben (siehe ["Babbling Idiot"](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Babbling%20Idiot%20Protection))! Weiterhin werden die Batterien dadurch auch nur sehr ineffektiv genutzt.<br>
   Bei der BOD handelt es sich um ein sogenanntes ["Fuse-Bit"](https://de.wikipedia.org/wiki/Fuse-Bit).<br>
   Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer) (z.B. [USBasp](https://www.ebay.de/i/232496093834) oder [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2)) verändert werden. Es lässt sich auch ein [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!<br>
   Der ISP ist 1:1 mit 6 Leitungen an den Pro Mini zu verbinden:
