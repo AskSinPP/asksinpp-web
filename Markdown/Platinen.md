@@ -28,13 +28,13 @@
   - [HB-UNI-Bat](https://github.com/ronnythomas/HB-UNI-Bat)
   - [HB-UNI-230V](https://github.com/ronnythomas/HB-UNI-230V)
   - [HB-UNI-SenAct-4-4](https://github.com/ronnythomas/HB-UNI-SenAct-4-4)
+  - [HB-UNI-SenAct-4-4-Hutschine](https://github.com/ronnythomas/HB-UNI-SenAct-4-4-Hutschine)
   - [HM-LC-Sw1-PCB-12V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-12V)
   - [HM-LC-Sw1-PCB-230V](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V)
   - [HM-LC-Sw1-PCB-230V-TR](https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V-TR)
   - [HM-LC-Sw2-230V](https://github.com/ronnythomas/HM-LC-Sw2-230V)
   - [HM-LC-Sw2-12V](https://github.com/ronnythomas/HM-LC-Sw2-12V)
   - [HM-LC-Dim1PWM-12-24V](https://github.com/ronnythomas/HM-LC-Dim1PWM-12-24V)
-  - [HB-UNI-SenAct-4-4-Hutschine](https://github.com/ronnythomas/HB-UNI-SenAct-4-4-Hutschine)
 
 - Platine(n) von "Gelegenheitsbastler" aus dem HM-Forum _(Nicht OpenSource! Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394) direkt anschreiben)_
   - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43162)
