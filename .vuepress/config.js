@@ -2,7 +2,7 @@ const nav = require('./nav');
 const sidebar = require('./sidebar');
 
 module.exports = {
-  base: '/AskSinPPCollection/',
+  base: '/asksinppcollection/',
   title: 'AskSinPPCollection',
   themeConfig: {
     sidebar: sidebar(),
