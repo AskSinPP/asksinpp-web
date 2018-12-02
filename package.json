@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
-    "check": "blcl -r .vuepress/dist"
+    "check": "blcl -b asksinppcollection -r .vuepress/dist"
   },
   "author": "",
   "license": "CC BY-SA License 4.0"

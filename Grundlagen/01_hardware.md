@@ -76,7 +76,7 @@ Da bei Batteriebetrieb mit 2 x 1,5V der Spannungsregler (LDO) nicht benötigt wi
 
 ::: danger
 Fällt die Batteriespannung zu weit ab kann es zu einem Dauersender / Babbling Idiot kommen.  
-Erklärung und Lösung **[HIER](/Grundlagen/FAQ/Babbling_idiot.html)**.
+Erklärung und Lösung **[HIER](/Grundlagen/FAQ/babbling_idiot.html)**.
 :::
 
 
