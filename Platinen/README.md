@@ -1,7 +1,6 @@
-[Startseite](https://github.com/jp112sdl/AskSinPPCollection/blob/master/README.md)
-## Hardware / Platinen
+# Platinen
 
-![topimg](../Images/Platinen_TOP.jpg)
+![topimg](./images/Platinen_TOP.jpg)
 
 - Platine(n) von [pa-pa](https://github.com/pa-pa) 
   - [HMSensor-Platine](https://github.com/pa-pa/HMSensor)
