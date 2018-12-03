@@ -1,17 +1,20 @@
 body
   .content:not(.custom), .page-edit, .page-nav
-    max-width 1024px
+    max-width: 1024px
   .content:not(.custom) img
-    max-width 700px
+    max-width: 700px
     max-height: 500px
-    object-fit scale-down
+    object-fit: scale-down
   strong > a {
-    font-weight bold
+    font-weight: bold
   }
 
-body.dark
-  color $darkTextColor !important
-  background-color $darkPrimaryBg
+html.dark
+  background-color: $darkPrimaryBg
+
+  body
+    color: $darkTextColor !important
+    background-color: $darkPrimaryBg
 
   hr
     border-top-color: $darkBorderColor
@@ -24,7 +27,7 @@ body.dark
       color: $accentColorDark
       background-color: $darkSecondaryBg
     a code
-      color $accentColorDark
+      color: $accentColorDark
 
   .custom-block
     p:not(.custom-block-title)

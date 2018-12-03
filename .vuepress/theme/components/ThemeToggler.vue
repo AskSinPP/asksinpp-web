@@ -31,7 +31,7 @@
     mounted() {
       this.isDark = window.localStorage.getItem('vuepress-isDark') || false;
       if(this.isDark) {
-        document.body.classList.add('dark');
+        document.getElementsByTagName('html')[0].classList.add('dark');
       }
     },
 
@@ -39,7 +39,7 @@
       toggle() {
         this.isDark = !this.isDark;
         window.localStorage.setItem('vuepress-isDark', this.isDark ? 'yes' : '');
-        document.body.classList[this.isDark ? 'add' : 'remove']('dark');
+        document.getElementsByTagName('html')[0].classList[this.isDark ? 'add' : 'remove']('dark');
       }
     }
   }
