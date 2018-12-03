@@ -3,7 +3,7 @@ home: true
 sidebar: false
 description: Selbstbau-Komponenten für HomeMatic mit AskSinPP
 # heroImage: /README_TOP.jpg
-actionText: Get Started →
+actionText: Und los →
 actionLink: /Grundlagen/
 features:
 - title: Arduino
