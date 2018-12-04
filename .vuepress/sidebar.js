@@ -20,19 +20,19 @@ module.exports = () => {
       ]
     },
     {
-      title: 'Hardware',
+      title: 'FAQ',
+      collapsable: false,
+      children: [
+        ...getFiles('Grundlagen/FAQ').map(file => `FAQ/${file}`)
+      ]
+    },
+    {
+      title: 'Material',
       collapsable: false,
       children: [
         ['/Sketche/', 'Sketche'],
         ['/Platinen/', 'Platinen'],
         ['/Gehaeuse/', 'Gehäuse'],
-      ]
-    },
-    {
-      title: 'FAQ',
-      collapsable: false,
-      children: [
-        ...getFiles('Grundlagen/FAQ').map(file => `FAQ/${file}`)
       ]
     },
   ];

@@ -6,14 +6,14 @@ description: Selbstbau-Komponenten für HomeMatic mit AskSinPP
 actionText: Und los →
 actionLink: /Grundlagen/
 features:
-- title: Arduino
-  details: Die Hardwareplattform der Komponenten
-  image: pro_mini.jpg
-- title: CC1101
-  details: Das 868Mhz Funkmodul
-  image: cc1101.jpg
-- title: AskSinPP
-  details: C++ Implementierung des AskSin Protokolls
-  image: asksinpp.png
+- title: Hardware
+  details: Arduino Pro Mini, STM32 und kompatible Microcontroller mit CC1101 868Mhz Funkmodul als Hardwarebasis.
+  image: platine.jpg
+- title: Software
+  details: Homematic kompatible AskSinPP Implementierung. Viele Sketche für Aktoren und Sensoren.
+  image: asksinpp.jpg
+- title: Community
+  details: Projekte, Platinen und Gehäuse von der Homematic Community zum Aufbau der Komponenten.
+  image: 3d-druck.jpg
 # footer: 
 ---

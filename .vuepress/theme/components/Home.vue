@@ -128,7 +128,7 @@ export default {
     p
       color lighten($textColor, 25%)
     img
-      max-width 80%
+      max-width 100%
   .footer
     padding 2.5rem
     border-top 1px solid $borderColor
