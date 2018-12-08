@@ -1,0 +1,20 @@
+{
+  "name": "asksinpp-collection",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.23",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.23",
+    "broken-link-checker-local": "^0.2.0",
+    "vuepress": "^1.0.0-alpha.23"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "check": "blcl -b asksinppcollection -r .vuepress/dist"
+  },
+  "author": "",
+  "license": "CC BY-SA License 4.0"
+}

@@ -1,14 +1,13 @@
-[Startseite](https://github.com/jp112sdl/AskSinPPCollection/blob/master/README.md)
-## Hardware / Platinen
+# Platinen
 
-![topimg](../Images/Platinen_TOP.jpg)
+![topimg](./images/Platinen_TOP.jpg)
 
 - Platine(n) von [pa-pa](https://github.com/pa-pa) 
   - [HMSensor-Platine](https://github.com/pa-pa/HMSensor)
 
 - Platine(n) von [Alex](https://github.com/alexreinert)
   - [HB-UNI-644 (Rev. 2)](https://github.com/alexreinert/PCB#hb-uni-644-rev-2) 
-  - [HB-UNI-SEN-BATT](https://github.com/alexreinert/PCB#hb-uni-sen-batt) 
+  - [HB-UNI-SEN-BATT](https://github.com/alexreinert/PCB#hb-uni-sen-batt)
   - [HB-UNI-SEN-PCB](https://github.com/alexreinert/PCB#hb-uni-sen-pcb) 
   - [HB-UNI-SEN-WEA](https://github.com/alexreinert/PCB#hb-uni-sen-wea) (Platine für die [Wetterstation](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master))
 

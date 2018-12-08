@@ -1,0 +1,15 @@
+{
+  "name": "AskSinPPCollection",
+  "short_name": "AskSinPPCollection",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "256x319",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#040768"
+}
