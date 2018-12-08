@@ -60,7 +60,12 @@ export default {
     data () {
       return this.$page.frontmatter
     },
+  },
+
+  created() {
+    this.$vuepress.$emit('AsyncMarkdownContentMounted');
   }
+
 }
 </script>
 
