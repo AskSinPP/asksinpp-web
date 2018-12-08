@@ -7,30 +7,31 @@ Als Microcontroller kommt meistens der Arduini Pro Mini zum Einsatz.
 ![Arduino Pro Mini](./images/arduino-pro-mini.jpg)
 
 Die AskSinPP Lib unterstützt zudem folgende Kontroller: 
-* ATMega328
+* ATMega328P
 * ATMega32
 * ATMega644
 * ATMega1284
 * STM32F1
 
 ::: warning
-Es gibt verschiedene Ausführungen des Arduino pro Mini.  
-Es ist darauf zu achten, dass man eine Version mit `ATmega328P` und `3,3V` verwendet.
+Es gibt verschiedene Ausführungen des Arduino Pro Mini.  
+Es ist darauf zu achten, dass man eine Version mit `ATmega328P` und `3,3V / 8Mhz` verwendet.
 :::
 
 ## Funkmodul
 
-Als Funkmodul wird meistens ein CC1101 868Mhz verwendet.  
+Als Funkmodul wird ein CC1101 868Mhz verwendet.  
 
 ![CC1101](./images/cc1101.jpg)
 
 Das Modul wird über den [SPI Bus](https://de.wikipedia.org/wiki/Serial_Peripheral_Interface) 
 an den Mikrocontroller angeschlossen.  
-Der der CC1101 mit 3,3V arbeitet kann er direkt am 3,3V Arduino betrieben werden. Für Kontroller
+Da das [CC1101](http://www.ti.com/lit/ds/symlink/cc1101.pdf) 
+mit einer Betriebsspannung von 1,8V bis 3,9V arbeitet, kann es direkt an 3,3V (VCC) Arduino betrieben werden. Für Kontroller
 mit höherer Arbeitsspannung ist ein [Pegelwandler](https://de.wikipedia.org/wiki/Pegelumsetzer) nötig.
 
 ::: tip
-Anastatt der mitgelieferten Spiralantenne empfiehlt sich ein Draht mit **8,3cm** Länge.  
+Anstatt der mitgelieferten Spiralantenne empfiehlt sich ein Draht mit **8,3cm** Länge.  
 Dieser sollte nach Möglichkeit mit Abstand zu den elektronischen Bauteilen verlegt werden.
 :::
 
@@ -42,18 +43,21 @@ Hier dargestellt die allgemeingültige Verdrahtung des Pro Mini mit dem CC1101 F
 Dieser Aufbau ist für alle AskSinPP Projekte mit Arduino Pro Mini gültig.  
 
 Um die Komponente z.B. in den Anlern-Modus zu versetzen wird ein ein Config-Taster verbaut 
-welcher an `A0` und `GND` angeschlossen wird.  
+welcher an `PIN 8` und `GND` angeschlossen wird.  
 
-Zusätzlich kann/sollte eine Status-LED verbaut werden.  
-Meistens wird nur eine LED bzw. eine Einfarbige-LED verwendet die über `PIN 4` und 
-einem Vorwiderstand von ca `330Ω` and `GND` angeschlossen wird.
-Optional kann die LED2 an `PIN 5` betrieben werden 
+Zusätzlich kann/sollte eine Status-LED verbaut werden. 
+Im Sketch ist zu diesem Zweck entweder eine `StatusLed` oder `DualStatusLed` definiert.  
+Beispiel Dual LED: `typedef DualStatusLed<LED2_PIN,LED1_PIN> LedType;`  
+Beispiel Single LED: `typedef StatusLed<LED_PIN> LedType;`  
+Der Anschluss-PIN der LED ergibt sich aus der Definition im Sketch:
+`#define LED_PIN 4`
+Die LED(s) werden über einen 330 Ohm Vorwiderstand mit dem jeweiligen Arduino-PIN verbunden.
 
 ## Stromversorgung
 
 ### Netzteil
 
-Wird der Arduino über ein Netzteil betrieben ist die Spannung für die Wahl des Pins entscheidend:
+Wird der Arduino über ein Netzteil (oder > 2x 1,5V Batterien) betrieben ist die Spannung für die Wahl des Pins der Einspeisung entscheidend:
 
 * Für eine Spannung zwischen 4V und 12V wird der `RAW` Pin verwendet da der Arduino Pro Mini 
   einen Spannungsregler hat.  
@@ -61,14 +65,14 @@ Wird der Arduino über ein Netzteil betrieben ist die Spannung für die Wahl des
 * Bei höheren Spannungen muss diese über einen Festspannungsregler oder Step-Down Modul heruntergesetzt werden.
 
 ::: warning
-Es gibt einige Versionen des Pro Mini die am `RAW` Port keine 12V aushalten.  
+Es gibt einige Versionen des Pro Mini deren Spannungsregler keine 12V aushalten.  
 Hier sollte auf jeden Fall der verbaute LDO kontrolliert werden. 
 Er ist auf dem Bild zur Verdrahtung mit einem roten X markiert.
 :::
 
 ### Batteriebetrieb
 
-Der Anschluss der Batterien erfolgt an `VCC` und `GND`.
+Der Anschluss der Batterien (2x 1,5V) erfolgt an `VCC` und `GND`.
 
 Da bei Batteriebetrieb mit 2 x 1,5V der Spannungsregler (LDO) nicht benötigt wird und auch die Power LED sowie die LED_BUILTIN nur unnötig Strom verbrauchen, können diese Bauteile (X) ganz unproblematisch entfernt werden.
 

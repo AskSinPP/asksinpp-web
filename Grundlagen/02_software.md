@@ -63,7 +63,6 @@ Es gibt mittlerweile viele fertige [Sketche](/Sketche/) die je nach Aktor oder S
 Als Beispiel wird hier der `HM-RC-P1` Paniktaster genommen.
 
 Der komplette Sketch ist [HM-RC-P1.ino](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-RC-P1/HM-RC-P1.ino).
-Es müssen ein paar Anpassung vor dem Flashen gemacht werden.
 
 ```cpp
 // Arduino pin for the config button
@@ -73,15 +72,15 @@ Es müssen ein paar Anpassung vor dem Flashen gemacht werden.
 #define BTN1_PIN 14
 ```
 
-Hier sieht man Button Belegung und kann diese entsprechend anpassen.  
+Hier sieht man die Button Belegung und kann diese entsprechend anpassen.  
 Für das Beispiel des Paniktasters schließen wir also einen weiteren Taster an `A0` und `GND` an.
 
 Weiterhin ist der DeviceInfo Block wichtig:
 ```cpp
 // define all device properties
 const struct DeviceInfo PROGMEM devinfo = {
-    {0x00,0x1a,0x00},       // Device ID
-    "HMRC001A00",           // Device Serial
+    {0x12,0x09,0x01},       // Device ID
+    "JPLRCP2001",           // Device Serial
     {0x00,0x1a},            // Device Model
     0x11,                   // Firmware Version
     as::DeviceType::Remote, // Device Type
@@ -89,19 +88,27 @@ const struct DeviceInfo PROGMEM devinfo = {
 };
 ```
 
-Die `Device ID` In Z.3 besteht aus genau 3 Bytes und kann frei gewählt werden.  
-Sie ist für die Identifierierung bei der Kommunikation über das Funkprotokoll zuständig und
-**darf in einem HomeMatic Netz nur einmal vorkommen**! 
+::: warning
+Jedes Gerät in einer HomeMatic Umgebung hat 2 eindeutige Identifikationsmerkmale:
 
-Die `Device Serial` ist eine frei wählbare **10-Stellige** Zeichenkette
-die für die Identifizierung in der CCU verwendet wird. 
+* die 10-stellige Seriennummer (wird in der WebUI in der Spalte Seriennummer in Einstellungen->Geräte angezeigt)
+* die 3-Byte Geräteadresse (wird in einer Konfigurationsdatei im Dateisystem gespeichert)
 
-Sollte man also mehrere (gleiche) Komponenten mit dem selben Sketch flashen
-muss die Device ID und Serial zwingend angepasst werden. 
+Beide dürfen in einer HomeMatic-Installation nur **1x vergeben** werden.  
+Ausschlaggebend für die Funk-Kommunikation ist die Geräte-Adresse.
+::: 
+
+Die Geräteadresse (im Sketch als `Device ID` bezeichnet) lautet in diesem Fall `0x12,0x09,0x01`.  
+Die Seriennummer (im Sketch als `Device Serial` bezeichnet) lautet in diesem Fall `JPLRCP2001`.
+
+Soll ein weiterer, auf diesen Sketch basierender HM-RC-P1 ins HomeMatic System integriert werden, verwendet man (- so mache ich es zumindest-) am besten eine fortlaufende Numerierung. 0x12, 0x09, 0x02 / JPLRCP2002.
+
+Wichtig: Die Seriennummer muss immer 10-stellig sein! Sie darf Buchstaben und Zahlen enthalten.
 
 Sind die Werte angepasst, kann der Programmcode kompiliert und an den Mikrocontroller 
 übertragen werden. In der Arduino IDE heißt dieser Vorgang `Sketch hochladen` 
 und bei PlatformIO `upload`.
+
 
 ## Serieller Monitor
 

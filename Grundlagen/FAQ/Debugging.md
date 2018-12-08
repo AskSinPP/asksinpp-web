@@ -54,4 +54,8 @@ ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.
   | -> ... | empfangenes, an das Gerät gerichtetes Telegramm |
   | ignore ... | empfangenes, nicht an das Geräte gerichtetes Telegramm |
   
-  _to be continued_
+
+## Doppelte Device ID oder Serial
+
+Es ist sicherzustellen, dass jedes HomeMatic Gerät eine eigene `Device ID` und `Device Serial` besitzt!  
+Siehe auch [Sketch anpassen und flashen](/Grundlagen/02_software.html#sketch-anpassen-und-flashen).

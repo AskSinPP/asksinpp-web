@@ -1,19 +1,12 @@
 ---
 home: true
-sidebar: false
-description: Selbstbau-Komponenten für HomeMatic mit AskSinPP
-# heroImage: /README_TOP.jpg
-actionText: Und los →
-actionLink: /Grundlagen/
-features:
-- title: Hardware
-  details: Arduino Pro Mini, STM32 und kompatible Microcontroller mit CC1101 868Mhz Funkmodul als Hardwarebasis.
-  image: platine.jpg
-- title: Software
-  details: Homematic kompatible AskSinPP Implementierung. Viele Sketche für Aktoren und Sensoren.
-  image: asksinpp.jpg
-- title: Community
-  details: Projekte, Platinen und Gehäuse von der Homematic Community zum Aufbau der Komponenten.
-  image: 3d-druck.jpg
-# footer: 
 ---
+
+# ▶️ AskSinPPCollection ◀️
+Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP) sowie deren Verwendung und Projekte.
+
+**Aus diesem Repository wird eine Website erstellt**  
+[https://jp112sdl.github.io/AskSinPPCollection/](https://jp112sdl.github.io/AskSinPPCollection/)
+
+**🚧 Diese Liste lebt von euren Zuarbeiten.**   
+Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per PullRequest oder Issue. 

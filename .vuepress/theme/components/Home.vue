@@ -1,53 +1,51 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1>{{ data.heroText || $title || 'Hello' }}</h1>
-
-      <img
-        v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
-        alt="hero"
-      >
+      <h1>AskSinPP Collection</h1>
 
       <p class="description">
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
+        Selbstbau-Komponenten für HomeMatic mit AskSinPP
       </p>
 
-      <p
-        class="action"
-        v-if="data.actionText && data.actionLink"
-      >
+      <p class="action">
         <NavLink
           class="action-button"
-          :item="actionLink"
+          :item="{text: 'Und los →', link: '/Grundlagen/'}"
         />
       </p>
     </div>
 
-    <div
-      class="features"
-      v-if="data.features && data.features.length"
-    >
-      <div
-        class="feature"
-        v-for="(feature, index) in data.features"
-        :key="index"
-      >
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
-        <div v-if="feature.image">
-          <img :src="feature.image">
+    <div class="features">
+      <div class="feature">
+        <h2>Hardware</h2>
+        <p>Arduino Pro Mini, STM32 und kompatible Microcontroller mit CC1101 868Mhz Funkmodul als Hardwarebasis.</p>
+        <div>
+          <img src="platine.jpg" alt="">
+        </div>
+      </div>
+      <div class="feature">
+        <h2>Software</h2>
+        <p>Homematic kompatible AskSinPP Implementierung. Viele Sketche für Aktoren und Sensoren.</p>
+        <div>
+          <img src="asksinpp.jpg" alt="">
+        </div>
+      </div>
+      <div class="feature">
+        <h2>Community</h2>
+        <p>Projekte, Platinen und Gehäuse von der Homematic Community zum Aufbau der Komponenten.</p>
+        <div>
+          <img src="3d-druck.jpg" alt="">
         </div>
       </div>
     </div>
 
-    <Content class="custom"/>
-
-    <div
-      class="footer"
-      v-if="data.footer"
-    >
-      {{ data.footer }}
+    <div class="footer" style="text-align: left">
+      <img src="https://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg" style="float:right; margin-left: 10px; margin-bottom: 10px;"/>
+      Diese Seite lebt von euren Zuarbeiten!<br/>
+      Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per
+      <NavLink :item="{text: 'Pull request', link: 'https://github.com/jp112sdl/AskSinPPCollection/pulls'}"/>
+      oder
+      <NavLink :item="{text: 'Issue', link: 'https://github.com/jp112sdl/AskSinPPCollection/issues'}" />.
     </div>
   </div>
 </template>
@@ -62,13 +60,6 @@ export default {
     data () {
       return this.$page.frontmatter
     },
-
-    actionLink () {
-      return {
-        link: this.data.actionLink,
-        text: this.data.actionText
-      }
-    }
   }
 }
 </script>

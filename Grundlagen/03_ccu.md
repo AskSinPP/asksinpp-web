@@ -4,12 +4,10 @@
 
 Zuerst bringt man wie gewohnt die CCU in den Anlernmodus.
 
-Je nachdem ob im Sketch ein `ConfigButton` oder `ConfigToggleButton` kann die neue
-HomeMatic Komponente per kurzem oder langem Tastendruck in den Anlernmodus versetzt werden.
+Je nachdem ob im Sketch ein `ConfigButton` oder `ConfigToggleButton` verwendet wird, kann die neue
+HomeMatic Komponente per kurzem (ConfigButton) oder langem (ConfigToggleButton) Tastendruck in den Anlernmodus versetzt werden.
 In unserem Bespiel reicht also ein **kurzer** Tastendruck. Die Status-LED blinkt und 
 signalisiert die Anlern-Bereitschaft bzw. die Datenübertragung.
-
-Alternativ kann die Komponente auch über die Seriennummer (Device Serial) angelernt werden.
 
 Der Paniktaster wird nach kurzer Zeit im Posteingang angezeigt.
 
