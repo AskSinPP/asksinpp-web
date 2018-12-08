@@ -62,7 +62,7 @@ export default {
     },
   },
 
-  created() {
+  mounted() {
     this.$vuepress.$emit('AsyncMarkdownContentMounted');
   }
 
