@@ -31,7 +31,7 @@ gesucht und installiert.
 * Port: COM-Port des FTDI Adapters 
 
 
-## PlatfromIO
+## PlatformIO
 
 PlatformIO gibt es als vollständige [Entwicklungsumgebung](https://platformio.org/platformio-ide) (IDE) und als [Command-Line-Interface](https://platformio.org/install/cli) (CLI).
 
