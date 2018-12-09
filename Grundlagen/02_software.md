@@ -11,7 +11,7 @@ PC Software für den Umgang mit dem Arduino.
 
 ### Bibliothek einbinden
 
-Damit die im Sketch verwendeten Bibliotheken zur Verüfung stehen müssen diese eingebunden werden:
+Damit die im Sketch verwendeten Bibliotheken zur Verfügung stehen, müssen diese eingebunden werden:
 * AskSinPP
 * EnableInterrupt
 * Low-Power
