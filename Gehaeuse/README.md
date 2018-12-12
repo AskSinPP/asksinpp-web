@@ -12,4 +12,6 @@
 - Gehäuse von [Hermi](https://www.thingiverse.com/hermi_le)
   - [optionale Teile für HB-UNI-Sen-WEA](https://www.thingiverse.com/thing:3173141)
   - [Homematic Lichtsensor HM-SEN-LI-O](https://www.thingiverse.com/thing:3196116)
+- Gehäuse von [Basti](https://www.thingiverse.com/Buddinski88/about)
+  - [HB-UNI-SEN-BATT](https://www.thingiverse.com/thing:3279647)
   
