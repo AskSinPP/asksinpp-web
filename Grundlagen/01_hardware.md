@@ -83,6 +83,9 @@ Fällt die Batteriespannung zu weit ab kann es zu einem Dauersender / Babbling I
 Erklärung und Lösung **[HIER](/Grundlagen/FAQ/babbling_idiot.html)**.
 :::
 
+### Stromverbrauch
+
+Informationen zum Stromverbrauch findet ihr [hier](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Ruhestrom).
 
 ## Aufbau
 
