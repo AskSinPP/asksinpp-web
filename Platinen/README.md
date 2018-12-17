@@ -34,6 +34,7 @@
   - [HM-LC-Sw2-230V](https://github.com/ronnythomas/HM-LC-Sw2-230V)
   - [HM-LC-Sw2-12V](https://github.com/ronnythomas/HM-LC-Sw2-12V)
   - [HM-LC-Dim1PWM-12-24V](https://github.com/ronnythomas/HM-LC-Dim1PWM-12-24V)
+  - [Wandsender](https://github.com/ronnythomas/Wandsender)
 
 - Platine(n) von "Gelegenheitsbastler" aus dem HM-Forum _(Nicht OpenSource! Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394) direkt anschreiben)_
   - [Nachbau HM-Geräte mit AVR und AskSinPP - Platine 1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43162)
