@@ -6,3 +6,4 @@
 - [Umbau Sonoff S20 auf HM-LC-Sw1-Pl-DN-R1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=44258)
 - [Umbau Gosund SP1 / BliTZWOLF SHP2 zu HM-ES-PMSw1-Pl](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1)
 - [Umbau Sonoff POW V1 zu HM-ES-PMSw1-Pl](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-ES-PMSw1-Pl)
+- [Umbau Funk Wandsender Licht Wandschalter 433MHZ für RF Empfänger](https://github.com/ronnythomas/Wandsender)
