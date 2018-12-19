@@ -9,7 +9,7 @@ branches:
 
 script:
   - npm ci
-  - "grep -qF 'compiler: vue_template_compiler_1.default' node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js || patch --batch node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js shared-utils.patch"
+  - "grep -qF 'compiler: vue_template_compiler_1.default' node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js && patch --batch node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js shared-utils.patch || true"
   - npm run build
   - npm run check
 

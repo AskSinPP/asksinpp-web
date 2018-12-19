@@ -4,6 +4,7 @@ module.exports = [
   {
     text: 'Material',
     items: [
+      { text: 'Projekte', link: '/Projekte/' },
       { text: 'Sketche', link: '/Sketche/' },
       { text: 'Platinen', link: '/Platinen/' },
       { text: 'Gehäuse', link: '/Gehaeuse/' },
