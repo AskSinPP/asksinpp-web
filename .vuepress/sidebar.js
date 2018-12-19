@@ -30,6 +30,7 @@ module.exports = () => {
       title: 'Material',
       collapsable: false,
       children: [
+        ['/Projekte/', 'Projekte'],
         ['/Sketche/', 'Sketche'],
         ['/Platinen/', 'Platinen'],
         ['/Gehaeuse/', 'Gehäuse'],
