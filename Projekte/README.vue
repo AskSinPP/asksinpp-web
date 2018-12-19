@@ -25,7 +25,7 @@
       <hr>
 
       <div class="projects">
-        <div v-for="{title, path, thumb, tags, author, desc, url} in projects">
+        <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url} in projects">
           <a class="title" rel="noreferrer noopener" :href="url" target="_blank">{{ title }}</a>
           <div class="thumb">
             <div class="author">
@@ -33,7 +33,7 @@
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
-              <a rel="noreferrer noopener" href="https://psi.cx">{{ author }}</a>
+              <a rel="noreferrer noopener" :href="authorUrl" target="_blank">{{ author }}</a>
             </div>
             <a rel="noreferrer noopener" :href="url" target="_blank">
               <img :src="thumb" alt="" v-if="thumb">
@@ -103,6 +103,7 @@
             thumb,
             tags: page.frontmatter.Tags.split(',').map(t => t.trim()).filter(t => t.length > 0) || [],
             author: page.frontmatter.Author || [],
+            authorUrl: page.frontmatter.AuthorUrl,
             desc: page.frontmatter.Desc || '',
             url: page.frontmatter.ProjectUrl,
           };
