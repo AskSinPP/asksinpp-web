@@ -9,8 +9,8 @@ module.exports = {
     nav,
     lastUpdated: 'Letztes Update',
     logo: '/logo.jpg',
-    docsRepo: 'psi-4ward/AskSinPPCollection',
-    docsBranch: 'docs',
+    docsRepo: 'jp112sdl/AskSinPPCollection',
+    docsBranch: 'master',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub'
   },
