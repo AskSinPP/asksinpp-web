@@ -1,12 +1,14 @@
 module.exports = [
-  // Normal Links
   { text: 'Grundlagen', link: '/Grundlagen/' },
-  // { text: 'Projekte', link: '/Projekte/' },
-  { text: 'Sketche', link: '/Sketche/' },
-  { text: 'Platinen', link: '/Platinen/' },
-  { text: 'Gehäuse', link: '/Gehaeuse/' },
-
-  // Links with dropdown
+  { text: 'Projekte', link: '/Projekte/' },
+  {
+    text: 'Material',
+    items: [
+      { text: 'Sketche', link: '/Sketche/' },
+      { text: 'Platinen', link: '/Platinen/' },
+      { text: 'Gehäuse', link: '/Gehaeuse/' },
+    ]
+  },
   {
     text: 'Community',
     items: [
