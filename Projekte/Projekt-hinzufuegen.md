@@ -1,8 +1,32 @@
 # Projekt hinzufügen
 
-Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/jp112sdl/AskSinPPCollection](https://github.com/jp112sdl/AskSinPPCollection) erzeugt.
+Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/jp112sdl/AskSinPPCollection](https://github.com/jp112sdl/AskSinPPCollection) erzeugt. In das Repository dürfen nur berechtigte
+Contributoren direkt schreiben weshalb die Änderungen über einen Pull-Request eingereicht werden müssen.
 
-Um ein neues Projekt hinzuzufügen wird unter `/Projekte/` eine beliebiger Datei angelegt, z.B. `/Projekte/HM-Mein-Projekt/README.md` oder `/Projekte/nickname/HM-Mein-Projekt.md`:
+Wer keine Lust hat sich mit GitHub und Pull-Requests auseinander zu setzen kann mir auch
+einfach eine [E-Mail](mailto:asppc@psi.cx) schreiben oder ein [Issue](https://github.com/jp112sdl/AskSinPPCollection/issues)
+aufmachen.
+
+Ein Projekt sollte alle nötigen Informationen zum Nachbau enthalten, also zumindest die verwendete Hardware, Bauteile, die Verdrahtung und den Sketch. 
+
+PS: Es tut nicht weh, wenn es verschiedene Projekte zum selben Thema gibt :)
+
+
+## Aufbau der Projekt-Datei
+
+Die Markdown-Dateien sowie Vorschaubilder werden unter `/Projekte/<nickName>/` abgelegt.  
+Je nach Bedarf können hier beliebige Unterordner zur Sturkturierung erstellt werden.
+
+Jedes Projekt besteht aus einer Markdown-Datei (z.B. `/Projekte/psi/HM-LC-Dim1PWM.md`)
+und einem Vorschaubild welches im Format 16:9 sein sollte, also z.B. 640x360px.
+
+Im [Repo](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte)
+kann man sich beim Aufbau der Datei an den bestehnden Beispielen orientieren.
+ 
+
+### Frontmatter
+
+In der Markdown-Datei wird das Projekt über einen Code-Block spezifiziert:
 
 ```markdown
 ---
@@ -19,16 +43,21 @@ Thumb: vorschaubild.jpg
 # Name des Projekts
 ```
 
-Das Bild sollte im Format 16:9 sein und eine Breite von 640px haben.
+* `isProject: true`: Gibt an, dass diese Datei eine Projektspezifikation ist.
+* `Desc`: Eine Kurzbeschreibung welche auf der Übersicht unterhalb des Bildes angezeigt wird.
+* `ProjectUrl`: Die URL unter der die Projektbeschreibung zu finden ist. Z.B. ein GitHub Repo, Blog Post oder Forum-Thread.
+* `Author`: Der Name des Autors.
+* `AuthorUrl`: Die URL die aufgerufen wird, wenn man auf den Autor-Namen klickt.
+* `Tags`: Eine Komma-separierte Liste mit Schlagworten für die Filterung.
+* `Thumb`: Der Pfad zum Vorschaubild, relativ zur aktuellen Markdown-Datei.
 
-Die `ProjectUrl` enthält den Link zum Projekt.
-Dies kann z.B. dein Blog, GitHub-Repo oder ein Forum-Thread sein.
-Alternativ kann die Markdown Datei auch eine vollständige Projektbeschreibung enthalten.  
-Wichtig ist, dass hier alle nötigen Informationen zum Nachbau vorhanden sind.
+Hat man keinen eigenen Platz zur Veröffentlichung des Projekts kann man dies auch innerhalb der Markdown-Datei tun.
+Ein Beispiel hierfür ist [HM-LC-Dim1PWM](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte/psi/HM-LC-Dim1PWM).
 
-Bitte orientiert euch bei den Tags an den vorhandenen. Natürlich kannst du auch neue hinzufügen
-aber nur wenn diese thematisch nicht passen.
 
-Einfach einen PullRequest stellen oder uns die Markdown-Datei und das Vorschaubild zukommen lassen.
+### Tags
 
-PS: Es tut nicht weh, wenn es verschiedene Projekte zum selben Thema gibt :)
+Bei der Wahl der Tags sollte sich vor allem an den schon vorhandenen Schlagworten orientiert werden.
+Tags, die auf alle Projekte zutreffend sind zu vermeiden (Bsp. Homematic, AskSinPP). Natürlich können
+neue Tags hinzugefügt werden sofern dies Sinn ergibt. Sie werden automatisch in die Filterleiste mit
+aufgenommen.
