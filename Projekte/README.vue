@@ -24,8 +24,8 @@
 
       <hr>
 
-      <div class="projects">
-        <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url} in projects">
+      <transition-group tag="div" class="projects" name="project">
+        <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url} in projects" :key="path">
           <a class="title" rel="noreferrer noopener" :href="url" target="_blank">{{ title }}</a>
           <div class="thumb">
             <div class="author">
@@ -48,7 +48,10 @@
           </div>
           <div class="desc">{{ desc }}</div>
         </div>
-      </div>
+        <p v-if="projects.length === 0" :key="'none found'">
+          Keine Projekte gefunden :(
+        </p>
+      </transition-group>
 
       <p>
         <a href="./Projekt-hinzufuegen.html">→ Projekt hinzufügen</a>
@@ -154,15 +157,32 @@
         background #00bc00
 
     .projects
+      position relative
       display flex
       flex-wrap wrap
+      .project-move
+        transition all 400ms ease-in-out 50ms
+      .project-enter-active
+        transition all 300ms ease-out
+      .project-leave-active
+        transition all 300ms ease-in
+        position absolute
+        z-index 0
+      .project-enter, project-leave-to
+        opacity 0
+      .project-enter
+        transform scale(0.9)
       > div
+        position relative
         box-shadow 2px 2px 10px 0 rgba(0,0,0,0.3)
         background #efefef
         margin-top 1rem;
         margin-right: 1rem;
         border 1px solid $borderColor
         width 320px
+        backface-visibility hidden
+        z-index 1
+        transform-origin 10% 50%
         .title
           padding 0.5rem 0.5rem
           border-bottom 1px solid $borderColor

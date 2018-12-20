@@ -28,7 +28,7 @@ kann man sich beim Aufbau der Datei an den bestehnden Beispielen orientieren.
 
 In der Markdown-Datei wird das Projekt über einen Code-Block spezifiziert:
 
-```markdown
+```plain
 ---
 isProject: true
 Desc: Die Kurzbeschreibung des Projekts
@@ -37,7 +37,6 @@ Author: Names des Autors
 AuthorUrl: https://website-des-authors
 Tags: Filter-Tags, mit Komma, getrennt
 Thumb: vorschaubild.jpg
-
 ---
 
 # Name des Projekts
