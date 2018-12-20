@@ -13,8 +13,8 @@
     <div class="layout--projects">
       <h1>Projekte</h1>
 
+      <h3>Filter</h3>
       <div class="tags">
-        <h3>Filter</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
           <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
           <line x1="7" y1="7" x2="7" y2="7"></line>
@@ -94,8 +94,8 @@
 
           if (page.frontmatter.Thumb) {
             let base = page.path.replace('/Projekte', '.');
-            if(base.endsWith('.html')) {
-              base = base.split('/').slice(0,-1).join('/') + '/';
+            if (base.endsWith('.html')) {
+              base = base.split('/').slice(0, -1).join('/') + '/';
             }
             thumb = require('' + base + page.frontmatter.Thumb);
           }
@@ -122,7 +122,7 @@
 
     methods: {
       toggleTag(tag) {
-        if(this.filterTags.includes(tag)) {
+        if (this.filterTags.includes(tag)) {
           this.filterTags.splice(this.filterTags.indexOf(tag), 1);
         } else {
           this.filterTags.push(tag);
@@ -138,11 +138,18 @@
     max-width none
     margin-top 3rem
     padding 2rem 0.5rem 2rem 1.5rem
+
     .tags
+      display flex
+      flex-wrap wrap
+      align-items flex-end
+      user-select none
       svg
         vertical-align middle
-      h3
-        margin-bottom 0.5rem
+        margin-right 0.3rem
+    h3
+      margin-bottom 0.5rem
+
     .tag
       font-weight bold
       cursor pointer
@@ -153,6 +160,7 @@
       margin-bottom 0.1rem
       border-radius 4px
       transition: all .1s ease-in-out
+
       &.active
         background #00bc00
 
@@ -160,21 +168,27 @@
       position relative
       display flex
       flex-wrap wrap
+
       .project-move
         transition all 400ms ease-in-out 50ms
+
       .project-enter-active
         transition all 300ms ease-out
+
       .project-leave-active
         transition all 300ms ease-in
         position absolute
         z-index 0
+
       .project-enter, project-leave-to
         opacity 0
+
       .project-enter
         transform scale(0.9)
+
       > div
         position relative
-        box-shadow 2px 2px 10px 0 rgba(0,0,0,0.3)
+        box-shadow 2px 2px 10px 0 rgba(0, 0, 0, 0.3)
         background #efefef
         margin-top 1rem;
         margin-right: 1rem;
@@ -183,6 +197,7 @@
         backface-visibility hidden
         z-index 1
         transform-origin 10% 50%
+
         .title
           padding 0.5rem 0.5rem
           border-bottom 1px solid $borderColor
@@ -191,15 +206,19 @@
           display block
           color inherit
           transition: color .1s ease-in-out
+
           &:hover
             color $accentColor
+
         .desc
           padding 0.3rem .5rem
+
         .thumb
           font-size 0
           min-height 180px
           position relative
           border-bottom 1px solid $borderColor
+
           .author, .tags
             position absolute
             right 0
@@ -208,16 +227,20 @@
             background rgba(#efefef, 0.8)
             display flex
             flex-wrap wrap
+
             svg
               height 20px
               margin-right 0.1rem
+
           .author
             border-bottom-left-radius 6px
             font-size 16px
+
           img
             width 100%
             height 180px
             object-fit cover
+
           .tags
             right 0
             top auto
@@ -226,6 +249,7 @@
             padding-top: 0.3rem
             border-top-left-radius 6px
             font-size 14px
+
             svg
               height 16px
 
@@ -233,21 +257,28 @@
     .layout--projects
       .tag
         background #7a7a7a
+
         &.active
           background green
+
       .projects
         > div
           box-shadow 2px 2px 10px 0 rgba(255, 255, 255, 0.1)
           background $darkSecondaryBg
           border 1px solid $darkBorderColor
+
           .title
             border-bottom 1px solid $darkBorderColor
+
             &:hover
               color $accentColorDark
+
           .thumb
             border-bottom 1px solid $darkBorderColor
+
             .author, .tags
               background rgba(#2B2B2B, 0.8)
+
               svg
                 height 20px
                 margin-right 0.1rem
