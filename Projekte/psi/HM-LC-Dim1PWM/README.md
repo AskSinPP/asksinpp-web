@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: 1-Kanal PWM LED Dimmer für 7-24V
+Desc: 1-Kanal PWM LED Dimmer für 7-24V mit Tastereingängen
 ProjectUrl: psi/HM-LC-Dim1PWM/
 Author: Psi
 AuthorUrl: https://psi.cx
@@ -10,7 +10,7 @@ Thumb: images/thumb.jpg
 
 # HM-LC-Dim1PWM
 
-1-Kanal PWM LED Dimmer für 7-24V
+1-Kanal PWM LED Dimmer für 7-24V mit Eingängen für zwei externe Taster.
 
 ![HM-LC-Dim1PWM](./images/Dim1PWM_finish-1.jpg)
 
@@ -20,6 +20,7 @@ Thumb: images/thumb.jpg
 ![Dim1PWM Schaltplan](./images/HM-LC-Dim1PWM.svg)
 
 Zur Sicherheit kann noch ein Gate-Widerstand von ca 100Ω eingefügt werden.
+
 
 ## Hardware
 
@@ -43,11 +44,9 @@ Der Dim1PWM lässt sich ganz gut auf einer Streifenraster-Platine aufbaun.
 Eleganter geht is mit der Platine von Ronny.
 
 ![Dim1PWM-PCB top](./images/Dim1PWM_PCB-top.jpg)
-![Dim1PWM-PCB bottom](./images/Dim1PWM_PCB-bottom.jpg)
 
 Wer Bedarf an einer Platine hat kann [Ronny über Facebook kontaktieren](https://www.facebook.com/ronny.thomas.83)
 
-Die Version 1.4 der Platine hat noch einen Fehler. Die Leiterbahn, markiert durch den roten Kreis, muss unterbrochen werden. 
 
 ### Aufbau
 
@@ -58,11 +57,10 @@ den geraden Strich symbolisiert und zeigt Richtung _Gnd_.
 ![Dim1PWM teilweise bestückt](./images/Dim1PWM_PCB_partly-equiped.jpg)
 
 Ursprünglich wurden zwei Kondensatoren zur Entstörung und Glättung der Spannung vorgesehen. Diese blieben bislang
-unbestückt da sich keine Probleme ergaben.
+unbestückt da sich keine Probleme ergaben. Optional kann man noch einen Klemmblock für zwei die zwei Tastereingänge verlöten.
 
-Nachdem alle Bauteile verlötet sind, muss bei Version 1.4 der Platine noch GND _repariert_ werden wozu
-zwei Drahtbrücken auf der Unterseite gesetzt werden:
- 
+Die Version 1.4 der Platine hat noch einen Fehler. Die Leiterbahn, markiert durch den roten Kreis, muss unterbrochen werden und GND muss über zwei Drahtbrücken verbunden werden.
+
 ![Dim1PWM Reparatur v1.4 ](./images/Dim1PWM_1.4-repair.jpg)
 
 ### Gehäuse
@@ -72,10 +70,7 @@ zwei Drahtbrücken auf der Unterseite gesetzt werden:
 
 ## Software
 
-Als Sketch kommt [HM-LC-Dim1PWM-CV](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Dim1PWM-CV/HM-LC-Dim1PWM-CV.ino)
-aus dem Repository von pa-pa zum Einsatz. 
-
-// TODO: `hal.activity.savePower<Idle<true> >(hal);` ???
+Als Sketch kommt [HM-LC-Dim1PWM_btns.ino](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte/psi/HM-LC-Dim1PWM/HM-LC-Dim1PWM_btns.ino) zum Einsatz. 
 
 ::: warning
 Stand 16.12.2018: Es musst zwingend der [Master-Branch](https://github.com/pa-pa/AskSinPP/archive/master.zip)
@@ -83,11 +78,6 @@ von AskSinPP verwendet werden da in V3 der
 [Fehler in der pwmtable](https://github.com/pa-pa/AskSinPP/issues/80) noch nicht behoben ist was dazu führt,
 dass die LEDs auch bei 0% noch sichtbar glimmen.
 :::
-
-Aus [Zeile 51](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Dim1PWM-CV/HM-LC-Dim1PWM-CV.ino#L51)
-lässt sich die ablesen, dass der Aktor über 3 Kanäle verfügt wovon 2
-[virtuelle Kanäle](https://www.elv.de/elektronikwissen/virtuelle-homematic-aktorkanaele-und-ihre-verknuepfungslogik.html) sind.
-Will man nur einen Kanal, kann `typedef DimmerDevice<HalType,ChannelType,1,1,PWM8<> > DimmerType;` verwendet werden.
 
 PS: Man denke daran die `Device ID` und `Device Serial` zu verändern da diese nur einmal pro Homematic Installation vorkommen dürfen.
 
@@ -104,4 +94,7 @@ Das Anlernen kann auch über die Serial durchgeführt werden.
 
 ![Dim1PWM in action](./images/Dim1PWM_run-1.jpg)
 
+Optional kann man den Dimmer über zwei potentialfreie Taster bedienen. 
+Das Verhalten der 2. und 3. _internen Gerätetaste_ kann in der CCU eingestellt werden.  
 
+![Einstellung der internen Gerätetasten](./images/interne-tasten-config.png)

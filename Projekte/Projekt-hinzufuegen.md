@@ -27,7 +27,7 @@ Beim Aufbau der Datei kann man sich an den [bestehnden Projekten](https://github
 
 In der Markdown-Datei wird das Projekt über einen Code-Block spezifiziert:
 
-```plain
+```
 ---
 isProject: true
 Desc: Die Kurzbeschreibung des Projekts
