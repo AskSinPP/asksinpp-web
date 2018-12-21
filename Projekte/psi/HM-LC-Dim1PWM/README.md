@@ -6,6 +6,7 @@ Author: Psi
 AuthorUrl: https://psi.cx
 Tags: LED, Aktor
 Thumb: images/thumb.jpg
+sidebar: auto
 ---
 
 # HM-LC-Dim1PWM
