@@ -78,7 +78,7 @@
       tags() {
         const tagsSet = new Set();
         this.allProjects.forEach(p => p.tags.forEach(t => tagsSet.add(t)));
-        return [...tagsSet];
+        return [...tagsSet].sort();
       },
       projects() {
         return this.allProjects
