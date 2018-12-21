@@ -20,9 +20,8 @@ Je nach Bedarf können hier beliebige Unterordner zur Sturkturierung erstellt we
 Jedes Projekt besteht aus einer Markdown-Datei (z.B. `/Projekte/psi/HM-LC-Dim1PWM.md`)
 und einem Vorschaubild welches im Format 16:9 sein sollte, also z.B. 640x360px.
 
-Im [Repo](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte)
-kann man sich beim Aufbau der Datei an den bestehnden Beispielen orientieren.
- 
+Beim Aufbau der Datei kann man sich an den [bestehnden Projekten](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte) orientieren.
+
 
 ### Frontmatter
 
