@@ -99,3 +99,11 @@ Optional kann man den Dimmer über zwei potentialfreie Taster bedienen.
 Das Verhalten der 2. und 3. _internen Gerätetaste_ kann in der CCU eingestellt werden.  
 
 ![Einstellung der internen Gerätetasten](./images/interne-tasten-config.png)
+
+
+## Weiteres
+
+* Solltest du Anmerkungen oder Probleme mit dem Nachbau haben, lasst es [mich](mailto:asppc@psi.cx) bitte wissen damit dieses Projekt verbessert werden kann.
+* Sofern du die Möglichkeit hast den Dimmer an seine Grenzen zu bringen (also anständig Last am MOSFET) wäre ich sehr an den Ergebnissen interessiert.
+
+Danke an pa-pa und Jérôme für ihre Arbeit und den vielen Support! Ohne diesen würde es das hier nicht geben.
