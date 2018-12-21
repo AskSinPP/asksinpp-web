@@ -10,6 +10,26 @@
       @toggle-sidebar="toggleSidebar"
     />
 
+    <div
+      class="sidebar-mask"
+      @click="toggleSidebar(false)"
+    ></div>
+
+
+    <Sidebar
+      :items="sidebarItems"
+      @toggle-sidebar="toggleSidebar"
+    >
+      <slot
+        name="sidebar-top"
+        slot="top"
+      />
+      <slot
+        name="sidebar-bottom"
+        slot="bottom"
+      />
+    </Sidebar>
+
     <div class="layout--projects">
       <h1>Projekte</h1>
 
@@ -135,8 +155,8 @@
 
 <style lang="stylus">
   .layout--projects
-    max-width none
-    margin-top 3rem
+    max-width 1400px
+    margin 3rem auto 0 auto
     padding 2rem 0.5rem 2rem 1.5rem
 
     .tags
