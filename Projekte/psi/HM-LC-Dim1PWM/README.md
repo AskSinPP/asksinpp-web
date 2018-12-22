@@ -13,7 +13,7 @@ sidebar: auto
 
 1-Kanal PWM LED Dimmer für 7-24V mit Eingängen für zwei externe Taster.
 
-![HM-LC-Dim1PWM](./images/Dim1PWM_finish-1.jpg)
+![HM-LC-Dim1PWM](./images/Dim1PWM.jpg)
 
 
 ## Schaltplan
@@ -60,6 +60,8 @@ den geraden Strich symbolisiert und zeigt Richtung _Gnd_.
 Ursprünglich wurden zwei Kondensatoren zur Entstörung und Glättung der Spannung vorgesehen. Diese blieben bislang
 unbestückt da sich keine Probleme ergaben. Optional kann man noch einen Klemmblock für zwei die zwei Tastereingänge verlöten.
 
+[!Dim1PWM_fertig](./images/Dim1PWM_finish-1.jpg)
+
 Die Version 1.4 der Platine hat noch einen Fehler. Die Leiterbahn, markiert durch den roten Kreis, muss unterbrochen werden und GND muss über zwei Drahtbrücken verbunden werden.
 
 ![Dim1PWM Reparatur v1.4 ](./images/Dim1PWM_1.4-repair.jpg)
@@ -93,7 +95,7 @@ Da im Sketch ein `ConfigToggleButton` definiert ist wird durch:
 
 Das Anlernen kann auch über die Serial durchgeführt werden.
 
-![Dim1PWM in action](./images/Dim1PWM_run-1.jpg)
+![Dim1PWM in action](./images/Dim1PWM_finish-2.jpg)
 
 Optional kann man den Dimmer über zwei potentialfreie Taster bedienen. 
 Das Verhalten der 2. und 3. _internen Gerätetaste_ kann in der CCU eingestellt werden.  

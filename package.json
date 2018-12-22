@@ -7,6 +7,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.30",
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.30",
+    "@vuepress/plugin-register-components": "^1.0.0-alpha.30",
     "@vuepress/plugin-search": "^1.0.0-alpha.30",
     "broken-link-checker-local": "^0.2.0",
     "vuepress": "^1.0.0-alpha.30"
