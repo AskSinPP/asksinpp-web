@@ -1,5 +1,4 @@
-[Startseite](https://github.com/jp112sdl/AskSinPPCollection/blob/master/README.md)
-## Geräteumbau auf AskSinPP
+# Geräteumbau auf AskSinPP
 
 - [Umbau Sonoff 4CH zu HM-LC-SW4-SM](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43718)
 - [Umbau OBI WiFi Zwischenstecker zu HM-LC-Sw1-Pl-DN-R1](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI)

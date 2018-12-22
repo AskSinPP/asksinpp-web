@@ -7,6 +7,7 @@ module.exports = [
       { text: 'Sketche', link: '/Sketche/' },
       { text: 'Platinen', link: '/Platinen/' },
       { text: 'Gehäuse', link: '/Gehaeuse/' },
+      { text: 'Umbauten', link: '/Projekte/Umbau.html' },
     ]
   },
   {

@@ -34,6 +34,7 @@ module.exports = () => {
         ['/Sketche/', 'Sketche'],
         ['/Platinen/', 'Platinen'],
         ['/Gehaeuse/', 'Gehäuse'],
+        ['/Projekte/Umbau.html', 'Umbauten'],
       ]
     },
   ];

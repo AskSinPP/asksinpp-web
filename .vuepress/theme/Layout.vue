@@ -1,10 +1,14 @@
+<template>
+  <DefaultLayout>
+    <footer slot="page-bottom">
+    </footer>
+  </DefaultLayout>
+</template>
+
 <script>
-  import DefaultLayout from '@vuepress/theme-default/layouts/Layout';
-  import Navbar from './components/Navbar';
-  import Home from './components/Home'
+  import DefaultLayout from './MainLayout';
 
   export default {
-    extends: DefaultLayout,
-    components: { Home, Navbar },
+    components: { DefaultLayout },
   }
 </script>
