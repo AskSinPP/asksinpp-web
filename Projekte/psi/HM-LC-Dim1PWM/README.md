@@ -60,7 +60,7 @@ den geraden Strich symbolisiert und zeigt Richtung _Gnd_.
 Ursprünglich wurden zwei Kondensatoren zur Entstörung und Glättung der Spannung vorgesehen. Diese blieben bislang
 unbestückt da sich keine Probleme ergaben. Optional kann man noch einen Klemmblock für zwei die zwei Tastereingänge verlöten.
 
-[!Dim1PWM_fertig](./images/Dim1PWM_finish-1.jpg)
+![Dim1PWM_fertig](./images/Dim1PWM_finish-1.jpg)
 
 Die Version 1.4 der Platine hat noch einen Fehler. Die Leiterbahn, markiert durch den roten Kreis, muss unterbrochen werden und GND muss über zwei Drahtbrücken verbunden werden.
 
