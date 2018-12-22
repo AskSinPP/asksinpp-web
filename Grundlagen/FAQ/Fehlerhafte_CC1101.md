@@ -9,5 +9,5 @@ Näheres ist im [FEHM-Forum Thread](https://forum.fhem.de/index.php/topic,91740.
 
 Lösungsvorschläge: 
 * [Anpassung der Frequenz per Sketch](https://forum.fhem.de/index.php/topic,91740.msg872348.html#msg872348)
-* Tausch der Kondensatoren gegen 12µF.
+* [Tausch der Kondensatoren gegen 12µF](https://forum.fhem.de/index.php/topic,91740.msg872505.html#msg872505)
 

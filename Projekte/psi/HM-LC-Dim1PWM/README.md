@@ -4,7 +4,7 @@ Desc: 1-Kanal PWM LED Dimmer für 7-24V mit Tastereingängen
 ProjectUrl: psi/HM-LC-Dim1PWM/
 Author: Psi
 AuthorUrl: https://psi.cx
-Tags: LED, Aktor
+Tags: LED, Aktor, Taster
 Thumb: images/thumb.jpg
 sidebar: auto
 ---
