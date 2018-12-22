@@ -124,7 +124,7 @@
             title: page.title,
             path: page.path,
             thumb,
-            tags: page.frontmatter.Tags.split(',').map(t => t.trim()).filter(t => t.length > 0) || [],
+            tags: page.frontmatter.Tags.split(',').map(t => t.trim()).filter(t => t.length > 0).sort() || [],
             author: page.frontmatter.Author || [],
             authorUrl: page.frontmatter.AuthorUrl,
             desc: page.frontmatter.Desc || '',
