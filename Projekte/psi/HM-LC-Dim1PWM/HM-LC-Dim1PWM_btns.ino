@@ -36,7 +36,7 @@ const struct DeviceInfo PROGMEM devinfo = {
     {0x11,0x12,0x48},       // Device ID
     "PsiDim1248",           // Device Serial
     {0x00,0x67},            // Device Model
-    0x25,                   // Firmware Version
+    0x29,                   // Firmware Version
     as::DeviceType::Dimmer, // Device Type
     {0x01,0x00}             // Info Bytes
 };
