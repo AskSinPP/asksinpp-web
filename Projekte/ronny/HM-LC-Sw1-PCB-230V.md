@@ -5,7 +5,7 @@ ProjectUrl: https://github.com/ronnythomas/HM-LC-Sw1-PCB-230V
 Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
 Tags: 230V, Aktor
-Thumb: HM-LC-Sw1-PCB.jpg
+Thumb: HM-LC-Sw1-PCB-230V.jpg
 ---
 
-# HM-LC-Sw1-PCB
+# HM-LC-Sw1-PCB-230V
