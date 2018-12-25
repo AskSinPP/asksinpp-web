@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: 2-fach 6A 230V Schaltkontakt mit 2 Eingängen und 5-12V Steuerspannung
+Desc: 2-fach 6A 230V Schaltkontakt mit 5-12V Steuerspannung
 ProjectUrl: https://github.com/ronnythomas/HM-LC-Sw2-12V
 Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
