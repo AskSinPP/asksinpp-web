@@ -55,7 +55,7 @@ Mit einer dritten Hand und einer selbstklemmenden Pinzette ist der Dim1PWM im Ha
 Man fängt mit den niedrigen Bauteilen an. Die Widerstände werden unter dem Arduino platziert. Die Anode der Status-LED ist durch
 den geraden Strich symbolisiert und zeigt Richtung _Gnd_.  
 
-![Dim1PWM teilweise bestückt](./images/Dim1PWM_PCB_partly-equiped.jpg)
+![Dim1PWM teilweise bestückt](./images/Dim1PWM_PCB_partly-assembled.jpg)
 
 Ursprünglich wurden zwei Kondensatoren zur Entstörung und Glättung der Spannung vorgesehen. Diese blieben bislang
 unbestückt da sich keine Probleme ergaben. Optional kann man noch einen Klemmblock für zwei die zwei Tastereingänge verlöten.
