@@ -33,7 +33,6 @@
     <div class="layout--projects">
       <h1>Projekte</h1>
 
-      <h3>Filter</h3>
       <div class="tags">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
           <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
@@ -84,6 +83,20 @@
 <script>
   import MainLayout from '../.vuepress/theme/MainLayout'
 
+  function shuffle(arra1) {
+    let ctr = arra1.length;
+    let temp;
+    let index;
+    while (ctr > 0) {
+      index = Math.floor(Math.random() * ctr);
+      ctr--;
+      temp = arra1[ctr];
+      arra1[ctr] = arra1[index];
+      arra1[index] = temp;
+    }
+    return arra1;
+  }
+
   export default {
     extends: MainLayout,
 
@@ -131,6 +144,7 @@
             url: page.frontmatter.ProjectUrl,
           };
         });
+      this.allProjects = shuffle(this.allProjects);
     },
 
     mounted() {
@@ -156,7 +170,7 @@
 <style lang="stylus">
   .layout--projects
     max-width 1400px
-    margin 3rem auto 0 auto
+    margin 1rem auto 0 auto
     padding 2rem 0.5rem 2rem 1.5rem
 
     .tags
@@ -167,8 +181,9 @@
       svg
         vertical-align middle
         margin-right 0.3rem
-    h3
-      margin-bottom 0.5rem
+      h3
+        margin-bottom 0
+        margin-right 0.5rem
 
     .tag
       font-weight bold
