@@ -4,7 +4,7 @@
       <h1>AskSinPP Collection</h1>
 
       <p class="description">
-        Selbstbau-Komponenten für HomeMatic mit AskSinPP
+        Selbstbau-Komponenten für HomeMatic
       </p>
 
       <p class="action">
@@ -41,11 +41,15 @@
 
     <div class="footer" style="text-align: left">
       <img src="https://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg" style="float:right; margin-left: 10px; margin-bottom: 10px;"/>
-      Diese Seite lebt von euren Zuarbeiten!<br/>
-      Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit. Entweder per
+      Diese Seite lebt von euren Zuarbeiten!
+      <br/>
+      Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit.
+      <br/>
+      Entweder per
       <NavLink :item="{text: 'Pull request', link: 'https://github.com/jp112sdl/AskSinPPCollection/pulls'}"/>
-      oder
-      <NavLink :item="{text: 'Issue', link: 'https://github.com/jp112sdl/AskSinPPCollection/issues'}" />.
+      ,
+      <NavLink :item="{text: 'Issue', link: 'https://github.com/jp112sdl/AskSinPPCollection/issues'}"/>
+      oder <a href="mailto:asppc@psi.cx">Mail</a>.
     </div>
   </div>
 </template>
