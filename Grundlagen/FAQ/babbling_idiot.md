@@ -70,3 +70,16 @@ Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(co
 ```
 
 Siehe auch: [USBASP AVR Programmer User Guide](http://eecs.oregonstate.edu/education/docs/ece375/USBASP-UG.pdf)
+
+
+Zum Schluss muss die Ausgabe kontrolliert werden. Folgende Zeile erscheint zum Schluss der Ausgabe
+wenn alles erfolgreich war:
+
+```
+avrdude: safemode: Fuses OK (E:FF, H:D02, L:FF)
+
+avrdude done.   Thank you.
+```
+
+Falls nicht ist die Ausgabe auf Fehlermeldungen zu kontrollieren.  
+Die Version `avrdude -v` sollte mindestens 6.3 sein!
