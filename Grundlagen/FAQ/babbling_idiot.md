@@ -17,6 +17,12 @@ Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer)
 verändert werden. Es lässt sich auch ein 
 [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!
 
+## Anschluss des ISP
+
+Die meisten USB-ASP können sowohl 5V als auch 3.3V, hier muss unbedingt zuerst der Jumper auf die richtige Spannung gesetzt werden sonst gibt es Arduino-Barbecue.
+
+![usb-asp Spannung Jumper](./images/usbavp-jumper.jpg)
+
 Der ISP ist 1:1 mit 6 Leitungen an den Pro Mini zu verbinden:
 
 | Pro Mini | ISP |
@@ -27,6 +33,16 @@ Der ISP ist 1:1 mit 6 Leitungen an den Pro Mini zu verbinden:
 | 11 | MOSI |
 | 12 | MISO |
 | 13 | SCK |
+
+![usb-asp Verdrahtung](./images/usbasp-wiring.jpg)
+
+Es gibt auch ISPs mit nur 6 PINS:
+
+![isp 6-pin](./images/isp-6-pinout.png)
+
+![usb-asp Jumperwire](./images/usb-asp-jumperwire.jpg)
+
+## avrdude
 
 Das Setzen der Fuse-Bits erfolgt mit dem Tool `avrdude`.
 Es befindet sich bei installierter **Arduino IDE** und Boardunterstützung **Arduino AVR Boards** 
@@ -51,3 +67,4 @@ Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(co
 <Pfadangabe>/avrdude -v -pm328p -P com11 -c stk500v1 -b 19200 -Ulfuse:w:0xFF:m -Uhfuse:w:0xD2:m -Uefuse:w:0xFF:m
 ```
 
+Siehe auch: [USBASP AVR Programmer User Guide](http://eecs.oregonstate.edu/education/docs/ece375/USBASP-UG.pdf)
