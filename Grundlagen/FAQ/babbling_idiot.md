@@ -54,6 +54,7 @@ Es befindet sich bei installierter **Arduino IDE** und Boardunterstützung **Ard
   - `~/Library/Arduino15/packages/arduino/tools/avrdude/6.3.0-arduino14/bin/`
 - bei Linux:
   - `~/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino14/bin/`
+  - Alternativ gibt es das avrdude auch in den meisten Repos und kann als globale Binary installiert werden (`apt-get install avrdude`)
 
 _(Der Ordner `6.3.0-arduino14` kann je nach Version abweichen.)_
 
@@ -72,7 +73,7 @@ Bei Verwendung eines Diamex oder Arduino UNO as ISP sieht der Aufruf so aus _(co
 Siehe auch: [USBASP AVR Programmer User Guide](http://eecs.oregonstate.edu/education/docs/ece375/USBASP-UG.pdf)
 
 
-Zum Schluss muss die Ausgabe kontrolliert werden. Folgende Zeile erscheint zum Schluss der Ausgabe
+Zum Schluss muss die Ausgabe kontrolliert werden. Folgende Zeilen erscheint zum Schluss der Ausgabe
 wenn alles erfolgreich war:
 
 ```
