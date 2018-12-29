@@ -44,6 +44,11 @@ Es gibt auch ISPs mit nur 6 PINS:
 
 ![usb-asp Jumperwire](./images/usb-asp-jumperwire.jpg)
 
+Die [HB-Mini](https://github.com/ronnythomas/HB-Mini) von Ronny eignet sich auch gut als Hilfsmittel.
+Hier kann man den Arduino etwas verkantet _drauflegen_ für den Flashvorgang.
+
+![usb-avr-pcb-mini](./images/usb-avr-pcb-mini.jpg)
+
 ## avrdude
 
 Das Setzen der Fuse-Bits erfolgt mit dem Tool `avrdude`.
