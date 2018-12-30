@@ -3,7 +3,7 @@ isProject: true
 Desc: Bewegungsmelder mit AM312 oder HC-SR501
 ProjectUrl: jan/HM-SEC-MDIR/
 Author: Jan
-AuthorUrl: https://psi.cx
+AuthorUrl: https://www.facebook.com/611915681
 Tags: Batterie, Sensor
 Thumb: images/thumb.jpg
 sidebar: auto
@@ -11,9 +11,14 @@ sidebar: auto
 
 # HM-SEC-MDIR
 
-![HM-SEC-MDIR](./images/case.jpg)
+Nachbau eines HM-Sec-MDIR Bewegungsmelder mit AM312 PIR und der Platine HB-UNI-Bat von Ronny.
 
-Nachbau eines HM-Sec-MDIR Bewegungsmelder mit AM312. Alternativ geht auch der HC-SR501 als Sensor. Der Umbau beschreibt den Nachbau anhand der Platine HB-UNI-Bat von Ronny. Es können natürlich auch andere Platinen genutzt werden.
+Da der PIR nur mit 3 Leitungen verdrahtet wird eignen sich auch andere 
+[Platinen](/Platinen/) für einen Aufbau.  
+Alternativ können auch die Sensoren HC-SR501 und HC-SR505 verwendet werden allerdings sind hier weitere
+Schritte nötig um die Betriebsspannung mit 3.3V zu ermöglichen und ggf. ein 220nF Kondensator um false-positives zu vermeiden.
+
+![HM-SEC-MDIR](./images/case.jpg)
 
 * [Forum Thread](https://homematic-forum.de/forum/viewtopic.php?f=76&t=44118&p=458066&hilit=HM+SEC+MDIR)
 * [Alternative](https://www.thingiverse.com/thing:3295975) mit UNI Platine von Ronny und HC-SR501 für Netzbetrieb
@@ -26,7 +31,7 @@ Nachbau eines HM-Sec-MDIR Bewegungsmelder mit AM312. Alternativ geht auch der HC
 * Taster 6x6
 * LED 5mm
 * 100-330 Ohm Widerstand, je nach LED
-* AM312 oder HC-SR501
+* AM312
 * 2x Batteriehalter AA
 * 1 Gehäuse aus dem 3D Drucker, es gibt einen Deckel für HC-SR501 und einen für AM312 sowie 2 Wand Adapter und das Grundgehäuse  
 * 2x M4 Schrauben und 2x M4 Muttern
