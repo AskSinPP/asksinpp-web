@@ -20,10 +20,10 @@ verändert werden. Es lässt sich auch ein
 
 ## Anschluss des ISP
 
-Die meisten USB-ASP können sowohl 5V als auch 3.3V, hier sollte zuerst der Jumper auf die richtige Spannung gesetzt werden.
+USBasp kann sowohl 5V als auch 3.3V - ! jedoch nur am Vcc !, hier sollte zuerst der Jumper auf die richtige Spannung gesetzt werden.
 
 ::: warning
-Einige USBASP Varianten setzen per Jumper nur VCC auf 3.3V, das SPI Interface läuft weiterhin mit 5V.
+USBasp setzen per Jumper nur Vcc auf 3.3V, das SPI Interface läuft weiterhin mit 5V.
 Es empfiehlt sich daher die Fuse-Bits zu programmieren bevor weitere Hardware oder das CC1101 an den Arduino angeschlossen ist.
 ::: 
 
