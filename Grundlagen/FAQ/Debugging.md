@@ -57,8 +57,7 @@ ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.
 
 ## CCU Log
 
-In der CCU unter Einstellungen > Systemsteuerung > Zentralen-Wartung kann das Fehlerprotokoll auf _Alles loggen_ gestellt werden
-um den Funkverkehr im Syslog zu sehen.
+In der CCU unter Einstellungen > Systemsteuerung > Zentralen-Wartung kann das Loglevel für **HomeMatic Funk** auf _Alles loggen_ gestellt werden, um den Funkverkehr im Fehlerprotokoll zu sehen.
  
 ![CCU Fehlerprotokoll Einstellungen](./images/ccu-fehlerprotokoll.png)
  
