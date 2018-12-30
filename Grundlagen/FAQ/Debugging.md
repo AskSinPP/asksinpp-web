@@ -53,7 +53,20 @@ ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.
   | <- ... | gesendetes Telegramm |
   | -> ... | empfangenes, an das Gerät gerichtetes Telegramm |
   | ignore ... | empfangenes, nicht an das Geräte gerichtetes Telegramm |
-  
+
+
+## CCU Log
+
+In der CCU unter Einstellungen > Systemsteuerung > Zentralen-Wartung kann das Fehlerprotokoll auf _Alles loggen_ gestellt werden
+um den Funkverkehr im Syslog zu sehen.
+ 
+![CCU Fehlerprotokoll Einstellungen](./images/ccu-fehlerprotokoll.png)
+ 
+Man kann die Logdatei über die WebUI herunterladen.  
+Um sie auf der Shell einzusehen loggt man sich mit ssh (bzw. Putty für Windows) auf der CCU ein.
+Die Logdatei befindet sich in `/var/log/messages`. Mit dem Befehl `less /var/log/messages` zeigt man die ganze Datei an.
+Mit `tail -f /var/log/messages` werden die letzten paar Zeile dargestellt, neue Meldungen werden sofort unten angefügt.
+
 
 ## Doppelte Device ID oder Serial
 
