@@ -12,15 +12,19 @@ Weiterhin werden die Batterien dadurch auch nur sehr ineffektiv genutzt.
 Bei der BOD handelt es sich um ein sogenanntes ["Fuse-Bit"](https://de.wikipedia.org/wiki/Fuse-Bit).
 
 Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer) 
-(z.B. [USBasp](https://www.ebay.de/i/232496093834) oder 
+(z.B. [USBASP](https://www.ebay.de/i/232496093834) oder 
 [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2)) 
 verändert werden. Es lässt sich auch ein 
 [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!
 
+
 ## Anschluss des ISP
 
+Die meisten USB-ASP können sowohl 5V als auch 3.3V, hier sollte zuerst der Jumper auf die richtige Spannung gesetzt werden.
+
 ::: warning
-Die meisten USB-ASP können sowohl 5V als auch 3.3V, hier muss unbedingt zuerst der Jumper auf die richtige Spannung gesetzt werden sonst gibt es Arduino-Barbecue.
+Einige USBASP Varianten setzen per Jumper nur VCC auf 3.3V, das SPI Interface läuft weiterhin mit 5V.
+Es empfiehlt sich daher die Fuse-Bits zu programmieren bevor weitere Hardware oder das CC1101 an den Arduino angeschlossen ist.
 ::: 
 
 ![usb-asp Spannung Jumper](./images/usbavp-jumper.jpg)
@@ -48,6 +52,7 @@ Die [HB-Mini](https://github.com/ronnythomas/HB-Mini) von Ronny eignet sich auch
 Hier kann man den Arduino etwas verkantet _drauflegen_ für den Flashvorgang.
 
 ![usb-avr-pcb-mini](./images/usb-avr-pcb-mini.jpg)
+
 
 ## avrdude
 
