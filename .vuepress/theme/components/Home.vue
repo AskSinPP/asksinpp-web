@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1>AskSinPP Collection</h1>
+      <h1>AskSin++</h1>
 
       <p class="description">
         Selbstbau-Komponenten für HomeMatic
@@ -25,7 +25,7 @@
       </div>
       <div class="feature">
         <h2>Software</h2>
-        <p>Homematic kompatible AskSinPP Implementierung. Viele Sketche für Aktoren und Sensoren.</p>
+        <p>Homematic kompatible AskSin++ Implementierung. Viele Sketche für Aktoren und Sensoren.</p>
         <div>
           <img src="asksinpp.jpg" alt="">
         </div>
@@ -46,9 +46,9 @@
       Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit.
       <br/>
       Entweder per
-      <NavLink :item="{text: 'Pull request', link: 'https://github.com/jp112sdl/AskSinPPCollection/pulls'}"/>
+      <NavLink :item="{text: 'Pull request', link: 'https://github.com/AskSinPP/asksinpp.de/pulls'}"/>
       ,
-      <NavLink :item="{text: 'Issue', link: 'https://github.com/jp112sdl/AskSinPPCollection/issues'}"/>
+      <NavLink :item="{text: 'Issue', link: 'https://github.com/AskSinPP/asksinpp.de/issues'}"/>
       oder <a href="mailto:asppc@psi.cx">Mail</a>.
     </div>
   </div>

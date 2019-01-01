@@ -2,14 +2,14 @@ const nav = require('./nav');
 const sidebar = require('./sidebar');
 
 module.exports = {
-  base: '/AskSinPPCollection/',
-  title: 'AskSinPPCollection',
+  base: '/',
+  title: 'AskSin++',
   themeConfig: {
     sidebar: sidebar(),
     nav,
     lastUpdated: 'Letztes Update',
     logo: '/logo.jpg',
-    docsRepo: 'jp112sdl/AskSinPPCollection',
+    docsRepo: 'AskSinPP/asksinpp.de',
     docsBranch: 'master',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub'

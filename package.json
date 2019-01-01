@@ -1,5 +1,5 @@
 {
-  "name": "asksinpp-collection",
+  "name": "asksinpp-website",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -10,12 +10,13 @@
     "@vuepress/plugin-register-components": "^1.0.0-alpha.30",
     "@vuepress/plugin-search": "^1.0.0-alpha.30",
     "broken-link-checker-local": "^0.2.0",
+    "vue-matomo": "^3.7.0-1",
     "vuepress": "^1.0.0-alpha.30"
   },
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
-    "check": "blcl -b asksinppcollection -r .vuepress/dist"
+    "check": "blcl -r .vuepress/dist"
   },
   "author": "",
   "license": "CC BY-SA License 4.0",

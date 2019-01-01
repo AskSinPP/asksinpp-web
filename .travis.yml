@@ -17,11 +17,11 @@ cache:
   directories:
     - node_modules
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  local_dir: ".vuepress/dist"
-  github-token: "$GITHUB_TOKEN"
-  target-branch: gh-pages
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  local_dir: ".vuepress/dist"
+#  github-token: "$GITHUB_TOKEN"
+#  target-branch: gh-pages
+#  on:
+#    branch: master
