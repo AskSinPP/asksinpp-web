@@ -8,6 +8,7 @@ module.exports = [
       { text: 'Platinen', link: '/Platinen/' },
       { text: 'Gehäuse', link: '/Gehaeuse/' },
       { text: 'Umbauten', link: '/Projekte/Umbau.html' },
+      { text: 'RF-Types', link: '/rftypes/' },
     ]
   },
   {

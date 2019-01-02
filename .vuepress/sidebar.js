@@ -35,6 +35,7 @@ module.exports = () => {
         ['/Platinen/', 'Platinen'],
         ['/Gehaeuse/', 'Gehäuse'],
         ['/Projekte/Umbau.html', 'Umbauten'],
+        ['/rftypes/', 'RF-Types'],
       ]
     },
   ];

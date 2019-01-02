@@ -1,5 +1,7 @@
 # RF-Types
 
+Liste der Device-IDs die von der CCU nativ verstanden werden.
+
 ID | Name | DeviceID | Datei
 ---|------|----------|-------
 263 130 | radio-controlled switch actuator 1-channel (flush-mount) Schueco | `0x008B` | [s](./rf_s.xml), [s_le_v2_3](./rf_s_le_v2_3.xml)
