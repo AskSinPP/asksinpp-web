@@ -6,6 +6,8 @@ node_js:
 script:
   - npm ci
   - "grep -qF 'compiler: vue_template_compiler_1.default' node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js && patch --batch node_modules/@vuepress/shared-utils/lib/parseVueFrontmatter.js shared-utils.patch || true"
+  - "grep -qF lastUpdatedTstamp node_modules/@vuepress/plugin-last-updated/index.js && patch --batch node_modules/@vuepress/plugin-last-updated/index.js last-updated.patch || true"
+  - "grep -qF lastUpdatedTstamp node_modules/vuepress-plugin-sitemap/index.js && patch --batch node_modules/vuepress-plugin-sitemap/index.js sitemap.patch || true"
   - npm run build
   - npm run check
 

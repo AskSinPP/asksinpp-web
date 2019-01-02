@@ -23,7 +23,8 @@ module.exports = {
     lineNumbers: true
   },
   plugins: [
-    '@vuepress/plugin-medium-zoom'
+    '@vuepress/plugin-medium-zoom',
+    ['sitemap', { hostname: 'https://asksinpp.de' }]
   ],
   head: [['script', {}, `
       var _paq = _paq || [];

@@ -9,9 +9,8 @@
     "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.30",
     "@vuepress/plugin-register-components": "^1.0.0-alpha.30",
     "@vuepress/plugin-search": "^1.0.0-alpha.30",
-    "broken-link-checker-local": "^0.2.0",
-    "vue-matomo": "^3.7.0-1",
-    "vuepress": "^1.0.0-alpha.30"
+    "vuepress": "^1.0.0-alpha.30",
+    "vuepress-plugin-sitemap": "^2.1.0"
   },
   "scripts": {
     "dev": "vuepress dev",
@@ -20,5 +19,7 @@
   },
   "author": "",
   "license": "CC BY-SA License 4.0",
-  "devDependencies": {}
+  "devDependencies": {
+    "broken-link-checker-local": "^0.2.0"
+  }
 }
