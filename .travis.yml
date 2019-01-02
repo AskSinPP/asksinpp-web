@@ -14,8 +14,7 @@ cache:
     - node_modules
 
 addons:
-  ssh_known_hosts:
-    - asksinpp.de
+  ssh_known_hosts: asksinpp.de:$DEPLOY_PORT
 
 before_deploy:
   - echo -e "$DEPLOY_KEY" > /tmp/deploy_key
