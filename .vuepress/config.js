@@ -24,5 +24,25 @@ module.exports = {
   },
   plugins: [
     '@vuepress/plugin-medium-zoom'
-  ]
+  ],
+  head: [['script', {}, `
+      var _paq = _paq || [];
+      _paq.push(["disableCookies"]);
+      (function() {
+        _paq.push(['setTrackerUrl', '/t.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='/t.js'; s.parentNode.insertBefore(g,s);
+        
+        function tl(ev) {
+          var path = event.path || (event.composedPath && event.composedPath());
+          if(!path) return;
+          var target = path.find(function(el) { return el.tagName === 'A'; });
+          if(!target) return;
+          if(!target.href || target.href.startsWith(location.origin)) return;
+          _paq.push(['trackLink', target.href, 'link']);
+        }
+        window.addEventListener('click', tl);
+      })();
+    `]]
 };
