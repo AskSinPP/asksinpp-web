@@ -45,7 +45,7 @@
 
       <transition-group tag="div" class="projects" name="project">
         <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url} in projects" :key="path">
-          <a class="title" rel="noreferrer noopener" :href="url" target="_blank">{{ title }}</a>
+          <a class="title" rel="noreferrer noopener" :href="url" target="_blank" @click.stop="trackProjectClick(title)">{{ title }}</a>
           <div class="thumb">
             <div class="author">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
@@ -54,7 +54,7 @@
               </svg>
               <a rel="noreferrer noopener" :href="authorUrl" target="_blank">{{ author }}</a>
             </div>
-            <a rel="noreferrer noopener" :href="url" target="_blank">
+            <a rel="noreferrer noopener" :href="url" target="_blank" @click.stop="trackProjectClick(title)">
               <img :src="thumb" alt="" v-if="thumb">
             </a>
             <div class="tags">
@@ -155,11 +155,15 @@
     },
 
     methods: {
+      trackProjectClick(title) {
+        if (_paq) _paq.push(['trackEvent', 'Project', 'click' , title]);
+      },
       toggleTag(tag) {
         if (this.filterTags.includes(tag)) {
           this.filterTags.splice(this.filterTags.indexOf(tag), 1);
         } else {
           this.filterTags.push(tag);
+          if (_paq) _paq.push(['trackEvent', 'Project', 'Tag selected', tag]);
         }
         document.location.hash = this.filterTags.join(',');
       }
