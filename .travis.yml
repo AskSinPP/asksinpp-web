@@ -15,15 +15,15 @@ cache:
 
 addons:
   ssh_known_hosts:
-    - $DEPLOY_HOST
+    - asksinpp.de
 
 before_deploy:
-  - echo "$DEPLOY_KEY" > /tmp/deploy_key
+  - echo -e "$DEPLOY_KEY" > /tmp/deploy_key
   - chmod 600 /tmp/deploy_key
 
 deploy:
   - provider: script
     skip_cleanup: true
-    script: rsync -a --delete-after -e "ssh -p $DEPLOY_PORT -i /tmp/deploy_key" .vuepress/dist/* www@$DEPLOY_HOST:/asksinpp.de
+    script: rsync -a --delete-after -e "ssh -p $DEPLOY_PORT -i /tmp/deploy_key" .vuepress/dist/* www@asksinpp.de:/asksinpp.de
     on:
       branch: master
