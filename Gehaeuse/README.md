@@ -6,6 +6,7 @@
   - [HM-WDS40-TH-I](https://www.thingiverse.com/thing:3184336)
   - [Platinenhalter](https://www.thingiverse.com/thing:3158997)
   - [HM-SEC-MDIR](https://www.thingiverse.com/thing:3227731)
+  - [HB-UNI-SenAct-4-4](https://www.thingiverse.com/thing:3327164)
 - Gehäuse von [Christoph S.](https://www.thingiverse.com/ChristophStr)
   - [HB-UNI-SENS-BATT-Case](https://www.thingiverse.com/thing:3028730) (Schiebedeckel)
   - [HB-UNI-SENS-BATT Platine](https://www.thingiverse.com/thing:3239446) (verschraubbarer Deckel)
