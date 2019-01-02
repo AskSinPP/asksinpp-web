@@ -14,7 +14,7 @@ cache:
     - node_modules
 
 addons:
-  ssh_known_hosts: asksinpp.de:$DEPLOY_PORT
+  ssh_known_hosts: asksinpp.de:22024
 
 before_deploy:
   - echo -e "$DEPLOY_KEY" > /tmp/deploy_key
@@ -23,6 +23,6 @@ before_deploy:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: rsync -a --delete-after -e "ssh -p $DEPLOY_PORT -i /tmp/deploy_key" .vuepress/dist/* www@asksinpp.de:/asksinpp.de
+    script: rsync -a --delete-after -e "ssh -p 22024 -i /tmp/deploy_key" .vuepress/dist/* www@asksinpp.de:/asksinpp.de
     on:
       branch: master
