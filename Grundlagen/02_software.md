@@ -16,7 +16,7 @@ Damit die im Sketch verwendeten Bibliotheken zur Verfügung stehen, müssen dies
 * EnableInterrupt
 * Low-Power
 
-Die AskSinPP Bibliothek kann als [ZIP](https://github.com/pa-pa/AskSinPP/archive/V3.zip) 
+Die AskSinPP Bibliothek kann als [ZIP](https://github.com/pa-pa/AskSinPP/archive/master.zip) 
 heruntergeladen werden.
 Anschließend geht man in der Arduino IDE auf `Sketch > Bibliothek einbinden > .ZIP-Bibliothek hinzufügen` 
 und wählt die ZIP-Datei aus.
