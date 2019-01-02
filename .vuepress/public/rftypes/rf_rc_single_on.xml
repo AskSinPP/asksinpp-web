@@ -2,7 +2,7 @@
 <device version="10" rx_modes="CONFIG" peering_sysinfo_expect_channel="false" supports_aes="true">
   <supported_types>
     <type name="Dorma Remote 4 single buttons" id="BRC-H" priority="2">
-      <parameter index="10.0" size="2.0" const_value="0x00065" />
+      <parameter index="10.0" size="2.0" const_value="0x0065" />
     </type>
     <type name="Generic RC Single-Button" id="HM-RC-SB-X" priority="1">
       <parameter index="22.0" size="1.0" const_value="0x44" />
