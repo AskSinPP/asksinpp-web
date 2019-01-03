@@ -9,5 +9,5 @@ Thumb: HM-LC-Sw1-FM.jpg
 
 ---
 
-# HM-LC-Sw1-FM potentalfrei
+# HM-LC-Sw1-FM potentialfrei
 
