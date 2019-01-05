@@ -87,7 +87,7 @@ Zum Schluss muss die Ausgabe kontrolliert werden. Folgende Zeilen erscheint zum 
 wenn alles erfolgreich war:
 
 ```
-avrdude: safemode: Fuses OK (E:FF, H:D02, L:FF)
+avrdude: safemode: Fuses OK (E:FF, H:D2, L:FF)
 
 avrdude done.   Thank you.
 ```
