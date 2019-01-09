@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:HM-LC-Dim2PWM_ohne_Taster-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -129,43 +128,16 @@ F 3 "" H 4200 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLZ44N Q1
-U 1 1 5BE2306A
-P 4800 1950
-F 0 "Q1" H 5006 1996 50  0000 L CNN
-F 1 "IRLZ44N" H 5006 1904 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5050 1875 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4800 1950 50  0001 L CNN
-	1    4800 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 5BE23102
-P 5450 2000
-F 0 "R2" H 5520 2046 50  0000 L CNN
-F 1 "4k7" H 5520 1954 50  0000 L CNN
-F 2 "" V 5380 2000 50  0001 C CNN
-F 3 "~" H 5450 2000 50  0001 C CNN
-	1    5450 2000
+P 5450 2450
+F 0 "R2" H 5520 2496 50  0000 L CNN
+F 1 "4k7" H 5520 2404 50  0000 L CNN
+F 2 "" V 5380 2450 50  0001 C CNN
+F 3 "~" H 5450 2450 50  0001 C CNN
+	1    5450 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 2150 5450 2150
-$Comp
-L power:GND #PWR0105
-U 1 1 5BE24B50
-P 4900 1750
-F 0 "#PWR0105" H 4900 1500 50  0001 C CNN
-F 1 "GND" H 4905 1575 50  0000 C CNN
-F 2 "" H 4900 1750 50  0001 C CNN
-F 3 "" H 4900 1750 50  0001 C CNN
-	1    4900 1750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5450 1750 4900 1750
-Connection ~ 4900 1750
 $Comp
 L Connector:Screw_Terminal_01x02 X2
 U 1 1 5BE26469
@@ -249,8 +221,6 @@ F 3 "" H 7050 1200 50  0001 C CNN
 $EndComp
 Connection ~ 7150 1200
 Wire Wire Line
-	4400 1950 4600 1950
-Wire Wire Line
 	4550 1850 4400 1850
 Wire Wire Line
 	7050 1200 7150 1200
@@ -331,9 +301,40 @@ Wire Wire Line
 	5750 3450 5750 3200
 Wire Wire Line
 	5750 3200 6150 3200
-Connection ~ 5450 2150
+$Comp
+L Transistor_FET:IRLZ44N Q1
+U 1 1 5BE2306A
+P 4800 2150
+F 0 "Q1" H 5006 2196 50  0000 L CNN
+F 1 "IRLZ44N" H 5006 2104 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5050 2075 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4800 2150 50  0001 L CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5BE24B50
+P 4900 2350
+F 0 "#PWR0105" H 4900 2100 50  0001 C CNN
+F 1 "GND" H 4905 2175 50  0000 C CNN
+F 2 "" H 4900 2350 50  0001 C CNN
+F 3 "" H 4900 2350 50  0001 C CNN
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5450 2150 5450 2600
+	4900 1950 4400 1950
 Wire Wire Line
-	5450 1850 5450 1750
+	5450 2600 4600 2600
+Wire Wire Line
+	4600 2600 4600 2150
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2300 5150 2300
+Wire Wire Line
+	5150 2300 5150 2350
+Wire Wire Line
+	5150 2350 4900 2350
+Connection ~ 4900 2350
 $EndSCHEMATC
