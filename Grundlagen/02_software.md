@@ -109,6 +109,31 @@ Sind die Werte angepasst, kann der Programmcode kompiliert und an den Mikrocontr
 übertragen werden. In der Arduino IDE heißt dieser Vorgang `Sketch hochladen` 
 und bei PlatformIO `upload`.
 
+Unter Device-Model wird ein zweistelliger Hexwert verwendet. Dieser Wert kann mehrfach vorkommen.
+Durch diesen Wert wird das Format der Kommunikation vom und zum Gerät beschrieben. Weitere
+von diesem Wert abhängigen Informationen sind im WebGUI sichtbar. So wird das Geräte-Icon
+und die Darstellung der vom Gerät übertragenen Werte über die Device-Model referenziert.
+
+Für die HM-Geräte und 1:1 Nachbauten sind die Device-Model in der CCU vorhanden. Für eigene
+Geräte (Homebrew) werden sie z.B. über Addons hinzugefügt.
+
+Im Beispiel ist das Device-Model `{0x00,0x1a}`. Über die Liste [RF-Types](/rftypes/) findet man, dass dieses
+Device-Model `0x001A` der FunkPankiHandsender HM-RC-P1 ist, also ein Original HM-Gerät
+und damit Icon und Beschreibung der Darstellung in der CCU schon vorhanden sind.
+
+Das Feld Firmware beinhaltet einen HEX-Wert, der in der Web-GUI als zwei Ziffeern angezeigt wird.
+Aus `0x11` wird dann "Firmware Version 1.1". Wenn auf die CCU eine höhere Firmware eingespielt wurde kann diese bei OTA-fähigen Geräten dann upgedatet werden.
+
+In der über das Device-Model referenzierten Konfiguration kann auch eine von der Firmwareversion
+abhängige Funktionalität enthalten sein, um etwa Varianten ab einer bestimmten Version zu ermöglichen.
+
+Der Device-Type beschreibt eine Klasse an Geräten. So können etwa Taster mit unterschiedlicher Anzahl
+an Tasten (und damit unterschiedlichem Device-Model) an anderen Stellen wieder gemeinschaftlich
+behandelt werden.
+
+Und letzlich gibt des noch die zweistellige HEX-Angabe Device-Info, wo weitere Details des Gerätes
+beschrieben werden.
+
 
 ## Serieller Monitor
 

@@ -1,6 +1,6 @@
 # RF-Types
 
-Liste der Device-IDs die von der CCU nativ verstanden werden.
+Liste der Device-Model IDs die von der CCU nativ verstanden werden.
 
  Bild | ID | Name | DeviceID | Datei 
 ------|----|------|----------|-------
