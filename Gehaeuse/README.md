@@ -15,4 +15,7 @@
   - [Homematic Lichtsensor HM-SEN-LI-O](https://www.thingiverse.com/thing:3196116)
 - Gehäuse von [Basti](https://www.thingiverse.com/Buddinski88/about)
   - [HB-UNI-SEN-BATT](https://www.thingiverse.com/thing:3279647)
-  
+- Gehäuse von [Stefan](https://www.thingiverse.com/Hasenpups/about)  
+  - [Ultrasonic Sensor V2](https://www.thingiverse.com/thing:2975998)
+  - [Temperature sensor](https://www.thingiverse.com/thing:2972598)
+  - [Ultrasonic Sensor](https://www.thingiverse.com/thing:2896543)
