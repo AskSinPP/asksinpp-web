@@ -12,7 +12,7 @@ Weiterhin werden die Batterien dadurch auch nur sehr ineffektiv genutzt.
 Bei der BOD handelt es sich um ein sogenanntes ["Fuse-Bit"](https://de.wikipedia.org/wiki/Fuse-Bit).
 
 Fuse-Bits können nur mithilfe eines ISP (In-System-Programmer) 
-(z.B. [USBASP](https://www.ebay.de/i/232496093834) oder 
+(z.B. [USBASP](https://www.ebay.de/itm/USBASP-AVR-Programmer-Adapter-Downloader-10-Pin-Kabel-ATTiny-USBISP/181667298888) oder 
 [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2)) 
 verändert werden. Es lässt sich auch ein 
 [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden!
