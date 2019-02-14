@@ -73,7 +73,7 @@ Die Version 1.4 der Platine hat noch einen Fehler. Die Leiterbahn, markiert durc
 
 ## Software
 
-Als Sketch kommt [HM-LC-Dim1PWM_btns.ino](./HM-LC-Dim1PWM_btns.ino) zum Einsatz. 
+Als Sketch kommt [HM-LC-Dim1PWM_btns.ino](https://github.com/AskSinPP/asksinpp.de/blob/master/Projekte/psi/HM-LC-Dim1PWM/HM-LC-Dim1PWM_btns.ino) zum Einsatz. 
 
 ::: warning
 Stand 16.12.2018: Es musst zwingend der [Master-Branch](https://github.com/pa-pa/AskSinPP/archive/master.zip)
