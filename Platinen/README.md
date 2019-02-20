@@ -18,7 +18,15 @@
   - [Gosund SP1](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1) Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl
   - [HM-LC-Bl1-FM](https://github.com/stan23/HM-LC-Bl1-FM-DC) Rollladenaktor für Gleichstrommotoren
   - [OBI WiFi Zwischenstecker](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI) Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1
-  
+
+- Platine(n) [Ranseyer](https://github.com/ranseyer) 
+Die Platinen haben neben dem CC1101 häufig noch Platz für andere Funkmodule wie RFM69 oder RFM95 (LoRa). Dennoch ist die Nutzung für HM möglich. 
+-   [MySensors-HM-easy-Standard](https://github.com/ranseyer/MySensors-HW/tree/master/MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF/1_Standard)
+- [STM32 Bluepill / MAPLE mit CC1101, RFM* und RS485](https://github.com/ranseyer/MySensors-HW/tree/master/Experimental/GW-STM32-RS485-RFM/Archiv)
+
+
+https://github.com/ranseyer/MySensors-HW/blob/master/MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF/1_Standard/top.png
+
 - Platine(n) von [Ronny](https://github.com/ronnythomas) _(Nicht OpenSource! Bei Bedarf, bitte den Urheber bei [Facebook](https://www.facebook.com/ronny.thomas.83) direkt anschreiben)_
   - [HB-Micro](https://github.com/ronnythomas/HB-Micro)
   - [HB-Mini](https://github.com/ronnythomas/HB-Mini)
