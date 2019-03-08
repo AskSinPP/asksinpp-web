@@ -6,7 +6,7 @@ Author: Gelegenheitsbastler
 AuthorUrl: https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394
 Tags: Umbau, 230V, Aktor
 Thumb: Sonoff-4CH-Umbau.jpg
-
+Added: 2018-12-22
 ---
 
 # Sonoff 4CH → HM-LC-SW4-SM

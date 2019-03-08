@@ -6,6 +6,7 @@ Author: Jerome
 AuthorUrl: https://github.com/jp112sdl
 Tags: 230V, Sensor, Wetter, Temperatur
 Thumb: HB-UNI-Sen-WEA.jpg
+Added: 2018-12-21
 ---
 
 # HB-UNI-Sen-WEA

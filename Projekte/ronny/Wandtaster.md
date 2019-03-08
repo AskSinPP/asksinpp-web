@@ -6,6 +6,7 @@ Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
 Tags: Batterie, Taster, Umbau
 Thumb: Wandtaster.jpg
+Added: 2018-12-22
 ---
 
 # Wandtaster

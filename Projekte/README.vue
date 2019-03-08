@@ -44,9 +44,10 @@
       <hr>
 
       <transition-group tag="div" class="projects" name="project">
-        <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url} in projects" :key="path">
+        <div v-for="{title, path, thumb, tags, author, authorUrl, desc, url, isNew} in projects" :key="path">
           <a class="title" rel="noreferrer noopener" :href="url" target="_blank" @click.stop="trackProjectClick(title)">{{ title }}</a>
           <div class="thumb">
+            <div class="is-new" v-if="isNew">new</div>
             <div class="author">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -82,20 +83,6 @@
 
 <script>
   import MainLayout from '../.vuepress/theme/MainLayout'
-
-  function shuffle(arra1) {
-    let ctr = arra1.length;
-    let temp;
-    let index;
-    while (ctr > 0) {
-      index = Math.floor(Math.random() * ctr);
-      ctr--;
-      temp = arra1[ctr];
-      arra1[ctr] = arra1[index];
-      arra1[index] = temp;
-    }
-    return arra1;
-  }
 
   export default {
     extends: MainLayout,
@@ -142,9 +129,15 @@
             authorUrl: page.frontmatter.AuthorUrl,
             desc: page.frontmatter.Desc || '',
             url: page.frontmatter.ProjectUrl,
+            added: page.frontmatter.Added,
+            isNew: Date.now() - (new Date(page.frontmatter.Added)).getTime() - 30 * 3600 * 24 * 1000 < 0
           };
         });
-      this.allProjects = shuffle(this.allProjects);
+      this.allProjects = this.allProjects.sort((a, b) => {
+        if (a.added > b.added) return -1;
+        else if (a.added < b.added) return 1;
+        else return 0;
+      });
     },
 
     mounted() {
@@ -258,7 +251,7 @@
           position relative
           border-bottom 1px solid $borderColor
 
-          .author, .tags
+          .author, .tags, .is-new
             position absolute
             right 0
             top 0
@@ -270,6 +263,14 @@
             svg
               height 20px
               margin-right 0.1rem
+
+          .is-new
+            right: auto
+            left: 0
+            font-size: 16px
+            font-weight: bold
+            border-bottom-right-radius 6px
+            color: #1E92FF
 
           .author
             border-bottom-left-radius 6px
@@ -315,10 +316,13 @@
           .thumb
             border-bottom 1px solid $darkBorderColor
 
-            .author, .tags
+            .author, .tags, .is-new
               background rgba(#2B2B2B, 0.8)
 
               svg
                 height 20px
                 margin-right 0.1rem
+
+            .is-new
+              color: yellow
 </style>

@@ -6,6 +6,7 @@ Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
 Tags: Batterie, Taster
 Thumb: HM-PBI-4-FM.jpg
+Added: 2019-01-13
 ---
 
 # HM-PBI-4-FM

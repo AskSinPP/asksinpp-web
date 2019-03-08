@@ -6,6 +6,7 @@ Author: der-pw
 AuthorUrl: https://github.com/der-pw
 Tags: 230V, Aktor, Umbau
 Thumb: OBII_thumb.jpg
+Added: 2019-02-12
 ---
 
 # HM-LC-Sw1-Pl-DN-R1_OBII

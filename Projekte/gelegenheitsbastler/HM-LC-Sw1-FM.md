@@ -6,7 +6,7 @@ Author: Gelegenheitsbastler
 AuthorUrl: https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394
 Tags: 230V, Aktor
 Thumb: HM-LC-Sw1-FM.jpg
-
+Added: 2019-01-02
 ---
 
 # HM-LC-Sw1-FM potentialfrei

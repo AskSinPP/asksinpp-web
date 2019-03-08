@@ -6,6 +6,7 @@ Author: Jerome
 AuthorUrl: https://github.com/jp112sdl
 Tags: Batterie, Sensor, Temperatur
 Thumb: HB-UNI-Sen-TEMP-DS18B20.jpg
+Added: 2018-12-21
 ---
 
 # HB-UNI-Sen-TEMP-DS18B20

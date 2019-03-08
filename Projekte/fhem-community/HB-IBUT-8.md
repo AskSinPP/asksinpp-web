@@ -6,7 +6,7 @@ Author: ext23
 AuthorUrl: https://forum.fhem.de/index.php?action=profile;u=15
 Tags: Taster, Sensor, Batterie
 Thumb: HB-IBUT-8.jpg
-
+Added: 2019-01-10
 ---
 
 # HB-IBUT-8

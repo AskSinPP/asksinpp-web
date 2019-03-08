@@ -6,6 +6,7 @@ Author: Gelegenheitsbastler
 AuthorUrl: https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394
 Tags: LED, Aktor
 Thumb: HM-LC-Dim1PWM_Konstantstrom.jpg
+Added: 2019-02-12
 ---
 
 # HM-LC-Dim1PWM Konstantstrom

@@ -6,7 +6,7 @@ Author: Gelegenheitsbastler
 AuthorUrl: https://homematic-forum.de/forum/ucp.php?i=pm&mode=compose&u=20394
 Tags: Umbau, 230V, Aktor
 Thumb: Sonoff-S20-Umbau.jpg
-
+Added: 2018-12-21
 ---
 
 # Sonoff S20 → HM-LC-Sw1-Pl-DN-R1

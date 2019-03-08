@@ -6,7 +6,7 @@ Author: FHEM-Community
 AuthorUrl: https://forum.fhem.de/index.php/topic,71413.0.html
 Tags: Sensor, Batterie
 Thumb: HM-Sec-RHS.jpg
-
+Added: 2019-01-10
 ---
 
 # HM-Sec-RHS

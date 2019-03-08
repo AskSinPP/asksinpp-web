@@ -6,6 +6,7 @@ Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
 Tags: 230V, Aktor
 Thumb: HM-LC-Sw1-PCB-12V.jpg
+Added: 2018-12-24
 ---
 
 # HM-LC-Sw1-PCB-12V

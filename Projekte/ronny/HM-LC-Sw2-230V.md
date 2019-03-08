@@ -6,6 +6,7 @@ Author: Ronny
 AuthorUrl: https://www.facebook.com/ronny.thomas.83
 Tags: 230V, Aktor, Taster
 Thumb: HM-LC-Sw2-230V.jpg
+Added: 2018-12-22
 ---
 
 # HM-LC-Sw2-230V

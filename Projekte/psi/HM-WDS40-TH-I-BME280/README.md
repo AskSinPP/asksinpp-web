@@ -7,6 +7,7 @@ AuthorUrl: https://psi.cx
 Tags: Batterie, Sensor, Temperatur
 Thumb: images/case-jan.jpg
 sidebar: auto
+Added: 2018-12-27
 ---
 
 # HM-WDS40-TH-I-BME280

@@ -6,6 +6,7 @@ Author: der-pw
 AuthorUrl: https://github.com/der-pw
 Tags: 230V, Aktor, Umbau
 Thumb: S26_thumb.jpg
+Added: 2019-01-28
 ---
 
 # Sonoff S26 → HM-LC-Sw1-Pl-DN-R1
