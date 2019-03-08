@@ -40,7 +40,6 @@
     </div>
 
     <div class="footer" style="text-align: left">
-      <img src="https://hits.dwyl.com/jp112sdl/AskSinPPCollection.svg" style="float:right; margin-left: 10px; margin-bottom: 10px;"/>
       Diese Seite lebt von euren Zuarbeiten!
       <br/>
       Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit.
