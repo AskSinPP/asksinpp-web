@@ -8,6 +8,8 @@
   | ------------- |-------------|-----|
   | [HM-LC-Bl1-FM](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Bl1-FM/HM-LC-Bl1-FM.ino) | 1-Kanal Rollladenaktor | |
   | [HM-LC-Dim1PWM-CV](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-Dim1PWM-CV/HM-LC-Dim1PWM-CV.ino) | 1-Kanal PWM Dimmer | |
+  | [HM-DW-WM](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-DW-WM/HM-DW-WM.ino) | 2-Kanal PWM Dimmer | |
+  | [HM-LC-DW-WM](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-DW-WM/HM-LC-DW-WM.ino) | DualWhite PWM Dimmer | |
   | [HM-LC-SW1-BA-PCB](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-SW1-BA-PCB/HM-LC-SW1-BA-PCB.ino) | 1-Kanal Batterieaktor | |
   | [HM-LC-SWX-SM](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-LC-SWX-SM/HM-LC-SWX-SM.ino) | 1-/2-/4-Kanal Schaltaktor | X = Platzhalter für die Kanalzahl;<br/>wird im Sketch definiert |
   | [HM-RC-4](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-RC-4/HM-RC-4.ino) | 4-Kanal Fernbedienung | |
