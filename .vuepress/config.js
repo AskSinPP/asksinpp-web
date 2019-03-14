@@ -12,7 +12,12 @@ module.exports = {
     docsRepo: 'AskSinPP/asksinpp.de',
     docsBranch: 'master',
     editLinks: true,
-    editLinkText: 'Edit this page on GitHub'
+    editLinkText: 'Edit this page on GitHub',
+    algolia: {
+      apiKey: 'acfa71c7299ab8e74e13a65ac8c2c9ac',
+      indexName: 'asksinpp',
+      debug: false
+    }
   },
   locales: {
     "/": {
