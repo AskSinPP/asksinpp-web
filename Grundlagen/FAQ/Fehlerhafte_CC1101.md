@@ -7,7 +7,122 @@ Näheres ist im [FHEM-Forum Thread](https://forum.fhem.de/index.php/topic,91740.
 
 ![CC1101 Modulvergleich](./images/CC1101_bad-vs-working.jpg)
 
-Lösungsvorschläge: 
-* [Anpassung der Frequenz per Sketch](https://forum.fhem.de/index.php/topic,91740.msg872348.html#msg872348)
+## Ermittlung der CC1101 Frequenz
+
+Viele Module kann man durch eine _kleine_ Verschiebung der Frequenz zur Funktion bewegen. Dazu gibt es einen
+[FreqTest.ino](https://github.com/pa-pa/AskSinPP/blob/master/examples/FreqTest/FreqTest.ino) Sketch.
+
+Der Testsketch versucht ausgehend von der Standardfrequenz ein gültiges Paket zu empfangen. Wenn nichts empfangen wurde, wird die Frequenz geändert und es wird wieder versucht. Dabei wird jeweils versucht den Bereich oberhalb und unterhalb der Standardfrequenz zu erweitern. Wenn irgendwo ein Paket empfangen wurde, wird von dort ausgehend die obere und untere Grenze ermittelt. Am Schluss wird dann die Frequenz, die in der Mitte zwischen oberer und unterer Grenze liegt, in den vorher ungenutzten Bereich des EEPROM geschrieben.
+
+Die Funkpartner sollten tendenziell weiter weg vom FreqTest-Device sein. 
+
+Der Testsketch verhält sich im Standardfall **passiv** was bedeutet, dass nur versucht wird, Pakete zu empfangen. Wurde nach einer Minute (einstellbar durch SCANTIME) nichts empfangen, wird die Frequenz gewechselt. Um sicher zu stellen, dass auch Nachrichten empfangen werden können, sollten während des Scans irgendein Gerät geschaltet werden.
+
+Durch Setzen des `ACTIVE_PING`-defines kann der aktive Modus eingeschaltet werden. Dann sendet der Sketch jede Sekunde eine Statusmessage. Hierzu sind sind die `PING_FROM` und `PING_TO` IDs entsprechend der eigenen Umgebung anzupassen. `PING_FROM` sollte eine gepairtes Geräte sein - z.B. Steckdose. `PING_TO` ist die Zentrale/FHEM/CCU. Das Scannen sollte jetzt viel schneller gehen, da eine Antwort von der Zentrale angefordert wird.
+
+RaspberryMatic Nutzer können die IDs der zu pingenden Partner per SSH aus der RFD Config auslesen:
+
+```bash
+# CCU
+grep "^<device serial" /etc/config/rfd/BidCoS-RF.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+
+# Paired Device
+grep "^<device serial" /etc/config/rfd/<Serial>.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+```
+
+Oben ist `<Serial>` durch die Seriennummer des gewünschten Geräts zu ersetzen.
+
+Sind nun die ID der CCU und eines Geräts bekannt kann der Sketch angepasst werden. Das Kommentarzeichen
+vor `#define ACTIVE_PING` wird entfernt und die `PING_FROM` sowie `PING_TO` Werte angepasst:
+
+```cpp
+#define ACTIVE_PING
+HMID PING_FROM(0x12,0x34,0x56);      // from address for status message e.g. switch
+HMID PING_TO(0x99,0x66,0x99);        // to address for status message / central / CCU
+```
+
+Nun wird der Sketch geflasht und der Scanvorgang im seriellen Monitor verfolgt:
+
+```text {25}
+AskSin++ V3.1.7 (Mar 20 2019 15:34:55)
+CC init1
+CC Version: 04
+ - ready
+Start searching ...
+Freq 0x21656A: 671067.  1/74
+Search for upper bound
+Freq 0x21657A: 671067.  1/72
+Freq 0x21658A: 671067.  1/73
+Freq 0x21659A: 671067.  1/72
+Freq 0x2165AA: 671067.  1/74
+Freq 0x2165BA: 671067.  1/72
+Freq 0x2165CA: 671067.  1/74
+Freq 0x2165DA: 60FE1F.  1/86
+Freq 0x2165EA: 671067.  1/75
+Freq 0x2165FA: 671067.  1/75
+Freq 0x21660A: 671067.  1/73
+Freq 0x21661A: 671067.  1/73
+Freq 0x21662A: 671067.  1/73
+Freq 0x21663A:   0/0
+Search for lower bound
+Freq 0x21655A:   0/0
+
+Done: 0x21656A - 0x21662A
+Calculated Freq: 0x2165CA
+Store into config area: 65CA
+```
+
+Wie man in der Ausgabe sieht, ist nun die neue Frequenz `0x2165CA` im EEPROM gespeichert.
+
+Man kann den Scanvorgang öfters laufen lassen um das Ergebnis zu verifizieren, hierzu einfach den Arduino über den Reset-Button neu starten.
+
+Wird nun der eigentlich Sketch geflasht wird beim Start das EEPROPM ausgelesen und die ermittelte Frequenz gespeichert was auch im Monitor ersichtlich ist:
+```text {8}
+AskSin++ V3.1.7 (Mar 20 2019 17:43:23)
+Address Space: 32 - 1650
+00000000
+Init Storage: CAFE6963
+CC init1
+CC Version: 04
+ - ready
+Config Freq: 0x2165CA
+ID: 010808  Serial: PsiDimDW08
+```
+
+::: warning
+Der Wert wird im EEPROM gespeichert und wird durch einen `RESET` gelöscht.
+:::
+
+## Frequenzanpassung per Sketch
+
+Es empfiehlt sich die (ggf. per FreqTest.ino) ermittelte Frequenz im Sketch vor dem Flashen zu setzen damit
+auch bei einem RESET die Werte nicht verloren gehen. Dazu kann der setup()-Block angepasst werden. Es ist darauf zu achten, dass die Anpassung nach dem `init(hal)` eingefügt werden da init() die Standardfrequenz setzt.
+
+```cpp {10-14}
+void setup () {
+  DINIT(57600,ASKSIN_PLUS_PLUS_IDENTIFIER);
+  if( sdev.init(hal,DIMMER1_PIN,DIMMER2_PIN) ) {
+    // first init - setup connection between button and first channel
+    sdev.channel(1).peer(cfgBtn.peer());
+  }
+  // Init the hw button
+  buttonISR(cfgBtn,CONFIG_BUTTON_PIN);
+
+  // Set frequency for CC1101
+  hal.radio.initReg(CC1101_FREQ2, 0x21);
+  hal.radio.initReg(CC1101_FREQ1, 0x65);
+  hal.radio.initReg(CC1101_FREQ0, 0xCA);
+  DPRINTLN("CC1101 Freq: 0x2165CA");
+
+  sdev.initDone();
+
+  // Output ID and Serial in serial console
+  DDEVINFO(sdev);
+}
+``` 
+
+
+## Weitere Lösungen
+
 * [Tausch der Kondensatoren gegen 12pF](https://forum.fhem.de/index.php/topic,91740.msg872505.html#msg872505)
 
