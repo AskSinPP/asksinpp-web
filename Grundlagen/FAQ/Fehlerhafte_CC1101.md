@@ -112,7 +112,6 @@ void setup () {
   hal.radio.initReg(CC1101_FREQ2, 0x21);
   hal.radio.initReg(CC1101_FREQ1, 0x65);
   hal.radio.initReg(CC1101_FREQ0, 0xCA);
-  DPRINTLN("CC1101 Freq: 0x2165CA");
 
   sdev.initDone();
 
