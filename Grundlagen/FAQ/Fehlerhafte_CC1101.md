@@ -120,8 +120,8 @@ void setup () {
 }
 ``` 
 
-
 ## Weitere Lösungen
 
 * [Tausch der Kondensatoren gegen 12pF](https://forum.fhem.de/index.php/topic,91740.msg872505.html#msg872505)
+* [CC1101_Frequenz XLS](https://github.com/TomMajor/SmartHome/tree/master/Info/CC1101_Frequenz) hilft bei der Berechnung des Hexwerts aus der Freq.
 
