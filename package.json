@@ -5,12 +5,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.30",
-    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.30",
-    "@vuepress/plugin-register-components": "^1.0.0-alpha.30",
-    "@vuepress/plugin-search": "^1.0.0-alpha.30",
-    "vuepress": "^1.0.0-alpha.30",
-    "vuepress-plugin-sitemap": "^2.1.0"
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.44",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.44",
+    "@vuepress/plugin-register-components": "^1.0.0-alpha.44",
+    "@vuepress/plugin-search": "^1.0.0-alpha.44",
+    "vuepress": "^1.0.0-alpha.44",
+    "vuepress-plugin-sitemap": "^2.1.2"
   },
   "scripts": {
     "dev": "vuepress dev",

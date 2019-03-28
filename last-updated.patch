@@ -1,10 +1,10 @@
---- node_modules/@vuepress/plugin-last-updated/index.js	2019-01-02 20:06:43.122584128 +0100
-+++ node_modules/@vuepress/plugin-last-updated/index.js.org	2019-01-02 20:08:59.301274371 +0100
-@@ -10,7 +10,6 @@
+--- index.js.orig       1985-10-26 09:15:00.000000000 +0100
++++ index.js    2019-03-28 08:56:55.496039750 +0100
+@@ -10,6 +10,7 @@
          ? transformer(timestamp, $lang)
          : defaultTransformer(timestamp, $lang)
        $page.lastUpdated = lastUpdated
--      $page.lastUpdatedTstamp = timestamp
++      $page.lastUpdatedTstamp = timestamp
      }
    }
  })

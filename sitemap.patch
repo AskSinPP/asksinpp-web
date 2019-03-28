@@ -1,39 +1,13 @@
-Index: node_modules/vuepress-plugin-sitemap/index.js
-IDEA additional info:
-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
-<+>UTF-8
-===================================================================
---- node_modules/vuepress-plugin-sitemap/index.js	(date 1546455850000)
-+++ node_modules/vuepress-plugin-sitemap/index.js	(date 1546455850000)
-@@ -3,9 +3,9 @@
- const chalk = require('chalk');
- const { createSitemap } = require('sitemap');
- 
--const log = (msg, color = 'blue', label = 'SITEMAP') =>
-+const log = (msg, color = 'blue', label = 'SITEMAP') => {
-   console.log(`\n${chalk.reset.inverse.bold[color](` ${label} `)} ${msg}`);
--
-+}
- module.exports = (options, context) => {
-   const {
-     urls = [],
-@@ -23,7 +23,7 @@
-       if (!hostname) {
-         return log(
-           `Not generating sitemap because required 'hostname' option doesn't exist`,
--          'orange'
-+          'red'
-         );
-       }
- 
-@@ -38,8 +38,8 @@
-       const pagesMap = new Map();
+--- node_modules/vuepress-plugin-sitemap/index.js.orig	2019-03-26 16:08:37.000000000 +0100
++++ node_modules/vuepress-plugin-sitemap/index.js	2019-03-28 09:04:03.373698922 +0100
+@@ -50,8 +50,8 @@
+       const pagesMap = new Map()
  
        pages.forEach(page => {
 -        const lastmodISO = page.lastUpdated
 -          ? new Date(page.lastUpdated).toISOString()
 +        const lastmodISO = page.lastUpdatedTstamp
 +          ? new Date(page.lastUpdatedTstamp).toISOString()
-           : undefined;
-         pagesMap.set(page.path, { changefreq, lastmodISO, ...others });
-       });
+           : undefined
+         const { normalizedPath } = stripLocalePrefix(page.path, localeKeys)
+         const relatedLocales = localesByNormalizedPagePath.get(normalizedPath)
