@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: Netzbetriebene Lösung zur MP3-Wiedergabe und LED-Signalisierung in HomeMatic
+Desc: Netzbetriebene Lösung zur MP3-Wiedergabe und LED-Signalisierung
 ProjectUrl: https://github.com/jp112sdl/HB-OU-MP3-LED
 Author: Jerome
 AuthorUrl: https://github.com/jp112sdl
