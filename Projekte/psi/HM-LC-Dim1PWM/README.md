@@ -16,6 +16,9 @@ Added: 2019-02-15
 
 ![HM-LC-Dim1PWM](./images/Dim1PWM.jpg)
 
+::: warning
+Es hat sich gezeigt, dass die zwei Tasterschnittstellen nicht vernünftig von der CCU verarbeitet werden. Ich empfehle diese **nicht** zu verwenden.
+:::
 
 ## Schaltplan
 
