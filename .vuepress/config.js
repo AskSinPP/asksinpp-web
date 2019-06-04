@@ -28,7 +28,7 @@ module.exports = {
     lineNumbers: true
   },
   plugins: [
-    '@vuepress/plugin-medium-zoom',
+    ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],
     ['sitemap', { hostname: 'https://asksinpp.de' }]
   ],
   head: [['script', {}, `
