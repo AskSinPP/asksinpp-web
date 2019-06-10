@@ -19,6 +19,7 @@ module.exports = {
       debug: false
     }
   },
+  serviceWorker: true,
   locales: {
     "/": {
       lang: "de-DE"
