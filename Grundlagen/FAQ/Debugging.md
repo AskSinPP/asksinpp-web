@@ -24,7 +24,7 @@ ist es immer von Vorteil, strukturiert nach dem Fehler zu suchen.
   CC Version: 04
   - ready
   ```
-  ggf. erscheint nach einem Reset, neuem Sketch (erstmaliger Inbetriebnahme) zwischendring noch:
+  ggf. erscheint nach einem Reset, neuem Sketch (erstmaliger Inbetriebnahme) zwischendrin noch:
   ```
   CAFEFAC4
   Init Storage: CAFE85D5
