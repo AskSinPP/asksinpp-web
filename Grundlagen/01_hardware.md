@@ -26,11 +26,11 @@ Als Funkmodul wird ein CC1101 868Mhz verwendet.
 
 Das Modul wird über den [SPI Bus](https://de.wikipedia.org/wiki/Serial_Peripheral_Interface) 
 an den Mikrocontroller angeschlossen.  
-Da das [CC1101](http://www.ti.com/lit/ds/symlink/cc1101.pdf) 
-mit einer Betriebsspannung von 1,8V bis 3,9V arbeitet, kann es direkt an 3,3V (VCC) Arduino betrieben werden. Für Kontroller
+Da der [CC1101](http://www.ti.com/lit/ds/symlink/cc1101.pdf) 
+mit einer Betriebsspannung von 1,8V bis 3,9V arbeitet, kann er direkt an 3,3V (VCC) des Arduino betrieben werden. Für Controller
 mit höherer Arbeitsspannung ist ein [Pegelwandler](https://de.wikipedia.org/wiki/Pegelumsetzer) nötig.
 
-::: tip
+::: Tipp
 Anstatt der mitgelieferten Spiralantenne empfiehlt sich ein Draht mit **8,3cm** Länge.  
 Dieser sollte nach Möglichkeit mit Abstand zu den elektronischen Bauteilen verlegt werden.
 :::
@@ -39,7 +39,7 @@ Dieser sollte nach Möglichkeit mit Abstand zu den elektronischen Bauteilen verl
 
 ![Allgemeingültige Verdrahtung Arduino Pro Mini und CC1101](./images/wiring_arduino_cc1101.png)
 
-Hier dargestellt die allgemeingültige Verdrahtung des Pro Mini mit dem CC1101 Funkmodul.  
+Hier dargestellt ist die allgemeingültige Verdrahtung des Pro Mini mit dem CC1101 Funkmodul.  
 Dieser Aufbau ist für alle AskSinPP Projekte mit Arduino Pro Mini gültig.  
 
 Um die Komponente z.B. in den Anlern-Modus zu versetzen wird ein ein Config-Taster verbaut 
@@ -89,7 +89,7 @@ Informationen zum Stromverbrauch findet ihr [hier](https://github.com/TomMajor/A
 
 ## Aufbau
 
-Mithilfe von Kupferlackdraht kann das Funkmodul platzspared unter dem Arduino Pro Mini angeschlossen werden.
+Mithilfe von Kupferlackdraht kann das Funkmodul platzsparend unter dem Arduino Pro Mini angeschlossen werden.
 
 ![CC1101 mit Kupferlackdraht am Arduino Pro Mini](./images/arduino_cc1101_bottom.jpg)
 
@@ -109,7 +109,7 @@ Von der Community gibt es mittlerweile verschiedene [Platinen](/Platinen/) und [
 | ISP Adapter | [eBay de](https://www.ebay.de/itm/USBASP-USBISP-AVR-51-Programmer-Adapter-mit-10-Pin-Kabel-ATMega-ATTiny-ATMEGA128/153318188378) | [AliExpress](https://de.aliexpress.com/item/1LOT-New-USBASP-USBISP-AVR-Programmer-USB-ISP-USB-ASP-ATMEGA8-ATMEGA128-Support-Win7-64/32724669918.html) | [Amazon](https://www.amazon.de/USBasp-Programmiergerät-inkl-Programmer-Arduino/dp/B01CPZ52MI/) | 
 
 Meistens braucht man auch noch (5mm) LEDs, Widerstände und Kurzhubtaster. Zum Aufbau von Prototypen sind zudem ein Steckbrett und Jumperwire recht nützlich.
-Wer etwas mehr basteln möchte ist mit dem einen oder anderen Sortimentkasten gut bedient. Es gibt auch Starterkits mit diveresen Teilen, einfach mal
+Wer etwas mehr basteln möchte ist mit dem einen oder anderen Sortimentkasten gut bedient. Es gibt auch Starterkits mit diversen Teilen, einfach mal
 etwas stöbern ;)
 
 Weiterhin ist zu beachten, dass das CC1101 Modul einen Lochabstand von 2.0mm anstatt der üblichen 2.54mm hat. Will man diesen auf eine Platine setzen
