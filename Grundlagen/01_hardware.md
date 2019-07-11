@@ -30,7 +30,7 @@ Da der [CC1101](http://www.ti.com/lit/ds/symlink/cc1101.pdf)
 mit einer Betriebsspannung von 1,8V bis 3,9V arbeitet, kann er direkt an 3,3V (VCC) des Arduino betrieben werden. Für Controller
 mit höherer Arbeitsspannung ist ein [Pegelwandler](https://de.wikipedia.org/wiki/Pegelumsetzer) nötig.
 
-::: Tipp
+::: tip
 Anstatt der mitgelieferten Spiralantenne empfiehlt sich ein Draht mit **8,3cm** Länge.  
 Dieser sollte nach Möglichkeit mit Abstand zu den elektronischen Bauteilen verlegt werden.
 :::
