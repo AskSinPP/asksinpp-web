@@ -20,6 +20,6 @@
   "author": "",
   "license": "CC BY-SA License 4.0",
   "devDependencies": {
-    "broken-link-checker-local": "^0.2.0"
+    "broken-link-checker-local": "^0.2.1"
   }
 }
