@@ -41,7 +41,7 @@ Je nach Zweck gibt es hier verschiedene Optionen:
 
 * Keine :)
 * [HB-UNI-SEN-BATT von Alex](https://github.com/alexreinert/PCB#hb-uni-sen-batt)
-* [Sensor_PLHT von Tom](https://github.com/TomMajor/AskSinPP_Examples/tree/master/PCB/Sensor_PLHT)
+* [Sensor_PLHT von Tom](https://github.com/TomMajor/SmartHome/tree/master/PCB)
 * [HB-UNI-Bat von Ronny](https://github.com/ronnythomas/HB-UNI-Bat)
 * [HB-Micro von Ronny](https://github.com/ronnythomas/HB-Micro)
 
