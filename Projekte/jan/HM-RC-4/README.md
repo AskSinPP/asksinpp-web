@@ -62,7 +62,7 @@ Teile Ausdrucken, Vorlagen auf [Thingiverse](https://www.thingiverse.com/thing:3
 
 ## Aufbau
 
-1. Platine zusammen löten. Als Antenne kann man einfach einen „Klingeldraht“ benutzen (8,3 mm lang).  
+1. Platine zusammen löten. Als Antenne kann man einfach einen „Klingeldraht“ benutzen (8,3 cm lang. Litze (=mit mehreren Drähten) bitte meiden).  
    ![Hardware Aufbau](./images/4.jpg)
 
 2. Wichtig! LED Rechteckig 2x5x7mm muss wie im Bild um 90 Grad umgebogen werden und so abgelötet werden.  
