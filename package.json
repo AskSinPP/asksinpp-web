@@ -5,15 +5,16 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.1",
-    "@vuepress/plugin-medium-zoom": "^1.0.1",
-    "@vuepress/plugin-register-components": "^1.0.1",
-    "@vuepress/plugin-search": "^1.0.1",
-    "vuepress": "^1.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.3",
+    "@vuepress/plugin-medium-zoom": "^1.0.3",
+    "@vuepress/plugin-register-components": "^1.0.3",
+    "@vuepress/plugin-search": "^1.0.3",
+    "vuepress": "^1.0.3",
     "vuepress-plugin-sitemap": "^2.1.2"
   },
   "scripts": {
     "dev": "vuepress dev",
+    "postinstall": "./apply-patches.sh",
     "build": "vuepress build",
     "check": "blcl -r .vuepress/dist"
   },

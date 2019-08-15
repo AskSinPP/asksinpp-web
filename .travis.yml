@@ -5,8 +5,6 @@ node_js:
 
 script:
   - npm ci
-  - "grep -qF lastUpdatedTstamp node_modules/@vuepress/plugin-last-updated/index.js && patch --batch node_modules/@vuepress/plugin-last-updated/index.js last-updated.patch || true"
-  - "grep -qF lastUpdatedTstamp node_modules/vuepress-plugin-sitemap/index.js && patch --batch node_modules/vuepress-plugin-sitemap/index.js sitemap.patch || true"
   - npm run build
 #  - npm run check
 
