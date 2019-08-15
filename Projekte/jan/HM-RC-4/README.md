@@ -100,6 +100,6 @@ Teile Ausdrucken, Vorlagen auf [Thingiverse](https://www.thingiverse.com/thing:3
 
 Autor: [Jan Oerter](https://www.facebook.com/jan.oerter)
 
-Vielen Dank an Jerome Pecht, Papa aus dem Homematicforum, Christoph Wichert und Ronny Thomas.  
+Vielen Dank an Jerome Pecht, Papa aus dem Homematicforum, Christoph Wiechert und Ronny Thomas.  
 Ohne Euch würde es keine Homematic Selbstbauprojekte geben.
 
