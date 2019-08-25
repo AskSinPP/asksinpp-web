@@ -2,7 +2,7 @@
 
 ![topimg](./images/Sketches_TOP.png)
 
-- [pa-pa](https://github.com/pa-pa/AskSinPP)
+## [pa-pa](https://github.com/pa-pa/AskSinPP)
   
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
@@ -23,7 +23,8 @@
   | [HM-WDS10-TH-O](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-WDS10-TH-O/HM-WDS10-TH-O.ino) | Temperatur- / Feuchtesensor Außen | verschiedene Sensoren;<br/>RTC wird verwendet! |
   | [HM-WDS100-C6-O-2](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-WDS100-C6-O-2/HM-WDS100-C6-O-2.ino) | Funk-Kombisensor | nur Fake-Werte |
 
-- Meine Nachbauten:
+## [Jérôme](https://github.com/jp112sdl) 
+### Nachbauten:
   
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
@@ -63,7 +64,7 @@
   | [HM-WDS40-TH-I-SI7021](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SI7021/HM-WDS40-TH-I-SI7021.ino) | Temperatur-/Feuchtesensor Innen | für SI7021 Sensor |
   | [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) | 2-Kanal-Rollladenaktor | wie HM-LC-Bl1-FM jedoch mit 2 Kanälen |
   
-- Meine Eigentwicklungen ([Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) erforderlich):
+### Eigentwicklungen ([Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) erforderlich):
 
   | Bezeichnung | Beschreibung |
   | ------------- |-----|
@@ -84,13 +85,13 @@
   | [HB-LC-Bl1PBU-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HB-LC-Bl1PBU-FM) | alternative Firmware für den HM-LC-Bl1PBU-FM (getrennte Taster-/Relais-Kanäle) |
   | [HB-UNI-DMX-Master](https://github.com/jp112sdl/HB-UNI-DMX-Master) | einfacher DMX Master Controller _(coming soon)_ |
 
-- [Marco](https://github.com/stan23)
+## [Marco](https://github.com/stan23)
 
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
   | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) | wird auf den originalen HM-LC-Sw2-FM geflasht|
   
-- [Tom](https://github.com/TomMajor/)
+## [Tom](https://github.com/TomMajor/)
 
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
@@ -98,3 +99,7 @@
   | [HB-SEC-WDS-2](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEC-WDS-2) | Wassermelder | Wassermelder mit Leitfähigkeitsmessung |
   | [HB-SEN-LJet](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet) | Füllstandsanzeige LevelJet | Anpassung an beliebige Tankformen durch Einsatz einer Peiltabelle möglich <br/> [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet/CCU_RM)|
   | [HB-SCI-3-FM](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SCI-3-FM) | 3fach Schließerkontakt | ist eigentlich ein HM-SCI-3-FM und kommt daher ohne zusätzliches Addon aus |
+  
+
+Du hast noch einen Sketch gefunden oder selbst entwickelt?  
+[Sag Bescheid](https://github.com/AskSinPP/asksinpp.de/issues), wir nehmen ihn gerne auf.
