@@ -4,66 +4,17 @@ Die Software für den Microcontroller wird bei Arduino als _Sketch_ bezeichnet.
 Der USB FTDI Adapter ist die Verbindung zwischen Microcontroller und PC.
 
 
-## Arduino IDE
-
-Die [Arduino IDE](https://www.arduino.cc/en/Main/Software) ist die gebräuchlichste
-PC Software für den Umgang mit dem Arduino.
-
-### Bibliothek einbinden
-
-Damit die im Sketch verwendeten Bibliotheken zur Verfügung stehen, müssen diese eingebunden werden:
-* AskSinPP
-* EnableInterrupt
-* Low-Power
-
-Die AskSinPP Bibliothek kann als [ZIP](https://github.com/pa-pa/AskSinPP/archive/master.zip) 
-heruntergeladen werden.
-Anschließend geht man in der Arduino IDE auf `Sketch > Bibliothek einbinden > .ZIP-Bibliothek hinzufügen` 
-und wählt die ZIP-Datei aus.
-
-EnableInterrupt und Low-Power wird über `Sketch > Bibliothek einbinden > Bibliotheken verwalten`
-gesucht und installiert.
-
-### Board einstellen
-
-* Board: `Arduino Pro or Pro Mini`
-* Prozessor: `ATmega328P (3.3V, 8 MHz)`
-* Port: COM-Port des FTDI Adapters 
-
-
-## PlatformIO
-
-PlatformIO gibt es als vollständige [Entwicklungsumgebung](https://platformio.org/platformio-ide) (IDE) und als [Command-Line-Interface](https://platformio.org/install/cli) (CLI).
-
-Die nötigen Bibliotheken können über den [Library Manager](https://docs.platformio.org/en/latest/librarymanager/)
-bequem installiert werden. Er enthält neben den gebräuchlichen EnableInterrupt und Low-Power auch AskSinPP.
-
-Die Konfiguration des Boards kann über das Interface eingestellt werden und wird in der `platformio.ini` im
-Projekt-Verzeichnis gespeichert. Diese Datei kann man sich also auch schnell selbst erstellen:
-
-```ini
-[env:pro8MHzatmega328]
-platform = atmelavr
-framework = arduino
-board = pro8MHzatmega328
-```
-
-
-## Anschluss des FTDI Adapters
-
-Um die Schaltung sehr kompakt zu halten, verzichtet man auf das Anlöten eines Steckverbinders.
-Es reicht aus, wenn man die Pins des FTDI Adapters durch die Lötbohrungen steckt und während des Flash-Vorgangs verkantet.
-
-![FTP Adapter verkantet am Arduino Pro Mini](./images/ftdi-verkantet.jpg)
-
-
-## Sketch anpassen und flashen
+## Sketch download und anpassen
 
 Es gibt mittlerweile viele fertige [Sketche](/Sketche/) die je nach Aktor oder Sensor verwendet werden können.  
 Als Beispiel wird hier der `HM-RC-P1` Paniktaster genommen.
 
 Der komplette Sketch ist [HM-RC-P1.ino](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-RC-P1/HM-RC-P1.ino).
 
+**Achtung**: Ein _"Seite speichern unter"_ der Github-URL lädt die HTML-Version herunter und nicht direkt den Source-Code.
+Dieser kann über den Button `Raw` aufgerufen werden: [HM-RC-P1.ino im Raw-Format](https://raw.githubusercontent.com/pa-pa/AskSinPP/master/examples/HM-LC-Bl1-FM/HM-LC-Bl1-FM.ino) Zudem wird nicht empfohlen _Notepad_ oder gar Word zum editieren zu verwenden sondern einen _echten_ Editor wie VSCode, Sublime, Atom, Notepad++, Vim, Emacs usw.
+
+### IO-Konfiguration
 ```cpp
 // Arduino pin for the config button
 #define CONFIG_BUTTON_PIN 8
@@ -73,9 +24,11 @@ Der komplette Sketch ist [HM-RC-P1.ino](https://github.com/pa-pa/AskSinPP/blob/m
 ```
 
 Hier sieht man die Button Belegung und kann diese entsprechend anpassen.  
-Für das Beispiel des Paniktasters schließen wir also einen weiteren Taster an `A0` und `GND` an.
+Für das Beispiel des Paniktasters schließen wir also den Config-Button an `GPIO-8` und `GND` sowie einen weiteren Taster an `GPIO-14` (bzw `A0`) und `GND` an.
 
-Weiterhin ist der DeviceInfo Block wichtig:
+### Device-Konfiguration
+
+Der DeviceInfo Block identifiziert das neue Device:
 ```cpp
 // define all device properties
 const struct DeviceInfo PROGMEM devinfo = {
@@ -104,6 +57,90 @@ Die Seriennummer (im Sketch als `Device Serial` bezeichnet) lautet in diesem Fal
 Soll ein weiterer, auf diesen Sketch basierender HM-RC-P1 ins HomeMatic System integriert werden, verwendet man (- so mache ich es zumindest-) am besten eine fortlaufende Numerierung. 0x12, 0x09, 0x02 / JPLRCP2002.
 
 Wichtig: Die Seriennummer muss immer 10-stellig sein! Sie darf Buchstaben und Zahlen enthalten.
+
+
+## Anschluss des FTDI Adapters
+
+Um die Schaltung sehr kompakt zu halten, verzichtet man auf das Anlöten eines Steckverbinders.
+Es reicht aus, wenn man die Pins des FTDI Adapters durch die Lötbohrungen steckt und während des Flash-Vorgangs verkantet.
+
+::: warning
+Der FTDI muss auf 3,3V gejumpert sein da das CC1101 Funkmodul mit 5V beschädigt werden könnte.
+:::
+
+![FTP Adapter verkantet am Arduino Pro Mini](./images/ftdi-verkantet.jpg)
+
+| PIN Arduino | PIN FTDI |                      |
+|-------------|----------|----------------------|
+| DTR         | DTR      | Data Terminal Ready  |
+| RX          | TX       | Datentransfer        |
+| TX          | RX       | Datentransfer        |
+| VCC         | VCC      | Spannung             |
+|             | CTS      | Wird nicht verwendet |
+| GND         | GND      | Masse                |
+
+
+## PlatformIO
+
+PlatformIO gibt es als vollständige [Entwicklungsumgebung](https://platformio.org/platformio-ide) (IDE) und als [Command-Line-Interface](https://platformio.org/install/cli) (CLI). Wer nicht tiefer in die Programmierung einsteigen möchte ist mit der CLI-Version ausreichend bedient.
+
+Die nötigen Bibliotheken können über den [Library Manager](https://docs.platformio.org/en/latest/librarymanager/)
+bequem installiert werden. Er enthält neben den gebräuchlichen EnableInterrupt und Low-Power auch AskSinPP.
+
+Die Konfiguration des Boards kann über das Interface eingestellt werden und wird in der `platformio.ini` im
+Projekt-Verzeichnis gespeichert. Diese Datei kann man sich also auch schnell selbst erstellen:
+
+```ini
+[platformio]
+src_dir = .
+
+[env:pro8MHzatmega328]
+platform = atmelavr
+framework = arduino
+board = pro8MHzatmega328
+
+lib_deps =
+  AskSinPP
+  EnableInterrupt
+  Low-Power
+```
+
+Einige Projekte bringen bereits eine `platformio.ini` mit und man kann mit `platformio run -t upload` den Code 
+kompilieren und direkt flashen ohne weitere Einstellungen vornehmen zu müssen.
+
+Manchmal kommt es vor, dass PlatformIO versucht ein falsches USB-Gerät anzusprechen. Hier kann mit `platformio device list`
+der Pfad des FTDI ermittelt werden. Dieser Pfad wird als Argument bei `run` übergeben. 
+Bsp.: `platformio run -t upload --upload-port /dev/ttyUSB0`
+
+
+## Arduino IDE
+
+Die [Arduino IDE](https://www.arduino.cc/en/Main/Software) ist die gebräuchlichste
+PC Software für den Umgang mit dem Arduino.
+
+### Bibliothek einbinden
+
+Damit die im Sketch verwendeten Bibliotheken zur Verfügung stehen, müssen diese eingebunden werden:
+* AskSinPP
+* EnableInterrupt
+* Low-Power
+
+Die AskSinPP Bibliothek kann als [ZIP](https://github.com/pa-pa/AskSinPP/archive/master.zip) 
+heruntergeladen werden.
+Anschließend geht man in der Arduino IDE auf `Sketch > Bibliothek einbinden > .ZIP-Bibliothek hinzufügen` 
+und wählt die ZIP-Datei aus.
+
+EnableInterrupt und Low-Power wird über `Sketch > Bibliothek einbinden > Bibliotheken verwalten`
+gesucht und installiert.
+
+### Board einstellen
+
+* Board: `Arduino Pro or Pro Mini`
+* Prozessor: `ATmega328P (3.3V, 8 MHz)`
+* Port: COM-Port des FTDI Adapters 
+
+
+## Flashen
 
 Sind die Werte angepasst, kann der Programmcode kompiliert und an den Mikrocontroller 
 übertragen werden. In der Arduino IDE heißt dieser Vorgang `Sketch hochladen` 
@@ -138,7 +175,10 @@ beschrieben werden.
 ## Serieller Monitor
 
 Der Arduino verfügt über eine Debug-Ausgabe die vom PC über den `seriellen Monitor`
-abgerufen werden kann (Arduino IDE: Menü > Werkzeuge > serieller Monitor).
+abgerufen werden kann:
+* Arduino IDE: Menü > Werkzeuge > serieller Monitor
+* PlatformIO CLI: `platformio device monitor`
+
 Aus dem Sketch kann man die verwendete Baudrate ablesen:
 
 ```cpp
@@ -148,4 +188,24 @@ void setup () {
 ```
 
 Hier also **57600 Baud**. Diese muss beim Verbindungsaufbau übereinstimmen, damit man
-nicht nur wirre Zeichen erhält. Weiteres zum [Debugging](/Grundlagen/FAQ/Debugging.html) in den FAQ.
+nicht nur wirre Zeichen erhält. Es ist zu empfehlen nach jedem Flashvorgang einen Blick auf 
+die Ausgaben zu werfen.
+
+```ini
+# Version
+AskSin++ V4.1.0 (Aug 25 2019 00:08:04)
+# Speicherbereich für Peerings und deren Parameter
+Address Space: 32 - 870
+# Funkmodul Init und Version
+CC init1
+CC Version: 14
+# Device ist gebootet
+ - ready
+# Device-ID und Serial (wird nicht immer ausgegeben)
+ID: 120901  Serial: JPLRCP2001
+# Funkverkehr:  <- ausgehend;  -> eingehend
+<- 0F 01 86 10 0108F2 000000 06 01 00 00 00 00  - 7528
+<- 0F 02 86 10 0108F2 000000 06 02 00 00 00 00  - 7626
+```
+
+Weiteres zum [Debugging](/Grundlagen/FAQ/Debugging.html) in den FAQ.
