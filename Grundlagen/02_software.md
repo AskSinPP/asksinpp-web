@@ -98,6 +98,7 @@ src_dir = .
 platform = atmelavr
 framework = arduino
 board = pro8MHzatmega328
+monitor_speed = 57600
 
 lib_deps =
   AskSinPP
