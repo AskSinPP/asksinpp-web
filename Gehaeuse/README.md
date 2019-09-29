@@ -20,3 +20,4 @@
 - Gehäuse von [Patrick](https://www.thingiverse.com/wpatrick/about)  
   - [HB-UNI-SENS-BATT snap](https://www.thingiverse.com/thing:3512767)
   - [HB-UNI-SENS-BATT snap V2](https://www.thingiverse.com/thing:3540481)
+  - [HM-Sensor-CR2032_FDGK](https://www.thingiverse.com/thing:3885760)
