@@ -7,6 +7,7 @@ Näheres ist im [FHEM-Forum Thread](https://forum.fhem.de/index.php/topic,91740.
 
 ![CC1101 Modulvergleich](./images/CC1101_bad-vs-working.jpg)
 
+
 ## Ermittlung der CC1101 Frequenz
 
 Viele Module kann man durch eine _kleine_ Verschiebung der Frequenz zur Funktion bewegen. Dazu gibt es einen
@@ -89,14 +90,13 @@ Config Freq: 0x2165CA
 ID: 010808  Serial: PsiDimDW08
 ```
 
-::: warning
-Der Wert wird im EEPROM gespeichert und wird durch einen `RESET` gelöscht.
-:::
 
 ## Frequenzanpassung per Sketch
 
-Es empfiehlt sich die (ggf. per FreqTest.ino) ermittelte Frequenz im Sketch vor dem Flashen zu setzen damit
-auch bei einem RESET die Werte nicht verloren gehen. Dazu kann der setup()-Block angepasst werden. Es ist darauf zu achten, dass die Anpassung nach dem `init(hal)` eingefügt werden da init() die Standardfrequenz setzt.
+Alternativ kann die (ggf. per FreqTest.ino) ermittelte Frequenz im Sketch gesetzt werden. Dazu kann der setup()-Block 
+angepasst werden. Es ist darauf zu achten, dass die Anpassung nach dem `init(hal)` eingefügt werden da init() 
+die Standardfrequenz setzt.
+
 
 ```cpp {10-14}
 void setup () {

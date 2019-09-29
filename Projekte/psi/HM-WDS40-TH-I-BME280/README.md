@@ -4,7 +4,7 @@ Desc: Temperatur- / Luftfeuchtesensor BME280
 ProjectUrl: psi/HM-WDS40-TH-I-BME280/
 Author: Psi
 AuthorUrl: https://psi.cx
-Tags: Batterie, Sensor, Temperatur
+Tags: Batterie, Sensor, Temperatur, Open-Source
 Thumb: images/case-jan.jpg
 sidebar: auto
 Added: 2018-12-27
@@ -41,7 +41,7 @@ Je nach Zweck gibt es hier verschiedene Optionen:
 
 * Keine :)
 * [HB-UNI-SEN-BATT von Alex](https://github.com/alexreinert/PCB#hb-uni-sen-batt)
-* [Sensor_PLHT von Tom](https://github.com/TomMajor/AskSinPP_Examples/tree/master/PCB/Sensor_PLHT)
+* [Sensor_PLHT von Tom](https://github.com/TomMajor/SmartHome/tree/master/PCB)
 * [HB-UNI-Bat von Ronny](https://github.com/ronnythomas/HB-UNI-Bat)
 * [HB-Micro von Ronny](https://github.com/ronnythomas/HB-Micro)
 

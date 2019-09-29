@@ -1,7 +1,7 @@
 body
-  .content:not(.custom), .page-edit, .page-nav
+  .content__default:not(.custom), .page-edit, .page-nav
     max-width: 1024px
-  .content:not(.custom) img
+  .content__default:not(.custom) img
     max-width: 700px
     max-height: 500px
     object-fit: scale-down
@@ -34,7 +34,7 @@ html.dark
   a
     color: $accentColorDark
 
-  .content
+  .content__default
     code
       color: $accentColorDark
       background-color: $darkSecondaryBg
