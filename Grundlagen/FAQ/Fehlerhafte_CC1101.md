@@ -25,7 +25,7 @@ RaspberryMatic Nutzer können die IDs der zu pingenden Partner per SSH aus der R
 
 ```bash
 # CCU
-grep "^<device serial" /etc/config/rfd/BidCoS-RF.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+grep BidCoS-Address /etc/config/ids| awk -F '=0x' '{print $2}'
 
 # Paired Device
 grep "^<device serial" /etc/config/rfd/<Serial>.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
