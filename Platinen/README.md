@@ -28,8 +28,10 @@ Die Platinen haben neben dem CC1101 häufig noch Platz für andere Funkmodule wi
   -   [MySensors-HM-easy-Standard](https://github.com/ranseyer/MySensors-HW/tree/master/MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF/1_Standard)
   - [STM32 Bluepill / MAPLE mit CC1101, RFM* und RS485](https://github.com/ranseyer/MySensors-HW/tree/master/Experimental/GW-STM32-RS485-RFM/Archiv)
 
-
-https://github.com/ranseyer/MySensors-HW/blob/master/MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF/1_Standard/top.png
+- Platine(n) von [pafra](https://github.com/pafra-123)<br>
+  -   [AskSin_Uni_PCB](https://github.com/pafra-123/AskSin_Uni_PCB)<br>
+  Kleine Universalplatine für Asksin-Projekte. Auf der Github-Seite sind ein paar Beispiele aufgeführt.<br>
+![AskSin_Uni_PCB](https://raw.githubusercontent.com/pafra-123/AskSin_Uni_PCB/master/images/AskSin_Uni_PCB_small.jpg)
 
 - Platine(n) von [Ronny](https://github.com/ronnythomas) _(Nicht OpenSource! Bei Bedarf, bitte den Urheber bei [Facebook](https://www.facebook.com/ronny.thomas.83) direkt anschreiben)_
   - [HB-Micro](https://github.com/ronnythomas/HB-Micro)
