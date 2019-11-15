@@ -1,3 +1,5 @@
+import { Tabs, Tab } from 'vue-slim-tabs';
+
 export default ({ Vue, options, router, siteData }) => {
   router.afterEach((to, from) => {
     if(typeof _paq === 'undefined' || !_paq.push) return;
@@ -5,4 +7,7 @@ export default ({ Vue, options, router, siteData }) => {
     _paq.push(['setDocumentTitle', document.title.replace(' | AskSin++', '')]);
     _paq.push(['trackPageView']);
   });
+
+  Vue.component('tabs', Tabs);
+  Vue.component('tab', Tab);
 }
