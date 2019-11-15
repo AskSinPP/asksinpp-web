@@ -142,7 +142,7 @@ Für den STM32F103C8 eignet sich der `generic_boot20`, die genaue Variante wird 
 
 ![BluePill LED Pin](./images/stm32-led-pin.jpg)
 
-Hier also `P13` und damit [generic_boot20_pc13.bin](https://github.com/rogerclarkmelbourne/STM32duino-bootloader/blob/master/binaries/generic_boot20_pc13.bin).
+Hier also `P13` und damit [generic_boot20_pc13.bin](https://github.com/rogerclarkmelbourne/STM32duino-bootloader/raw/master/binaries/generic_boot20_pc13.bin).
 
 :::warning
 Auf Github den `Download` Button nutzen, kein "Ziel speichern unter" oder ähnliches sonst wird nur die _HTML-Vorschau_ heruntergeladen, nicht aber das eigentliche Bootloader-Hex-File.
