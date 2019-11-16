@@ -202,7 +202,7 @@ und kommt mit einem Install Script `drivers/win/install_drivers.bat`.
     [USB Serial for Blue Pill (STM32) with PlatformIO](https://donneyfan.com/blog/usb-serial-for-blue-pill-stm32-with-platformio).
     
 Nach dem Flashen wird der Jumper `BOOT0` wieder auf `0` gesteckt und der STM32 über seine Micro-USB Buchse angeschlossen.
-Jetzt wird der Geräte-Manager überprüft, es sollte ein neues _"Maple Serial (COM5)"_ vorhanden sein.
+Jetzt wird der Geräte-Manager überprüft, es sollte ein neues _"Maple Serial (COMx)"_ vorhanden sein.
 
 In der Arduino IDE wird als Upload-Method `STM32duino Bootloader` gewählt. 
     
