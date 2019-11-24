@@ -10,7 +10,7 @@ function getFiles(dir) {
 module.exports = () => {
   const sidebar = {};
 
-  sidebar['/Grundlagen/'] =[
+  sidebar['/Grundlagen/'] = [
     {
       title: 'Grundlagen',
       collapsable: false,
@@ -27,8 +27,16 @@ module.exports = () => {
       ]
     },
     {
+      title: 'STM32',
+      collapsable: true,
+      children: [
+        ['STM32/', 'Einführung'],
+        ...getFiles('Grundlagen/STM32').map(file => `STM32/${ file }`)
+      ]
+    },
+    {
       title: 'Material',
-      collapsable: false,
+      collapsable: true,
       children: [
         ['/Projekte/', 'Projekte'],
         ['/Sketche/', 'Sketche'],

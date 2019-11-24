@@ -30,7 +30,15 @@ module.exports = {
   },
   plugins: [
     ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],
-    ['sitemap', { hostname: 'https://asksinpp.de' }]
+    ['sitemap', {
+      hostname: 'https://asksinpp.de',
+      dateFormatter: lastUpdated => {
+        // Convert de date str to Date obj
+        let [date, time] = lastUpdated.split(',');
+        date = date.split('.').reverse().join('-');
+        return new Date(`${date} ${time}`);
+      }
+    }]
   ],
   head: [['script', {}, `
       var _paq = _paq || [];
