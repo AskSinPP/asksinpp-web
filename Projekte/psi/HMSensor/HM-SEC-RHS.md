@@ -48,6 +48,8 @@ Wird der RHS am Fenster montiert, zeigt der Magnet nach unten was die Stellung "
 Dreht man den Fenstergriff nach oben schließt der linke Reedkontakt und der Sensor
 meldet "gekippt". Die Verriegelt-Stellung wird entsprechend über den rechten Reedkontakt signalisiert.
 
+Bei einem linken Fenster ist es gespiegelt und muss in den Geräteeinstellungen der CCU angepasst werden.
+
 ![HM-Sec-RHS Rückseite](./HM-SEC-RHS/Back.jpg)
 
 :::tip
@@ -68,3 +70,7 @@ Als Sketch wird [HM-SEC-RHS.ino](https://raw.githubusercontent.com/pa-pa/AskSinP
 
 Die per-default einkommentierten `#define` Settings passen zum Betrieb für die HMSensor-CR2032 sowie den ProMini-Bootloader. Device-ID und Serial wird, wie immer, pro Device eindeutig zu vergeben.
 
+:::warning
+Beim Anlernen an die CCU muss der **Übertragungsmodus** auf **Standard** gestellt werden.  
+_Gesichert_ ist nur mit Verwendung eines AES Schlüssels möglich.
+:::
