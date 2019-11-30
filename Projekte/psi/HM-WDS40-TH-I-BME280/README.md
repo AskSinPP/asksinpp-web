@@ -25,7 +25,7 @@ von Tom ist eine gutes Beispiel für einen universell einsetzbaren Sensor.
 Möchte man den Temperatursensor an einen HM-CC-RT-DN Heizkörperthermostat anlernen
 benötigt man genauere Timings und muss auf einen externen Taktgeber zurückgreifen.
 
-Das [HMSensor WDS40-RTC](../HMSensor/HM-WDS40-TH-I-RTC-BME280) Projekt kann mit einem 32kHz Osziallator bestückt werden.
+Das [HMSensor WDS40-RTC](../HMSensor/HM-WDS40-TH-I-RTC-BME280.html) Projekt kann mit einem 32kHz Osziallator bestückt werden.
 :::
 
 ## Hardware
