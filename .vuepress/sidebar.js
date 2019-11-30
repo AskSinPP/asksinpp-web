@@ -48,6 +48,11 @@ module.exports = () => {
     },
   ];
 
+  sidebar['/Projekte/psi/HMSensor/'] = [
+    ['', 'HMSensor'],
+    ...getFiles('Projekte/psi/HMSensor')
+  ];
+
   return sidebar;
 };
 

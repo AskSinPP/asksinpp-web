@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="S7_BNVjYnpnzi0fK4uBU_bottom" viewBox="170000 -125000 200000 100000" width="200mm" height="100mm" class="w-100 h-100" sodipodi:docname="CR2032-Bottom-Parts.svg" inkscape:version="0.92.4 5da689c313, 2019-01-14" style="clip-rule:evenodd;fill-rule:evenodd;stroke-width:0;stroke-linecap:round;stroke-linejoin:round">
+  <metadata id="metadata210">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="640" inkscape:window-height="480" id="namedview208" showgrid="false" inkscape:zoom="38.44" inkscape:cx="473.9" inkscape:cy="49.15" inkscape:current-layer="S7_BNVjYnpnzi0fK4uBU_bottom" fit-margin-top="-2.776e-17" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" />
+  <defs id="defs193">
+    <style id="style2">.S7_BNVjYnpnzi0fK4uBU_fr4 {color: #666666;}
+.S7_BNVjYnpnzi0fK4uBU_cu {color: #cccccc;}
+.S7_BNVjYnpnzi0fK4uBU_cf {color: #cc9933;}
+.S7_BNVjYnpnzi0fK4uBU_sm {color: #004200; opacity: 0.75;}
+.S7_BNVjYnpnzi0fK4uBU_ss {color: #ffffff;}
+.S7_BNVjYnpnzi0fK4uBU_sp {color: #999999;}
+.S7_BNVjYnpnzi0fK4uBU_out {color: #000000;}</style>
+    <rect x="-1700" y="-1050" width="3400" height="2100" id="poTLpZ1-5GAvJa-BXZCu_pad-11" />
+    <rect x="-1000" y="-475" width="2000" height="950" id="poTLpZ1-5GAvJa-BXZCu_pad-12" />
+    <rect x="-475" y="-1000" width="950" height="2000" id="poTLpZ1-5GAvJa-BXZCu_pad-13" />
+    <circle cx="0" cy="0" r="1050" id="poTLpZ1-5GAvJa-BXZCu_pad-14" />
+    <rect x="-1050" y="-1050" width="2100" height="2100" rx="1050" ry="1050" id="poTLpZ1-5GAvJa-BXZCu_pad-15" />
+    <rect x="-800" y="-1462" width="1600" height="2924" id="poTLpZ1-5GAvJa-BXZCu_pad-16" />
+    <rect x="-825" y="-950" width="1650" height="1900" id="poTLpZ1-5GAvJa-BXZCu_pad-17" />
+    <rect x="-950" y="-825" width="1900" height="1650" id="poTLpZ1-5GAvJa-BXZCu_pad-18" />
+    <rect x="-950" y="-850" width="1900" height="1700" id="poTLpZ1-5GAvJa-BXZCu_pad-19" />
+    <rect x="-1100" y="-1075" width="2200" height="2150" id="poTLpZ1-5GAvJa-BXZCu_pad-20" />
+    <circle cx="0" cy="0" r="1300" id="poTLpZ1-5GAvJa-BXZCu_pad-21" />
+    <rect x="-875" y="-875" width="1750" height="1750" id="poTLpZ1-5GAvJa-BXZCu_pad-22" />
+    <g id="S7_BNVjYnpnzi0fK4uBU_bottom_silkscreen">
+      <path d="m 172400,-102000 v 1000 m -400,-900 -100,-100 h -300 l -100,100 v 0 l -100,100 v 100 l 100,100 v 0 l 100,100 h 200 l 100,100 h 100 v 100 100 100 l -100,100 h -100 -200 -200 m -400,-1000 v 1000 h -400 -100 v -100 l -100,-100 v -100 l 100,-100 v -100 h 100 400" id="path16" inkscape:connector-curvature="0" style="fill:none;stroke-width:150" />
+      <path d="m 174900,-99670 v 500 l -200,-350 -100,350 v -500 m -300,0 v 500 m -200,-470 -100,-30 h -100 v 30 20 l -100,50 v 50 l 100,40 v 30 20 l 100,20 100,30 v 20 50 50 40 30 l -100,20 h -100 l -100,-20 m -300,20 h -100 v -20 l -100,-50 v -90 -170 -100 l 100,-40 v -30 h 100 l 100,30 v 40 100 170 90 50 l -100,20 m 1100,2070 v -30 h -200 v 30 20 l -100,50 v 50 l 100,40 v 30 20 l 100,20 100,30 v 20 50 50 40 30 l -100,20 h -100 l -100,-20 m -500,-430 100,-20 v -30 h 100 l 100,30 v 40 50 l 100,100 v 70 l -100,90 v 50 50 l -100,20 h -100 v -20 l -100,-30 m -200,-450 v 500 m -300,-500 300,290 m -300,210 300,-280 m 1600,2320 200,240 m 100,-240 v 500 h -200 v -20 l -100,-30 v -40 -70 -50 l 100,-30 v -20 h 200 m -500,20 h -200 m 0,-260 h 200 v 500 h -200 m -200,-470 -100,-30 h -100 l -100,30 v 20 50 50 40 30 l 100,20 100,20 v 30 l 100,20 v 50 50 40 l -100,30 v 20 h -100 l -100,-20 m -200,-220 h -200 m -100,-260 h 300 v 500 h -300 m -100,0 h -300 m 200,-500 v 500 m 1300,4460 v 500 l -200,-360 -100,360 v -500 m -400,500 h -100 v -30 l -100,-50 v -90 -170 -90 l 100,-50 v -20 h 100 l 100,20 v 50 l 100,90 v 170 l -100,90 v 50 l -100,30 m -400,-480 v -20 h -200 v 20 20 l -100,50 v 50 l 100,50 v 20 20 l 100,30 100,20 v 20 50 50 50 20 l -100,30 h -100 l -100,-30 m -200,-470 v 500" id="path18" inkscape:connector-curvature="0" style="fill:none;stroke-width:100" />
+      <path d="m 176600,-118200 v 200 m 7200,-200 v 300 m 0,6900 v -300 m -7200,300 v -300 m 0,-6900 h 300 m -300,7200 h 300 m 6900,0 h -300 m 300,-7200 h -300 m -6900,200 h -1400 m 14400,10700 h -16000 v 19020 h 16000 v -19020" id="path20" inkscape:connector-curvature="0" style="fill:none;stroke-width:150" />
+      <path d="m 185800,-115900 v 1000 m 1700,0 v -1000 m -14500,-1800 v 1000 m 1700,0 v -1000 m 12000,8800 h 1000 m 0,-1700 h -1000 m -4900,-9700 h -1200 m 0,-1700 h 1200 m -10900,4300 v 1000 m 1700,0 v -1000 m 100,11700 v -1000 m -1700,0 v 1000 m 2000,-6400 v 1100 m -1900,-1100 v 1100 m 1900,-3300 h -1800" id="path22" inkscape:connector-curvature="0" style="fill:none;stroke-width:120" />
+      <path d="m 181200,-115100 v 1000 m -1100,-900 h 100 l 100,-100 h 100 l 200,100 100,100 v 100 l 100,200 v 100 l -100,200 v 100 l -100,100 h -200 -100 -100 l -100,-100 m -900,-900 h 600 m -300,0 v 1000 l 100,-100 100,-100 100,-100 m 2800,13700 v 970 m -1100,-870 100,-100 h 100 100 200 l 100,100 v 100 l 100,200 v 100 l -100,230 v 90 l -100,100 -200,50 h -100 l -100,-50 -100,-50 m -300,0 -100,50 -100,50 h -200 l -100,-50 -100,-50 v -100 -70 -200 l 600,-500 h -600 m 6400,-17700 v 100 l 100,100 v 100 l -100,100 -100,100 -100,100 h -100 -200 -200 l -100,-100 -100,-100 v -100 -100 -100 l 100,-100 m 900,-900 v 500 m 0,-300 h -1000 l 100,100 100,100 100,100 m -12200,-1300 v 0 l 100,200 v 100 l -100,100 -100,100 -100,100 h -200 -100 -200 l -100,-100 -100,-100 v -100 -100 -200 0 m 0,-400 v 0 -100 -300 -100 0 l 100,-100 h 100 l 200,100 600,600 v -700 m 14200,9700 100,-100 h 100 100 100 l 100,100 100,100 v 200 200 100 l -100,100 -100,100 -100,100 h -100 l -100,-100 h -100 m -300,100 h -600 l 300,-400 h -200 v 0 l -100,-100 v -100 -200 -100 l 100,-100 v 0 h 300 100 l 100,100 m -10200,-10200 300,500 m 200,-500 v 1000 h -300 l -100,-100 h -100 v -100 -100 -100 l 100,-100 h 100 300 m -1500,-500 h 600 m -300,0 v 1000 l 100,-200 h 100 l 100,-100 m -5500,800 h 100 v 200 100 100 l -100,100 -100,100 h -200 -200 -100 l -100,-100 -100,-100 -100,-100 v -100 l 100,-200 v 0 m 300,-900 h 600 m -1000,300 700,200 v -600 m 100,17200 v -100 h 200 100 100 l 100,100 100,100 v 200 200 100 l -100,100 -100,100 -100,100 h -100 l -200,-100 v 0 m -900,100 h 500 v -500 100 h -100 -300 -100 v -100 l -100,-100 v -200 l 100,-100 v -100 h 100 300 100 v 100 m 2900,-7600 v -500 m 400,1000 -400,-500 -300,500 m -900,-1000 h 600 m -300,0 v 1000 l 100,-200 100,-100 h 100" id="path24" inkscape:connector-curvature="0" style="fill:none;stroke-width:150" />
+    </g>
+    <g id="S7_BNVjYnpnzi0fK4uBU_bottom_soldermask">
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-11" x="171400" y="-99441" id="use27" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-11" x="171400" y="-94361" id="use29" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-11" x="171400" y="-89281" id="use31" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-11" x="171400" y="-96901" id="use33" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-11" x="171400" y="-91821" id="use35" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-117400" id="use37" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-116600" id="use39" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-115800" id="use41" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-115000" id="use43" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-114200" id="use45" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-113400" id="use47" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-112600" id="use49" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="175963" y="-111800" id="use51" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="177413" y="-110400" id="use53" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="178213" y="-110400" id="use55" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="179013" y="-110400" id="use57" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="179813" y="-110400" id="use59" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="180613" y="-110400" id="use61" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="181413" y="-110400" id="use63" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="182213" y="-110400" id="use65" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="183013" y="-110400" id="use67" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-111800" id="use69" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-112600" id="use71" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-113400" id="use73" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-114200" id="use75" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-115000" id="use77" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-115800" id="use79" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-116600" id="use81" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-12" x="184463" y="-117400" id="use83" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="183013" y="-118900" id="use85" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="182213" y="-118900" id="use87" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="181413" y="-118900" id="use89" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="180613" y="-118900" id="use91" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="179813" y="-118900" id="use93" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="179013" y="-118900" id="use95" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="178213" y="-118900" id="use97" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-13" x="177413" y="-118900" id="use99" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-14" x="188700" y="-113600" id="use101" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="188700" y="-116100" id="use103" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="188700" y="-118700" id="use105" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="188700" y="-121200" id="use107" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-14" x="188722" y="-123800" id="use109" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="186182" y="-123800" id="use111" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="183642" y="-123800" id="use113" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="181102" y="-123800" id="use115" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="178562" y="-123800" id="use117" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-15" x="176022" y="-123800" id="use119" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="188610" y="-107282" id="use121" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="186610" y="-107282" id="use123" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="184610" y="-107282" id="use125" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="182610" y="-107282" id="use127" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="180610" y="-107282" id="use129" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="178610" y="-107282" id="use131" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="176610" y="-107282" id="use133" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="174610" y="-107282" id="use135" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="180610" y="-88282" id="use137" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="182610" y="-88282" id="use139" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-16" x="178610" y="-88282" id="use141" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="186690" y="-114193" id="use143" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="186690" y="-116693" id="use145" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="173800" y="-115971" id="use147" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="173800" y="-118471" id="use149" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-18" x="188448" y="-109800" id="use151" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-18" x="185948" y="-109800" id="use153" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-19" x="179879" y="-121158" id="use155" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-19" x="182579" y="-121158" id="use157" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="171704" y="-115971" id="use159" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="171704" y="-118471" id="use161" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="171831" y="-107700" id="use163" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-17" x="171831" y="-105200" id="use165" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-20" x="172085" y="-113512" id="use167" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-20" x="172085" y="-110262" id="use169" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-21" x="188087" y="-86741" id="use171" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-21" x="171958" y="-123190" id="use173" width="100%" height="100%" />
+      <use xlink:href="#poTLpZ1-5GAvJa-BXZCu_pad-22" x="171831" y="-86420" id="use175" width="100%" height="100%" />
+    </g>
+    <clipPath id="S7_BNVjYnpnzi0fK4uBU_bottom_outline">
+      <path d="m 170000,-125000 v 40000 h 20000 v -40000 h -20000" id="path178" inkscape:connector-curvature="0" style="fill:none;stroke-width:150" />
+    </clipPath>
+    <mask id="S7_BNVjYnpnzi0fK4uBU_bottom_mech-mask">
+      <g id="g183" style="fill:#000000;stroke:#000000">
+        <rect x="170000" y="-125000" width="20000" height="40000" id="rect181" style="fill:#ffffff" />
+      </g>
+    </mask>
+    <mask id="S7_BNVjYnpnzi0fK4uBU_bottom_sm-mask">
+      <g id="g190" style="fill:#000000;stroke:#000000">
+        <rect x="170000" y="-125000" width="20000" height="40000" id="rect186" style="fill:#ffffff" />
+        <use xlink:href="#S7_BNVjYnpnzi0fK4uBU_bottom_soldermask" id="use188" x="0" y="0" width="100%" height="100%" />
+      </g>
+    </mask>
+  </defs>
+  <g transform="matrix(0,-5,-5,0,-255000,825000)" id="g205">
+    <g mask="url(#S7_BNVjYnpnzi0fK4uBU_bottom_mech-mask)" clip-path="url(#S7_BNVjYnpnzi0fK4uBU_bottom_outline)" transform="matrix(-1,0,0,1,360000,0)" id="g203">
+      <rect x="170000" y="-125000" width="20000" height="40000" class="S7_BNVjYnpnzi0fK4uBU_fr4" id="rect195" style="color:#666666;fill:currentColor" />
+      <g mask="url(#S7_BNVjYnpnzi0fK4uBU_bottom_sm-mask)" id="g201">
+        <rect x="170000" y="-125000" width="20000" height="40000" class="S7_BNVjYnpnzi0fK4uBU_sm" id="rect197" style="color:#004200;opacity:0.75;fill:currentColor" />
+        <use xlink:href="#S7_BNVjYnpnzi0fK4uBU_bottom_silkscreen" class="S7_BNVjYnpnzi0fK4uBU_ss" id="use199" style="color:#ffffff;fill:currentColor;stroke:currentColor" x="0" y="0" width="100%" height="100%" />
+      </g>
+    </g>
+  </g>
+  <g aria-label="100nF" transform="translate(295000,145000)" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5715.3599px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1037">
+    <path d="m 17750,-185100 h 950 v -2700 l -970,200 v -800 l 960,-200 h 1020 v 3500 h 950 v 700 h -2910 z" style="fill:#ffff00;stroke-width:0" id="path1068" inkscape:connector-curvature="0" />
+    <path d="m 23690,-186500 q 0,-800 -150,-1100 -150,-300 -490,-300 -350,0 -500,300 -140,300 -140,1100 0,800 140,1100 150,300 500,300 340,0 490,-300 150,-300 150,-1100 z m 1070,0 q 0,1100 -450,1600 -440,600 -1260,600 -830,0 -1270,-600 -450,-500 -450,-1600 0,-1000 450,-1600 440,-500 1270,-500 820,0 1260,500 450,600 450,1600 z" style="fill:#ffff00;stroke-width:0" id="path1070" inkscape:connector-curvature="0" />
+    <path d="m 27660,-186500 q 0,-800 -150,-1100 -140,-300 -490,-300 -340,0 -490,300 -150,300 -150,1100 0,800 150,1100 150,300 490,300 350,0 490,-300 150,-300 150,-1100 z m 1080,0 q 0,1100 -450,1600 -450,600 -1270,600 -820,0 -1270,-600 -440,-500 -440,-1600 0,-1000 440,-1600 450,-500 1270,-500 820,0 1270,500 450,600 450,1600 z" style="fill:#ffff00;stroke-width:0" id="path1072" inkscape:connector-curvature="0" />
+    <path d="m 32630,-186300 v 1900 h -1000 v -300 -1200 q 0,-400 -20,-500 -20,-200 -60,-200 -60,-100 -160,-200 -100,0 -230,0 -310,0 -490,200 -180,200 -180,700 v 1500 h -1000 v -3100 h 1000 v 400 q 230,-200 480,-400 250,-100 560,-100 540,0 820,300 280,400 280,1000 z" style="fill:#ffff00;stroke-width:0" id="path1074" inkscape:connector-curvature="0" />
+    <path d="m 33600,-188600 h 2900 v 800 h -1820 v 800 h 1710 v 800 h -1710 v 1800 h -1080 z" style="fill:#ffff00;stroke-width:0" id="path1076" inkscape:connector-curvature="0" />
+  </g>
+  <g aria-label="10kΩ" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6350.3999px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1041" transform="rotate(-90,220000,-75000)">
+    <path d="m 205900,57480 h 1100 v -3000 l -1100,230 v -820 l 1100,-220 h 1100 v 3810 h 1100 v 820 h -3300 z" style="fill:#ffff00;stroke-width:0" id="path1079" inkscape:connector-curvature="0" />
+    <path d="m 212500,55980 q 0,-870 -100,-1220 -200,-360 -600,-360 -400,0 -500,360 -200,350 -200,1220 0,880 200,1240 100,360 500,360 400,0 600,-360 100,-360 100,-1240 z m 1200,10 q 0,1150 -500,1780 -500,620 -1400,620 -900,0 -1400,-620 -500,-630 -500,-1780 0,-1150 500,-1780 500,-620 1400,-620 900,0 1400,620 500,630 500,1780 z" style="fill:#ffff00;stroke-width:0" id="path1081" inkscape:connector-curvature="0" />
+    <path d="m 214600,53480 h 1100 v 2620 l 1300,-1270 h 1200 l -1600,1590 1800,1880 h -1400 l -1300,-1450 v 1450 h -1100 z" style="fill:#ffff00;stroke-width:0" id="path1083" inkscape:connector-curvature="0" />
+    <path d="m 221000,53590 q 1100,0 1700,640 600,630 600,1600 0,1080 -800,1570 h 1000 v 900 h -2100 v -970 q 100,-60 200,-150 500,-540 500,-1330 0,-590 -300,-990 -300,-410 -800,-410 -600,0 -900,410 -300,400 -300,990 0,790 500,1330 100,90 300,150 v 970 h -2200 v -900 h 1000 q -800,-490 -800,-1570 0,-970 600,-1600 600,-640 1800,-640 z" style="fill:#ffff00;stroke-width:0" id="path1085" inkscape:connector-curvature="0" />
+  </g>
+  <g aria-label="9pF" transform="translate(295000,145000)" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6350.3999px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1045">
+    <path d="m 30310,-259900 v -900 q 280,100 540,200 260,100 520,100 530,0 830,-300 300,-300 350,-900 -210,200 -450,200 -240,100 -520,100 -710,0 -1150,-400 -430,-400 -430,-1100 0,-700 480,-1200 490,-400 1310,-400 900,0 1400,600 490,600 490,1700 0,1100 -580,1800 -580,700 -1590,700 -320,0 -620,-100 -300,0 -580,-100 z m 1470,-2300 q 310,0 470,-200 160,-200 160,-600 0,-400 -160,-600 -160,-200 -470,-200 -310,0 -470,200 -160,200 -160,600 0,400 160,600 160,200 470,200 z" style="fill:#ffff00;stroke-width:0" id="path1088" inkscape:connector-curvature="0" />
+    <path d="m 35730,-260300 v 1800 h -1110 v -4800 h 1110 v 500 q 230,-300 510,-400 280,-200 640,-200 640,0 1060,500 410,500 410,1300 0,800 -410,1300 -420,600 -1060,600 -360,0 -640,-200 -280,-100 -510,-400 z m 740,-2300 q -360,0 -550,300 -190,200 -190,700 0,500 190,800 190,200 550,200 360,0 540,-200 190,-300 190,-800 0,-500 -190,-700 -180,-300 -540,-300 z" style="fill:#ffff00;stroke-width:0" id="path1090" inkscape:connector-curvature="0" />
+    <path d="m 39220,-264500 h 3220 v 900 h -2030 v 900 h 1910 v 900 h -1910 v 2000 h -1190 z" style="fill:#ffff00;stroke-width:0" id="path1092" inkscape:connector-curvature="0" />
+  </g>
+  <g aria-label="9pF" transform="translate(295000,145000)" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6350.3999px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1049">
+    <path d="m -23550,-259300 v -900 q 280,200 540,200 260,100 520,100 530,0 830,-300 290,-300 350,-900 -210,200 -450,300 -240,0 -520,0 -710,0 -1150,-400 -430,-400 -430,-1100 0,-700 480,-1200 490,-400 1300,-400 910,0 1410,600 490,600 490,1700 0,1200 -580,1800 -580,700 -1590,700 -320,0 -620,-100 -300,0 -580,-100 z m 1470,-2200 q 310,0 470,-200 160,-200 160,-600 0,-400 -160,-700 -160,-200 -470,-200 -320,0 -470,200 -160,300 -160,700 0,400 160,600 150,200 470,200 z" style="fill:#ffff00;stroke-width:0" id="path1095" inkscape:connector-curvature="0" />
+    <path d="m -18130,-259700 v 1800 h -1110 v -4800 h 1110 v 500 q 230,-300 510,-400 280,-200 640,-200 640,0 1060,600 410,500 410,1300 0,800 -410,1300 -420,500 -1060,500 -360,0 -640,-200 -280,-100 -510,-400 z m 740,-2300 q -360,0 -550,300 -190,300 -190,800 0,500 190,700 190,300 550,300 360,0 540,-300 190,-200 190,-700 0,-500 -190,-800 -180,-300 -540,-300 z" style="fill:#ffff00;stroke-width:0" id="path1097" inkscape:connector-curvature="0" />
+    <path d="m -14640,-263800 h 3220 v 900 h -2030 v 800 h 1910 v 900 h -1910 v 2000 h -1190 z" style="fill:#ffff00;stroke-width:0" id="path1099" inkscape:connector-curvature="0" />
+  </g>
+  <g aria-label="100nF" transform="translate(295000,145000)" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5715.3599px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1053">
+    <path d="m 26570,-249800 h 950 v -2700 l -970,200 v -800 l 960,-200 h 1020 v 3500 h 950 v 700 h -2910 z" style="fill:#ffff00;stroke-width:0" id="path1102" inkscape:connector-curvature="0" />
+    <path d="m 32510,-251200 q 0,-800 -150,-1100 -150,-300 -490,-300 -350,0 -500,300 -140,300 -140,1100 0,800 140,1100 150,300 500,300 340,0 490,-300 150,-300 150,-1100 z m 1070,0 q 0,1100 -450,1600 -440,600 -1260,600 -830,0 -1270,-600 -450,-500 -450,-1600 0,-1000 450,-1600 440,-500 1270,-500 820,0 1260,500 450,600 450,1600 z" style="fill:#ffff00;stroke-width:0" id="path1104" inkscape:connector-curvature="0" />
+    <path d="m 36480,-251200 q 0,-800 -150,-1100 -140,-300 -490,-300 -340,0 -490,300 -150,300 -150,1100 0,800 150,1100 150,300 490,300 350,0 490,-300 150,-300 150,-1100 z m 1080,0 q 0,1100 -450,1600 -450,600 -1270,600 -820,0 -1270,-600 -440,-500 -440,-1600 0,-1000 440,-1600 450,-500 1270,-500 820,0 1270,500 450,600 450,1600 z" style="fill:#ffff00;stroke-width:0" id="path1106" inkscape:connector-curvature="0" />
+    <path d="m 41450,-251000 v 1900 h -1000 v -300 -1200 q 0,-400 -20,-500 -20,-200 -60,-200 -60,-100 -160,-200 -100,0 -230,0 -310,0 -490,200 -180,200 -180,700 v 1500 h -1000 v -3100 h 1000 v 400 q 230,-200 480,-400 250,-100 560,-100 540,0 820,300 280,400 280,1000 z" style="fill:#ffff00;stroke-width:0" id="path1108" inkscape:connector-curvature="0" />
+    <path d="m 42420,-253300 h 2900 v 800 h -1820 v 800 h 1710 v 800 h -1710 v 1800 h -1080 z" style="fill:#ffff00;stroke-width:0" id="path1110" inkscape:connector-curvature="0" />
+  </g>
+  <g aria-label="32kHz" transform="translate(295000,146500)" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6350.3999px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" id="text1057">
+    <path d="m 1373,-259900 q 468,100 710,400 245,300 245,800 0,700 -527,1000 -527,400 -1537.9,400 -356.62,0 -716.3,-100 -356.6,0 -706.8,-100 v -1000 q 334.7,200 663.4,300 331.8,100 651.1,100 474.5,0 725.6,-200 253.9,-200 253.9,-500 0,-300 -260.1,-400 -257.3,-200 -762.8,-200 h -477.5 v -800 h 502.3 q 449.6,0 669.8,-100 220.3,-200 220.3,-400 0,-300 -214.1,-500 -214,-100 -604.6,-100 -288.42,0 -583,100 -294.6,0 -586,200 v -900 q 353.4,-100 700.7,-200 347.32,0 682.2,0 902.8,0 1348.8,300 450,300 450,900 0,400 -214,600 -214,300 -633,400 z" style="fill:#ffff00;stroke-width:0" id="path1113" inkscape:connector-curvature="0" />
+    <path d="m 4663,-258300 h 2037 v 900 H 3336 v -900 l 1690,-1500 q 226,-200 335,-400 108,-200 108,-400 0,-300 -220,-500 -217,-200 -580,-200 -279,0 -611,100 -331,100 -710,400 v -1000 q 403,-200 797,-200 394,-100 772,-100 831,0 1290,400 462,300 462,1000 0,400 -195,700 -195,300 -822,900 z" style="fill:#ffff00;stroke-width:0" id="path1115" inkscape:connector-curvature="0" />
+    <path d="m 7786,-262200 h 1110 v 2600 l 1274,-1300 h 1290 l -1693,1600 1833,1900 h -1350 l -1354,-1400 v 1400 H 7786 Z" style="fill:#ffff00;stroke-width:0" id="path1117" inkscape:connector-curvature="0" />
+    <path d="m 12060,-262000 h 1190 v 1700 h 1760 v -1700 h 1200 v 4600 h -1200 v -2000 h -1760 v 2000 h -1190 z" style="fill:#ffff00;stroke-width:0" id="path1119" inkscape:connector-curvature="0" />
+    <path d="m 17150,-260900 h 3030 v 800 l -1830,1900 h 1830 v 800 h -3100 v -800 l 1830,-1900 h -1760 z" style="fill:#ffff00;stroke-width:0" id="path1121" inkscape:connector-curvature="0" />
+  </g>
+  <path inkscape:connector-curvature="0" style="opacity:1;vector-effect:none;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1323;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:23.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" d="m 332300,-88800 a 1220,1220 0 0 1 1200,1200 1220,1220 0 0 1 -1200,1200 1220,1220 0 0 1 -1200,-1200 1220,1220 0 0 1 1200,-1200 z" id="path1059" />
+  <g id="g1010" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5715.3599px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0" transform="rotate(-90,234400,-246100)" aria-label="100nF">
+    <path inkscape:connector-curvature="0" id="path1000" style="fill:#ffff00;stroke-width:0" d="m 17750,-185100 h 950 v -2700 l -970,200 v -800 l 960,-200 h 1020 v 3500 h 950 v 700 h -2910 z" />
+    <path inkscape:connector-curvature="0" id="path1002" style="fill:#ffff00;stroke-width:0" d="m 23690,-186500 q 0,-800 -150,-1100 -150,-300 -490,-300 -350,0 -500,300 -140,300 -140,1100 0,800 140,1100 150,300 500,300 340,0 490,-300 150,-300 150,-1100 z m 1070,0 q 0,1100 -450,1600 -440,600 -1260,600 -830,0 -1270,-600 -450,-500 -450,-1600 0,-1000 450,-1600 440,-500 1270,-500 820,0 1260,500 450,600 450,1600 z" />
+    <path inkscape:connector-curvature="0" id="path1004" style="fill:#ffff00;stroke-width:0" d="m 27660,-186500 q 0,-800 -150,-1100 -140,-300 -490,-300 -340,0 -490,300 -150,300 -150,1100 0,800 150,1100 150,300 490,300 350,0 490,-300 150,-300 150,-1100 z m 1080,0 q 0,1100 -450,1600 -450,600 -1270,600 -820,0 -1270,-600 -440,-500 -440,-1600 0,-1000 440,-1600 450,-500 1270,-500 820,0 1270,500 450,600 450,1600 z" />
+    <path inkscape:connector-curvature="0" id="path1006" style="fill:#ffff00;stroke-width:0" d="m 32630,-186300 v 1900 h -1000 v -300 -1200 q 0,-400 -20,-500 -20,-200 -60,-200 -60,-100 -160,-200 -100,0 -230,0 -310,0 -490,200 -180,200 -180,700 v 1500 h -1000 v -3100 h 1000 v 400 q 230,-200 480,-400 250,-100 560,-100 540,0 820,300 280,400 280,1000 z" />
+    <path inkscape:connector-curvature="0" id="path1008" style="fill:#ffff00;stroke-width:0" d="m 33600,-188600 h 2900 v 800 h -1820 v 800 h 1710 v 800 h -1710 v 1800 h -1080 z" />
+  </g>
+  <path inkscape:connector-curvature="0" id="path1020" d="m 257600,-123900 v 14600 h 31000 v 1300 h 30700 v -3600 h 21300 11900 v -12600 h -95000 z" style="fill:none;stroke:#ff0000;stroke-width:841.3478;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4826.2959px;line-height:1.2;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0" x="296600" y="-1.2e+05" id="text1024"><tspan sodipodi:role="line" id="tspan1022" x="296600" y="-1.2e+05" style="fill:#ff0000;stroke-width:0">Quarz</tspan></text>
+  <path style="fill:none;stroke:#ffffff;stroke-width:695.7791;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 297800,-36980 v 3080" id="path964" inkscape:connector-curvature="0" />
+</svg>

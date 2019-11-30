@@ -21,6 +21,12 @@ weshalb dies nicht Teil dieses Projekts ist. Der
 [HB-UNI-Sensor1](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1)
 von Tom ist eine gutes Beispiel für einen universell einsetzbaren Sensor.
 
+::: tip
+Möchte man den Temperatursensor an einen HM-CC-RT-DN Heizkörperthermostat anlernen
+benötigt man genauere Timings und muss auf einen externen Taktgeber zurückgreifen.
+
+Das [HMSensor WDS40-RTC](../HMSensor/HM-WDS40-TH-I-RTC-BME280) Projekt kann mit einem 32kHz Osziallator bestückt werden.
+:::
 
 ## Hardware
 
@@ -40,6 +46,7 @@ Es gibt BME280 Boards für 3.3V ohne LDO was etwas Arbeit spart.
 Je nach Zweck gibt es hier verschiedene Optionen:
 
 * Keine :)
+* [HMSensor von pa-pa](../HMSensor/HM-WDS40-TH-I-BME280)
 * [HB-UNI-SEN-BATT von Alex](https://github.com/alexreinert/PCB#hb-uni-sen-batt)
 * [Sensor_PLHT von Tom](https://github.com/TomMajor/SmartHome/tree/master/PCB)
 * [HB-UNI-Bat von Ronny](https://github.com/ronnythomas/HB-UNI-Bat)
@@ -96,7 +103,7 @@ Als Sketch kommt [HM-WDS40-TH-I-BME280](https://github.com/jp112sdl/Beispiel_Ask
 von Jerome zum Einsatz. Wie immer dran denken die [Serial und ID zu ändern](/Grundlagen/02_software.html#sketch-anpassen-und-flashen).
 
 Zusätzlich zu den üblichen Bibliotheken (AskSinPP, EnableInterrupt, Low-Power) benötigt man noch die 
-[Lib für denBME280](https://github.com/finitespace/BME280). 
+[Lib für den BME280](https://github.com/finitespace/BME280). 
 Allerdings hatte ich hier noch einen [Fehler beim kompilieren](https://github.com/finitespace/BME280/issues/17)
 weshalb ich die `BME280Spi*.o` Dateien gelöscht habe.
 
