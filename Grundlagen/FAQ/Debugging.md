@@ -72,6 +72,7 @@ Mit `tail -f /var/log/messages` werden die letzten paar Zeile dargestellt, neue 
 Es ist sicherzustellen, dass jedes HomeMatic Gerät eine eigene `Device ID` und `Device Serial` besitzt!  
 Siehe auch [Sketch anpassen und flashen](/Grundlagen/02_software.html#sketch-anpassen-und-flashen).
 
+
 ## Gerät lässt sich nicht anlernen / Funkprobleme
 
 Siehe [Fehlerhafte CC1101 Module](./Fehlerhafte_CC1101.html)

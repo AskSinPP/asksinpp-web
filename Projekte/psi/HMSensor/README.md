@@ -18,6 +18,10 @@ dabei nur 40x20mm und damit nur geringfügig größer als ein Pro-Mini.
 Die Platine gibt es in der StepUp und CR2032 Variante. Die jeweiligen Bauteillisten sind 
 auf Github hinterlegt.
 
+PS: Keine Angst vor SMD, mit etwas Übung lassen sich HMSensor Platinen mit einem normalen Lötkolben bestücken.
+Mit einer guten Pinzette, Flux und Entlötlitze sowie einer Lupe oder Mikroskop hat man eine gute Grundausstattung.
+Youtube bietet einige gute Videos die den Einstieg erleichtern. Hat man den Dreh erst mal raus, dann will man
+keine Beinchen mehr abknipsen nach dem Löten 🙂
 
 ## HMSensor-StepUp
 
@@ -120,9 +124,12 @@ Beispielsweise `-P usb -c usbasp` für den USBasp unter Windows.
 
 ### Sketche
 
-Sketche werden wie gewohnt über den UART (FTDI) geflasht. 
+Sketche werden wie gewohnt über den UART (FTDI) geflasht.
 
-**Anschluss:** 
+Alternativ könnte man den Bootloader auch weglassen und den Sketch direkt per ISP aufspielen. Der FTDI würde
+dann nur noch zur Anzeige des seriellen Monitors benötigt.
+
+**Anschluss des FTDI an die HMSensor:** 
 
 | HMSensor | FTDI | |
 |----------|------|-|
