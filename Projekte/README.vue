@@ -82,10 +82,10 @@
 </template>
 
 <script>
-  import MainLayout from '../.vuepress/theme/MainLayout'
+  import Layout from '@theme/layouts/Layout'
 
   export default {
-    extends: MainLayout,
+    extends: Layout,
 
     data() {
       return {
