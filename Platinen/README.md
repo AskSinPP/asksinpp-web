@@ -12,7 +12,10 @@
   - [HB-UNI-SEN-WEA](https://github.com/alexreinert/PCB#hb-uni-sen-wea) (Platine für die [Wetterstation](https://github.com/jp112sdl/HB-UNI-Sen-WEA/tree/master))
 
 - Platine(n) von [Tom](https://github.com/TomMajor)
-  - [PLHT Sensor](https://github.com/TomMajor/SmartHome/tree/master/PCB) (Druck-, Helligkeit-, Feuchte-, Temperatursensor)
+  - [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1#platine) (Druck-, Helligkeit-, Feuchte-, Temperatursensor)
+  - [HB-SEN-LJet](https://github.com/TomMajor/SmartHome/tree/master/HB-SEN-LJet#platine) (Kopplung der Projet LevelJET Ultraschall-Füllstandsanzeige mit HomeMatic)
+  - [HB-UNI-Sensor-Heizung](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor-Heizung#platine) (Schwellwertschalter, der bei Unter- und Überschreitung eines bestimmten Sensorwertes möglichst zeitnah ein Telegramm an die Zentrale sendet)
+  - [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench#platine) (Testbench für CC1101 Frequenztests)
 
 - Platine(n) von [Marco](https://github.com/stan23)
   - [Gosund SP1](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1) Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl
