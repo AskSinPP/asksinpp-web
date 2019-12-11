@@ -1,10 +1,4 @@
----
-sidebar: auto
----
-
-# RF-Types
-
-## Native Types
+# Native RF-Types
 
 Liste der Device-Model IDs die von der CCU nativ verstanden werden.
 
@@ -236,74 +230,3 @@ Liste der Device-Model IDs die von der CCU nativ verstanden werden.
 &nbsp; | ZEL STG RM WT 2 | HM Push Button 2 Roto | `0x007D` | [pb-2-wm55_ge_v1_4](./rf_pb-2-wm55_ge_v1_4.xml), [pb-2-wm55_le_v1_3](./rf_pb-2-wm55_le_v1_3.xml) 
 ![atent](./device-thumbs/73_hm-atent_thumb.png) | atent | Funk-Handsender DORMA | `0x0064` | [rc](./rf_rc.xml) 
 
-
-## HomeBrew Types
-
-### Jerome
-
-Bereiche: `E901 - E902`, `F1D0 - F1D1`, `F300-F3FF`, `F9D2-F9D7`
-
- Bild | ID | Name | DeviceID | Datei 
-------|----|------|----------|-------
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-cap-moist_thumb.png" width=25/> | [HB-UNI-Sen-CAP-MOIST](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST) | kapazitiver Bodenfeuchtesensor<br/>_optional mit DS18B20 Temperatursensor_ | E9 01 | HB-UNI-Sen-PRESS
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-dist-tof_thumb.png" width=25/> | [HB-UNI-Sen-DIST-TOF](https://github.com/jp112sdl/HB-UNI-Sen-DIST-TOF) | Time-of-Flight Abstandsensor | E9 02 | HB-UNI-Sen-PRESS-SC |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-dist-us_thumb.png" width=25/> | [HB-UNI-Sen-DIST-US](https://github.com/jp112sdl/HB-UNI-Sen-DIST-US) | Ultraschall Abstandsensor | F1 D0 | HB-UNI-Sen-WEA |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-lev-tof_thumb.png" width=25/> | [HB-UNI-Sen-LEV-TOF](https://github.com/jp112sdl/HB-UNI-Sen-LEV-TOF) | Time-of-Flight Füllstandsensor | F1 D1 | HB-UNI-Sen-IAQ |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-lev-us_thumb.png" width=25/> | [HB-UNI-Sen-LEV-US](https://github.com/jp112sdl/HB-UNI-Sen-LEV-US) | Ultraschall Füllstandsensor | F2 06 | HB-IBUT-8 |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-press_thumb.png" width=25/> | [HB-UNI-Sen-PRESS](https://github.com/jp112sdl/HB-UNI-Sen-PRESS) | Drucksensor |  F3 11 | HB-UNI-Sen-CAP-MOIST |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-temp-ds18b20_thumb.png" width=25/> | [HB-UNI-Sen-TEMP-DS18B20](https://github.com/jp112sdl/HB-UNI-Sen-TEMP-DS18B20) | 1..8fach DS18B20 Temperatursensor | F3 12 | HB-UNI-Sen-CAP-MOIST-T |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-wea_thumb.png" width=25/> | [HB-UNI-Sen-WEA](https://github.com/jp112sdl/HB-UNI-Sen-WEA) | Wetterstation |  F3 01 | HB-UNI-Sen-TEMP-DS18B20 |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-senact-4-4_thumb.png" width=25/> | [HB-UNI-SenAct-4-4](https://github.com/jp112sdl/HB-UNI-SenAct-4-4) | 4fach - Sender & - Aktor | F3 08 | HB-UNI-Sen-TEMP-IR |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-senact-8-8_thumb.png" width=25/> |  [HB-UNI-SenAct-8-8](https://github.com/jp112sdl/HB-UNI-SenAct-8-8)  | 8fach - Sender & - Aktor | F3 20 | HB-LC-SW12-FM |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-rgb-led-ctrl_thumb.png" width=25/> | [HB-UNI-RGB-LED-CTRL](https://github.com/jp112sdl/HB-UNI-RGB-LED-CTRL) | RGB Controller für WS28xx / Neopixel / etc. | F3 30 | HB-RC-2-PBU-LED|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-temp-ir_thumb.png" width=25/> | [HB-UNI-Sen-TEMP-IR](https://github.com/jp112sdl/HB-UNI-Sen-TEMP-IR) | MLX90614 Infrarot Temperatursensor | F3 31 | HB-UNI-SenAct-4-4-SC|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-dummy-beacon_thumb.png" width=25/> | [HB-UNI-Sen-DUMMY-BEACON](https://github.com/jp112sdl/HB-UNI-Sen-DUMMY-BEACON) | Dummy-Device zum Simulieren<br/>zyklischer Statusmeldungen sowie Ack-Nachrichten | F3 32 | HB-UNI-SenAct-4-4-RC|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-volt_thumb.png" width=25/> | [HB-UNI-Sen-VOLT](https://github.com/jp112sdl/HB-UNI-Sen-VOLT) | universeller Spannungssensor (Template) | F3 33 | HB-UNI-SenAct-4-4-SC-BAT|
-|<img src="https://github.com/eq-3/occu/blob/master/WebUI/www/config/img/devices/50/PushButton-2ch-wm_thumb.png" width=25/> | [HB-LC-Sw1PBU-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HB-LC-Sw1PBU-FM) | alternative Firmware für den<br/>HM-LC-Sw1PBU-FM (getrennte Taster-/Relais-Kanäle) |  F3 34 | HB-UNI-SenAct-4-4-RC-BAT|
-|<img src="https://github.com/eq-3/occu/blob/master/WebUI/www/config/img/devices/50/PushButton-2ch-wm_thumb.png" width=25/> | [HB-LC-Sw2PBU-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HB-LC-Sw2PBU-FM) | alternative Firmware für den<br/>HM-LC-Sw2PBU-FM (getrennte Taster-/Relais-Kanäle) |  F3 35 | HB-LC-Sw1PBU-FM|
-|<img src="https://github.com/eq-3/occu/blob/master/WebUI/www/config/img/devices/50/PushButton-2ch-wm_thumb.png" width=25/> | [HB-LC-Bl1PBU-FM](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HB-LC-Bl1PBU-FM) | alternative Firmware für den<br/>HM-LC-Bl1PBU-FM (getrennte Taster-/Relais-Kanäle) |  F3 36 | HB-LC-Sw2PBU-FM|
-|<img src="https://github.com/eq-3/occu/blob/master/WebUI/www/config/img/devices/50/5_hm-lc-sw2-fm_thumb.png" width=25/> | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den<br/>HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) special thx to [stan23](https://github.com/stan23)! |  F3 37 | HB-LC-Bl1PBU-FM|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-dmx-master_thumb.png" width=25/> | [HB-UNI-DMX-Master](https://github.com/jp112sdl/HB-UNI-DMX-Master) | (sehr) einfacher DMX Master Controller | F3 38 | HB-UNI-SenAct-8-8-RC|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-dis-ep-42bw_thumb.png" width=25/> | [HB-Dis-EP-42BW](https://github.com/jp112sdl/HB-Dis-EP-42BW) | 4.2" ePaper Display | F3 39 | HB-UNI-SenAct-8-8-RC-BAT|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-dis-ep-75bw_thumb.png" width=25/> | [HB-Dis-EP-75BW](https://github.com/jp112sdl/HB-Dis-EP-75BW) | 7.5" ePaper Display | F3 3A | HB-UNI-SenAct-8-8-SC|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-rfid-rc_thumb.png" width=25/> | [HB-UNI-Sen-RFID-RC](https://github.com/jp112sdl/HB-UNI-Sen-RFID-RC) | RFID-Reader als Sender (Tasterschnittstelle) |  F3 3B | HB-UNI-SenAct-8-8-SC-BAT|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-ibut-8_thumb.png" width=25/> | [HB-IBUT-8](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-IBUT-8) | iButton Sender Taster/Schließer |  F3 3C | HB-UNI-Sen-RFID-RC|
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-ou-mp3-led_thumb.png" width=25/> | [HB-OU-MP3-LED](https://github.com/jp112sdl/HB-OU-MP3-LED) | MP3-Player mit LED |  F3 41 | HB-UNI-RGB-LED-CTRL |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-weight_thumb.png" width=25/> | [HB-UNI-Sen-WEIGHT](https://github.com/jp112sdl/HB-UNI-Sen-WEIGHT) | universeller Wägesensor | F3 42 | HB-UNI-DMX-MASTER |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-weight-sc_thumb.png" width=25/> | [HB-UNI-Sen-WEIGHT-SC](https://github.com/jp112sdl/HB-UNI-Sen-WEIGHT-SC) | universeller Wägesensor mit Schließerkontakt |  F3 43 | HB-DIS-EP-42BW |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-iaq_thumb.png" width=25/> | [HB-UNI-Sen-IAQ](https://github.com/jp112sdl/HB-UNI-Sen-IAQ) | universeller Luftgütesensor _(temporarily discontinued)_ [(see HM-Forum)](https://homematic-forum.de/forum/viewtopic.php?f=76&t=49422)| F3 44 | HB-OU-MP3-LED |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-rc-12-ep-bw_thumb.png" width=25/> | [HB-RC-12-EP](https://github.com/jp112sdl/HB-RC-12-EP) | 12 Kanal Fernbedienung mit Farb- oder Schwarz/Weiß-ePaper-Display | F3 45 | HB-RC-12-EP-29C |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-rc-2-pbu-led_thumb.png" width=25/> | [HB-RC-2-PBU-LED](https://github.com/jp112sdl/HB-RC-2-PBU-LED) | 2 Kanal Taster mit RGB-Hintergrundbeleuchtung |  F3 46 | HB-RC-12-EP-29BW |
-|<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-ou-mot-servo_thumb.png" width=25/> | [HB-OU-MOT-SERVO](https://github.com/jp112sdl/HB-OU-MOT-SERVO) | Servo-Motor Steuerung |  F3 47 | HB-DIS-EP-75BW |
-
-
-| | |
-|-|-|
-|F3 48 | HB-OU-MOT-SERVO |
-|F3 4A | HB-UNI-Sen-VOLT |
-|F3 4B | HB-UNI-Sen-WEIGHT |
-|F3 4C | HB-UNI-Sen-WEIGHT-SC |
-|F3 53 | HB-DIS-EP-42BW-MAINS |
-|F3 57 | HB-DIS-EP-75BW-MAINS |
-|F3 FF | HB-UNI-Sen-DUMMY-BEACON |
-|F5 01 | HB-LC-Sw2-FM |
-|F9 D6 | HB-UNI-Sen-DIST-US |
-|F9 D7 | HB-UNI-Sen-DIST-TOF |
-|F9 D2 | HB-UNI-Sen-LEV-US |
-|F9 D3 | HB-UNI-Sen-LEV-TOF |
-
-### pa-pa
-
-Bereiche: `F205`, `F206`
-
-### stan23
-
-Bereiche: `F501`
-
-### Tom
-
-Bereiche: `F103-F13F`
-
-### FHEM
-
-Bereiche: `F101-F102`
