@@ -80,5 +80,8 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 ## FHEM
 
- Bild | ID | Name | DeviceID | Datei 
-------|----|------|----------|-------
+ ID | Name | DeviceID 
+----|------|----------
+HB-UW-Sen-THPL-I | FHEM Wettersensor Innen 2014 | `0xF101`
+HB-UW-Sen-THPL-O | FHEM Wettersensor Außen 2014 | `0xF102`
+
