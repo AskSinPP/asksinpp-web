@@ -82,10 +82,10 @@
 </template>
 
 <script>
-  import Layout from '@theme/layouts/Layout'
+  import ParentLayout from '@theme/layouts/OriginTheme'
 
   export default {
-    extends: Layout,
+    extends: ParentLayout,
 
     data() {
       return {

@@ -65,11 +65,11 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 ## pa-pa
 
-| ID | Name | Device-Model | Datei |
-|----|------|----------|-------|
-| HB GEN SENS | generischer Sensor | F2 05 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HB-GEN-SENS/HB-GEN-SENS.ino |
-| HB-IBUT8 | iButton Reader | F2 06 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HB-IBUT-8/HB-IBUT-8.ino |
-| HM_LC_SW2_FM | | F2 01 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HM-LC-SW2-FM/HM_LC_SW2_FM.ino |
+| ID | Name | Device-Model |
+|----|------|----------|
+| HB GEN SENS | generischer Sensor | `0xF205`
+| HB-IBUT8 | iButton Reader | `0xF206`
+| HM_LC_SW2_FM | | `0xF201` 
 
 
 ## stan23
@@ -82,7 +82,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 | Bild | ID | Name | Device-Model | Datei |
 |------|----|------|----------|-------|
-|<img src="https://github.com/TomMajor/SmartHome/blob/master/HB-UNI-Sensor1/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor1_thumb.png" width=25/> | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1) | Universalsensor Temperatur/Druck/Feuchte/Lux/UV/Dig.Eingang | `0xF103` | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/blob/master/HB-UNI-Sensor1/CCU_RM/src/addon/firmware/rftypes/hb-uni-sensor1.xml) |
+|<img src="https://raw.githubusercontent.com/TomMajor/SmartHome/master/HB-UNI-Sensor1/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor1_thumb.png" width=25/> | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1) | Universalsensor Temperatur/Druck/Feuchte/Lux/UV/Dig.Eingang | `0xF103` | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/blob/master/HB-UNI-Sensor1/CCU_RM/src/addon/firmware/rftypes/hb-uni-sensor1.xml) |
 
 
 ## Dirk (FHEM 2014)
