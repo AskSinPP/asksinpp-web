@@ -48,6 +48,11 @@ module.exports = () => {
     },
   ];
 
+  sidebar['/rftypes/'] = [
+    ['', 'RF-Typs'],
+    ['HomeBrew', 'HomeBrew Typs'],
+  ];
+
   sidebar['/Projekte/psi/HMSensor/'] = [
     ['', 'HMSensor'],
     ...getFiles('Projekte/psi/HMSensor')
