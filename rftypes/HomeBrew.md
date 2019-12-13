@@ -9,15 +9,15 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | Entwickler | Bereich
 |------------|----------
 | [Jerome](https://github.com/jp112sdl/) | `E901-E902`, `F1D0-F1D1`, `F300-F3FF`, `F9D2-F9D7`
-| [pa-pa](https://github.com/pa-pa/) | `F205`, `F206`
+| [pa-pa](https://github.com/pa-pa/) | `F201`, `F205`, `F206`
 | [stan23](https://github.com/stan23/) | `F501`
-| [Tom](https://github.com/TomMajor/) | `F103-F13F`
-| FHEM | `F101-F102`
+| [Tom Major](https://github.com/TomMajor/) | `F103-F13F`
+| [Dirk (FHEM 2014)](https://github.com/kc-GitHub/Wettersensor) | `F101-F102`
 
 
 ## Jerome
 
- Bild | ID | Name | DeviceID | Datei 
+ Bild | ID | Name | Device-Model | Datei 
 ------|----|------|----------|-------
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-press_thumb.png" width=25/> | [HB-UNI-Sen-PRESS](https://github.com/jp112sdl/HB-UNI-Sen-PRESS) | Drucksensor | `0xE901` | [hb-uni-sen-press](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-press.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-press_thumb.png" width=25/> | [HB-UNI-Sen-PRESS-SC](https://github.com/jp112sdl/HB-UNI-Sen-PRESS) | Drucksensor | `0xE902` | [hb-uni-sen-press-sc](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-press-sc.xml) |
@@ -65,23 +65,30 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 ## pa-pa
 
- Bild | ID | Name | DeviceID | Datei 
-------|----|------|----------|-------
+| ID | Name | Device-Model | Datei |
+|----|------|----------|-------|
+| HB GEN SENS | generischer Sensor | F2 05 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HB-GEN-SENS/HB-GEN-SENS.ino |
+| HB-IBUT8 | iButton Reader | F2 06 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HB-IBUT-8/HB-IBUT-8.ino |
+| HM_LC_SW2_FM | | F2 01 | https://github.com/pa-pa/AskSinPP/blob/master/examples/custom/HM-LC-SW2-FM/HM_LC_SW2_FM.ino |
+
 
 ## stan23
 
- Bild | ID | Name | DeviceID | Datei 
+ Bild | ID | Name | Device-Model | Datei 
 ------|----|------|----------|-------
 
-## Tom
 
- Bild | ID | Name | DeviceID | Datei 
-------|----|------|----------|-------
+## Tom Major
 
-## FHEM
+| Bild | ID | Name | Device-Model | Datei |
+|------|----|------|----------|-------|
+|<img src="https://github.com/TomMajor/SmartHome/blob/master/HB-UNI-Sensor1/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor1_thumb.png" width=25/> | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1) | Universalsensor Temperatur/Druck/Feuchte/Lux/UV/Dig.Eingang | `0xF103` | [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/blob/master/HB-UNI-Sensor1/CCU_RM/src/addon/firmware/rftypes/hb-uni-sensor1.xml) |
 
- ID | Name | DeviceID 
+
+## Dirk (FHEM 2014)
+
+ ID | Name | Device-Model 
 ----|------|----------
-HB-UW-Sen-THPL-I | FHEM Wettersensor Innen 2014 | `0xF101`
-HB-UW-Sen-THPL-O | FHEM Wettersensor Außen 2014 | `0xF102`
+HB-UW-Sen-THPL-I | FHEM Wettersensor Innen (2014) | `0xF101`
+HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
 
