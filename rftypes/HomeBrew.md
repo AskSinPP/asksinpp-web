@@ -67,9 +67,9 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 | ID | Name | Device-Model |
 |----|------|----------|
-| HB GEN SENS | generischer Sensor | `0xF205`
-| HB-IBUT8 | iButton Reader | `0xF206`
-| HM_LC_SW2_FM | | `0xF201` 
+| [HB GEN SENS](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-GEN-SENS) | generischer Sensor | `0xF205`
+| [HB-IBUT8](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-IBUT-8) | iButton Reader | `0xF206`
+| [HM_LC_SW2_FM](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HM-LC-SW2-FM) | | `0xF201` 
 
 
 ## stan23
