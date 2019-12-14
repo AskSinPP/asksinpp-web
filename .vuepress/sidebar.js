@@ -49,8 +49,8 @@ module.exports = () => {
   ];
 
   sidebar['/rftypes/'] = [
-    ['', 'RF-Typs'],
-    ['HomeBrew', 'HomeBrew Typs'],
+    ['', 'RF-Types'],
+    ['HomeBrew', 'HomeBrew Types'],
   ];
 
   sidebar['/Projekte/psi/HMSensor/'] = [
