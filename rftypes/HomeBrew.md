@@ -9,7 +9,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | Entwickler | Bereich
 |------------|----------
 | [Jerome](https://github.com/jp112sdl/) | `E901-E902`, `F1D0-F1D1`, `F300-F3FF`, `F9D2-F9D7`
-| [pa-pa](https://github.com/pa-pa/) | `F201`, `F205`, `F206`
+| [pa-pa](https://github.com/pa-pa/) | `F200-F29F`
 | [stan23](https://github.com/stan23/) | `F501`
 | [Tom Major](https://github.com/TomMajor/) | `F103-F13F`
 | [Dirk (FHEM 2014)](https://github.com/kc-GitHub/Wettersensor) | `F101-F102`
@@ -67,9 +67,13 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 | ID | Name | Device-Model |
 |----|------|----------|
+| [HM_LC_SW2_FM](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HM-LC-SW2-FM) | Funk-Schaltaktor 2-fach | `0xF201` 
+| [HB-SW2-SENS](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-SW2-SENS) | ?? | `0xF202`
+| [HB-DoorBell](https://github.com/pa-pa/AskSinPP/tree/master/examples/stm32/HB-DoorBell) | Türklingel | `0xF203`
 | [HB GEN SENS](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-GEN-SENS) | generischer Sensor | `0xF205`
 | [HB-IBUT8](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-IBUT-8) | iButton Reader | `0xF206`
-| [HM_LC_SW2_FM](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HM-LC-SW2-FM) | | `0xF201` 
+| [HB-LC-BL1-FM-2](https://github.com/pa-pa/AskSinPP) | Jalousieaktor, extra 2 Kanal Blind - da FHEM die dynamische Kanalanzahl nicht kann | `0xF207`
+| [HB-LC-Dim1TPBU-FM](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-LC-Dim1TPBU-FM) | Dimmer mit extra Features | `0xF299`
 
 
 ## stan23
