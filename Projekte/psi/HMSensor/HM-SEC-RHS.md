@@ -32,6 +32,21 @@ sofern man diese nutzen möchte. Hier wird der ProMini-Bootloader und das Flashe
 * Reed-Kontakt 2x14mm [Aliexpress](https://de.aliexpress.com/item/10pcs-N-O-Reed-switch-Magnetic-Switch-2-14mm-Normally-Open-Magnetic-Induction-switch/32803902404.html)
 * Neodym Magnet 4x2mm [Aliexpress](https://de.aliexpress.com/item/32946901529.html)
 
+| Bezeichner | Anzahl | Teil            | Größe
+|------------|--------|-----------------|-----------
+|            | 2x     | Reed-Kontakt    | 2x14mm
+|            | 1x     | Magnet          | 4x2mm
+| IC1        | 1x     | ATMega328P-AU   | TQFP-32
+| BT1        | 1x     | CR2023 Halter   | SMD Tab 20mm
+| D1         | 1x     | LED rot         | 1206
+| D2         | 1x     | LED grün        | 1206
+| R1         | 1x     | 10kΩ Widerstand | 0805
+| R2, R3     | 2x     | 1k5Ω Widerstand | 0805 
+| C1, C2, C3 | 3x     | 100nF Kerko     | 0805
+| C6         | 1x     | 10µF Kergo      | 0805
+| SW1, SW2   | 2x     | Taster          | 3x6x2,5mm
+
+
 ### Gehäuse
 
 * [Original von joschi2009](https://www.thingiverse.com/thing:2354704) für HMSensor-CR2032
