@@ -14,7 +14,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     algolia: {
-      apiKey: 'f40dd11f788809fa64baf6b11c8f0a77',
+      apiKey: 'acfa71c7299ab8e74e13a65ac8c2c9ac',
       indexName: 'asksinpp',
       debug: false
     }
