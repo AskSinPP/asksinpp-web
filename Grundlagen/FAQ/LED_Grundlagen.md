@@ -1,10 +1,10 @@
 # LED-Dimmer Grundlagen
 
-Leuchtdioden haben eine erhbliche Verbreitung erreicht und verbrauchen vergleichsweise wenig Energie.
+Leuchtdioden haben eine erhebliche Verbreitung erreicht und verbrauchen vergleichsweise wenig Energie.
 Sie werden in verschiedenster Form in Lampen verbaut, doch stellt sich oft die Frage, wie man damit
 im Kontext des SmartHome umgehen soll. Dieser Artikel soll einige Grundlagen und Verständnis schaffen.
 
-Aus elektrotechnischer Sicht wird die lektüre auf
+Aus elektrotechnischer Sicht wird die Lektüre auf
 [ElectronicsTutorials](https://www.electronics-tutorials.ws/de/dioden/leuchtdiode.html) nahegelegt!
 
 tldr;
@@ -13,7 +13,7 @@ tldr;
   => Strombegrenzung nötig (meist durch Vorwiderstand gelöst)
 * Die Lichtitensität wird maßgeblich über den Strom bestimmt, nicht über die Spannung.
 * Es gelten die Regeln der Reihen- / Parallelschaltung:
-  * Reihenschaltung: Addierung der Spannungen der LDEs
+  * Reihenschaltung: Addierung der Spannungen der LEDs
   * Parallelschaltung: Addierung des Stroms der LEDs
 * Leistung [Watt] = Spannung [Volt] * Strom [Ampere]
 
@@ -25,7 +25,7 @@ oder als Einheiten ausgedrückt `[W] = [V] * [A]`.
 ## Konstanspannung
 
 Wird eine Spannungsquelle (Netzteil) mit konstanter Spannung eingesetzt (z.b. 12V)
-muss also der Strom der durch die LED fließt begrenzt werden. Dies erfolt über
+muss also der Strom, der durch die LED fließt begrenzt werden. Dies erfolt über
 den Einbau eines Vorwiderstands. LED-Stripes haben diese Widerstände eingebaut
 sofern in ihrer Spezifikation ein Spannung angegeben ist wie z.B. 12V oder 24V.
 
@@ -34,9 +34,9 @@ Abgekürz oft durch CV (Constant-Voltage).
 
 ## Konstantstrom
 
-Wird eine Konstanstromquelle eingesetzt liefert diese einen definierten Strom
+Wird eine Konstanstromquelle eingesetzt, liefert diese einen definierten Strom
 von Beispielswiese 350mA wobei sich die Spannung an die beötigte Leistung anpasst.
-In diesem Fall werden die LEDs ohne Vorwiderstand betrieben da der Stromfluss vom
+In diesem Fall werden die LEDs ohne Vorwiderstand betrieben, da der Stromfluss vom
 Netzteil geregelt wird. Sie werden auch LED-Treiber genannt.
 
 Netzteile welche als KSQ arbeiten erkennt man oft daran, dass als Output
@@ -69,7 +69,7 @@ PWM kommt meist bei Betrieb mit konstanter Spannung zum Einsatz, wie z.B. bei LE
 
 ## Dimmer
 
-Die Frage ist nun wie entweder der Strom begrenzt werden kann oder die LED
+Die Frage ist nun, wie entweder der Strom begrenzt werden kann oder die LED
 gepulst wird. Im Feld haben sich verschiedenste Varianten etabliert.
 
 ### Controller
@@ -100,14 +100,14 @@ Das [Digital Addressable Lighting Interface](https://de.wikipedia.org/wiki/Digit
 
 ### 3m LED-Stripe
 
-Angenommen wir haben einen einfarbigen LED-Stripe mit den Spezifikationen von `24V` und und `14,4W` pro Meter.
+Angenommen wir haben einen einfarbigen LED-Stripe mit den Spezifikationen von `24V` und `14,4W` pro Meter.
 
 Aus den `24V` ist zu erkennen, dass es sich hier um eine konstante Spannung handelt und der Strombedarf
 von der Länge (also der Anzahl der parallel-geschalteten LEDs) abhängt.
 
 Der Leistungsbedarf ist also `14,4W/m * 3m = 43,2W` und demnach `43,2W / 24V = 1.8A`. 
 
-Ein passendes Netzteil wäre hierfür Beispielsweise das Meanwell LPV-60-24 mit `24V` und `2,5A` da man
+Ein passendes Netzteil wäre hierfür beispielsweise das Meanwell LPV-60-24 mit `24V` und `2,5A` da man
 immer rund 10% mehr Leistung einplanen sollte. Zudem verbraucht der LED-Controller auch einen geringe Leistung.
 
 Bei der Auswahl des LED-Controllers ist nun auf die maximale Eingangsspannung sowie den Strom zu achten.  
@@ -119,14 +119,14 @@ sollte (z.B. am Anfang und am Ende).
 
 ### Deckenspots
 
-Viele LED-Deckenspots oder auch Panles werden mit externem Netzteil geliefert welches durch
+Viele LED-Deckenspots oder auch Panles werden mit externem Netzteil geliefert, welches durch
 eine eigene Beschaltung ersetzt werden kann. In diesem Beispiel entnehmen wir den technischen Daten:
-`700mA` sowie `7W`. Zudem ist auf dem Netzteil eine Ausgansspannung von `7-15V` angegeben wudurch
+`700mA` sowie `7W`. Zudem ist auf dem Netzteil eine Ausgansspannung von `7-15V` angegeben, wudurch
 klar wird, dass es sich hier um einen Konstantstrom-Betrieb handelt.
 
-Ein mögliches Netzteil wäre das Meanwell LCM-40. Der Ausgangsstrom kann über Dip-Schalter
+Ein mögliches Netzteil wäre das Meanwell LCM-40. Der Ausgangsstrom kann über DIP-Schalter
 eingestellt werden und zudem kann es über einen PWM Eingang gedimmt werden. Aus dem Datenblatt
-geht zudem hervor, dass bei einem Strom von `700mA` maximal `57V` geliefert werden wodurch 5
+geht zudem hervor, dass bei einem Strom von `700mA` maximal `57V` geliefert werden, wodurch 5
 Deckensponts **in Reihe** versorgt werden können.
 
 
