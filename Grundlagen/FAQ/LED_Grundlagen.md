@@ -9,58 +9,63 @@ Aus elektrotechnischer Sicht wird die Lektüre auf
 
 tldr;
 * Der Strom kann durch eine LED nur in eine Richtung fließen. Es muss also auf die Polung geachtet werden.
-* Der Innenwiderstand sinkt bei angelegter Spannung gegen null.
+* Der Innenwiderstand sinkt bei höherer Spannung, die Kennlinie ist nicht-linear
   => Strombegrenzung nötig (meist durch Vorwiderstand gelöst)
-* Die Lichtitensität wird maßgeblich über den Strom bestimmt, nicht über die Spannung.
+* Die Lichtintensität wird maßgeblich über den Strom bestimmt, nicht über die Spannung.
 * Es gelten die Regeln der Reihen- / Parallelschaltung:
   * Reihenschaltung: Addierung der Spannungen der LEDs
   * Parallelschaltung: Addierung des Stroms der LEDs
 * Leistung [Watt] = Spannung [Volt] * Strom [Ampere]
+
+Achtung: Parallelschaltung von LEDs ohne Vorwiderstand ist nicht zu empfehlen. Durch leichte Unterschiede 
+im Produktionsprozess und damit in der Kennlinie könnte eine LED auf der Kennlinie *davonlaufen* und 
+durch zu hohen Strom zerstört werden.
 
 Eine LED benötigt eine gewisse Leistung die in Watt angegeben ist,
 diese setzt sich aus der benötigten Spannung und dem Strom zusammen, also `P = U * I`
 oder als Einheiten ausgedrückt `[W] = [V] * [A]`.
 
 
-## Konstanspannung
 
-Wird eine Spannungsquelle (Netzteil) mit konstanter Spannung eingesetzt (z.b. 12V)
-muss also der Strom, der durch die LED fließt begrenzt werden. Dies erfolt über
+## Konstantspannung
+
+Wird eine Spannungsquelle (Netzteil) mit konstanter Spannung (z.B. 12 V) eingesetzt 
+muss also der Strom, der durch die LED fließt, begrenzt werden. Dies erfolt über
 den Einbau eines Vorwiderstands. LED-Stripes haben diese Widerstände eingebaut
-sofern in ihrer Spezifikation ein Spannung angegeben ist wie z.B. 12V oder 24V.
+sofern in ihrer Spezifikation ein Spannung angegeben ist wie z.B. 12 V oder 24 V.
 
-Abgekürz oft durch CV (Constant-Voltage).
+Abgekürzt oft durch CV (Constant-Voltage).
 
 
 ## Konstantstrom
 
-Wird eine Konstanstromquelle eingesetzt, liefert diese einen definierten Strom
-von Beispielswiese 350mA wobei sich die Spannung an die beötigte Leistung anpasst.
+Wird eine Konstanstromquelle (KSQ) eingesetzt, liefert diese einen definierten Strom
+von beispielsweise 350 mA, wobei sich die Spannung an die benötigte Leistung anpasst.
 In diesem Fall werden die LEDs ohne Vorwiderstand betrieben, da der Stromfluss vom
 Netzteil geregelt wird. Sie werden auch LED-Treiber genannt.
 
 Netzteile welche als KSQ arbeiten erkennt man oft daran, dass als Output
 ein fester Strom und ein variabler Spannungsberiech angegeben sind. Beispielsweise
-`20-32V`, `350mA`.
+`20-32 V`, `350 mA`.
 
 KSQ kommen oft bei LED-Panels, Einbauspots und Power-LEDs zum Einsatz.
 
-Abgekürz oft durch CC (Constant-Current).
+Abgekürzt oft durch CC (Constant-Current).
 
 
 ## Dimmen von LEDs
 
-Um die Helligkeit von LEDs zu regeln sind zwei Verfahren gebräuchlich: Strombegrenzung und PWM. 
+Um die Helligkeit von LEDs zu regeln sind zwei Verfahren gebräuchlich: Strombegrenzung und Pulsweitenmodulation. 
 
 ### Strombegrenzung
 
-Bei der Stormbegrenzung wird der Strom, der durch die LED fließt, nach unten geregelt wodurch
+Bei der Strombegrenzung wird der Strom, der durch die LED fließt, nach unten geregelt wodurch
 die Leistung abnimmt und die LED dunkler wird.
 
 ### Pulsweitenmodulation
 
 Bei [PWM](https://de.wikipedia.org/wiki/Pulsdauermodulation) wird die LED in sehr kurzen
-Zeitabständen ein- und ausgeschaltet wodurch sich kurze Hell- und Dunkelphasen ergen.
+Zeitabständen ein- und ausgeschaltet, wodurch sich kurze Hell- und Dunkelphasen ergeben.
 Die Trägheit des menschlichen Auges kann diese kurzen Wechsel nicht erfassen
 und interpretiert nur die durchschnittliche Helligkeit.
 
@@ -74,7 +79,7 @@ gepulst wird. Im Feld haben sich verschiedenste Varianten etabliert.
 
 ### Controller
 
-LED-Controller werden auf der Nidervolt-Seite, also nach dem Netzteil verschaltet.
+LED-Controller werden auf der Niedervolt-Seite, also nach dem Netzteil verschaltet.
 Meistens wird PWM eingesetzt, es gibt aber auch viele Spannungsquellen mit integriertem
 Controller wie zum Beispiel Netzteile mit DIM, DALI oder DMX Eingang welche das Dimmen übernehmen.
 
@@ -82,9 +87,12 @@ Controller wie zum Beispiel Netzteile mit DIM, DALI oder DMX Eingang welche das 
 
 ### Phasenschnitt
 
-Phasenabschnittsdimmer bzw Phasenanschnittsdimmer wurden zum Dimmen von herkömmlichen
+Phasenabschnittsdimmer bzw. Phasenanschnittsdimmer wurden zum Dimmen von herkömmlichen
 Glühlampen und Halogenlampen benutzt. Der Einsatz bei LED-Leuchtmitteln ist nur bedingt
-zu empfehlen da die Funktion von der Kompatibilität des Netzteils abhängt.
+zu empfehlen da die Funktion von der Kompatibilität des Netzteils abhängt. 
+Oft versucht die interne Schaltung des LED-Leuchtmittels gegenzusteuern. Im Endeffekt 
+bleibt das die Helligkeit über einen großen Dimmbereich nahezu gleich, und sinkt dann 
+rasch ab oder geht in Blinken oder Blitzen über.
 
 ### DALI
 
@@ -108,20 +116,21 @@ von der Länge (also der Anzahl der parallel-geschalteten LEDs) abhängt.
 Der Leistungsbedarf ist also `14,4W/m * 3m = 43,2W` und demnach `43,2W / 24V = 1.8A`. 
 
 Ein passendes Netzteil wäre hierfür beispielsweise das Meanwell LPV-60-24 mit `24V` und `2,5A` da man
-immer rund 10% mehr Leistung einplanen sollte. Zudem verbraucht der LED-Controller auch einen geringe Leistung.
+immer rund 10% mehr Leistung einplanen sollte. Zudem verbraucht der LED-Controller auch eine geringe Leistung.
 
 Bei der Auswahl des LED-Controllers ist nun auf die maximale Eingangsspannung sowie den Strom zu achten.  
 Aus dem Datenblatt des HM-LC-Dim1-PWM-CV ist die maximale Schaltleistung von `60W` zu entnehmen sowie
 die Spannungsfestigkeit von `24V`, demnach wäre dieser Controller für den Betrieb der 3m LED-Stripe geeignet.
 
 An dieser Stelle sei darauf hingewiesen, dass bei langen LED-Stripes die Versorgung öfters eingespeist werden
-sollte (z.B. am Anfang und am Ende).
+sollte (z.B. am Anfang und am Ende), weil die dünnen flexiblem Leiterbahnen des Stripes einen vergleichsweise 
+hohen Widerstand haben und an ihnen zu viel Spannung abfällt.
 
 ### Deckenspots
 
-Viele LED-Deckenspots oder auch Panles werden mit externem Netzteil geliefert, welches durch
+Viele LED-Deckenspots oder auch Panels werden mit externem Netzteil geliefert, welches durch
 eine eigene Beschaltung ersetzt werden kann. In diesem Beispiel entnehmen wir den technischen Daten:
-`700mA` sowie `7W`. Zudem ist auf dem Netzteil eine Ausgansspannung von `7-15V` angegeben, wudurch
+`700mA` sowie `7W`. Zudem ist auf dem Netzteil eine Ausgansspannung von `7-15V` angegeben, wodurch
 klar wird, dass es sich hier um einen Konstantstrom-Betrieb handelt.
 
 Ein mögliches Netzteil wäre das Meanwell LCM-40. Der Ausgangsstrom kann über DIP-Schalter
@@ -135,4 +144,4 @@ Deckensponts **in Reihe** versorgt werden können.
 ### Hoher Einschaltstrom
 
 Durch das kapazitive Verhalten von LEDs können beim Einschalten hohe Stromspitzen enstehen was z.B. zum 
-Festkleben von Relais führen kann. Für dieses Problem gibt es Einschaltstrombegrenzer oder Nulldurchgangsschalter.
+Festkleben von Relais führen kann. Für dieses Problem gibt es Einschaltstrombegrenzer (ESB) oder Nulldurchgangsschalter.
