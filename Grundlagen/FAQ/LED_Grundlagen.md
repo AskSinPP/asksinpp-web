@@ -9,7 +9,7 @@ Aus elektrotechnischer Sicht wird die Lektüre auf
 
 tldr;
 * Der Strom kann durch eine LED nur in eine Richtung fließen. Es muss also auf die Polung geachtet werden.
-* Der Innenwiderstand sinkt bei höherer Spannung, die Kennlinie ist nicht-linear
+* Der Innenwiderstand sinkt bei höherer Spannung, die [Kennlinie](https://de.wikipedia.org/wiki/Leuchtdiode#/media/Datei:Ledwhitecharcurp.png) ist nicht-linear
   => Strombegrenzung nötig (meist durch Vorwiderstand gelöst)
 * Die Lichtintensität wird maßgeblich über den Strom bestimmt, nicht über die Spannung.
 * Es gelten die Regeln der Reihen- / Parallelschaltung:
