@@ -143,5 +143,5 @@ Deckensponts **in Reihe** versorgt werden können.
 
 ### Hoher Einschaltstrom
 
-Durch das kapazitive Verhalten von LEDs können beim Einschalten hohe Stromspitzen enstehen was z.B. zum 
+Durch das kapazitive Verhalten von LED-Leuchtmitteln können beim Einschalten hohe Stromspitzen enstehen was z.B. zum 
 Festkleben von Relais führen kann. Für dieses Problem gibt es Einschaltstrombegrenzer (ESB) oder Nulldurchgangsschalter.
