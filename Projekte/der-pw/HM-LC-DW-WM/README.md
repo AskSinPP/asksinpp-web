@@ -4,7 +4,7 @@ Desc: 2-Kanal STM32 PWM LED Dimmer für 7-24V mit Dreh-Encoder
 ProjectUrl: der-pw/HM-LC-DW-WM/
 Author: der-pw
 AuthorUrl: https://github.com/der-pw
-Tags: LED, Aktor, Taster, Open-Source
+Tags: LED, Aktor, Taster, OpenSource
 Thumb: images/thumb.jpg
 sidebar: auto
 Added: 2019-11-09

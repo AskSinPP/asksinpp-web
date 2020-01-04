@@ -4,7 +4,7 @@ Desc: Temperatur- / Luftfeuchtesensor BME280
 ProjectUrl: psi/HM-WDS40-TH-I-BME280/
 Author: Psi
 AuthorUrl: https://psi.cx
-Tags: Batterie, Sensor, Temperatur, Open-Source
+Tags: Batterie, Sensor, Temperatur, OpenSource
 Thumb: images/case-jan.jpg
 sidebar: auto
 Added: 2018-12-27
