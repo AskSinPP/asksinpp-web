@@ -1,3 +1,5 @@
+@import "tabs.styl";
+
 body
   .content__default:not(.custom), .page-edit, .page-nav
     max-width: 1024px
@@ -40,6 +42,8 @@ html.dark
       background-color: $darkSecondaryBg
     a code
       color: $accentColorDark
+    pre > code
+      color: $darkTextColor
 
   .custom-block
     p:not(.custom-block-title)
@@ -60,6 +64,8 @@ html.dark
   .sidebar
     background-color: $darkPrimaryBg
     border-right-color: $darkBorderColor
+    .sidebar-heading
+      color: inherit
     .nav-links
       border-bottom-color: $darkBorderColor
   a.sidebar-link

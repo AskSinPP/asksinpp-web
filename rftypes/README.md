@@ -1,4 +1,4 @@
-# RF-Types
+# Native RF-Types
 
 Liste der Device-Model IDs die von der CCU nativ verstanden werden.
 
@@ -229,3 +229,4 @@ Liste der Device-Model IDs die von der CCU nativ verstanden werden.
 &nbsp; | ZEL STG RM HS 4 | HM Remote 4 buttons Roto | `0x0080` | [rc](./rf_rc.xml) 
 &nbsp; | ZEL STG RM WT 2 | HM Push Button 2 Roto | `0x007D` | [pb-2-wm55_ge_v1_4](./rf_pb-2-wm55_ge_v1_4.xml), [pb-2-wm55_le_v1_3](./rf_pb-2-wm55_le_v1_3.xml) 
 ![atent](./device-thumbs/73_hm-atent_thumb.png) | atent | Funk-Handsender DORMA | `0x0064` | [rc](./rf_rc.xml) 
+

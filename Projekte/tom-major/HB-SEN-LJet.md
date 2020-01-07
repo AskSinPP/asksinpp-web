@@ -4,7 +4,7 @@ Desc: Kopplung der Projet LevelJET Ultraschall-Füllstandsanzeige mit HomeMatic
 ProjectUrl: https://github.com/TomMajor/SmartHome#f%C3%BCllstandsanzeige-%C3%B6ltankwassertank-hb-sen-ljet
 Author: Tom Major
 AuthorUrl: https://github.com/TomMajor/SmartHome
-Tags: Sensor, Open-Source
+Tags: Sensor, OpenSource
 Thumb: HB-SEN-LJet.jpg
 Added: 2019-08-14
 ---

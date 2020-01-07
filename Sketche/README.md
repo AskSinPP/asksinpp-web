@@ -95,11 +95,14 @@
 
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
-  | [HB-UNI-Sensor1](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1) | Universalsensor | es wird ein separates [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1/CCU_RM) benötigt! |
+  | [HB-UNI-Sensor1](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1) | Universalsensor (Druck-, Helligkeit-, Feuchte-, Temperatursensor) | es wird ein separates [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1/CCU_RM) benötigt! |
+  | [HB-SEN-LJet](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet) | Füllstandsanzeige für LevelJet | Anpassung an beliebige Tankformen durch Einsatz einer Peiltabelle möglich <br/> [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet/CCU_RM)|
+  | [HB-UNI-Sensor-Heizung](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor-Heizung) | Schwellwertschalter, der bei Unter- und Überschreitung eines bestimmten Sensorwertes möglichst zeitnah ein Telegramm an die Zentrale sendet | vom HB-UNI-Sensor1 abgeleitet, benutzt das gleiche [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-UNI-Sensor1/CCU_RM) |
+  | [HB-ES-S0-CNT6](https://github.com/TomMajor/SmartHome/tree/master/HB-ES-S0-CNT6) | 6fach S0-Stromzähler | Anbindung an Zentrale über Ethernet |
   | [HB-SEC-WDS-2](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEC-WDS-2) | Wassermelder | Wassermelder mit Leitfähigkeitsmessung |
-  | [HB-SEN-LJet](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet) | Füllstandsanzeige LevelJet | Anpassung an beliebige Tankformen durch Einsatz einer Peiltabelle möglich <br/> [CCU Addon](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEN-LJet/CCU_RM)|
   | [HB-SCI-3-FM](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SCI-3-FM) | 3fach Schließerkontakt | ist eigentlich ein HM-SCI-3-FM und kommt daher ohne zusätzliches Addon aus |
-  
+  | [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench) | Testbench für CC1101 Frequenztests und für weitere Anwendungen | - |
+
 
 Du hast noch einen Sketch gefunden oder selbst entwickelt?  
 [Sag Bescheid](https://github.com/AskSinPP/asksinpp.de/issues), wir nehmen ihn gerne auf.

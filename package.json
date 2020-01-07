@@ -10,8 +10,9 @@
     "@vuepress/plugin-register-components": "^1.2.0",
     "@vuepress/plugin-search": "^1.2.0",
     "lodash": "^4.17.15",
+    "vue-slim-tabs": "^0.4.0",
     "vuepress": "^1.2.0",
-    "vuepress-plugin-sitemap": "^2.3.0"
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "scripts": {
     "dev": "vuepress dev",

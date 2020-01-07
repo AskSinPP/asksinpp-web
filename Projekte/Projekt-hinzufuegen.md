@@ -1,6 +1,6 @@
 # Projekt hinzufügen
 
-Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/jp112sdl/AskSinPPCollection](https://github.com/jp112sdl/AskSinPPCollection) erzeugt. In das Repository dürfen nur berechtigte
+Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/AskSinPP/asksinpp.de](https://github.com/AskSinPP/asksinpp.de) erzeugt. In das Repository dürfen nur berechtigte
 Contributoren direkt schreiben weshalb die Änderungen über einen Pull-Request eingereicht werden müssen.
 
 Wer keine Lust hat sich mit GitHub und Pull-Requests auseinander zu setzen kann mir auch
@@ -20,7 +20,7 @@ Je nach Bedarf können hier beliebige Unterordner zur Sturkturierung erstellt we
 Jedes Projekt besteht aus einer Markdown-Datei (z.B. `/Projekte/psi/HM-LC-Dim1PWM.md`)
 und einem Vorschaubild welches im Format 16:9 sein sollte, also z.B. 640x360px.
 
-Beim Aufbau der Datei kann man sich an den [bestehnden Projekten](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte) orientieren.
+Beim Aufbau der Datei kann man sich an den [bestehenden Projekten](https://github.com/jp112sdl/AskSinPPCollection/tree/master/Projekte) orientieren.
 
 
 ### Frontmatter
@@ -43,7 +43,7 @@ Thumb: vorschaubild.jpg
 
 * `isProject: true`: Gibt an, dass diese Datei eine Projektspezifikation ist.
 * `Desc`: Eine Kurzbeschreibung welche auf der Übersicht unterhalb des Bildes angezeigt wird.
-* `ProjectUrl`: Die URL unter der die Projektbeschreibung zu finden ist. Z.B. ein GitHub Repo, Blog Post oder Forum-Thread.
+* `ProjectUrl`: Die URL unter der die Projektbeschreibung zu finden ist, z.B. ein GitHub Repo, Blog Post oder Forum-Thread.
 * `Author`: Der Name des Autors.
 * `AuthorUrl`: Die URL die aufgerufen wird, wenn man auf den Autor-Namen klickt.
 * `Tags`: Eine Komma-separierte Liste mit Schlagworten für die Filterung.
