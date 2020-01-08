@@ -145,3 +145,10 @@ Deckensponts **in Reihe** versorgt werden können.
 
 Durch das kapazitive Verhalten von LED-Leuchtmitteln können beim Einschalten hohe Stromspitzen enstehen was z.B. zum 
 Festkleben von Relais führen kann. Für dieses Problem gibt es Einschaltstrombegrenzer (ESB) oder Nulldurchgangsschalter.
+
+### LED leuchtet bei 0%
+
+Wird eine _schwaches_ LED-Leuchtmittel hinter einem Phasendimmer betrieben, dann kann es vorkommen, dass selbst bei 0% Dimmung die LED weiterhin leuchtet / glimmt. Ein Grundlastelement kann hier abhilfe schaffen. Siehe [LED Grundlastelement: Funktionsweise und Anschluss](https://ledtipps.net/grundlastelement/) Artikel von LEDTipps.
+
+Ist der LED-Controller **hinter** dem Netzteil verbaut, dann liegt ein anderes Problem vor und ein Grundlastelement bietet keine Lösung.
+
