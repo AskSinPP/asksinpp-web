@@ -18,8 +18,7 @@ tldr;
 * Leistung [Watt] = Spannung [Volt] * Strom [Ampere]
 
 Achtung: Parallelschaltung von LEDs ohne Vorwiderstand ist nicht zu empfehlen. Durch leichte Unterschiede 
-im Produktionsprozess und damit in der Kennlinie könnte eine LED auf der Kennlinie *davonlaufen* und 
-durch zu hohen Strom zerstört werden.
+im Produktionsprozess und damit in der Kennlinie könnte eine LED (mit gleicher Durchlassspannung) auf der Kennlinie *davonlaufen* und durch zu hohen Strom zerstört werden. Da mit steigender Temperatur die Durchlassspannung sinkt verstärkt sich dieser Effekt. 
 
 Eine LED benötigt eine gewisse Leistung die in Watt angegeben ist,
 diese setzt sich aus der benötigten Spannung und dem Strom zusammen, also `P = U * I`
