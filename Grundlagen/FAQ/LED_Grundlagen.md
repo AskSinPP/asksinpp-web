@@ -5,7 +5,8 @@ Sie werden in verschiedenster Form in Lampen verbaut, doch stellt sich oft die F
 im Kontext des SmartHome umgehen soll. Dieser Artikel soll einige Grundlagen und Verständnis schaffen.
 
 Aus elektrotechnischer Sicht wird die Lektüre auf
-[ElectronicsTutorials](https://www.electronics-tutorials.ws/de/dioden/leuchtdiode.html) nahegelegt!
+[ElectronicsTutorials](https://www.electronics-tutorials.ws/de/dioden/leuchtdiode.html) 
+und [Mikrocontroller.net](https://www.mikrocontroller.net/articles/LED) nahegelegt!
 
 tldr;
 * Der Strom kann durch eine LED nur in eine Richtung fließen. Es muss also auf die Polung geachtet werden.
