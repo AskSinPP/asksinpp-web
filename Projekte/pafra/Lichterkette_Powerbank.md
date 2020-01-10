@@ -1,0 +1,1 @@
+Batterie Lichterkette mit Powerbank
