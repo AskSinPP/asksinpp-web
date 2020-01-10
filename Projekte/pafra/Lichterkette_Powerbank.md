@@ -9,4 +9,4 @@ Thumb: Batterielichterkette_01.jpg
 Added: 2020-01-10
 ---
 
-# Batterie Lichterkette mit Powerbank
+# Umbau Batterie Lichterkette mit Powerbank
