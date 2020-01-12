@@ -13,6 +13,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [stan23](https://github.com/stan23/) | `F501`
 | [Tom Major](https://github.com/TomMajor/) | `F103-F13F`
 | [Dirk (FHEM 2014)](https://github.com/kc-GitHub/Wettersensor) | `F101-F102`
+| [Manawyrm](https://github.com/manawyrm) | `FA01-FA0F`
 
 
 ## Jerome
@@ -98,3 +99,8 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 HB-UW-Sen-THPL-I | FHEM Wettersensor Innen (2014) | `0xF101`
 HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
 
+## Manawyrm
+
+ ID | Name | Device-Model 
+----|------|----------
+HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
