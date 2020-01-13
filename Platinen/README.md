@@ -22,6 +22,7 @@ _Wer noch weitere Platinen kennt oder selbst erstellt hat möge [diese Seite ver
 
 ### [pa-pa](https://github.com/pa-pa)
   - [HMSensor-Platine](https://github.com/pa-pa/HMSensor)
+  - [STM32Dimmer](https://github.com/pa-pa/STM32Dimmer) 5-Kanal PWM LED Dimmer mit STM32
 
 ### [Alex](https://github.com/alexreinert)
   - [HB-UNI-644 (Rev. 2)](https://github.com/alexreinert/PCB#hb-uni-644-rev-2) 
