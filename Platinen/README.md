@@ -41,6 +41,11 @@ _Wer noch weitere Platinen kennt oder selbst erstellt hat möge [diese Seite ver
   - [Gosund SP1](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1) Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl
   - [HM-LC-Bl1-FM](https://github.com/stan23/HM-LC-Bl1-FM-DC) Rollladenaktor für Gleichstrommotoren
   - [OBI WiFi Zwischenstecker](https://github.com/stan23/HM-LC-Sw1-Pl-DN-R1_OBI) Controllerplatine zum Umbau auf HM-LC-Sw1-Pl-DN-R1
+  - [AskSinAnalyzer](https://github.com/stan23/myPCBs) PCB für den [AskSinAnalyzer](https://github.com/jp112sdl/AskSinAnalyzer)
+  - [HB-UNI-Sen-CAP-MOIST-T](https://github.com/stan23/myPCBs/tree/master/HB-UNI-Sen-CAP-MOIST-T) Platine für [Jérômes Feuchtigkeitssensor](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST)
+  - [HB-Dis-EP-42BW Platine](https://github.com/jp112sdl/HB-Dis-EP-42BW/tree/master/PCB) Platine für [Jérômes 4,2" ePaper Display](https://github.com/jp112sdl/HB-Dis-EP-42BW) 
+  - [HB-MOD-UART Platine](https://github.com/stan23/myPCBs/tree/master/HB-MOD-UART) Platine für das HM-MOD-UART Funkmodul mit SMA-Anschluss für eine externe Antenne.
+  - [HB-MOD-UART-USB Platine](https://github.com/stan23/myPCBs/tree/master/HB-MOD-UART-USB) Ein USB-Stick mit HM-MOD-UART Funkmodul und FT232R, basierend auf @alexreinert's HB-RF-USB.
   
 ### [Jérôme](https://github.com/jp112sdl)
   - [HB-RC-2-PBU-LED](https://github.com/jp112sdl/HB-RC-2-PBU-LED): 2 fach Wandtaster, ähnlich dem HmIP-BSL, mit RGB LED Beleuchtung (oben/unten)).
