@@ -210,3 +210,112 @@ ID: 120901  Serial: JPLRCP2001
 ```
 
 Weiteres zum [Debugging](/Grundlagen/FAQ/Debugging.html) in den FAQ.
+
+## OTA (Firmware-Updates)
+
+Geräte mit AskSin++ können über die CCU sowie über FHEM mit neuer Software bespielt werden. 
+Das funktioniert wie bei gewöhnlichen HomeMatic Geräten über die "Geräte-Firmware"-Übersicht. 
+
+::: Achtung
+OTA-Updates über die CCU dürfen nur bei eigenen Gerätedefinitionen gemacht werden, nicht bei Geräten,
+die offiziell existieren.  
+* ein unabsichtliches Flashen von echten HomeMatic-Geräten mit der AskSin++-Firmware wird diese **unbrauchbar** machen
+* viele offizielle Geräte haben nicht die nötigen Parameter und Einstellungen in der Gerätedefinition für OTA-Updates oder nutzen andere Mikrocontroller
+::: 
+
+### Bootloader erstellen
+
+Um die Geräte per OTA-Update mit Software versorgen zu können, ist ein spezieller Bootloader nötig, der auf die Geräte aufgespielt werden muss. 
+Das kann bei den üblichen Arduino Pro Minis leider nicht über die serielle Schnittstelle (FTDI) erfolgen, sondern muss mit einem AVR ISP-Programmer gemacht werden.
+Durch das Installieren des OTA-Bootloaders wird auch der Arduino-Bootloader ersetzt, was zur Folge hat, dass eine Programmierung der Arduinos nur noch per ISP (und natürlich per OTA) möglich ist.  
+
+Damit die Firmware nicht für jedes Gerät individuell gebaut werden muss, verschieben sich die Geräteinformationen (Seriennummer, Geräteadresse) in den Bootloader. 
+Der Bootloader wird also "personalisiert" für jedes Gerät erstellt und geflasht. Die Firmware kann dann auf alle (baugleichen) Sensoren über die CCU übertragen werden.  
+
+Im Sketch muss das "`USE_OTA_BOOTLOADER`" einkommentiert werden. Dieses sorgt dafür, dass die Firmware die Geräteinformationen aus dem Bootloader liest:
+```cpp
+// define this to read the device id, serial and device type from bootloader section
+#define USE_OTA_BOOTLOADER
+```
+
+Mit dieser Änderung wird jetzt eine neue Firmware gebaut und wir benötigen das resultierende .hex-File. Bei PlatformIO findet sich dies in `Projektordner/.pio/build/pro8MHzatmega328/firmware.hex`. 
+
+Wir benötigen nun den Bootloader selbst:  
+Dieser ist im AskSin++-Git enthalten und kann von uns entweder per `git clone https://github.com/pa-pa/AskSinPP` oder als [.zip Download](https://github.com/pa-pa/AskSinPP/archive/master.zip) runtergeladen werden. Im Ordner `bootloader/avr/` befindet sich die `makeota.html`. Diese Datei kann mit einem Webbrowser geöffnet werden und erstellt uns einen Bootloader mit den gewünschten Parametern. 
+![makeota.html](./images/makeotahtml.png)
+
+* **MCU Type** bleibt auf ATmega328 (für die normalen Arduino ProMini)
+* **Device Model** ist der Geräte-Typ, also z.B. FA01 
+* **HM ID** ist die Geräteadresse (3 Bytes), z.B. 210001
+* **HM Serial** ist die Seriennummer, z.B. ASKS210001
+* **Config string** kann zusätzliche Konfigurationseinstellungen für die Firmware speichern, kann auf 0 gelassen werden. 
+
+Unter **Firmware** wird dann unsere .hex-Datei mit der gewünschten Firmware aus PlatformIO hochgeladen. 
+Nach einem Klick auf "Create Bootloader" bekommen wir dann eine .hex-Datei mit der HM Serial als Namen heruntergeladen.  
+Diese Datei enthält den Bootloader, die Konfiguration sowie unsere Firmware und kann so 1:1 auf den AVR geflashed werden. 
+
+### Bootloader flashen
+
+Die Firmware kann nun auf den AVR geflashed werden. Dazu können verschiedene Tools genutzt werden. 
+
+Über die Konsole erfolgt das Flashen folgendermaßen: 
+```bash
+avrdude -p m328p -c stk500v2 -P /dev/ttyUSB0 -U lfuse:w:0xE2:m -U hfuse:w:0xD0:m
+avrdude -p m328p -c stk500v2 -P /dev/ttyUSB0 -V -U flash:w:ASKS21001.hex
+```
+Die Parameter -c (Programmieradaptertyp) und -P (Port) müssen entsprechend für den genutzten AVR ISP-Programmer abgeändert werden. 
+Die Fuses nutzen den internen 8 MHz RC-Oszillator, deaktivieren die Brown-Out Erkennung, deaktivieren das Löschen des EEPROM beim Flashen und konfigurieren den Resetvektor des Bootloaders.
+
+Nach dem Flashen funktioniert das Gerät wie gewohnt und kann an die CCU angelernt werden. 
+
+### Firmware für CCU verpacken
+
+Um nun eine neue Firmware zu übertragen, wird wieder eine .hex-Datei mit der neuen Firmware erstellt.  
+Hierbei ist darauf zu achten, dass der "Firmware Version"-Parameter im DeviceInfo struct auf die neue Firmwareversion aktualisiert wird:
+```cpp
+    0x12,                   // Firmware Version
+```
+0x12 ist die Version 1.2, 0x34 wäre Version 3.4.  
+
+Das Tool prepota.sh im Bootloader-Ordner kann nun die .hex-Datei in eine .eq3-Datei umwandeln.  
+Hierzu wird auf der Konsole das Script prepota.sh genutzt: 
+```bash
+./prepota.sh neueFirmwareVersion1.2.hex
+```
+Unter Windows kann dies entweder im Windows 10 Subsystem for Linux oder über Cygwin (bash, sed) erfolgen. Unter Linux und Mac sollten alle erforderlichen Abhängigkeiten bereits vorhanden sein. 
+Wenn der Download des AskSin++-Quelltextes als .zip-Datei erfolgt ist, kann es evtl. nötig sein, die Datei als Ausführbar zu markieren. 
+Das kann mit `chmod +x prepota.sh` erledigt werden.
+Das Tool ist relativ langsam, Laufzeiten von 30 Sekunden können durchaus auftreten. 
+
+Ein Firmware-Update für die CCU besteht aus 3 Dateien: 
+* firmware_aktuellesDatum.eq3
+* changelog.txt
+* info
+
+Diese 3 Dateien werden als .tar.gz-Archiv verpackt. 
+
+Unter Windows lässt sich das .tar.gz-Archiv mit dem Tool 7-Zip erstellen.  
+Die Datei info (ohne Dateiendung!) enthält folgende Informationen: 
+```
+TypeCode=64001
+Name=HB-Sen-Env-I
+CCUFirmwareVersionMin=2.27.0
+CCU3FirmwareVersionMin=3.27.0
+FirmwareVersion=1.2
+```
+* TypeCode ist die Device Model ID (in diesem Beispiel 0xFA01) allerdings in [dezimaler Schreibweise](https://www.google.com/search?q=0xFA01+in+decimal).  
+* Name ist der genaue Name (auf Groß- und Kleinschreibung achten!) aus der .xml-Gerätedefinition.  
+* CCU und CCU3FirmwareVersionMin ist die minimale Version der CCU-Firmware, die benötigt wird.  
+* FirmwareVersion ist die Version der Firmware, die in diesem Ordner enthalten ist.   
+
+Die Datei sollte mit Unix-Zeichenenden (LF, \n) gespeichert werden.  
+Die changelog.txt enthält natürlichen Text mit Informationen über diese Firmware-Version. 
+
+Die fertige .tar.gz-Datei mit der Firmware muss folgendermaßen aussehen: 
+![.tar.gz Datei mit 3 Dateien](./images/firmwareupdate.png)
+
+### OTA-Update starten
+
+Ein Firmware-Update kann wie üblich über die CCU gestartet werden. 
+Nach dem Klick auf "Update" beim entsprechenden Gerät wird zunächst eine Fehlermeldung auftreten. 
+Das Update wurde dennoch vorgemerkt. Durch einen Druck auf den Gerätetaster am entsprechenden Gerät wird das Update dann gestartet. 
