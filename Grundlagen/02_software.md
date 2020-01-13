@@ -217,22 +217,22 @@ Geräte mit AskSin++ können über die CCU sowie über FHEM mit neuer Software b
 Das funktioniert wie bei gewöhnlichen HomeMatic Geräten über die "Geräte-Firmware"-Übersicht. 
 
 ::: Achtung
-OTA-Updates über die CCU sollten nur bei eigenen Gerätedefinitionen gemacht werden, nicht bei Geräten,
+OTA-Updates über die CCU dürfen nur bei eigenen Gerätedefinitionen gemacht werden, nicht bei Geräten,
 die offiziell existieren.  
 * ein unabsichtliches Flashen von echten HomeMatic-Geräten mit der AskSin++-Firmware wird diese **unbrauchbar** machen
-* viele offizielle Geräte haben nicht die nötigen Parameter und Einstellungen in der Gerätedefinition für OTA-Updates
+* viele offizielle Geräte haben nicht die nötigen Parameter und Einstellungen in der Gerätedefinition für OTA-Updates oder nutzen andere Mikrocontroller
 ::: 
 
 ### Bootloader erstellen
 
-Um die Geräte per OTA-Update mit Software versorgen zu können ist ein spezieller Bootloader nötig, der auf die Geräte aufgespielt werden muss. 
-Das kann bei den üblichen Arduino Pro Mini's leider nicht über die serielle Schnittstelle (FTDI) erfolgen, sondern muss mit einem AVR ISP-Programmer gemacht werden.
-Durch das Installieren des OTA-Bootloaders wird auch der Arduino-Bootloader ersetzt, was zur Folge hat, das eine Programmierung der Arduinos nur noch per ISP (und natürlich per OTA) möglich ist.  
+Um die Geräte per OTA-Update mit Software versorgen zu können, ist ein spezieller Bootloader nötig, der auf die Geräte aufgespielt werden muss. 
+Das kann bei den üblichen Arduino Pro Minis leider nicht über die serielle Schnittstelle (FTDI) erfolgen, sondern muss mit einem AVR ISP-Programmer gemacht werden.
+Durch das Installieren des OTA-Bootloaders wird auch der Arduino-Bootloader ersetzt, was zur Folge hat, dass eine Programmierung der Arduinos nur noch per ISP (und natürlich per OTA) möglich ist.  
 
 Damit die Firmware nicht für jedes Gerät individuell gebaut werden muss, verschieben sich die Geräteinformationen (Seriennummer, Geräteadresse) in den Bootloader. 
 Der Bootloader wird also "personalisiert" für jedes Gerät erstellt und geflasht. Die Firmware kann dann auf alle (baugleichen) Sensoren über die CCU übertragen werden.  
 
-Im Sketch muss das "`USE_OTA_BOOTLOADER`" einkommentiert werden. Dieses sorgt dafür, dass die Firmware die Geräteinformationen aus dem Bootloader ließt:
+Im Sketch muss das "`USE_OTA_BOOTLOADER`" einkommentiert werden. Dieses sorgt dafür, dass die Firmware die Geräteinformationen aus dem Bootloader liest:
 ```cpp
 // define this to read the device id, serial and device type from bootloader section
 #define USE_OTA_BOOTLOADER
