@@ -1,6 +1,16 @@
+---
+sidebar: auto
+sidebarDepth: 3
+---
+
 # Software / Sketche
 
 ![topimg](./images/Sketches_TOP.png)
+
+::: warning
+`HB-` Sketche stehen für **HomeBrew** und werden nicht nativ von der CCU verstanden.  
+Die Installation eines entsprechenden **DeviceAddons** ist erforderlich!
+:::
 
 ## [pa-pa](https://github.com/pa-pa/AskSinPP)
   
@@ -24,7 +34,8 @@
   | [HM-WDS100-C6-O-2](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-WDS100-C6-O-2/HM-WDS100-C6-O-2.ino) | Funk-Kombisensor | nur Fake-Werte |
 
 ## [Jérôme](https://github.com/jp112sdl) 
-### Nachbauten:
+
+### Nachbauten
   
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
@@ -63,8 +74,10 @@
   | [HM-WDS40-TH-I-SHT31](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SHT31/HM-WDS40-TH-I-SHT31.ino) | Temperatur-/Feuchtesensor Innen | für SHT31 Sensor |
   | [HM-WDS40-TH-I-SI7021](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SI7021/HM-WDS40-TH-I-SI7021.ino) | Temperatur-/Feuchtesensor Innen | für SI7021 Sensor |
   | [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) | 2-Kanal-Rollladenaktor | wie HM-LC-Bl1-FM jedoch mit 2 Kanälen |
-  
-### Eigentwicklungen ([Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) erforderlich):
+
+### Eigentwicklungen 
+
+**Es ist die Installation des [JP-HB-Device-Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) auf der CCU nötig.**
 
   | Bezeichnung | Beschreibung |
   | ------------- |-----|
@@ -89,7 +102,7 @@
 
   | Bezeichnung | Beschreibung | Hinweise |
   | ------------- |-------------|-----|
-  | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) | wird auf den originalen HM-LC-Sw2-FM geflasht|
+  | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) | wird auf den originalen HM-LC-Sw2-FM geflasht |
   
 ## [Tom](https://github.com/TomMajor/)
 
@@ -103,6 +116,7 @@
   | [HB-SCI-3-FM](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SCI-3-FM) | 3fach Schließerkontakt | ist eigentlich ein HM-SCI-3-FM und kommt daher ohne zusätzliches Addon aus |
   | [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench) | Testbench für CC1101 Frequenztests und für weitere Anwendungen | - |
 
+<hr/>
 
-Du hast noch einen Sketch gefunden oder selbst entwickelt?  
+Du hast noch einen Sketch gefunden oder selbst entwickelt? 
 [Sag Bescheid](https://github.com/AskSinPP/asksinpp.de/issues), wir nehmen ihn gerne auf.
