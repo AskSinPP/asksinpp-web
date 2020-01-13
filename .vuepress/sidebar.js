@@ -13,7 +13,7 @@ module.exports = () => {
   sidebar['/Grundlagen/'] = [
     {
       title: 'Grundlagen',
-      collapsable: false,
+      collapsable: true,
       children: [
         ['', 'Einführung'],
         ...getFiles('Grundlagen')
@@ -21,7 +21,7 @@ module.exports = () => {
     },
     {
       title: 'FAQ',
-      collapsable: false,
+      collapsable: true,
       children: [
         ...getFiles('Grundlagen/FAQ').map(file => `FAQ/${file}`)
       ]
