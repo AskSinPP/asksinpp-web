@@ -216,7 +216,7 @@ Weiteres zum [Debugging](/Grundlagen/FAQ/Debugging.html) in den FAQ.
 Geräte mit AskSin++ können über die CCU sowie über FHEM mit neuer Software bespielt werden. 
 Das funktioniert wie bei gewöhnlichen HomeMatic Geräten über die "Geräte-Firmware"-Übersicht. 
 
-::: Achtung
+::: warning
 OTA-Updates über die CCU dürfen nur bei eigenen Gerätedefinitionen gemacht werden, nicht bei Geräten,
 die offiziell existieren.  
 * ein unabsichtliches Flashen von echten HomeMatic-Geräten mit der AskSin++-Firmware wird diese **unbrauchbar** machen
@@ -238,10 +238,14 @@ Im Sketch muss das "`USE_OTA_BOOTLOADER`" einkommentiert werden. Dieses sorgt da
 #define USE_OTA_BOOTLOADER
 ```
 
-Mit dieser Änderung wird jetzt eine neue Firmware gebaut und wir benötigen das resultierende .hex-File. Bei PlatformIO findet sich dies in `Projektordner/.pio/build/pro8MHzatmega328/firmware.hex`. 
+  
+Mit dieser Änderung wird jetzt eine neue Firmware gebaut und wir benötigen das resultierende .hex-File.  
+In der Arduino IDE kann die Firmware über Sketch->Kompilierte Binärdatei exportieren gespeichert werden.  
+Bei PlatformIO findet sich diese in `Projektordner/.pio/build/pro8MHzatmega328/firmware.hex`. 
 
-Wir benötigen nun den Bootloader selbst:  
-Dieser ist im AskSin++-Git enthalten und kann von uns entweder per `git clone https://github.com/pa-pa/AskSinPP` oder als [.zip Download](https://github.com/pa-pa/AskSinPP/archive/master.zip) runtergeladen werden. Im Ordner `bootloader/avr/` befindet sich die `makeota.html`. Diese Datei kann mit einem Webbrowser geöffnet werden und erstellt uns einen Bootloader mit den gewünschten Parametern. 
+Nun benötigen wir den Bootloader selbst:  
+Dieser ist im AskSin++-Git enthalten und kann von uns entweder per `git clone https://github.com/pa-pa/AskSinPP` oder als [.zip Download](https://github.com/pa-pa/AskSinPP/archive/master.zip) runtergeladen werden. Im Ordner `bootloader/avr/` befindet sich die `makeota.html`.   
+Diese Datei kann mit einem Webbrowser geöffnet werden und erstellt uns einen Bootloader mit den gewünschten Parametern. 
 ![makeota.html](./images/makeotahtml.png)
 
 * **MCU Type** bleibt auf ATmega328 (für die normalen Arduino ProMini)
@@ -250,7 +254,7 @@ Dieser ist im AskSin++-Git enthalten und kann von uns entweder per `git clone ht
 * **HM Serial** ist die Seriennummer, z.B. ASKS210001
 * **Config string** kann zusätzliche Konfigurationseinstellungen für die Firmware speichern, kann auf 0 gelassen werden. 
 
-Unter **Firmware** wird dann unsere .hex-Datei mit der gewünschten Firmware aus PlatformIO hochgeladen. 
+Unter **Firmware** wird dann unsere .hex-Datei mit der gewünschten Firmware hochgeladen. 
 Nach einem Klick auf "Create Bootloader" bekommen wir dann eine .hex-Datei mit der HM Serial als Namen heruntergeladen.  
 Diese Datei enthält den Bootloader, die Konfiguration sowie unsere Firmware und kann so 1:1 auf den AVR geflashed werden. 
 
@@ -311,7 +315,7 @@ FirmwareVersion=1.2
 Die Datei sollte mit Unix-Zeichenenden (LF, \n) gespeichert werden.  
 Die changelog.txt enthält natürlichen Text mit Informationen über diese Firmware-Version. 
 
-Die fertige .tar.gz-Datei mit der Firmware muss folgendermaßen aussehen: 
+Die fertige .tar.gz-Datei mit der Firmware muss folgendermaßen aussehen:   
 ![.tar.gz Datei mit 3 Dateien](./images/firmwareupdate.png)
 
 ### OTA-Update starten
