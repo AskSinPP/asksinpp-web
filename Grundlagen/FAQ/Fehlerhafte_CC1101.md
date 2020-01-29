@@ -125,3 +125,12 @@ void setup () {
 * [Tausch der Kondensatoren gegen 12pF](https://forum.fhem.de/index.php/topic,91740.msg872505.html#msg872505)
 * [CC1101_Frequenz XLS](https://github.com/TomMajor/SmartHome/tree/master/Info/CC1101_Frequenz) hilft bei der Berechnung des Hexwerts aus der Freq.
 
+
+## HB-CC1101-Testbench
+
+Meist werden die CC1101-Module über die SMD-Kontakte verlötet und sind im Fehlerfall nur schwer wieder zu entfernen.
+Um dem Problem zu entgehen wurde im homematic-forum.de die HB-CC1101-Testbench vorgestellt.
+Vereinfacht ausgedrückt, ist es damit möglich, sowohl den Ruhestrohm zu testen, also auch einen FreqTest durchzuführen und um evtl. Fehlfunktionen noch vor dem Einbau festzustellen.
+
+* [Vorstellung HC-CC1101-TEstbench](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701)
+* [verbessertes Klemmstück zum Aufsockeln des Moduls](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701&start=40#p560242)
