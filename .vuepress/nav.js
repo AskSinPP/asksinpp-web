@@ -18,7 +18,7 @@ module.exports = [
       { text: 'Facebook Gruppe', link: 'https://www.facebook.com/groups/Homematic.Freunde' },
       {
         text: 'Chat',
-        link: 'https://join.slack.com/t/homematicuser/shared_invite/enQtNDgyNDM2OTkyMDA2LWY1YjY0NTE0NmY0OWM3YWUzMzAzMTgxYmRjMTMyOWE3NjkxNDdlMDY5ZjlhYzM5Nzg2N2U2YjdmNzNlYWNhNTU'
+        link: 'https://join.slack.com/t/homematicuser/shared_invite/enQtNjAzMDA0MjM3NzY1LTY2MzkzODUzODIyNGQ0YmVmZTJkNDRjN2U0MWQxNWRmNTQ0NjI4MjMyNjZjOWFmNjkyNjNiMTcwZGZmYWNlNjQ'
       }
     ]
   },
