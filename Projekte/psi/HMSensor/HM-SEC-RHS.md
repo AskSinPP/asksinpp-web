@@ -37,6 +37,7 @@ sofern man diese nutzen möchte. Hier wird der ProMini-Bootloader und das Flashe
 |            | 2x     | Reed-Kontakt    | 2x14mm
 |            | 1x     | Magnet          | 4x2mm
 | IC1        | 1x     | ATMega328P-AU   | TQFP-32
+| IC2        | 1x     | CC1101 SPI 868Mhz | 
 | BT1        | 1x     | CR2023 Halter   | SMD Tab 20mm
 | D1         | 1x     | LED rot         | 1206
 | D2         | 1x     | LED grün        | 1206
