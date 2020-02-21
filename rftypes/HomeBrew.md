@@ -14,6 +14,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [Tom Major](https://github.com/TomMajor/) | `F103-F13F`
 | [Dirk (FHEM 2014)](https://github.com/kc-GitHub/Wettersensor) | `F101-F102`
 | [Manawyrm](https://github.com/manawyrm) | `FA01-FA0F`
+| [ssbingo](https://github.com/ssbingo) | `FAB0-FABF`
 
 
 ## Jerome
@@ -104,3 +105,8 @@ HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
  ID | Name | Device-Model 
 ----|------|----------
 HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
+
+## ssbingo
+ ID | Name | Device-Model 
+----|------|----------
+HB-OU-RGB-STACKFIRE | Kaminfeuer Leuchte | `0xFAB5`
