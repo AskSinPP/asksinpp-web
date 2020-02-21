@@ -109,4 +109,4 @@ HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
 ## ssbingo
 | Bild | ID | Name | Device-Model | Datei |
 |------|----|------|----------|-------|
-|<img src="https://raw.githubusercontent.com/ssbingo/HB-OU-RGB-STACKFIRE/master/AddOn/usr/local/addons/jp-hb-devices-addon/www/config/img/devices/50/hb-ou-rgb-campfire_thumb.png" width=25/> | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) | LED Leuchte (10/20 x 30 WS2812B) | `0xFAB6` | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE/blob/master/AddOn/usr/local/addons/jp-hb-devices-addon/firmware/rftypes/hb-ou-rgb-campfire.xml) |
+|<img src="https://raw.githubusercontent.com/ssbingo/HB-OU-RGB-STACKFIRE/master/AddOn/usr/local/addons/jp-hb-devices-addon/www/config/img/devices/50/hb-ou-rgb-campfire_thumb.png" width=25/> | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) | LED Leuchte (10/20 x 30 WS2812B) | `0xFAB5` | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE/blob/master/AddOn/usr/local/addons/jp-hb-devices-addon/firmware/rftypes/hb-ou-rgb-campfire.xml) |
