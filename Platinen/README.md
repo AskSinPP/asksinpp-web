@@ -100,9 +100,9 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   - [Umbau Sonoff 4CH zu HM-LC-SW4-SM](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43718)
   - [Umbau Sonoff S20 auf HM-LC-Sw1-Pl-DN-R1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=44258)
 
+
 ### [ssbingo](https://github.com/ssbingo)
-	- [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) : LED Leuchte mit 10/20x 30LED(WS2812B) z.B. als Kamin- oder Lagerfeuersimulation
-	
+  - [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE): LED Leuchte mit 10/20x 30LED(WS2812B) z.B. als Kamin- oder Lagerfeuersimulation	
 	
 ## PCBs fertigen lassen
 
