@@ -106,8 +106,8 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   - [HB-UNI-Sen-Lev-Vo](https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo): Sensor für Voltronic Tank-Sonden (z.B. Wohnwagen, Wohnmobil)
   - [HM-LC-Sw1-FM](https://github.com/ssbingo/PCB---HM-LC-Sw1-FM): 1-Kanal Schaltaktor 230V mit externem Taster
   - [AskSinAnalyzer](https://github.com/ssbingo/PCB---AskSinAnalyzer): Platine für das AskSinAnalyzer-Projekt (Achtung: abweichendes ESP32-PinOut)
-  - [HB-OU-MP3-LED](https://github.com/ssbingo/PCB---HB-OU-MP3-LED): Platine & Gehäuse für das HB-OU-MP3-LED - Projekt von Jérôme
-	
+  - [HB-OU-MP3-LED](https://github.com/ssbingo/PCB---HB-OU-MP3-LED): Platine & Gehäuse für das HB-OU-MP3-LED - Projekt von [Jérôme](https://github.com/jp112sdl/HB-OU-MP3-LED)
+  - [WS2812B-Protect](https://github.com/ssbingo/PCB---WS2812B-Protect): Schutzplatine für WS2812B-Stripes (Diese Platine ist nicht OpenSource)	
 	
 		
 ## PCBs fertigen lassen
