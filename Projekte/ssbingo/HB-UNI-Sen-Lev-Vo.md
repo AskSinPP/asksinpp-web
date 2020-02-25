@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: Füllstandssensor für Tanks mit Votronic-Sonden
+Desc: FÃ¼llstandssensor fÃ¼r Tanks mit Votronic-Sonden
 ProjectUrl: https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo
 Author: ssbingo
 AuthorUrl: https://github.com/ssbingo/
