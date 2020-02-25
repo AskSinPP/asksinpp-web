@@ -102,10 +102,6 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
 
 ### [ssbingo](https://github.com/ssbingo)<br>
 	- [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) : LED Leuchte mit 10/20x 30LED(WS2812B) z.B. als Kamin- oder Lagerfeuersimulation
-	- [HB-UNI-Sen-Lev-Vo](https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo) : Sensor für Voltronic Tank-Sonden (z.B. Wohnwagen, Wohnmobil)
-	- [HM-LC-Sw1-FM](https://github.com/ssbingo/PCB---HM-LC-Sw1-FM) : 1-Kanal Schaltaktor 230V mit externem Taster
-	- [AskSinAnalyzer](https://github.com/ssbingo/PCB---AskSinAnalyzer) : Platine für das AskSinAnalyzer-Projekt (Achtung: abweichendes ESP32-PinOut)
-	- [HB-OU-MP3-LED](https://github.com/ssbingo/PCB---HB-OU-MP3-LED) : Platine & Gehäuse für das HB-OU-MP3-LED - Projekt von Jérôme
 	
 	
 ## PCBs fertigen lassen
