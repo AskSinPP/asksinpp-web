@@ -105,7 +105,10 @@ HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
  ID | Name | Device-Model 
 ----|------|----------
 HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
+
 ## ssbingo
 | Bild | ID | Name | Device-Model | Datei |
 |------|----|------|----------|-------|
-|<img src="https://raw.githubusercontent.com/ssbingo/HB-OU-RGB-STACKFIRE/master/AddOn/usr/local/addons/jp-hb-devices-addon/www/config/img/devices/50/hb-ou-rgb-campfire_thumb.png" width=25/> | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) | LED Leuchte (10/20 x 30 WS2812B) | 0xFAB5 | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE/blob/master/AddOn/usr/local/addons/jp-hb-devices-addon/firmware/rftypes/hb-ou-rgb-campfire.xml) |
+|<img src="https://raw.githubusercontent.com/ssbingo/HB-UNI-Sen-Lev-Vo/master/addon/usr/local/addon/www/config/img/devices/50/hb-uni-sen-lev-vo_thumb.png" width=25/> | [HB-UNI-Sen-Lev-Vo](https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo) | Füllstandsensor für Tankanzeigen mit Votronic-Sonden | `0xFAB4` | [HB-UNI-Sen-Lev-Vo](https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo/blob/master/addon/usr/local/addon/firmware/rftypes/hb-uni-sen-lev-vo.xml) |
+|<img src="https://raw.githubusercontent.com/ssbingo/HB-OU-RGB-STACKFIRE/master/AddOn/usr/local/addons/jp-hb-devices-addon/www/config/img/devices/50/hb-ou-rgb-campfire_thumb.png" width=25/> | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE) | LED Leuchte (10/20 x 30 WS2812B) | `0xFAB5` | [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE/blob/master/AddOn/usr/local/addons/jp-hb-devices-addon/firmware/rftypes/hb-ou-rgb-campfire.xml) |
+
