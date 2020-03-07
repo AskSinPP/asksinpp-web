@@ -79,7 +79,7 @@ Für die HMSensor gibt es diverse [Addon-Platinen](https://github.com/pa-pa/HMSe
 Beide Varianten führen die ISP sowie die UART Pins nach außen.
 
 ![Anschluss über Pin-Header](./images/Anschluss-Pinheader.jpg)
-![Anschluss über Pogos auf Lochrasterplatine](./images/Anschluss-Pogo-Lochraster.jpg)
+![Anschluss über Pogos auf FlashStation](./images/HMSensor-FlashStation_1.jpg)
 
 ### Bootloader und Fuses
 
@@ -151,3 +151,4 @@ Schuld waren _"defekte"_ CC1101 Module.
 
 * [Github Repo](https://github.com/pa-pa/HMSensor/)
 * [FHEM Forum Thread](https://forum.fhem.de/index.php/topic,73954.0.html) 
+* [HMSensor FlashStation](https://github.com/psi-4ward/HMSensor-FlashStation)
