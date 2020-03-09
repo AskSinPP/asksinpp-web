@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: "kapazitiver Bodenfeuchtesensor" mit optionalem Temperatursensor DS18B20
+Desc: Kapazitiver Bodenfeuchtesensor mit optionalem Temperatursensor DS18B20
 ProjectUrl: https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST
 Author: Jerome
 AuthorUrl: https://github.com/jp112sdl
