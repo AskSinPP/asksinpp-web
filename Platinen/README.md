@@ -100,7 +100,6 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   - [Umbau Sonoff 4CH zu HM-LC-SW4-SM](https://homematic-forum.de/forum/viewtopic.php?f=76&t=43718)
   - [Umbau Sonoff S20 auf HM-LC-Sw1-Pl-DN-R1](https://homematic-forum.de/forum/viewtopic.php?f=76&t=44258)
 
-
 ### [ssbingo](https://github.com/ssbingo)
   - [HB-OU-RGB-STACKFIRE](https://github.com/ssbingo/HB-OU-RGB-STACKFIRE): LED Leuchte mit 10/20x 30LED(WS2812B) z.B. als Kamin- oder Lagerfeuersimulation
   - [HB-UNI-Sen-Lev-Vo](https://github.com/ssbingo/HB-UNI-Sen-Lev-Vo): Sensor für Voltronic Tank-Sonden (z.B. Wohnwagen, Wohnmobil)
@@ -108,8 +107,12 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   - [AskSinAnalyzer](https://github.com/ssbingo/PCB---AskSinAnalyzer): Platine für das AskSinAnalyzer-Projekt (Achtung: abweichendes ESP32-PinOut)
   - [HB-OU-MP3-LED](https://github.com/ssbingo/PCB---HB-OU-MP3-LED): Platine & Gehäuse für das HB-OU-MP3-LED - Projekt von [Jérôme](https://github.com/jp112sdl/HB-OU-MP3-LED)
   - [WS2812B-Protect](https://github.com/ssbingo/PCB---WS2812B-Protect): Schutzplatine für WS2812B-Stripes (Diese Platine ist nicht OpenSource)	
-	
-		
+
+### [Psi](https://psi.cx)
+  - [HM-LC-Dim1PWM-LinearPWM](https://github.com/psi-4ward/HM-LC-Dim1PWM-LinearPWM): HomeMatic Aktor mit linearer PWM Ausgabe über Optokoppler zum Beschalten von PWM-Dim Eingängen (Beispielsweise von Meanwell Netzteilen)
+  - [HMSensor-FlashStation](https://github.com/psi-4ward/HMSensor-FlashStation): Hilfsplatine um HMSensor PCBs mit Hilfe von PogoPins einzuspannend und zu flashen
+
+
 ## PCBs fertigen lassen
 
 Hat man Bedarf an ein paar mehr Platinen kann man diese auch selbst in Auftrag geben.
