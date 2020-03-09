@@ -46,7 +46,7 @@ Es gibt BME280 Boards für 3.3V ohne LDO was etwas Arbeit spart.
 Je nach Zweck gibt es hier verschiedene Optionen:
 
 * Keine :)
-* [HMSensor von pa-pa](../HMSensor/HM-WDS40-TH-I-BME280)
+* [HMSensor von pa-pa](../HMSensor/HM-WDS40-TH-I-RTC-BME280.html)
 * [HB-UNI-SEN-BATT von Alex](https://github.com/alexreinert/PCB#hb-uni-sen-batt)
 * [Sensor_PLHT von Tom](https://github.com/TomMajor/SmartHome/tree/master/PCB)
 * [HB-UNI-Bat von Ronny](https://github.com/ronnythomas/HB-UNI-Bat)
