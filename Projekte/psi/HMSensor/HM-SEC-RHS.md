@@ -44,7 +44,7 @@ sofern man diese nutzen möchte. Hier wird der ProMini-Bootloader und das Flashe
 | R1         | 1x     | 10kΩ Widerstand | 0805
 | R2, R3     | 2x     | 1k5Ω Widerstand | 0805 
 | C1, C2, C3 | 3x     | 100nF Kerko     | 0805
-| C6         | 1x     | 10µF Kergo      | 0805
+| C6         | 1x     | 10µF Kerko      | 0805
 | SW1, SW2   | 2x     | Taster          | 3x6x2,5mm
 
 
