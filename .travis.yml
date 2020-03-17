@@ -5,6 +5,7 @@ node_js:
 
 script:
   - npm ci
+  - npm run generate-rftypes
   - npm run build
 #  - npm run check
 

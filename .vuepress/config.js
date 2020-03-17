@@ -1,3 +1,4 @@
+const lineNumbersPlugin = require('./lineNumbers');
 const nav = require('./nav');
 const sidebar = require('./sidebar');
 
@@ -26,7 +27,9 @@ module.exports = {
     }
   },
   markdown: {
-    lineNumbers: true
+    plugins: [
+      lineNumbersPlugin
+    ]
   },
   plugins: [
     ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],

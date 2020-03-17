@@ -40,3 +40,5 @@ node_modules/
 
 .temp
 temp
+
+rftypes/*.xml.md
