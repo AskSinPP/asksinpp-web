@@ -17,8 +17,7 @@
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
-    "check": "blcl -r .vuepress/dist",
-    "generate-rftypes": "for i in $(ls -1 .vuepress/public/rftypes/xmls/) ; do echo -e \"# $i\\n\\n[RAW](./xmls/$i)\\n\\n<<< @/.vuepress/public/rftypes/xmls/$i\\n\" > rftypes/$i.md ; done"
+    "check": "blcl -r .vuepress/dist"
   },
   "author": "",
   "license": "CC BY-SA License 4.0",
