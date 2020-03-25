@@ -1,10 +1,11 @@
 # In-System-Programming (ISP)
 
-Grundsätzlich ist zu verstehen, dass ein ATMega Mikrocontroller über das [_In-System-Programming_ Interface](https://de.wikipedia.org/wiki/In-System-Programmierung), kurz ISP, programmiert wird. Zudem dient die ISP-Schnittstelle dazu Konfiguartionsoptionen (["Fuse-Bits"](https://de.wikipedia.org/wiki/Fuse-Bit)) zu setzen.
+Grundsätzlich wird ein ATMega Mikrocontroller über das [_In-System-Programming_ Interface](https://de.wikipedia.org/wiki/In-System-Programmierung), kurz ISP, programmiert. Zudem dient die ISP-Schnittstelle dazu Konfiguartionsparameter (["Fuse-Bits"](https://de.wikipedia.org/wiki/Fuse-Bit)) zu setzen.
 
-ISP-Programmer sind z. B. [USBASP](https://www.ebay.de/itm/USBASP-AVR-Programmer-Adapter-Downloader-10-Pin-Kabel-ATTiny-USBISP/181667298888) 
-oder der **zu bevorzugende** [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2). 
-Es lässt sich auch ein [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden.
+Als bevorzugter ISP-Programmer hat sich der [Diamex Programmer](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2) etabliert. 
+Alternativ lässt sich auch ein [Arduino UNO als ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP) verwenden oder der kostengünstige 
+[USBASP-Clone](https://www.ebay.de/itm/USBASP-AVR-Programmer-Adapter-Downloader-10-Pin-Kabel-ATTiny-USBISP/181667298888). Allerdings lässt sich in beiden Fällen nur die Stromversorgung auf 3.3V Stellen. Die SPI-Pegel haben weiterhin 5V wodurch ein ggf. schon verbautes CC1101 Modul Schaden nehmen kann.
+
 
 Die ISP-Schnittstelle des ATMega ist die SPI-Schnittstelle.
 
@@ -113,7 +114,7 @@ avrdude -p m328p -P /dev/ttyACM3 -c stk500v2 -U lfuse:w:0xE2:m -U hfuse:w:0xD2:m
 avrdude -p m328p -P /dev/ttyACM3 -c stk500v2 -U lfuse:v:0xE2:m -U hfuse:v:0xD2:m -U efuse:v:0xFF:m -U lock:v:0xFF:m
 ```
 
-### Sketch (Bootloader) flasehn
+### Sketch (Bootloader) flashen
 
 Beispiel HEX-File flashen, hier der [Bootloader](https://raw.githubusercontent.com/pa-pa/AskSinPP/master/bootloader/avr/ATmegaBOOT_168_atmega328_pro_8MHz.hex)
 der es ermöglicht Software über die UART Schnittstelle zu flashen. Da hier eine **Datei** geflasht wird ist darauf zu achten, dass der avrdude-Aufruf
