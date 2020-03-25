@@ -1,7 +1,9 @@
 # Software / Flashen
 
 Die Software für den Microcontroller wird bei Arduino als _Sketch_ bezeichnet.  
-Der USB FTDI Adapter ist die Verbindung zwischen Microcontroller und PC.
+
+Da der Arduino-Pro-Mini mit einem entsprechendem Bootloader ausgeliefert wird, kann ein Sketch direkt über USB-UART Adapter
+geflasht werden wie zum Beispiel dem FTDI, der den Arduino mit dem PC verbindet. 
 
 
 ## Sketch download und anpassen
