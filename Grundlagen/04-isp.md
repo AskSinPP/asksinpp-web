@@ -19,17 +19,19 @@ mit einem Bootloader vorkonfiguriert sind, der das Flashen von Sketches über UA
 
 ## Anschluss des ISP
 
+Die Spannung des Diamex wird über DIP-Schalter gesetzt, siehe [Manual](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2) unter Download (1: off; 2: on).
+
+![DIAMEX ISP Programmer](./images/isp_diamex.jpg)
+
 USBasp kann sowohl 5V als auch 3.3V - ! jedoch nur am Vcc !, hier sollte zuerst der Jumper auf die richtige Spannung gesetzt werden.
 
+![usb-asp Spannung Jumper](./images/usbavp-jumper.jpg)
 
-Die Spannung des Diamex wird über DIP-Schalter gesetzt, siehe [Manual](https://www.diamex.de/dxshop/USB-ISP-Programmer-fuer-Atmel-AVR-Rev2) unter Download (1: off; 2: on).
 
 ::: warning
 USBasp setzt per Jumper nur VCC auf 3.3V, das SPI Interface läuft weiterhin mit 5V.
 Es empfiehlt sich daher die Fuse-Bits zu programmieren bevor weitere Hardware oder das CC1101 an den Arduino SPI-Bus angeschlossen ist. **Deshalb ist ein Diamex-Programmer einem USBasp vorzuziehen!**
 ::: 
-
-![usb-asp Spannung Jumper](./images/usbavp-jumper.jpg)
 
 Der ISP ist 1:1 mit 6 Leitungen an den Pro Mini zu verbinden bzw. nach Angabe des Pin-Outs bei dem jeweiligen Projekt.
 
@@ -76,6 +78,7 @@ Natürlich müssen die jeweiligen avrdude-Optionen an die verwendete Umgebung an
 * **Port (`-P`)**  
   Unter Windows wird hier ein COMxx Device verwendet, z. B. `-P COM11`. Im Gerätemanager kann die Nummer nachgelesen werden.  
   Unter Linux oder Mac wird ein Device unter /dev/ angelegt, z. B. `-P /dev/ttyACM0` oder `-P /dev/ttyUSB0`, der Befehl `dmesg` gibt Aufschluss, nachdem der ISP am USB-Port angeschlossen wurde.
+  ![Gerätemanager](./images/isp_com-port.png)
   
 * **ISP-Programmer (`-c`)**  
   Für einen Diamex: `-c stk500v2`  
