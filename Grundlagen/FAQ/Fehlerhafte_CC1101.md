@@ -24,11 +24,13 @@ Durch Setzen des `ACTIVE_PING`-defines kann der aktive Modus eingeschaltet werde
 RaspberryMatic Nutzer können die IDs der zu pingenden Partner per SSH aus der RFD Config auslesen:
 
 ```bash
-# CCU
-grep BidCoS-Address /etc/config/ids| awk -F '=0x' '{print $2}'
+$ # Get CCU address (from CCU/RaspberryMatic via SSH)
+$ grep "^<device serial" /etc/config/rfd/BidCoS-RF.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+123456
 
-# Paired Device
-grep "^<device serial" /etc/config/rfd/<Serial>.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+$ # Paired Device
+$ grep "^<device serial" /etc/config/rfd/<Serial>.dev | awk -F 'address="0x' '{print $2}' | awk -F'"' {'print $1'}
+996699
 ```
 
 Oben ist `<Serial>` durch die Seriennummer des gewünschten Geräts zu ersetzen.
