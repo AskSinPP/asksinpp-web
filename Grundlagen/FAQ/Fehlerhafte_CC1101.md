@@ -21,19 +21,23 @@ Der Testsketch verhält sich im Standardfall **passiv** was bedeutet, dass nur v
 
 Durch Setzen des `ACTIVE_PING`-defines kann der aktive Modus eingeschaltet werden. Dann sendet der Sketch jede Sekunde eine Statusmessage. Hierzu sind sind die `PING_FROM` und `PING_TO` IDs entsprechend der eigenen Umgebung anzupassen. `PING_FROM` sollte eine gepairtes Geräte sein - z.B. Steckdose. `PING_TO` ist die Zentrale/FHEM/CCU. Das Scannen sollte jetzt viel schneller gehen, da eine Antwort von der Zentrale angefordert wird.
 
-RaspberryMatic Nutzer können die IDs der zu pingenden Partner per SSH aus der RFD Config auslesen:
+Über folgendes **CCU-Script** (Programme & Zentralverknüpfungen > Skript testen) können die PING-Adressen ermittelt werden:
 
-```bash
-$ # Get CCU address (from CCU/RaspberryMatic via SSH)
-$ grep BidCoS-Address /etc/config/ids | awk -F ' = ' '{printf("%x\n",$2)}'
-123456
+```java
+! Folgend muss die Seriennummer angepasst werden.
+! Es sollte ein nicht batteriebetriebenen Gerätes gewählt werden.
+string serial = "OEQ1234567";
 
-$ # Paired Device
-$ grep "^<device serial" /etc/config/rfd/<Serial>.dev | sed 's/.*address="0x\([^"]*\)".*/\1/'
-996699
+string ccu;
+string device;
+string stderr;
+system.Exec("grep BidCoS-Address /etc/config/ids | awk -F '= ?' -v format='%x\n' '{printf(format,$2)}'", &ccu, &stderr);
+WriteLine(stderr);
+system.Exec("grep '^<device serial' /etc/config/rfd/" + serial + ".dev | sed 's/.*address=.0x\([0-9A-F]*\). .*/\1/'", &device, &stderr);
+WriteLine(stderr);
+WriteLine("PING_FROM(0x" + device.Substr(0,2) + ",0x" + device.Substr(2,2) + ",0x" + device.Substr(4,2) + ");" );
+WriteLine("PING_TO(0x" + ccu.Substr(0,2) + ",0x" + ccu.Substr(2,2) + ",0x" + ccu.Substr(4,2) + ");" );
 ```
-
-Oben ist `<Serial>` durch die Seriennummer des gewünschten Geräts zu ersetzen.
 
 Sind nun die ID der CCU und eines Geräts bekannt kann der Sketch angepasst werden. Das Kommentarzeichen
 vor `#define ACTIVE_PING` wird entfernt und die `PING_FROM` sowie `PING_TO` Werte angepasst:
