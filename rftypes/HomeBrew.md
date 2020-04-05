@@ -16,6 +16,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [Manawyrm](https://github.com/manawyrm) | `FA01-FA0F`
 | [ssbingo](https://github.com/ssbingo) | `FAB0-FABF`
 | [BoruCz](https://github.com/BoruCz) | `F1D2`
+| [SteMaker](https://github.com/SteMaker) | `FA00`
 
 
 ## Jerome
@@ -105,7 +106,7 @@ HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
 
  ID | Name | Device-Model 
 ----|------|----------
-HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
+[HB-Sen-Env-I](https://github.com/Manawyrm/HB-Sen-Env-I-Firmware) | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
 
 ## ssbingo
 | Bild | ID | Name | Device-Model | Datei |
@@ -118,3 +119,8 @@ HB-Sen-Env-I | Umgebungssensor (Temp, Humid, Pressure) Innen | `0xFA01`
  ID | Name | Device-Model 
 ----|------|----------
 HB-UNI-Sen-WIND | [Homematic wind sensor based on Ventus W132 ](https://github.com/BoruCz/HB-UNI-Sen-WIND) | `0xF1D2`
+
+## SteMaker
+ ID | Name | Device-Model 
+----|------|----------
+HB-LC-Bl2-RD | Gerät mit zwei Rolladenaktoren und einem Regensensor  | `0xFA00`
