@@ -121,6 +121,6 @@ HB-UW-Sen-THPL-O | FHEM Wettersensor Außen (2014) | `0xF102`
 HB-UNI-Sen-WIND | [Homematic wind sensor based on Ventus W132 ](https://github.com/BoruCz/HB-UNI-Sen-WIND) | `0xF1D2`
 
 ## SteMaker
- ID | Name | Device-Model 
-----|------|----------
-HB-LC-Bl2-RD | Gerät mit zwei Rolladenaktoren und einem Regensensor  | `0xFA00`
+| Bild | ID | Name | Device-Model 
+|------|----|------|----------
+| <img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-lc-bl2-rd_thumb.png"> |HB-LC-Bl2-RD | Gerät mit zwei Rolladenaktoren und einem Regensensor  | `0xFA00`
