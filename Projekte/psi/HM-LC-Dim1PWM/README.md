@@ -20,6 +20,11 @@ Added: 2019-02-15
 Es hat sich gezeigt, dass die zwei Tasterschnittstellen nicht vernünftig von der CCU verarbeitet werden. Ich empfehle diese **nicht** zu verwenden.
 :::
 
+::: warning
+Der Fade-Effekt ist wegen der 8-Bit Auflösung des 328p nicht ganz _smooth_, eine gute Alternative bietet 
+der Dimmer auf [HM-LC-DW-WM](/Projekte/der-pw/HM-LC-DW-WM/) auf Basis des STM32.
+:::
+
 ## Schaltplan
 
 ![Dim1PWM Schaltplan](./images/HM-LC-Dim1PWM.svg)
