@@ -30,17 +30,28 @@ module.exports = {
   },
   plugins: [
     ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],
+    ['@vuepress/pwa', { serviceWorker: true, updatePopup: true }],
     ['sitemap', {
       hostname: 'https://asksinpp.de',
       dateFormatter: lastUpdated => {
         // Convert de date str to Date obj
         let [date, time] = lastUpdated.split(',');
         date = date.split('.').reverse().join('-');
-        return new Date(`${date} ${time}`);
+        return new Date(`${ date } ${ time }`);
       }
     }]
   ],
-  head: [['script', {}, `
+  head: [
+    ['link', { rel: 'icon', href: '/logo.jpg' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#00A4A6' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logo.jpg' }],
+    ['link', { rel: 'mask-icon', href: '/logo.jpg', color: '#00A4A6' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/logo.jpg' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    ['script', {}, `
       var _paq = _paq || [];
       _paq.push(["disableCookies"]);
       (function() {
@@ -59,5 +70,6 @@ module.exports = {
         }
         window.addEventListener('click', tl);
       })();
-    `]]
+    `]
+  ]
 };
