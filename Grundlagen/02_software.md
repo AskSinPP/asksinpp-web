@@ -193,6 +193,8 @@ void setup () {
 Hier also **57600 Baud**. Diese muss beim Verbindungsaufbau übereinstimmen, damit man
 nicht nur wirre Zeichen erhält. Es ist zu empfehlen nach jedem Flashvorgang einen Blick auf 
 die Ausgaben zu werfen.
+Für den Fall, dass man mit **115200** Baud eine Verbindung/lebare Zeichen bekommt, verwendet man eine 16MHz Pro Mini.
+Achtung die haben meistens auch **5V** VCC und zerstören potentiell das CC1101 Funkmodul.
 
 ```ini
 # Version
