@@ -128,8 +128,17 @@ Damit die im Sketch verwendeten Bibliotheken zur Verfügung stehen, müssen dies
 * EnableInterrupt
 * Low-Power
 
-Die AskSinPP Bibliothek kann als [ZIP](https://github.com/pa-pa/AskSinPP/archive/master.zip) 
-heruntergeladen werden.
+Die Release-Branches der AskSinPP (V#) sind dazu gedacht, eine stabile Basis für Geräte zu sein, ohne die Weiterentwicklung einzuschränken.
+
+Bitte nutzt den V4 Branch für Eure Geräte.
+
+Der Master-Zweig wird für die aktive Entwicklung verwendet und kann instabil sein.
+
+Ausnahme: Einige Geräte wie HB-UNI-Sen-WEA oder HB-UNI-Sensor1 nutzen neuere Features und benötigen deswegen den Master-branch.
+Dies sollte in der Readme zum jeweiligen Gerät dokumentiert sein.
+
+Die AskSinPP Bibliothek kann als ZIP-Datei für den [V4 Release-Branch](https://codeload.github.com/pa-pa/AskSinPP/zip/V4) bzw. für den [Master-branch](https://codeload.github.com/pa-pa/AskSinPP/zip/master) heruntergeladen werden.
+
 Anschließend geht man in der Arduino IDE auf `Sketch > Bibliothek einbinden > .ZIP-Bibliothek hinzufügen` 
 und wählt die ZIP-Datei aus.
 
