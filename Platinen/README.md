@@ -111,6 +111,9 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
 ### [Psi](https://psi.cx)
   - [HM-LC-Dim1PWM-LinearPWM](https://github.com/psi-4ward/HM-LC-Dim1PWM-LinearPWM): HomeMatic Aktor mit linearer PWM Ausgabe über Optokoppler zum Beschalten von PWM-Dim Eingängen (Beispielsweise von Meanwell Netzteilen)
   - [HMSensor-FlashStation](https://github.com/psi-4ward/HMSensor-FlashStation): Hilfsplatine um HMSensor PCBs mit Hilfe von PogoPins einzuspannend und zu flashen
+  
+### [HMSteve](https://github.com/HMSteve)
+  - [AskSinPP_1284_Board](https://github.com/HMSteve/PCBs/tree/master/AskSinPP_1284_Board): Universelle Sensorplatine mit ATMega1284p, wenn der Speicher des 328p knapp wird
 
 
 ## PCBs fertigen lassen
