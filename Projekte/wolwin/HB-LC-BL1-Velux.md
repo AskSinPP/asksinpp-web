@@ -5,7 +5,7 @@ ProjectUrl: https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-LC-BL1-Velux-K
 Author: wolwin
 AuthorUrl: https://github.com/wolwin
 Tags: Aktor, Batterie, OpenSource
-Thumb: HB-LC-Bl1-Velux.jpg
+Thumb: HB-LC-BL1-Velux.jpg
 Added: 2020-07-25
 ---
 
