@@ -16,7 +16,7 @@ Es kommt ab und an zu Problemen bei Upload/Flashen der Sketches über die UART-S
 
 * Der FTDI ist falsch angeschlossen.  
   `TX` (Senden) am AVR muss an `RX` (Empfangen) am FTDI angeschlossen sein und umgekehrt.
-* Auf dem AVR muss ein entsprechender Bootloader (über [ISP](../04-isp.html)) geflasht sein um später per UART den eigentlichen Sketch flashen zu können. Ein Arduino Pro-Mini wird überlichwise mit einem Bootloader ausgeliefert. 
+* Auf dem AVR muss ein entsprechender Bootloader (über [ISP](../04-isp.html)) geflasht sein um später per UART den eigentlichen Sketch flashen zu können. Ein Arduino Pro-Mini wird überlichweise mit einem Bootloader ausgeliefert. 
 * Der FTDI kann keinen RESET des AVR durchführen.
   `RESET` Pin falsch angeschlossen oder es fehlt ein 100nF Kondensator in der Leitung. Ein Arduino Pro-Mini hat diesen on-board.
 * Der interne Takt des AVR ist zu ungenau, flashen per ISP geht.  
@@ -28,3 +28,5 @@ Es kommt ab und an zu Problemen bei Upload/Flashen der Sketches über die UART-S
      // Init der seriellen Konsole mit 38400 Baud
      DINIT(38400, ASKSIN_PLUS_PLUS_IDENTIFIER);`)
      ```
+* Mit dem ISP wurden die Fuses des AVR so geändert, dass er einen externen Takt erwartet, aber kein Quarz oder Resonator angeschlossen ist. 
+  Dadurch kann der Bootloader nicht ausgeführt werden. Es muss zum Ändern der Fuses per ISP ein externer Takt angelegt werden. Der Diamex ISP unterstützt diese Funktion.
