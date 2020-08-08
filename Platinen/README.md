@@ -114,6 +114,11 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   
 ### [HMSteve](https://github.com/HMSteve)
   - [AskSinPP_1284_Board](https://github.com/HMSteve/PCBs/tree/master/AskSinPP_1284_Board): Universelle Sensorplatine mit ATMega1284p, wenn der Speicher des 328p knapp wird
+  
+### [der-pw](https://github.com/der-pw)
+  - [HM-LC-Sw1-Pl-DN-R1_S26](https://github.com/der-pw/HM-LC-Sw1-Pl-DN-R1_S26): Adapterplatine um aus einem Sonoff S26 einen HM-LC-Sw1-Pl-DN-R1 Zwischenstecker zu bauen.
+  - [HM-LC-Sw1-Pl-DN-R1_OBII](https://github.com/der-pw/HM-LC-Sw1-Pl-DN-R1_OBII): Adapterplatine um aus einem Obi Wlan Zwischenstecker einen HM-LC-Sw1-Pl-DN-R1 Zwischenstecker zu bauen.
+  - [HM-LC-SW1-BA-PCB_mini_MAX1724](https://github.com/der-pw/HM-LC-SW1-BA-PCB_mini_MAX1724): HM-LC-SW1-BA-PCB_mini mit einer Ausgangsspannung von 3,3V, bspw. für Mini-Lichterketten.  
 
 
 ## PCBs fertigen lassen
