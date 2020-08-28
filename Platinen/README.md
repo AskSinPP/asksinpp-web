@@ -120,6 +120,9 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
   - [HM-LC-Sw1-Pl-DN-R1_OBII](https://github.com/der-pw/HM-LC-Sw1-Pl-DN-R1_OBII): Adapterplatine um aus einem Obi Wlan Zwischenstecker einen HM-LC-Sw1-Pl-DN-R1 Zwischenstecker zu bauen.
   - [HM-LC-SW1-BA-PCB_mini_MAX1724](https://github.com/der-pw/HM-LC-SW1-BA-PCB_mini_MAX1724): HM-LC-SW1-BA-PCB_mini mit einer Ausgangsspannung von 3,3V, bspw. für Mini-Lichterketten.  
 
+### [Asselhead](https://github.com/Asselhead)
+ - [HM-LC-SW1-Li](https://github.com/Asselhead/HM-LC-SW1-Li): Schaltaktor für LED-Lichterketten mit LiIon Akku Ladefunktion
+ - [HB-Dis-EP-75BW-PCB](https://github.com/Asselhead/HB-Dis-EP-75BW-PCB): Homematic Homebrew Leiterplatte für 7,5" (und andere) ePaper Displays mit OnBoard Driver
 
 ## PCBs fertigen lassen
 
