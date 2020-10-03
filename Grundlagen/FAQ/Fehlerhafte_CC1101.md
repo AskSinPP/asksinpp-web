@@ -1,7 +1,7 @@
 # Fehlerhafte CC1101 Module
 
 Es sind CC1101 Module im Umlauf die auf einer leicht verschobenen Frequenz senden.  
-Dies führt zu sehr schlechte RSI Werten. Meist kann der Aktor gar nicht erst angelernt werden.
+Dies führt zu sehr schlechte RSSI Werten. Meist kann der Aktor gar nicht erst angelernt werden.
 
 Näheres ist im [FHEM-Forum Thread](https://forum.fhem.de/index.php/topic,91740.0.html) erläutert.
 
@@ -13,13 +13,13 @@ Näheres ist im [FHEM-Forum Thread](https://forum.fhem.de/index.php/topic,91740.
 Viele Module kann man durch eine _kleine_ Verschiebung der Frequenz zur Funktion bewegen. Dazu gibt es einen
 [FreqTest.ino](https://github.com/pa-pa/AskSinPP/blob/master/examples/FreqTest/FreqTest.ino) Sketch.
 
-Der Testsketch versucht ausgehend von der Standardfrequenz ein gültiges Paket zu empfangen. Wenn nichts empfangen wurde, wird die Frequenz geändert und es wird wieder versucht. Dabei wird jeweils versucht den Bereich oberhalb und unterhalb der Standardfrequenz zu erweitern. Wenn irgendwo ein Paket empfangen wurde, wird von dort ausgehend die obere und untere Grenze ermittelt. Am Schluss wird dann die Frequenz, die in der Mitte zwischen oberer und unterer Grenze liegt, in den vorher ungenutzten Bereich des EEPROM geschrieben.
+Der Testsketch versucht ausgehend von der Standardfrequenz ein gültiges Paket zu empfangen. Wenn nichts empfangen wurde, wird die Frequenz geändert und es wird wieder versucht. Dabei wird jeweils versucht den Bereich oberhalb und unterhalb der Standardfrequenz zu erweitern. Wenn irgendwo ein Paket empfangen wurde, wird von dort ausgehend die obere und untere Grenze ermittelt. Am Schluss wird die Frequenz, die in der Mitte zwischen oberer und unterer Grenze liegt, in den vorher ungenutzten Bereich des EEPROM geschrieben.
 
 Die Funkpartner sollten tendenziell weiter weg vom FreqTest-Device sein. 
 
-Der Testsketch verhält sich im Standardfall **passiv** was bedeutet, dass nur versucht wird, Pakete zu empfangen. Wurde nach einer Minute (einstellbar durch SCANTIME) nichts empfangen, wird die Frequenz gewechselt. Um sicher zu stellen, dass auch Nachrichten empfangen werden können, sollten während des Scans irgendein Gerät geschaltet werden.
+Der Testsketch verhält sich im Standardfall **passiv**. Das bedeutet, dass nur versucht wird, Pakete zu empfangen. Wurde nach einer Minute (einstellbar durch `SCANTIME`) nichts empfangen, wird die Frequenz gewechselt. Um sicher zu stellen, dass auch Nachrichten empfangen werden können, sollte während des Scans irgendein Gerät geschaltet werden.
 
-Durch Setzen des `ACTIVE_PING`-defines kann der aktive Modus eingeschaltet werden. Dann sendet der Sketch jede Sekunde eine Statusmessage. Hierzu sind sind die `PING_FROM` und `PING_TO` IDs entsprechend der eigenen Umgebung anzupassen. `PING_FROM` sollte eine gepairtes Geräte sein - z.B. Steckdose. `PING_TO` ist die Zentrale/FHEM/CCU. Das Scannen sollte jetzt viel schneller gehen, da eine Antwort von der Zentrale angefordert wird.
+Durch Setzen des `ACTIVE_PING`-defines kann der aktive Modus eingeschaltet werden. Dann sendet der Sketch jede Sekunde eine Statusmessage. Hierzu sind sind die `PING_FROM` und `PING_TO` IDs entsprechend der eigenen Umgebung anzupassen. `PING_FROM` sollte ein gepairtes Gerät sein - z.B. Steckdose. `PING_TO` ist die Zentrale/FHEM/CCU. Das Scannen sollte jetzt viel schneller gehen, da eine Antwort von der Zentrale angefordert wird.
 
 Über folgendes **CCU-Script** (Programme & Zentralverknüpfungen > Skript testen) können die PING-Adressen ermittelt werden:
 
@@ -81,9 +81,10 @@ Store into config area: 65CA
 
 Wie man in der Ausgabe sieht, ist nun die neue Frequenz `0x2165CA` im EEPROM gespeichert.
 
-Man kann den Scanvorgang öfters laufen lassen um das Ergebnis zu verifizieren, hierzu einfach den Arduino über den Reset-Button neu starten.
+Man kann den Scanvorgang wiederholt laufen lassen um das Ergebnis zu verifizieren. Hierzu einfach den Arduino über den Reset-Button neu starten.
 
-Wird nun der eigentlich Sketch geflasht wird beim Start das EEPROPM ausgelesen und die ermittelte Frequenz gespeichert was auch im Monitor ersichtlich ist:
+Wird nun der eigentlich Sketch geflasht, wird beim Start das EEPROM ausgelesen und die ermittelte Frequenz - gespeichert was auch im Monitor ersichtlich ist:
+
 ```text {8}
 AskSin++ V3.1.7 (Mar 20 2019 17:43:23)
 Address Space: 32 - 1650
@@ -96,11 +97,10 @@ Config Freq: 0x2165CA
 ID: 010808  Serial: PsiDimDW08
 ```
 
-
 ## Frequenzanpassung per Sketch
 
-Alternativ kann die (ggf. per FreqTest.ino) ermittelte Frequenz im Sketch gesetzt werden. Dazu kann der setup()-Block 
-angepasst werden. Es ist darauf zu achten, dass die Anpassung nach dem `init(hal)` eingefügt werden da init() 
+Alternativ kann die (ggf. per FreqTest.ino) ermittelte Frequenz im Sketch gesetzt werden. Dazu kann der `setup()`-Block 
+angepasst werden. Es ist darauf zu achten, dass die Anpassung nach dem `init(hal)` eingefügt werden da `init()` 
 die Standardfrequenz setzt.
 
 
@@ -136,7 +136,7 @@ void setup () {
 
 Meist werden die CC1101-Module über die SMD-Kontakte verlötet und sind im Fehlerfall nur schwer wieder zu entfernen.
 Um dem Problem zu entgehen wurde im homematic-forum.de die HB-CC1101-Testbench vorgestellt.
-Vereinfacht ausgedrückt, ist es damit möglich, sowohl den Ruhestrohm zu testen, also auch einen FreqTest durchzuführen und um evtl. Fehlfunktionen noch vor dem Einbau festzustellen.
+Vereinfacht ausgedrückt ist es damit möglich, sowohl den Ruhestrohm zu testen, als auch einen FreqTest durchzuführen und um evtl. Fehlfunktionen noch vor dem Einbau feststellen zu können.
 
-* [Vorstellung HC-CC1101-TEstbench](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701)
-* [verbessertes Klemmstück zum Aufsockeln des Moduls](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701&start=40#p560242)
+* [Vorstellung HC-CC1101-Testbench](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701)
+* [Verbessertes Klemmstück zum Aufsockeln des Moduls](https://homematic-forum.de/forum/viewtopic.php?f=76&t=54701&start=40#p560242)
