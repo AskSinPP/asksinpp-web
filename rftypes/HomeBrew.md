@@ -17,6 +17,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [ssbingo](https://github.com/ssbingo) | `FAB0-FABF`
 | [BoruCz](https://github.com/BoruCz) | `F1D2`
 | [SteMaker](https://github.com/SteMaker) | `FA00`
+| [HMSteve](https://github.com/HMSteve) | `F800-F83F`
 
 
 ## Jerome
@@ -129,3 +130,11 @@ HB-UNI-Sen-WIND | [Homematic wind sensor based on Ventus W132 ](https://github.c
 | Bild | ID | Name | Device-Model 
 |------|----|------|----------
 | <img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-lc-bl2-rd_thumb.png"> |HB-LC-Bl2-RD | Gerät mit zwei Rolladenaktoren und einem Regensensor  | `0xFA00`
+
+
+## HMSteve
+ ID | Name | Device-Model 
+----|------|----------
+HB-UNI-Sen-Sky | [Sky Sensor (Helligkeit, UV-Index, Himmelstemperatur) ](https://github.com/HMSteve/HB-UNI-Sen-Sky) | `0xF820`
+HB-UNI-Sen-TH  | [Universalsensor (Temperatur, Luftfeuchte) ](https://github.com/HMSteve/HB-UNI-Sen-TH) | `0xF800`
+HB-UNI-Sen-RainCounter | [Regenmesser-Umbau ](https://github.com/HMSteve/HB-UNI-Sen-RainCounter) | `0xF821`
