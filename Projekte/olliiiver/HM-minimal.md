@@ -9,5 +9,5 @@ Thumb: HM-minimal.jpg
 Added: 2020-10-27
 ---
 
-# Kompakte Hardware mit Minimalkomponenten für Erweiterungen auf Lochrasterplatinen
+# HM Minimal
 
