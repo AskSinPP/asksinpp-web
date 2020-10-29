@@ -22,10 +22,10 @@ weshalb dies nicht Teil dieses Projekts ist. Der
 von Tom ist eine gutes Beispiel für einen universell einsetzbaren Sensor.
 
 ::: tip
-Möchte man den Temperatursensor an einen HM-CC-RT-DN Heizkörperthermostat anlernen
+Möchte man den Temperatursensor an einen HM-CC-RT-DN Heizkörperthermostat anlernen,
 benötigt man genauere Timings und muss auf einen externen Taktgeber zurückgreifen.
 
-Das [HMSensor WDS40-RTC](../HMSensor/HM-WDS40-TH-I-RTC-BME280.html) Projekt kann mit einem 32kHz Osziallator bestückt werden.
+Das [HMSensor WDS40-RTC](../HMSensor/HM-WDS40-TH-I-RTC-BME280.html) Projekt kann mit einem 32kHz Oszillator bestückt werden.
 :::
 
 ## Hardware
@@ -57,9 +57,9 @@ In diesem Beispiel wird die HB-UNI-Bat von Ronny verwendet.
 
 ### Babbling Idiot
 
-Damit es bei abfallender Battriespannung zu keinem Dauersender kommt wird die BOD über die Fuse-Bits des Arduino deaktiviert,
+Damit es bei abfallender Battriespannung zu keinem Dauersenden kommt, wird die BOD über die Fuse-Bits des Arduino deaktiviert,
 siehe [Babbling Idiot](/Grundlagen/FAQ/babbling_idiot.html).
-Am besten setzt man die Fuses direkt nach dem einlöten der Stiftleiste da man diese zum Anschluss des IPS über 
+Am besten setzt man die Fuses direkt nach Einlöten der Stiftleiste, da man diese zum Anschluss des ISP über 
 Jumperwires nutzen kann.
 
 
@@ -68,24 +68,25 @@ Jumperwires nutzen kann.
 Der Ruhestrom kann drastisch gesenkt werden:
 
 * LDO und LEDs vom Arduino entfernen, siehe [Batteriebetrieb](/Grundlagen/01_hardware.html#batteriebetrieb)
-* LDO vom BME280 Board entfernen, siehe [Ruhestrom von Tom](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Ruhestrom). Dieser Punkt entfällt für die 3.3V Versionen des BME280 Boards.
+* LDO vom BME280 Board entfernen, siehe [Ruhestrom von Tom](https://github.com/TomMajor/AskSinPP_Examples/tree/master/Info/Ruhestrom). Dieser Punkt entfällt für die 3.3V Versionen des BME280-Boards.
 
 ![BME280 LDO removed](./images/BME280-ldo-removed.jpg)  
-Im Bild zu sehen: Der LDO ist entfernt und eine Lötbrücke ist am Level-Shifter gesetzt.
+Im Bild zu sehen: Der LDO ist entfernt und eine Lötbrücke wurde am Level-Shifter gesetzt.
 
-Statt die Lötbrücke am Level-Shifter zu setzen, kann man aber auch einfach den ausgelöteten LDO überbrücken, d.h. das 5V- mit dem 3.3V-Pad verbinden. Siehe hier: https://it-net.blog/?p=148&lang=en
+Statt die Lötbrücke am Level-Shifter zu setzen, kann man aber auch den [ausgelöteten LDO überbrücken](https://it-net.blog/?p=148&lang=en), d.h. das 5V- mit dem 3.3V-Pad verbinden.
 
 ### Aufbau
 
-Der Aufbau gestaltet sich simpel. Wie gewöhnlich wird der CC1101, die Status-LED und der Taster nach der [allgemein gültigen Verdrahtung](/Grundlagen/01_hardware.html#verdrahtung) angeschlossen bzw. anhand der gewählte Platine bestückt.
+Der Aufbau gestaltet sich simpel: Wie gewöhnlich wird der CC1101, die Status-LED und der Taster nach der [allgemein gültigen Verdrahtung](/Grundlagen/01_hardware.html#verdrahtung) angeschlossen bzw. anhand der gewählten Platine bestückt.
 
-Die 4 Anschlüsse des BME280 Boards:
-* `VIN`: 3V Betriebsspannung, kann von VCC PIN des Arduino genommen werden
+Die vier Anschlüsse des BME280-Boards:
+
+* `VIN`: 3V Betriebsspannung, kann vom VCC PIN des Arduino genommen werden.
 * `GND`
-* `SCL`: I2C Taktleitung, wird an PIN `A5` des Arduino angeschlossen
-* `SDA`: I2C Datenleitung, wird an PIN `AA` des Arduino angeschlossen
+* `SCL`: I2C Taktleitung, wird an PIN `A5` des Arduino angeschlossen.
+* `SDA`: I2C Datenleitung, wird an PIN `AA` des Arduino angeschlossen.
 
-Einige Platinen bieten entsprechende Lötpunkt an wodurch der BME280 direkt per Stiftleiste eingelötet werden kann. 
+Einige Platinen bieten entsprechende Lötpunkt an, wodurch der BME280 direkt per Stiftleiste aufgelötet werden kann. 
 
 ![Verdrahtung](./images/verdrahtung.png)
 
@@ -100,7 +101,7 @@ Einige Platinen bieten entsprechende Lötpunkt an wodurch der BME280 direkt per 
 ## Sketch
 
 Als Sketch kommt [HM-WDS40-TH-I-BME280](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-BME280/HM-WDS40-TH-I-BME280.ino)
-von Jerome zum Einsatz. Wie immer dran denken die [Serial und ID zu ändern](/Grundlagen/02_software.html#sketch-anpassen-und-flashen).
+von Jérôme zum Einsatz. Wie immer dran denken die [Serial und ID zu ändern](/Grundlagen/02_software.html#sketch-anpassen-und-flashen).
 
 Zusätzlich zu den üblichen Bibliotheken (AskSinPP, EnableInterrupt, Low-Power) benötigt man noch die 
 [Lib für den BME280](https://github.com/finitespace/BME280). 
@@ -117,4 +118,4 @@ Im Sketch ist ein `ConfigButton` definiert weshalb der neue Aktor per kurzem Tas
 
 * Der BME280 ist etwas träge, gib ihm ein paar (mehr) Minuten damit sich die Temperatur einpegelt.
 * Das Projekt ist auch recht schön auf [technikkram.net](https://technikkram.net/2018/05/homematic-diy-projekt-thermometer-und-hydrometer-fertige-platine-im-eigenbau) beschrieben. Leider fehlt hier die Babbling Idiot Protection.
-* Solltest du Anmerkungen oder Probleme mit dem Nachbau haben, lasst es [mich](mailto:asppc@psi.cx) bitte wissen damit dieses Projekt verbessert werden kann.
+* Solltest du Anmerkungen oder Probleme mit dem Nachbau haben, lass es [mich](mailto:asppc@psi.cx) bitte wissen damit dieses Projekt verbessert werden kann.
