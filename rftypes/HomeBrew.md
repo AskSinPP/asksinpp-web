@@ -18,7 +18,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [BoruCz](https://github.com/BoruCz) | `F1D2`
 | [SteMaker](https://github.com/SteMaker) | `FA00`
 | [HMSteve](https://github.com/HMSteve) | `F800-F83F`
-
+| [FUEL4EP](https://github.com/FUEL4EP/) | `F601-F603`
 
 ## Jerome
 
@@ -139,3 +139,10 @@ HB-UNI-Sen-WIND | [Homematic wind sensor based on Ventus W132 ](https://github.c
 HB-UNI-Sen-Sky | [Sky Sensor (Helligkeit, UV-Index, Himmelstemperatur) ](https://github.com/HMSteve/HB-UNI-Sen-Sky) | `0xF820`
 HB-UNI-Sen-TH  | [Universalsensor (Temperatur, Luftfeuchte) ](https://github.com/HMSteve/HB-UNI-Sen-TH) | `0xF800`
 HB-UNI-Sen-RainCounter | [Regenmesser-Umbau ](https://github.com/HMSteve/HB-UNI-Sen-RainCounter) | `0xF821`
+
+## FUEL4EP
+ ID | Name | Device-Model 
+----|------|----------
+[HB-UNI-SENSOR-CO2-SCD30](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-CO2_SCD30)|NDIR CO2 Sensor<br/>_basierend auf Sensirion SCD30_|F6 01 | 
+[HB-UNI-SENSOR-AQ-BME680](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-AQ-BME680) | Air Quality Sensor<br/>_basierend auf Bosch BME680_|F6 02 | 
+[HB-UNI-SENSOR-TH-SHT75](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1_SHT75) | high accuracy TH Sensor<br/>_basierend auf Sensirion SHT75_ |F6 03 | 
