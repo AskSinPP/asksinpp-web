@@ -31,7 +31,7 @@ jobs:
           path: .vuepress/dist/
           remote_path: /asksinpp.de
           remote_host: asksinpp.de
-          remote_port: 22022
+          remote_port: 22024
           remote_user: www
           remote_key: ${{ secrets.DEPLOY_KEY }}
 
