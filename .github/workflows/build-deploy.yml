@@ -1,0 +1,32 @@
+on: push
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cache
+        uses: actions/cache@v2.1.3
+        with:
+          path: node_modules
+
+      - name: Build
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+        - run: npm ci
+        - run: npm run build
+
+      - name: Deploy
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          switches: -avzr --delete
+          path: .vuepress/dist/
+          remote_path: /asksinpp.de
+          remote_host: asksinpp.de
+          remote_port: 22022
+          remote_user: www
+          remote_key: ${{ secrets.DEPLOY_KEY }}
+
