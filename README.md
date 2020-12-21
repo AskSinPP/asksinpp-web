@@ -2,7 +2,7 @@
 home: true
 ---
 
-# ▶️ AskSinPPCollection ◀️
+# asksinpp.de
 Eine Übersicht rund um die Arduino [AskSinPP Lib](https://github.com/pa-pa/AskSinPP) sowie deren Verwendung und Projekte.
 
 **Aus diesem Repository wird eine Website erstellt**  

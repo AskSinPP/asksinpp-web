@@ -40,6 +40,9 @@
         <slot name="page-bottom"/>
       </template>
     </Page>
+    <footer>
+      <a href="/Impressum.html">Impressum</a>
+    </footer>
   </div>
 </template>
 
