@@ -50,6 +50,10 @@
       <NavLink :item="{text: 'Issue', link: 'https://github.com/AskSinPP/asksinpp.de/issues'}"/>
       oder <a href="mailto:asppc@psi.cx">Mail</a>.
     </div>
+
+    <div class="page_bottom">
+      <a href="/Impressum.html">Impressum</a>
+    </div>
   </div>
 </template>
 

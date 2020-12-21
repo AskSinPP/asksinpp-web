@@ -1,3 +1,7 @@
+---
+pageClass: content_default
+--- 
+
 # Impressum
 
 Der Inhalt dieser Website wird automatisch aus dem Git-Repository [https://github.com/AskSinPP/asksinpp.de](https://github.com/AskSinPP/asksinpp.de) erstellt, welches durch verschiedene [Mitwirkende](https://github.com/AskSinPP/asksinpp.de/graphs/contributors) gepflegt wird.

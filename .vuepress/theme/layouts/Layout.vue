@@ -2,7 +2,9 @@
   <div>
     <ParentLayout>
       <template #page-bottom>
-
+        <div class="page_bottom">
+          <a href="/Impressum.html">Impressum</a>
+        </div>
       </template>
     </ParentLayout>
   </div>
@@ -25,9 +27,7 @@
         </div>
 */
 
-  // use when slots are fixed
-  // import ParentLayout from '@parent-theme/layouts/Layout.vue';
-  import ParentLayout from './OriginTheme.vue';
+  import ParentLayout from '@parent-theme/layouts/Layout.vue';
 
   export default {
     components: {
