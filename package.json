@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
-    "check": "blcl -r .vuepress/dist"
+    "check": "blcl -r .vuepress/dist",
+    "postinstall": "echo \\$contentClass = \\'.content__default\\' > node_modules/@vuepress/theme-default/styles/config.styl"
   },
   "author": "",
   "license": "CC BY-SA License 4.0",
