@@ -16,7 +16,7 @@ Am besten man fragt in den jeweiligen Projekt-Threads nach. Die Autoren haben au
 Da die meisten PCBs OpenSource sind können sie auch bei PCB-Herstellern [in Fertigung gegeben](#pcbs-fertigen-lassen) werden.
 :::
 
-_Wer noch weitere Platinen kennt oder selbst erstellt hat möge [diese Seite vervollständigen](https://github.com/AskSinPP/asksinpp.de/edit/master/Platinen/README.md)!_
+_Wer noch weitere Platinen kennt oder selbst erstellt hat möge [diese Seite vervollständigen](https://github.com/AskSinPP/asksinpp-web/edit/master/Platinen/README.md)!_
 
 ## PCB-Autoren
 

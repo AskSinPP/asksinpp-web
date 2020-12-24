@@ -1,6 +1,6 @@
 # Projekt hinzufügen
 
-Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/AskSinPP/asksinpp.de](https://github.com/AskSinPP/asksinpp.de) erzeugt. In das Repository dürfen nur berechtigte
+Die Projekte werden aus den Markdown-Dateien des Github Projekts [https://github.com/AskSinPP/asksinpp-web](https://github.com/AskSinPP/asksinpp-web) erzeugt. In das Repository dürfen nur berechtigte
 Contributoren direkt schreiben weshalb die Änderungen über einen Pull-Request eingereicht werden müssen.
 
 Wer keine Lust hat sich mit GitHub und Pull-Requests auseinander zu setzen kann mir auch

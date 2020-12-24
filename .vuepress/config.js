@@ -9,7 +9,7 @@ module.exports = {
     nav,
     lastUpdated: 'Letztes Update',
     logo: '/logo.jpg',
-    docsRepo: 'AskSinPP/asksinpp.de',
+    docsRepo: 'AskSinPP/asksinpp-web',
     docsBranch: 'master',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
@@ -32,7 +32,7 @@ module.exports = {
     ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],
     ['@vuepress/pwa', { serviceWorker: true, updatePopup: true }],
     ['sitemap', {
-      hostname: 'https://asksinpp.de',
+      hostname: 'https://asksinpp.github.io',
       dateFormatter: lastUpdated => {
         // Convert de date str to Date obj
         let [date, time] = lastUpdated.split(',');

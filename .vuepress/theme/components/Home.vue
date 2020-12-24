@@ -45,14 +45,14 @@
       Wer sich hier vermisst, oder noch was gefunden hat, das fehlt - immer her damit.
       <br/>
       Entweder per
-      <NavLink :item="{text: 'Pull request', link: 'https://github.com/AskSinPP/asksinpp.de/pulls'}"/>
+      <NavLink :item="{text: 'Pull request', link: 'https://github.com/AskSinPP/asksinpp-web/pulls'}"/>
       ,
-      <NavLink :item="{text: 'Issue', link: 'https://github.com/AskSinPP/asksinpp.de/issues'}"/>
+      <NavLink :item="{text: 'Issue', link: 'https://github.com/AskSinPP/asksinpp-web/issues'}"/>
       oder <a href="mailto:asppc@psi.cx">Mail</a>.
     </div>
 
     <div class="page_bottom">
-      <a href="/Impressum.html">Impressum</a>
+      <a href="/impressum.html">Impressum</a>
     </div>
   </div>
 </template>

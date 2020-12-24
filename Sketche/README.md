@@ -119,4 +119,4 @@ Die Installation eines entsprechenden **DeviceAddons** ist erforderlich!
 <hr/>
 
 Du hast noch einen Sketch gefunden oder selbst entwickelt? 
-[Sag Bescheid](https://github.com/AskSinPP/asksinpp.de/issues), wir nehmen ihn gerne auf.
+[Sag Bescheid](https://github.com/AskSinPP/asksinpp-web/issues), wir nehmen ihn gerne auf.

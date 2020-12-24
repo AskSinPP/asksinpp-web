@@ -4,11 +4,11 @@ pageClass: content_default
 
 # Impressum
 
-Der Inhalt dieser Website wird automatisch aus dem Git-Repository [https://github.com/AskSinPP/asksinpp.de](https://github.com/AskSinPP/asksinpp.de) erstellt, welches durch verschiedene [Mitwirkende](https://github.com/AskSinPP/asksinpp.de/graphs/contributors) gepflegt wird.
+Der Inhalt dieser Website wird automatisch aus dem Git-Repository [https://github.com/AskSinPP/asksinpp-web](https://github.com/AskSinPP/asksinpp-web) erstellt, welches durch verschiedene [Mitwirkende](https://github.com/AskSinPP/asksinpp-web/graphs/contributors) gepflegt wird.
 
 Kontakt:
 * E-Mail: [asppc@psi.cx](mailto:asppc@psi.cx)
-* [Github-Issue](https://github.com/AskSinPP/asksinpp.de/issues)
+* [Github-Issue](https://github.com/AskSinPP/asksinpp-web/issues)
 
 
 # Haftungsausschluss
@@ -28,11 +28,13 @@ nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links 
 
 ## Urheberrecht
 
-Alle Inhalte dieser Website, sofern auf nicht auf der jeweiligen Seite anders ausgezeichnet, unterliegen der [CC BY-NC-SA 4.0](https://raw.githubusercontent.com/AskSinPP/asksinpp.de/master/LICENSE.txt). 
+Alle Inhalte dieser Website, sofern auf nicht auf der jeweiligen Seite anders ausgezeichnet, unterliegen der [CC BY-NC-SA 4.0](https://raw.githubusercontent.com/AskSinPP/asksinpp-web/master/LICENSE.txt). 
 
 ## Datenschutz
 
-Die Nutzung dieser Webseite ist ohne Angabe personenbezogener Daten möglich. Es erfolgt keine Speicherung von Daten mit personenbezug.
+Die Nutzung dieser Webseite ist ohne Angabe personenbezogener Daten möglich.
+
+Diese Website wird auf [GitHub](https://github.com) gehostet, es gelten die entsprechenden [Richtlinien von GitHub](https://help.github.com/articles/global-privacy-practices/).
 
 ## Cookies
 

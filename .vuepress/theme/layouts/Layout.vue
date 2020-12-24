@@ -3,7 +3,7 @@
     <ParentLayout>
       <template #page-bottom>
         <div class="page_bottom">
-          <a href="/Impressum.html">Impressum</a>
+          <a href="/impressum.html">Impressum</a>
         </div>
       </template>
     </ParentLayout>
@@ -18,7 +18,7 @@
             :is="UtterancesCommentsComponent"
             :title="$page.title"
             :pathname="$page.relativePath"
-            repo="AskSinPP/asksinpp.de"
+            repo="AskSinPP/asksinpp-web"
             label="comment"
             :theme="utterancesTheme"
             description="Dieses Issue enthält die Kommentare der Seite:"

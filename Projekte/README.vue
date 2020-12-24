@@ -75,7 +75,7 @@
 
       <p class="foot">
         <a href="./Projekt-hinzufuegen.html">→ Projekt hinzufügen</a>
-        <a href="/Impressum.html">Impressum</a>
+        <a href="/impressum.html">Impressum</a>
       </p>
     </div>
   </div>

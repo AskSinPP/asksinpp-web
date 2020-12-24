@@ -24,17 +24,6 @@ jobs:
       - run: npm run build
 
       # Deploy
-      - uses: burnett01/rsync-deployments@4.1
-        if: github.ref == 'refs/heads/master'
-        with:
-          switches: -avzr --delete
-          path: .vuepress/dist/
-          remote_path: /asksinpp.de
-          remote_host: asksinpp.de
-          remote_port: 22024
-          remote_user: www
-          remote_key: ${{ secrets.DEPLOY_KEY }}
-
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
