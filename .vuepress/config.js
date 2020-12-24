@@ -52,13 +52,14 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/logo.jpg' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['script', {}, `
-      var _paq = _paq || [];
-      _paq.push(["disableCookies"]);
+      var _paq = [
+        ["disableCookies"],
+        ['setTrackerUrl', 'https://mt.psi.cx/t.php'],
+        ['setSiteId', '2'],
+      ];
       (function() {
-        _paq.push(['setTrackerUrl', '/t.php']);
-        _paq.push(['setSiteId', '2']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src='/t.js'; s.parentNode.insertBefore(g,s);
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://mt.psi.cx/t.js'; s.parentNode.insertBefore(g,s);
         
         function tl(ev) {
           var path = event.path || (event.composedPath && event.composedPath());
