@@ -32,7 +32,7 @@ module.exports = {
     ['@vuepress/plugin-medium-zoom', { selector: '.content__default img' }],
     ['@vuepress/pwa', { serviceWorker: true, updatePopup: true }],
     ['sitemap', {
-      hostname: 'https://asksinpp.github.io',
+      hostname: 'https://asksinpp.de',
       dateFormatter: lastUpdated => {
         // Convert de date str to Date obj
         let [date, time] = lastUpdated.split(',');

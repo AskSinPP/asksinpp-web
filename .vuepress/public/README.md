@@ -1,4 +1,4 @@
-# asksinpp.github.io
+# asksinpp.de
 
 This Repository holds the generated files for 
 [https://github.com/AskSinPP/asksinpp-web](https://github.com/AskSinPP/asksinpp-web).
