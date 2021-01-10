@@ -100,7 +100,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 |<img src="https://raw.githubusercontent.com/TomMajor/SmartHome/master/HB-TM-Devices-AddOn/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor5_thumb.png" width=25/> | [HB-UNI-Sensor5](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1) | HB-UNI-Sensor1 Variante mit benutzerspezifische Sensordaten | `0xF115` | [HB-TM-Devices-AddOn](https://github.com/TomMajor/SmartHome/tree/master/HB-TM-Devices-AddOn) |
 |<img src="https://raw.githubusercontent.com/TomMajor/SmartHome/master/HB-TM-Devices-AddOn/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor6_thumb.png" width=25/> | [HB-UNI-Sensor6](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1) | HB-UNI-Sensor1 Variante mit benutzerspezifische Sensordaten | `0xF116` | [HB-TM-Devices-AddOn](https://github.com/TomMajor/SmartHome/tree/master/HB-TM-Devices-AddOn) |
 |<img src="https://raw.githubusercontent.com/TomMajor/SmartHome/master/HB-TM-Devices-AddOn/CCU_RM/src/addon/www/config/img/devices/50/hb-uni-sensor-blitz_thumb.png" width=25/> | [HB-UNI-Sensor-Blitz](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor-Blitz) | Sensor zur Erkennung von Blitzen | `0xF120` | [HB-TM-Devices-AddOn](https://github.com/TomMajor/SmartHome/tree/master/HB-TM-Devices-AddOn) |
-
+|<img src="https://raw.githubusercontent.com/TomMajor/SmartHome/master/HB-TM-Devices-AddOn/CCU_RM/src/addon/www/config/img/devices/50/hb-sec-wds-2_thumb.png" width=25/> | [HB-Sec-WDS-2](https://github.com/TomMajor/SmartHome/tree/master/HB-Sec-WDS-2) | Wassermelder Standard / Custom | `0xF121` | [HB-TM-Devices-AddOn](https://github.com/TomMajor/SmartHome/tree/master/HB-TM-Devices-AddOn) |
 
 ## Dirk (FHEM 2014)
 
