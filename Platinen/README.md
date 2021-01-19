@@ -32,10 +32,14 @@ _Wer noch weitere Platinen kennt oder selbst erstellt hat möge [diese Seite ver
 
 ### [Tom](https://github.com/TomMajor)
   - [HB-UNI-Sensor1](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1#platine): Druck-, Helligkeit-, Feuchte-, Temperatursensor
+  - [HB-Sec-WDS-2](https://github.com/TomMajor/SmartHome/tree/master/HB-Sec-WDS-2#platine): Wassermelder, zusätzliche Batteriespannung als Datenpunkt als Option
   - [HB-SEN-LJet](https://github.com/TomMajor/SmartHome/tree/master/HB-SEN-LJet#platine): Kopplung der Projet LevelJET Ultraschall-Füllstandsanzeige mit HomeMatic
   - [HB-UNI-Sensor-Heizung](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor-Heizung#platine): Schwellwertschalter, der bei Unter- und Überschreitung eines bestimmten Sensorwertes möglichst zeitnah ein Telegramm an die Zentrale sendet
-  - [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench#platine): Testbench für CC1101 Frequenztests
   - [tmStamp](https://github.com/TomMajor/SmartHome/tree/master/PCB/tmStamp): kleine AskSinPP Universalplatine basierend auf Arduino Pro Mini
+  - [HB-RC-12-EP](https://github.com/TomMajor/SmartHome/tree/master/PCB/HB-RC-12-EP): Ein Board für Jérômes HB-RC-12-EP Projekt, eine 12 Kanal Fernbedienung mit ePaper-Display
+  - [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench#platine): Testbench für CC1101 Frequenztests
+  - [AskSin Analyzer XS Board](https://github.com/TomMajor/SmartHome/tree/master/PCB/AskSin-Analyzer-XS#platine): Ein Board für Christophs AskSin Analyzer XS, die Minimalversion des "großen" AskSinAnalyzer
+  - [StepUp_Board_MAX1724](https://github.com/TomMajor/SmartHome/tree/master/PCB/StepUp_Board_MAX1724): Ein kleines Board für den Step-Up Wandler MAX1724
 
 ### [Marco](https://github.com/stan23)
   - [Gosund SP1](https://github.com/stan23/HM-ES-PMSw1-Pl_GosundSP1) Controllerplatine zum Umbau auf HM-ES-PMSw1-Pl
