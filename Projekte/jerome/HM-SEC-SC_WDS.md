@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: RWE/Innogy/Livisi Fensterkontakt WDS
+Desc: RWE/Innogy/Livisi Fensterkontakt WDS mit AskSinPP flashen
 ProjectUrl: https://homematic-forum.de/forum/viewtopic.php?f=76&t=65146
 Author: Jerome
 AuthorUrl: https://github.com/jp112sdl

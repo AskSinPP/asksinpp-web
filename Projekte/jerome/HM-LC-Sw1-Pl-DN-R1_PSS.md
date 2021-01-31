@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: RWE/Innogy/Livisi Zwischenstecker PSS
+Desc: RWE/Innogy/Livisi Zwischenstecker PSS mit AskSinPP flashen
 ProjectUrl: https://homematic-forum.de/forum/viewtopic.php?f=76&t=65147
 Author: Jerome
 AuthorUrl: https://github.com/jp112sdl
