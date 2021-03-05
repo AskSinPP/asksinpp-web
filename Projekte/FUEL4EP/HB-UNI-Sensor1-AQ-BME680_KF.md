@@ -5,7 +5,7 @@ ProjectUrl: https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_devel
 Author: FUEL4EP
 AuthorUrl: https://github.com/FUEL4EP
 Tags: Sensor, Batterie, OpenSource, Temperatur
-Thumb: HB-UNI-Sensor1-AQ-BME680_KF.png
+Thumb: HB-UNI-Sensor1-AQ-BME680_KF.jpg
 Added: 2021-03-05
 ---
 

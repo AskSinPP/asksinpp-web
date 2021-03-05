@@ -5,7 +5,7 @@ ProjectUrl: https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_devel
 Author: FUEL4EP
 AuthorUrl: https://github.com/FUEL4EP
 Tags: Sensor, Batterie, OpenSource
-Thumb: HB-UNI-Sensor1-CO2_SCD30.png
+Thumb: HB-UNI-Sensor1-CO2_SCD30.jpg
 Added: 2020-12-30
 ---
 

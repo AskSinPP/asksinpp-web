@@ -55,8 +55,7 @@
               </svg>
               <a rel="noreferrer noopener" :href="authorUrl" target="_blank">{{ author }}</a>
             </div>
-            <a rel="noreferrer noopener" :href="url" target="_blank" @click.stop="trackProjectClick(title)">
-              <img :src="thumb" alt="" v-if="thumb">
+            <a class="project-img" rel="noreferrer noopener" :href="url" target="_blank" @click.stop="trackProjectClick(title)" :style="{ backgroundImage: 'url('+thumb+')' }">
             </a>
             <div class="tags">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag">
@@ -211,19 +210,22 @@ export default {
     position relative
     display flex
     flex-wrap wrap
+    z-index 2
 
     .project-move
-      transition all 400ms ease-in-out 50ms
+      transition all 600ms ease-out 50ms
 
     .project-enter-active
-      transition all 300ms ease-out
+      transition all 500ms ease-out
 
     .project-leave-active
-      transition all 300ms ease-in
+      transition all 500ms ease-in
       position absolute
+      height: 265px
+      overflow hidden
       z-index 0
 
-    .project-enter, project-leave-to
+    .project-enter, .project-leave-to
       opacity 0
 
     .project-enter
@@ -238,7 +240,7 @@ export default {
       border 1px solid $borderColor
       width 320px
       backface-visibility hidden
-      z-index 1
+      z-index 3
       transform-origin 10% 50%
 
       .title
@@ -258,7 +260,6 @@ export default {
 
       .thumb
         font-size 0
-        min-height 180px
         position relative
         border-bottom 1px solid $borderColor
 
@@ -287,10 +288,13 @@ export default {
           border-bottom-left-radius 6px
           font-size 16px
 
-        img
+        .project-img
           width 100%
           height 180px
-          object-fit cover
+          display inline-block
+          background-repeat no-repeat
+          background-size contain
+          background-position center center
 
         .tags
           right 0
