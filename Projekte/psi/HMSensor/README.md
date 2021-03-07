@@ -26,7 +26,10 @@ keine Beinchen mehr abknipsen nach dem Löten 🙂
 ## HMSensor-StepUp
 
 Durch den StepUp Wandler erreicht man eine möglichst gute Ausnutzung der Batteriekapazität.
+
 Zusätzlich ist eine externe Messung der Batteriespannung möglich.
+Dazu muss der Spannungsteiler über `R4` und `R5` bestückt werden.  Der Sensor Pin ist `A3`, der Activation Pin ist `7`
+und die Referenzspannung beträgt 3V.
 
 Beide Varianten können mit einem 32kHz Quarz ausgestattet werden wenn man
 genauere Timings benötigt. Zusätzlich kann er den Ruhestrom weiter senken, siehe 
