@@ -19,6 +19,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [SteMaker](https://github.com/SteMaker) | `FA00`
 | [HMSteve](https://github.com/HMSteve) | `F800-F83F`
 | [FUEL4EP](https://github.com/FUEL4EP/) | `F601-F607`
+| [netprog2019](https://github.com/netprog2019/) | `FB00-FBFF`
 
 ## Jerome
 
