@@ -82,6 +82,15 @@ Der FTDI muss auf 3,3V gejumpert sein da das CC1101 Funkmodul mit 5V beschädigt
 | GND         | GND      | Masse                |
 
 
+## Arduino Mini Pro mit gedrehtem FTDI-Interface
+
+Es gibt eine abweichende Version des Arduino Mini Pro, bei dem die Belegung der Pins des FTDI-Interface gedreht ist.<br>
+Bei diesem Pro Mini den FTDI Adapters um 180° gedreht aufsetzen, anders als im Bild oben.<br>
+Im Bild links die alte Belegung, rechts die gedrehte. Bei der gedrehten steht nicht mehr DTR, sondern DTR ist dort mit GRN bezeichnet.
+
+![Arduino Pro Mini Alt Neu](./images/arduinopromini_alt_neu.jpg)
+
+
 ## PlatformIO
 
 PlatformIO gibt es als vollständige [Entwicklungsumgebung](https://platformio.org/platformio-ide) (IDE) und als [Command-Line-Interface](https://platformio.org/install/cli) (CLI). Wer nicht tiefer in die Programmierung einsteigen möchte ist mit der CLI-Version ausreichend bedient.
