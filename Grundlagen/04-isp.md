@@ -99,6 +99,7 @@ Die Parameter-Argumente dürfen keine Leerzeichen enthalten. z. B. wäre `-U fla
 Siehe auch:
 * [avrdude - Mikrocontroller.net](https://www.mikrocontroller.net/articles/AVRDUDE)
 * [avrdude Manual](https://www.nongnu.org/avrdude/user-manual/avrdude.html)
+* [avrdudes (GUI für avrdude)](https://github.com/zkemble/AVRDUDESS)
 * [Fuse Calculator](http://www.engbedded.com/fusecalc/)
 
 ### Fuse-Bits setzen
