@@ -24,4 +24,5 @@
   - [HM-Sensor-CR2032_FDGK](https://www.thingiverse.com/thing:3885760)
   - [HM-Sensor-AAA_FDGK](https://www.thingiverse.com/thing:4391967)
   - [HB-MOD-UART-USB](https://www.thingiverse.com/thing:4579570)
-  - [HM-Sensor Programmierklemme](https://www.thingiverse.com/thing:4564797)
+  - [HM-Sensor Programmierklemme](https://www.thingiverse.com/thing:4564797)  
+  - [HB-UNI-Sen-CAP-MOIST(-T)](https://homematic-forum.de/forum/viewtopic.php?f=83&t=68414)
