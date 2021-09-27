@@ -4,7 +4,7 @@ Desc: Aktor mit linearer PWM Ausgabe über Optokoppler zum Beschalten von PWM-DI
 ProjectUrl: https://github.com/psi-4ward/HM-LC-Dim1PWM-LinearPWM
 Author: Psi
 AuthorUrl: https://psi.cx
-Tags: OpenSource, LED, Aktor
+Tags: OpenSource, LED, Aktor, Dimmer
 Thumb: HM-LC-Dim1PWM-LinearPWM.jpg
 Added: 2020-02-11
 ---
