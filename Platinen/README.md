@@ -131,6 +131,12 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
 ### [Asselhead](https://github.com/Asselhead)
  - [HM-LC-SW1-Li](https://github.com/Asselhead/HM-LC-SW1-Li): Schaltaktor für LED-Lichterketten mit LiIon Akku Ladefunktion
  - [HB-Dis-EP-75BW-PCB](https://github.com/Asselhead/HB-Dis-EP-75BW-PCB): Homematic Homebrew Leiterplatte für 7,5" (und andere) ePaper Displays mit OnBoard Driver
+ 
+### [FUEL4EP](https://github.com/FUEL4EP/HomeAutomation)
+ - [HB-UNI-SEN-BATT_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine mit kleinen Anpassungen
+ - [HB-UNI-SEN-BATT_E07-868MS10_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_E07-868MS10_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine adaptiert auf das  EByte E07-868MS10 CC1101 868MHz SMD Wireless Module
+ - [HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine adaptiert auf das  EByte E07-868MS10 CC1101 868MHz SMD Wireless Module, ATMega1284P und SMD Bestückung durch JLCPCB SMT Service
+
 
 ## PCBs fertigen lassen
 
