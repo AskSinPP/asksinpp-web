@@ -7,7 +7,8 @@ pageClass: content_default
 Der Inhalt dieser Website wird automatisch aus dem Git-Repository [https://github.com/AskSinPP/asksinpp-web](https://github.com/AskSinPP/asksinpp-web) erstellt, welches durch verschiedene [Mitwirkende](https://github.com/AskSinPP/asksinpp-web/graphs/contributors) gepflegt wird.
 
 Kontakt:
-* E-Mail: [asppc@psi.cx](mailto:asppc@psi.cx)
+* E-Mail: [asppc@psi.cx](mailto:asppc@psi.cx)  
+  **Diese E-Mail bitte nicht für Support-Anfragen nutzen sondern das Forum nutzen!**
 * [Github-Issue](https://github.com/AskSinPP/asksinpp-web/issues)
 
 
