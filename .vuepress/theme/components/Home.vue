@@ -48,7 +48,7 @@
       <NavLink :item="{text: 'Pull request', link: 'https://github.com/AskSinPP/asksinpp-web/pulls'}"/>
       ,
       <NavLink :item="{text: 'Issue', link: 'https://github.com/AskSinPP/asksinpp-web/issues'}"/>
-      oder <a href="mailto:asppc@psi.cx">Mail</a>.
+      oder <a href="mailto:asppc@psi.cx">Mail</a> (Für Support-Anfrange bitte das Forum nutzen!).
     </div>
 
     <div class="page_bottom">
