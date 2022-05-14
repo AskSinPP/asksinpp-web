@@ -8,9 +8,9 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
 | Entwickler | Bereich
 |------------|----------
-| [Jerome](https://github.com/jp112sdl/) | `E901-E902`, `F1D0-F1D1`, `F300-F3FF`, `F9D2-F9D7`
+| [Jérôme](https://github.com/jp112sdl/) | `E901-E902`, `F1D0-F1D1`, `F300-F3FF`, `F9D2-F9D7`
 | [pa-pa](https://github.com/pa-pa/) | `F201-F207`, `F299`
-| [stan23](https://github.com/stan23/) | `F501`
+| [stan23](https://github.com/stan23/) | `F501-F50F`
 | [Tom Major](https://github.com/TomMajor/) | `F103-F13F`
 | [Dirk (FHEM 2014)](https://github.com/kc-GitHub/Wettersensor) | `F101-F102`
 | [Manawyrm](https://github.com/manawyrm) | `FA01-FA0F`
@@ -21,7 +21,7 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 | [FUEL4EP](https://github.com/FUEL4EP/) | `F601-F607`
 | [netprog2019](https://github.com/netprog2019/) | `FB00-FBFF`
 
-## Jerome
+## Jérôme
 
  Bild | ID | Name | Device-Model | Datei 
 ------|----|------|----------|-------
@@ -62,7 +62,6 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-dis-ep-42bw_thumb.png" width=25/> | [HB-Dis-EP-42BW-MAINS](https://github.com/jp112sdl/HB-Dis-EP-42BW) | 4.2" ePaper Display | `0xF353` | [hb-dis-ep-42bw_e_v1_1_mains](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-dis-ep-42bw_e_v1_1_mains.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-dis-ep-75bw_thumb.png" width=25/> | [HB-Dis-EP-75BW-MAINS](https://github.com/jp112sdl/HB-Dis-EP-75BW) | 7.5" ePaper Display | `0xF357` | [hb-dis-ep-75bw_mains_e_1_0](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-dis-ep-75bw_mains_e_1_0.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-dummy-beacon_thumb.png" width=25/> | [HB-UNI-Sen-DUMMY-BEACON](https://github.com/jp112sdl/HB-UNI-Sen-DUMMY-BEACON) | Dummy-Device zum Simulieren<br/>zyklischer Statusmeldungen sowie Ack-Nachrichten | `0xF3FF` | [hb-uni-sen-dummy-beacon](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-dummy-beacon.xml) |
-|<img src="https://raw.githubusercontent.com/eq-3/occu/master/WebUI/www/config/img/devices/50/5_hm-lc-sw2-fm_thumb.png" width=25/> | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-Sw2-FM) | alternative Firmware für den<br/>HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) special thx to [stan23](https://github.com/stan23)! | `0xF501` | [hb-lc-sw2-fm](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-lc-sw2-fm.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-lev-us_thumb.png" width=25/> | [HB-UNI-Sen-LEV-US](https://github.com/jp112sdl/HB-UNI-Sen-LEV-US) | Ultraschall Füllstandsensor | `0xF9D2` | [hb-uni-sen-lev-us](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-lev-us.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-lev-tof_thumb.png" width=25/> | [HB-UNI-Sen-LEV-TOF](https://github.com/jp112sdl/HB-UNI-Sen-LEV-TOF) | Time-of-Flight Füllstandsensor | `0xF9D3` | [hb-uni-sen-lev-tof](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-lev-tof.xml) |
 |<img src="https://raw.githubusercontent.com/jp112sdl/JP-HB-Devices-addon/master/src/addon/www/config/img/devices/50/hb-uni-sen-dist-tof_thumb.png" width=25/> | [HB-UNI-Sen-DIST-TOF](https://github.com/jp112sdl/HB-UNI-Sen-DIST-TOF) | Time-of-Flight Abstandsensor | `0xF9D7` | [hb-uni-sen-dist-tof](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-uni-sen-dist-tof.xml) |
@@ -86,6 +85,8 @@ Jeder Entwickler sollte seinen eigenen Bereich wählen damit Kollisionen vermied
 
  Bild | ID | Name | Device-Model | Datei 
 ------|----|------|----------|-------
+|<img src="https://raw.githubusercontent.com/eq-3/occu/master/WebUI/www/config/img/devices/50/5_hm-lc-sw2-fm_thumb.png" width=25/> | [HB-LC-Sw2-FM](https://github.com/stan23/HB-LC-SwX-FM) | alternative Firmware für den<br/>HB-LC-Sw2-FM (getrennte Taster-/Relais-Kanäle) | `0xF501` | [hb-lc-sw2-fm](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-lc-sw2-fm.xml) |
+|<img src="https://raw.githubusercontent.com/eq-3/occu/master/WebUI/www/config/img/devices/50/4_hm-lc-sw1-fm_thumb.png" width=25/> | [HB-LC-Sw1-FM](https://github.com/stan23/HB-LC-SwX-FM) | alternative Firmware für den<br/>HB-LC-Sw1-FM (getrennte Taster-/Relais-Kanäle) | `0xF502` | [hb-lc-sw1-fm](https://github.com/jp112sdl/JP-HB-Devices-addon/blob/master/src/addon/firmware/rftypes/hb-lc-sw1-fm.xml) |
 
 
 ## Tom Major
