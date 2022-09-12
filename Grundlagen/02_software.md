@@ -14,7 +14,7 @@ Als Beispiel wird hier der `HM-RC-P1` Paniktaster genommen.
 Der komplette Sketch ist [HM-RC-P1.ino](https://github.com/pa-pa/AskSinPP/blob/master/examples/HM-RC-P1/HM-RC-P1.ino).
 
 **Achtung**: Ein _"Seite speichern unter"_ der Github-URL lädt die HTML-Version herunter und nicht direkt den Source-Code.
-Dieser kann über den Button `Raw` aufgerufen werden: [HM-RC-P1.ino im Raw-Format](https://raw.githubusercontent.com/pa-pa/AskSinPP/master/examples/HM-LC-Bl1-FM/HM-LC-Bl1-FM.ino) Zudem wird nicht empfohlen _Notepad_ oder gar Word zum editieren zu verwenden sondern einen _echten_ Editor wie VSCode, Sublime, Atom, Notepad++, Vim, Emacs usw.
+Dieser kann über den Button `Raw` aufgerufen werden: [HM-RC-P1.ino im Raw-Format](https://raw.githubusercontent.com/pa-pa/AskSinPP/master/examples/HM-RC-P1/HM-RC-P1.ino) Zudem wird nicht empfohlen _Notepad_ oder gar Word zum editieren zu verwenden sondern einen _echten_ Editor wie VSCode, Sublime, Atom, Notepad++, Vim, Emacs usw.
 
 ### IO-Konfiguration
 ```cpp
