@@ -58,4 +58,10 @@ Ein Beispiel hierfür ist [HM-LC-Dim1PWM](https://github.com/jp112sdl/AskSinPPCo
 Bei der Wahl der Tags sollte sich vor allem an den schon vorhandenen Schlagworten orientiert werden.
 Tags, die auf alle Projekte zutreffend sind zu vermeiden (Bsp. Homematic, AskSinPP). Natürlich können
 neue Tags hinzugefügt werden sofern dies Sinn ergibt. Sie werden automatisch in die Filterleiste mit
-aufgenommen.
+aufgenommen. 
+
+Beipiele für Tags:  
+* Sensor, Aktor, Dimmer, Taster etc.
+* Temperatur, Visualisierung, LED etc.
+* Batterie, 230V etc.
+
