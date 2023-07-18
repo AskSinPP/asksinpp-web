@@ -1,6 +1,6 @@
 ---
 isProject: true
-Desc: VOC Luftgütesensor mit Bosch BME680 und Kalman Filter Autokalibrierung
+Desc: VOC Luftgütesensor mit Bosch BME680 und Kalman Filter Autokalibrierung, aLF Version
 ProjectUrl: https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-AQ-BME680_KF
 Author: FUEL4EP
 AuthorUrl: https://github.com/FUEL4EP

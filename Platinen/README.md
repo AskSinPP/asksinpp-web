@@ -136,6 +136,9 @@ Bei Bedarf, bitte den Urheber im [HomeMatic-Forum](https://homematic-forum.de/fo
  - [HB-UNI-SEN-BATT_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine mit kleinen Anpassungen
  - [HB-UNI-SEN-BATT_E07-868MS10_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_E07-868MS10_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine adaptiert auf das  EByte E07-868MS10 CC1101 868MHz SMD Wireless Module
  - [HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine adaptiert auf das  EByte E07-868MS10 CC1101 868MHz SMD Wireless Module, ATMega1284P und SMD Bestückung durch JLCPCB SMT Service
+ - [HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FRAM_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SEN-BATT_ATMega1284P_E07-868MS10_FRAM_FUEL4EP): Alexander Reinerts HB-UNI-SEN-BATT Platine adaptiert auf das  EByte E07-868MS10 CC1101 868MHz SMD Wireless Module, ATMega1284P, TPS61221 Aufwärtswandler, 2x2 Mbit FRAM, ePaper Waveshare ePaper Modul (1.54inch (B) und SMD Bestückung durch JLCPCB SMT Service
+ - [HB-UNI-SenAct-4-4-SC_DS_FUEL4EP](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HB-UNI-SenAct-4-4-SC_DS_FUEL4EP): Platine für einen 3x Schaltaktor für Betrieb an einem Netzfreischalter
+ - [HM-LC-Bl1-FM_FUEL4EP/](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/PCBs/HM-LC-Bl1-FM_FUEL4EP/): 24V Polwendesteuerung für Velux Rolladen und Betrieb an einem Netzfreischalter mit Akkubetrieb im Standby, automatische Ladeschaltung
 
 
 ## PCBs fertigen lassen
