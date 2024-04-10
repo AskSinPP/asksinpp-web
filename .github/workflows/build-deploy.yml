@@ -2,7 +2,7 @@ on: push
 
 jobs:
   build_and_deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       # GIT Checkout
       - uses: actions/checkout@v2
@@ -15,9 +15,9 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       # Setup Node.JS
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '21'
 
       # Build
       - run: npm ci

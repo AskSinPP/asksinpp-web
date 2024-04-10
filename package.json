@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build",
     "check": "blcl -r .vuepress/dist",
     "postinstall": "echo \\$contentClass = \\'.content__default\\' > node_modules/@vuepress/theme-default/styles/config.styl"
   },
