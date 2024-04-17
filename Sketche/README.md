@@ -75,7 +75,7 @@ Die Installation eines entsprechenden **DeviceAddons** ist erforderlich!
   | [HM-WDS40-TH-I-SI7021](https://github.com/jp112sdl/Beispiel_AskSinPP/blob/master/examples/HM-WDS40-TH-I-SI7021/HM-WDS40-TH-I-SI7021.ino) | Temperatur-/Feuchtesensor Innen | für SI7021 Sensor |
   | [HM-LC-Bl1-FM-2](https://github.com/jp112sdl/HM-LC-Bl1-FM-2) | 2-Kanal-Rollladenaktor | wie HM-LC-Bl1-FM jedoch mit 2 Kanälen |
 
-### Eigentwicklungen 
+### Eigenentwicklungen 
 
 **Es ist die Installation des [JP-HB-Device-Addon](https://github.com/jp112sdl/JP-HB-Devices-addon) auf der CCU nötig.**
 
@@ -116,6 +116,29 @@ Die Installation eines entsprechenden **DeviceAddons** ist erforderlich!
   | [HB-SEC-WDS-2](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SEC-WDS-2) | Wassermelder | Wassermelder mit Leitfähigkeitsmessung |
   | [HB-SCI-3-FM](https://github.com/TomMajor/AskSinPP_Examples/tree/master/HB-SCI-3-FM) | 3fach Schließerkontakt | ist eigentlich ein HM-SCI-3-FM und kommt daher ohne zusätzliches Addon aus |
   | [HB-CC1101-Testbench](https://github.com/TomMajor/SmartHome/tree/master/HB-CC1101-Testbench) | Testbench für CC1101 Frequenztests und für weitere Anwendungen | - |
+  
+## [FUEL4EP](https://github.com/FUEL4EP)
+
+### Eigenentwicklungen 
+
+**Es ist die Installation des Addons [hb-ep-devices-addon](https://github.com/FUEL4EP/HomeAutomation/releases/latest) auf der CCU3 / RaspberryMatic nötig.**
+
+  | Bezeichnung | Beschreibung | Hinweise |
+  | ------------- |-------------|-----|
+  | [HB-UNI-SENSOR1-THPD-BME280](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-THPD-BME280) | Sensor für Temperatur, Druck, Luftfeuchte, Taupunkt, absoluter Luftfeuchte und WebUI Offseteinstellung | vom HB-UNI-Sensor1 abgeleitet |
+  | [HB-UNI-SENSOR1-AQ-BME680_KF_rLF](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-AQ-BME680_KF_rLF) | selbstkalibrierender Air Quality Sensor<br/>basierend auf Bosch BME680<br/>und Kalman Filter<br/>und WebUI Offseteinstellung (rLF Version) | vom HB-UNI-Sensor1 abgeleitet |
+  | [HB-UNI-SENSOR1-RAD-AL53](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-RAD-AL53) | Radioaktivitätssensor für Alpha-, Beta- und Gammastrahlung<br/>_basierend auf Teviso AL53 Sensor<br/>mit gleitender Mittelwertbildung über 7 Tage_  | vom HB-UNI-Sensor1 abgeleitet |
+  | [HB-UNI-SENSOR1-THD-SHT45](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-THD-SHT45) | hoch genauer THD Sensor<br/>basierend auf Sensirion SHT45 <br/>mit Taupunkttemperatur,<br/>absoluter Luftfeuchte<br/>und gleitendem Mittelwert der Temperatur über 24 Stunden und 7 Tage<br/> | 1x AA Batterie |
+  |[HB-UNI-Sensor1-THPD-SHT45_BME280](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-THPD-SHT45_BME280) | hoch genauer THPD Sensor<br/>basierend auf Sensirion SHT45 und Bosch BME280 <br/>mit Taupunkttemperatur,<br/>absoluter Luftfeuchte<br/>und gleitendem Mittelwert der Temperatur über 24 Stunden und 7 Tage<br/>| Akkubetrieb |
+   |[HB-UNI-SenAct-4-4-RC_DS](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-SenAct-4-4-RC_DS) | 3x Schaltaktor für Betrieb an einem **Netzfreischalter** - Akkubetrieb im Standby, automatische Ladeschaltung - bei Aktivierung eines Aktors wird die Netzspannung zugeschaltet und am Ende wieder abgeschaltet - geringer Standby-Verbrauch von ca. 1 mA @ 5V| hybrider Akku- und Netzbetrieb |
+  |[HB-UNI-SENSOR1-CO2-SCD30](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/HB-UNI-Sensor1-CO2_SCD30) | genauer NDIR CO2 Sensor<br/>_basierend auf Sensirion SCD30<br/>Akku- oder Netzbetrieb<br/>und WebUI Offseteinstellung_| Akkubetrieb |
+
+### Sketche zur Ermittlung der Funkreichweite 
+
+ | Bezeichnung | Beschreibung | Hinweise |
+ | ------------- |-------------|-----|
+ |[Range_test_beacon](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/Range_test_beacon)| 868,3Mhz Funkbake um die Reichweite eines HF-Übertragungskanals zu ermitteln |  |
+ |[FreqTest_range_test_with_distant_beacon](https://github.com/FUEL4EP/HomeAutomation/tree/master/AsksinPP_developments/sketches/FreqTest_range_test_with_distant_beacon)| spezielle Version von FreqTest um die Reichweite eines HF-Übertragungskanals zu ermitteln | abgeleitet aus FreqTest |
 
 <hr/>
 
