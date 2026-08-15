@@ -64,6 +64,7 @@ Die Platinen haben neben dem CC1101 häufig noch Platz für andere Funkmodule wi
   - [HB-UNI-Mini-X](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X): Universielle 'AskSin++' Mini-Platine im THT-Format. Es sind alle Ports des 'Arduino Pro Mini' über zwei beschriftete Port Reihen (bestückbar mit Pin-Header oder JST-XH) zugänglich.
   - [HB-UNI-Mini-X-AddOn](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X-AddOn): AddOn Platine für 'HB-UNI-Mini-X' im THT-Format. Mit 'HB-UNI-Mini-X' und dem 'HB-UNI-Mini-X-AddOn' kann die Kern-Funktionalität der 'HB-UNI-Sens-X' Platine erreicht werden.
   - [Sens-Gar-118x](https://github.com/wolwin/WW-myPCB/tree/master/PCB_Sens-Gar-118x): Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X'.
+  - [HB-LxR-THT](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-LxR-THT): 'AskSin++' Aktor Platine mit bistabilen Relais und verschiedenen Konfigurationsmöglichkeiten (THT).
 
 ### [Ronny](https://github.com/ronnythomas)
 
