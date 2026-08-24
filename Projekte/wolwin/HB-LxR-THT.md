@@ -4,7 +4,7 @@ Desc: HB-LxR-THT � Konfigurierbare 'AskSin++' Platinen mit bistabilen Relais (
 ProjectUrl: https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-LxR-THT/README.md
 Author: wolwin
 AuthorUrl: https://github.com/wolwin
-Tags: OpenSource, PCB, Aktor
+Tags: OpenSource, Aktor
 Thumb: HB-LxR-THT.jpg
 ---
 
