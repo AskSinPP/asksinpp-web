@@ -3,6 +3,8 @@ const sidebar = require('./sidebar');
 
 module.exports = {
   base: '/',
+  // Interne Handbuchplanung und Arbeitsregeln nicht als Website-Seiten erzeugen.
+  patterns: ['**/*.md', '**/*.vue', '!Handbuch/Intern/**', '!AGENTS.md'],
   title: 'AskSin++',
   themeConfig: {
     sidebar: sidebar(),

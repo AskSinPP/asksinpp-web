@@ -10,6 +10,51 @@ function getFiles(dir) {
 module.exports = () => {
   const sidebar = {};
 
+  sidebar['/Handbuch/'] = [
+    ['', 'Über das Handbuch'],
+    {
+      title: 'Einstieg',
+      collapsable: false,
+      children: [
+        ['Grundlagen/Architektur', 'Architektur im Überblick'],
+        ['Grundlagen/Erstes-Geraet', 'Das erste eigene Gerät'],
+        ['Grundlagen/Programmablauf', 'Programmablauf'],
+      ]
+    },
+    {
+      title: 'Klassen und Templates',
+      collapsable: true,
+      children: [
+        ['Klassen/Device', 'Geräteklassen'],
+        ['Klassen/Channel', 'Kanäle'],
+        ['Klassen/HAL', 'Hardwareabstraktion'],
+        ['Klassen/Templates', 'Templates verstehen'],
+      ]
+    },
+    {
+      title: 'Batterie und Energie',
+      collapsable: true,
+      children: [
+        ['Batterie/Grundlagen', 'Grundlagen'],
+        ['Batterie/Messverfahren', 'Messverfahren'],
+        ['Batterie/Schwellenwerte', 'Schwellenwerte'],
+        ['Batterie/Energiesparen', 'Energiesparen'],
+      ]
+    },
+    {
+      title: 'Geräteentwicklung',
+      collapsable: true,
+      children: [
+        ['Funk/', 'Funk, Nachrichten und Peers'],
+        ['Register/', 'Register und Speicherung'],
+        ['Sensoren/', 'Sensoren'],
+        ['Aktoren/', 'Aktoren'],
+      ]
+    },
+    ['Praxis/', 'Praxis und Lernbeispiele'],
+    ['Referenz/', 'Quellen und Versionsstand'],
+  ];
+
   sidebar['/Grundlagen/'] = [
     {
       title: 'Grundlagen',

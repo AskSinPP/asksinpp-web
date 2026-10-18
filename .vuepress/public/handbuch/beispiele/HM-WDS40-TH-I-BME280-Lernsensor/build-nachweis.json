@@ -1,0 +1,82 @@
+{
+  "build_date": "2026-10-17",
+  "host": "Windows x64",
+  "arduino_cli": {
+    "version": "1.5.1",
+    "commit": "01f3d4f2b",
+    "url": "https://downloads.arduino.cc/arduino-cli/arduino-cli_1.5.1_Windows_64bit.zip",
+    "archive_sha256": "fabe42e0eb04d00e776a66178299ff95a46c623dbc260f997e58fd514853dd40"
+  },
+  "fqbn": "arduino:avr:pro:cpu=8MHzatmega328",
+  "core": {
+    "name": "arduino:avr",
+    "version": "1.8.6"
+  },
+  "compiler": {
+    "gcc_version": "7.3.0",
+    "package_version": "7.3.0-atmel3.6.1-arduino7"
+  },
+  "warnings": "default",
+  "asksinpp": {
+    "version": "5.0.3",
+    "commit": "21bab8b92f7982c29beca08ff3c0ad6ef1e72a5c",
+    "url": "https://github.com/pa-pa/AskSinPP/tree/21bab8b92f7982c29beca08ff3c0ad6ef1e72a5c"
+  },
+  "libraries": [
+    {
+      "name": "EnableInterrupt",
+      "manager_version": "1.1.0",
+      "declared_version": "1.1.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/GreyGnome/EnableInterrupt-1.1.0.zip",
+      "archive_sha256": "888c39edb3ae8464c25976f4ed530b5644fd16c03582e469e53bd47409f9a679"
+    },
+    {
+      "name": "Low-Power",
+      "manager_version": "1.81.0",
+      "declared_version": "1.81",
+      "url": "https://downloads.arduino.cc/libraries/github.com/rocketscream/Low_Power-1.81.0.zip",
+      "archive_sha256": "6269154393347525328657a54122d731a920cd7b12072584914e26bc38af6c34"
+    },
+    {
+      "name": "BME280",
+      "manager_version": "3.0.0",
+      "declared_version": "3.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/finitespace/BME280-3.0.0.zip",
+      "archive_sha256": "88b1ac5877c9cc0ec706b077043306432fe3a2de9930d1ddbc6f714946c3dced"
+    }
+  ],
+  "bundled_libraries": {
+    "Wire": "1.0 (AVR Core 1.8.6)",
+    "SPI": "1.0 (AVR Core 1.8.6)"
+  },
+  "builds": [
+    {
+      "name": "Original HM-WDS40-TH-I-BME280",
+      "source_commit": "c0ad384c66a8e4887f4cacc591af5d3b88167886",
+      "source_sha256": "f499e469fa02896c69661148573d3abb2f7e2618d7be71eb314cfcc6aa917a6d",
+      "exit_code": 0,
+      "flash_bytes": 25432,
+      "flash_limit_bytes": 30720,
+      "static_ram_bytes": 973,
+      "ram_limit_bytes": 2048
+    },
+    {
+      "name": "HM-WDS40-TH-I-BME280-Lernsensor",
+      "file": "HM-WDS40-TH-I-BME280-Lernsensor.ino",
+      "source_sha256": "d45fa04c30429b04644282f3551c499ca22b3dc4a9e6ce1eb068421f00af9894",
+      "exit_code": 0,
+      "flash_bytes": 24832,
+      "flash_limit_bytes": 30720,
+      "static_ram_bytes": 901,
+      "ram_limit_bytes": 2048
+    }
+  ],
+  "hardware_tested": false,
+  "upload_performed": false,
+  "pairing_tested": false,
+  "notes": [
+    "Only the named configuration was compiled. LCD, OTA bootloader and USE_AES were not enabled.",
+    "Static RAM usage excludes runtime stack and additional heap consumption.",
+    "Tutorial uses a stable 3.3 V supply, NoBattery, BME280 normal mode and address 0x76."
+  ]
+}

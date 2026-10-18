@@ -1,5 +1,6 @@
 module.exports = [
   { text: 'Grundlagen', link: '/Grundlagen/' },
+  { text: 'Entwicklerhandbuch', link: '/Handbuch/' },
   { text: 'Projekte', link: '/Projekte/' },
   {
     text: 'Material',

@@ -1,0 +1,39 @@
+# Offene Fragen und Prüfaufträge
+
+**Stand:** erste Analysephase. Die Quellcodebefunde sind in [Bestandsaufnahme](./Bestandsaufnahme.md), [Inventar](./Klasseninventar.md), [Batterieanalyse](./Batterieanalyse.md) und [Beispielkatalog](./Beispielkatalog.md) belegt. „Offen“ bezeichnet fehlende Rahmenbedingungen, Hardwareprüfung oder fachliche Entscheidung. Eindeutig gelesene Implementierung wird nicht als ungewiss ausgegeben.
+
+## Batterie und Hardware
+
+| ID / Priorität | Was bereits feststeht | Offene Frage und nächster Prüfschritt |
+| --- | --- | --- |
+| B1 / P0 vor Batterietutorial | Der Code unterstützt interne und externe Messpfade mit sehr unterschiedlichen Voraussetzungen. | Welcher Referenzaufbau soll das Kapitel tragen: direkt versorgter ATmega328P oder Wandlerbetrieb, welches Board, welche Zellen und welche Sensorplatine? Vor konkreten Schaltungs- oder Grenzwertempfehlungen gemeinsam festlegen. Die Struktur kann unabhängig davon entstehen. |
+| B2 / P1 | AVR-`InternalVCC` verwendet nominell 1100 mV und keine öffentliche Kalibriermethode; `ExternalVCC` skaliert mit `VCC/FACTOR`. | Welche ADC-/Bandgap-Toleranzen, zulässigen Eingangswiderstände und Einschwingzeiten gelten beim benannten ATmega328P? Herstellerdatenblatt, Arduino-Core und Referenzmessung heranziehen; tatsächliche Teilerwiderstände und Aktivierungsschaltung dokumentieren. |
+| B3 / P1 | Sync-/Async-Meter und IRQ-Pfad halten Minima; `AsyncMeter::measure` überschreibt direkt. ADC-Nutzung wird in den IRQ-Klassen über `setIdle/unsetIdle` koordiniert. | Wann soll ein Gerät das Minimum zurücksetzen? Wie wirken Lastspitzen, ADC-Umschaltung, Sensorfehler und eventuelles Umschalten des E5-Messmodus? Messreihe und kontrollierten Test planen, bevor eine Filter- oder Kalibrierempfehlung folgt. |
+| B4 / P1 | Bei `BatterySensorExt` liest nur die eigene Methode `voltage()` extern. Geerbte `current/low/critical` bleiben am internen Meter. | Ist diese Klasse ausschließlich als Altkompatibilität gedacht? Historie/Upstreamabsicht prüfen und entscheiden, ob sie im Lernweg nur als Fallstrick erscheint. Eine etwaige Library-Korrektur benötigt einen eigenen Auftrag. |
+| B5 / P1 | Schwellen werden nach Rundung strikt unterschritten. E1/E2/E9 konfigurieren critical, fragen es aber nicht ab. E3 fragt es ab, setzt die Null-Defaults jedoch nicht. | Welche Reaktion soll der Lernsketch vorsehen, und welche Spannungsgrenzen sind mit MCU-Takt, Funkchip, Sensor und Versorgung nachweisbar geeignet? Vor Veröffentlichung gerätespezifisch festlegen und prüfen. |
+| B6 / P1 | AVR-Sleep-Aufrufe deaktivieren BOD für die betreffende Ruhephase; das setzt keine neuen Fuse-Werte. | Welche BOD-/Takt-/Bootloaderkonfiguration wird für den Referenzaufbau vorausgesetzt? Wachzustand und Spannungseinbruch beim Senden anhand des Datenblatts und mit Messungen untersuchen. Vorhandene FAQ nicht als universelle Fuse-Empfehlung übernehmen. |
+| B7 / P1 | `SleepRTC` hält Timer2 aktiv und berücksichtigt RTC-Zähler. `USE_RTC` im Library-Beispiel E6 ist optional. | Welche 32-kHz-Beschaltung und Boardvariante werden reproduzierbar verwendet? Genauigkeit, Aufwachverhalten und Direktverknüpfung zum Thermostat auf Hardware vergleichen. |
+| B8 / P1 | E7 nutzt im aktiven Build `USE_WOR`, alternativ einen `BurstDetector`. `sleepForever` trennt keine Batterie elektrisch. | Wie groß sind Ruhestrom, Empfangslatenz, Sensor-/Wandlerverbrauch und verbleibender Entladestrom tatsächlich? Messungen mit definiertem Aufbau und Betriebszustand; Wiederanlauf nach kritischem Zustand prüfen. Keine Laufzeit aus Code allein ableiten. |
+
+## API, Beispiele und Konfiguration
+
+| ID / Priorität | Was bereits feststeht | Offene Frage und nächster Prüfschritt |
+| --- | --- | --- |
+| A1 / P0 vor vollständigem Tutorial | Beispielrepository und Library pinnen sich gegenseitig nicht; die Quellstände sind separat erfasst. | Welche Board-Core-, Compiler- und externen Sensorbibliotheksversionen bilden eine reproduzierbare Kombination? Zuerst E1 kompilieren, anschließend E3/E4; Prüfnachweise je Tutorial erfassen. |
+| A2 / P1 | E1 und E2 enthalten lokale Klassen namens `WeatherChannel`/`WeatherEventMsg`; E6 nutzt die Library-Typen. E2 protokolliert Messfehler und liest trotzdem gespeicherte Werte. | Welche Strategie für fehlende, veraltete oder ungültige Sensordaten wird im Lerngerät verwendet? Externe BME-/DHT-Treiber prüfen und einen klaren Fehlerfall einbauen, ohne Originalbeispiele zu verändern. |
+| A3 / P1 | Registerlisten und Kanalzahl beeinflussen Speicherbelegung und Layoutprüfsumme; Defaultinitialisierung kann folgen. | Wie werden bei einem Tutorial-Upgrade bestehende Peers und Benutzerkonfiguration erhalten oder bewusst neu angelegt? EEPROM-Budget auf dem Referenz-MCU berechnen und eine klar beschriebene Update-/Reset-Strategie festlegen. |
+| A4 / P2 | `VirtBaseChannel`/`VirtChannel` erlauben eine gemeinsame Schnittstelle; E1–E9 decken noch kein gemischtes Kanalgerät ab. | Welches konkrete Beispiel eignet sich für unterschiedliche Kanaltypen? Ein reales Gerät auswählen, Template-Zusammenhang lesen und kompilieren. Ebenso ein direkter List2- und externer-EEPROM-Lernfall vor späterer API-Vertiefung. |
+| A5 / P2 | AES-, ACK-/NACK- und Burst-Pfade sind vorhanden; ihre Aktivierung ist konfigurationsabhängig. | Welche Schalter, Gerätebeschreibungen und Schlüsselkonfiguration sollen im Funkkapitel demonstriert werden? Einen realen Nachrichtenablauf am festgelegten Quellstand nachvollziehen; keine weitergehenden Sicherheitszusagen aus Klassennamen ableiten. |
+| A6 / P2 | Die Library nennt mehrere Architekturen, die Sleep-/ADC-Implementierungen besitzen getrennte Präprozessorpfade. | Welche Plattformen sollen nach AVR praktisch unterstützt und geprüft werden? Featurematrix anlegen; ältere STM32F1-Anleitungen nicht ungeprüft auf jeden STM32-Core übertragen. |
+| A7 / P1 vor List2-/Speicherlayoutempfehlungen | In `Channel.h` addiert `peerAddress()` `List2::size()` zum Offset, aber `Channel::size()` addiert diese Größe nicht; `firstinit()` löscht den von `size()` gemeldeten Bereich. | Ist das für einen nichtleeren List2-Typ beabsichtigt oder ein Upstreamfehler? Verbraucher und Speicherlayout am festgelegten Commit prüfen und bei Bedarf eine gezielte Upstreamklärung anstoßen. Bis dahin kein sicheres Speicherlayout für benutzerdefinierte nichtleere List2-Typen versprechen. Keine Library-Änderung ohne separaten Auftrag. |
+
+## Lizenzierung und Veröffentlichung
+
+| ID / Priorität | Was bereits feststeht | Offene Frage und nächster Prüfschritt |
+| --- | --- | --- |
+| L1 / nach Nutzerklärung, vor Projektabschluss | Website-`LICENSE.txt` enthält CC BY-NC-SA 4.0 International; Paketmetadaten nennen abweichend BY-SA. Der Nutzer klärt diese Abweichung derzeit. Quelldateien enthalten zusätzlich ihre jeweils eigenen Lizenzhinweise. | Die Diskrepanz ist nach Nutzerentscheidung beim Abschluss des Projekts zusammen mit Paketmetadaten und tatsächlich übernommenen Inhalten auf mögliche Kollisionen prüfen. Sie ist bis dahin kein Grund, wichtige technische Dokumentation zurückzustellen. Quelllizenzen, Urheberangaben und Quellenverweise bei konkreten Übernahmen trotzdem beachten; keine Lizenzdatei eigenmächtig ändern. |
+| V1 / nach späterer Veröffentlichung | Neue Routen sind Bestandteil des lokalen Builds; die Website verwendet einen externen Algolia-Index. | Wann wird der externe Suchindex nach einer ausdrücklich beauftragten Veröffentlichung neu gecrawlt? Kein Bestandteil dieses lokalen Auftrags. |
+
+## Redaktionelle Entscheidung
+
+**„Architektur im Überblick“**, **Device**, **Channel**, **HAL** und **Programmablauf** sind als erste Grundlagen ausgearbeitet. Als nächstes folgt „Das erste eigene Gerät“ mit dem BME280-Beispiel als durchgehendem Sensorpfad und festgelegtem Firmware-Build. Für das vollständige Batteriekapitel ist B1 die erste fachliche Entscheidung; in dieser Phase sind dafür keine umfassenden Änderungen nötig.
